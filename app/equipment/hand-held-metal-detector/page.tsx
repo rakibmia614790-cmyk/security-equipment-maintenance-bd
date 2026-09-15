@@ -4,302 +4,282 @@ export const metadata: Metadata = {
   title:
     "Hand Held Metal Detector Repair & Maintenance Bangladesh | Security Equipment Maintenance BD",
   description:
-    "Professional hand held metal detector supply, installation, repair, maintenance, testing, spare parts and technical support services across Bangladesh.",
+    "Hand Held Metal Detector supply, installation, repair, preventive maintenance, sensitivity testing, spare parts and technical support across Bangladesh.",
 };
 
 const brands = [
-  "Garrett Metal Detectors",
-  "CEIA",
-  "Rapiscan Systems",
-  "Smiths Detection",
-  "Fisher Research Laboratory",
-  "Vallon",
-  "ZKTeco",
-  "Nuctech",
-  "Adani Systems",
-  "Elektral",
-  "Metrasens",
-  "Westminster International",
-  "Safeway Inspection System",
-  "Kumahira",
-  "Shanghai Eastimage",
-  "Beijing Zhongdun Anmin",
-  "Fujian Security Technology",
-  "Securina",
-  "TSS",
-  "L3 Security & Detection Systems",
+  { name: "Garrett Metal Detectors", file: "garrett.png" },
+  { name: "CEIA", file: "ceia.png" },
+  { name: "Rapiscan Systems", file: "rapiscan.png" },
+  { name: "Smiths Detection", file: "smiths-detection.png" },
+  { name: "Nuctech", file: "nuctech.svg" },
+  { name: "ZKTeco", file: "zkteco.svg" },
+  { name: "Vallon", file: "vallon.svg" },
+  { name: "Metrasens", file: "metrasens.png" },
+  { name: "Adani Systems", file: "adani-systems.png" },
+  { name: "Elektral", file: "elektral.png" },
+  { name: "Westminster International", file: "westminster.svg" },
+  { name: "Autoclear", file: "autoclear.png" },
+  { name: "Fisher Research Laboratory", file: "fisher.svg" },
+  { name: "Kumahira", file: "kumahira.svg" },
+  { name: "Shanghai Eastimage", file: "eastimage.png" },
 ];
 
 const services = [
-  "Hand Held Metal Detector Supply",
-  "Installation & Setup",
-  "Fault Diagnosis & Repair",
-  "Preventive Maintenance",
-  "Corrective Maintenance",
-  "Sensitivity Testing",
-  "Detection Performance Testing",
-  "Battery & Power System Inspection",
-  "Control Circuit & Electronic Repair",
-  "Alarm & Indicator Troubleshooting",
-  "Charging System Inspection",
-  "Spare Parts Support",
-  "AMC & Service Contracts",
-  "Technical Consultation",
-  "On-site Technical Support",
+  "Hand Held Metal Detector fault diagnosis",
+  "Electronic circuit and control troubleshooting",
+  "Detection sensitivity testing",
+  "Alarm and audio inspection",
+  "LED indicator troubleshooting",
+  "Battery and charging system inspection",
+  "Power supply inspection",
+  "Sensor and detection coil inspection",
+  "Sensitivity adjustment and performance testing",
+  "Preventive and corrective maintenance",
+  "Spare parts arrangement",
+  "On-site technical support",
+  "Equipment inspection and commissioning",
+  "Annual Maintenance Contract (AMC)",
 ];
 
 const applications = [
-  "Airports & Aviation Facilities",
-  "Government Buildings",
-  "Courts & Prisons",
+  "Airports",
+  "Government Facilities",
+  "Defence & Military",
   "Police & Law Enforcement",
-  "Military & Defense Facilities",
-  "Ports & Border Control",
+  "Courts & Prisons",
   "Banks & Financial Institutions",
+  "Ports & Critical Infrastructure",
   "Factories & Industrial Facilities",
   "Shopping Malls",
-  "Hotels & Corporate Offices",
-  "Stadiums & Event Venues",
-  "Schools, Colleges & Universities",
+  "Hotels",
+  "Corporate Offices",
+  "Schools & Universities",
+  "Hospitals",
+  "Stadiums & Events",
 ];
+
+function BrandCard({
+  name,
+  file,
+}: {
+  name: string;
+  file: string;
+}) {
+  return (
+    <div className="group rounded-2xl border border-white/10 bg-white/[0.03] p-4 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:bg-white/[0.06]">
+      <div className="flex h-24 items-center justify-center rounded-xl border border-white/10 bg-black/50 px-4">
+        <img
+          src={`/brands/hhmd/${file}`}
+          alt={`${name} brand mark`}
+          className="max-h-14 max-w-[82%] object-contain"
+        />
+      </div>
+
+      <p className="mt-3 text-center text-sm font-medium text-slate-300">
+        {name}
+      </p>
+    </div>
+  );
+}
 
 export default function HandHeldMetalDetectorPage() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-[#020617] text-white">
+
       {/* HERO */}
-      <section className="border-b border-cyan-500/20 px-6 py-24">
-        <div className="mx-auto max-w-6xl">
+      <section className="relative overflow-hidden border-b border-white/10">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(34,211,238,0.14),transparent_35%),radial-gradient(circle_at_bottom_left,rgba(59,130,246,0.12),transparent_35%)]" />
+
+        <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
-            People Screening & Security
+            Security Equipment Maintenance BD
           </p>
 
-          <h1 className="mt-4 max-w-5xl text-4xl font-bold leading-tight md:text-6xl">
+          <h1 className="mt-4 max-w-4xl text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
             Hand Held Metal Detector
-            <br />
-            <span className="text-cyan-400">
-              Repair & Maintenance Bangladesh
+            <span className="block text-cyan-400">
+              Repair & Maintenance
             </span>
           </h1>
 
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-gray-400">
-            Professional hand held metal detector supply, installation,
-            troubleshooting, repair, preventive maintenance, performance
-            testing, spare parts and technical support for security screening
-            operations across Bangladesh.
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+            Professional supply, installation, repair, preventive
+            maintenance, sensitivity testing, spare parts and technical
+            support for Hand Held Metal Detectors across Bangladesh.
           </p>
-
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a
-              href="tel:+8801799419011"
-              className="rounded-xl bg-cyan-400 px-7 py-4 text-center font-bold text-black transition hover:bg-cyan-300"
-            >
-              Call for Service
-            </a>
-
-            <a
-              href="https://wa.me/8801518698236"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-xl border border-cyan-400 px-7 py-4 text-center font-bold text-cyan-400 transition hover:bg-cyan-400 hover:text-black"
-            >
-              WhatsApp
-            </a>
-          </div>
         </div>
       </section>
 
-      {/* REPAIR */}
-      <section className="px-6 py-20">
-        <div className="mx-auto max-w-6xl">
+      {/* INTRO */}
+      <section className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+        <div className="max-w-4xl">
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">
-            Technical Services
+            HHMD Technical Services
           </p>
 
-          <h2 className="mt-3 text-3xl font-bold md:text-4xl">
-            Repair and Maintenance
+          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+            Reliable Hand Held Metal Detector Support
           </h2>
 
-          <p className="mt-5 max-w-4xl leading-8 text-gray-400">
-            Troubleshooting, repair and preventive maintenance for Hand Held
-            Metal Detector systems. Our technical service includes inspection,
-            sensitivity testing, electronic troubleshooting, power-system
-            inspection and performance verification.
+          <p className="mt-5 leading-8 text-slate-400">
+            Hand Held Metal Detectors are widely used for secondary
+            screening and personal inspection. Our technical service
+            covers equipment diagnosis, performance testing, sensitivity
+            adjustment, preventive maintenance and corrective repair.
           </p>
-
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
-              <h3 className="text-xl font-semibold text-cyan-400">
-                Repair & Troubleshooting
-              </h3>
-
-              <p className="mt-3 leading-7 text-gray-400">
-                Diagnosis and repair of electronic, electrical, charging,
-                control and detector-related faults.
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
-              <h3 className="text-xl font-semibold text-cyan-400">
-                Preventive Maintenance
-              </h3>
-
-              <p className="mt-3 leading-7 text-gray-400">
-                Planned inspection and maintenance to improve reliability,
-                operational stability and service life.
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
-              <h3 className="text-xl font-semibold text-cyan-400">
-                Testing & Performance
-              </h3>
-
-              <p className="mt-3 leading-7 text-gray-400">
-                Sensitivity testing, detection performance checks, alarm
-                verification and operational inspection.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 
       {/* BRANDS */}
-      <section className="border-y border-cyan-500/20 bg-white/[0.02] px-6 py-20">
-        <div className="mx-auto max-w-6xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">
-            Global Industry Coverage
-          </p>
+      <section className="border-y border-white/10 bg-white/[0.02]">
+        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
 
-          <h2 className="mt-3 text-3xl font-bold md:text-4xl">
-            Brands / Manufacturers in the Hand Held Metal Detector Market
-          </h2>
+          <div className="mb-10">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">
+              Brands We Work With
+            </p>
 
-          <p className="mt-5 max-w-4xl leading-8 text-gray-400">
-            Hand held metal detectors are manufactured by a wide range of
-            international security screening and detection technology
-            companies. The following list represents brands and manufacturers
-            associated with this product category and security screening
-            market.
-          </p>
+            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+              Hand Held Metal Detector Brands
+            </h2>
 
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <p className="mt-4 max-w-3xl leading-7 text-slate-400">
+              We provide technical support for a wide range of security
+              screening equipment brands and models.
+            </p>
+          </div>
+
+          <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {brands.map((brand) => (
-              <div
-                key={brand}
-                className="rounded-2xl border border-cyan-400/20 bg-black/50 p-6 transition hover:border-cyan-400/60"
-              >
-                <div className="mb-4 h-1 w-12 rounded-full bg-cyan-400" />
-
-                <h3 className="text-lg font-semibold">{brand}</h3>
-
-                <p className="mt-3 text-sm leading-6 text-gray-400">
-                  Security screening, metal detection and people-screening
-                  technology.
-                </p>
-              </div>
+              <BrandCard
+                key={brand.name}
+                name={brand.name}
+                file={brand.file}
+              />
             ))}
           </div>
+
+          <div className="mt-8 rounded-2xl border border-white/10 bg-black/30 p-5">
+            <p className="text-xs leading-6 text-slate-500">
+              Brand names and marks are shown for equipment identification
+              and market reference only. Their display does not imply
+              dealership, manufacturer authorization, endorsement or
+              official partnership unless separately confirmed.
+            </p>
+          </div>
+
         </div>
       </section>
 
       {/* SERVICES */}
-      <section className="px-6 py-20">
-        <div className="mx-auto max-w-6xl">
+      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+
+        <div className="mb-10">
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">
-            What We Provide
+            Our Services
           </p>
 
-          <h2 className="mt-3 text-3xl font-bold md:text-4xl">
-            Hand Held Metal Detector Services
+          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+            HHMD Repair & Maintenance Services
           </h2>
-
-          <div className="mt-10 grid gap-4 md:grid-cols-2">
-            {services.map((service) => (
-              <div
-                key={service}
-                className="rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4 text-gray-300 transition hover:border-cyan-400/40"
-              >
-                <span className="mr-3 text-cyan-400">✓</span>
-                {service}
-              </div>
-            ))}
-          </div>
         </div>
+
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {services.map((service, index) => (
+            <div
+              key={service}
+              className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition hover:border-cyan-400/30 hover:bg-white/[0.05]"
+            >
+              <div className="flex gap-4">
+                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-cyan-400/20 bg-cyan-400/[0.06] text-sm font-bold text-cyan-300">
+                  {String(index + 1).padStart(2, "0")}
+                </div>
+
+                <p className="leading-6 text-slate-300">
+                  {service}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
       </section>
 
       {/* APPLICATIONS */}
-      <section className="border-y border-cyan-500/20 bg-white/[0.02] px-6 py-20">
-        <div className="mx-auto max-w-6xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">
-            Security Applications
-          </p>
+      <section className="border-y border-white/10 bg-white/[0.02]">
+        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
 
-          <h2 className="mt-3 text-3xl font-bold md:text-4xl">
-            Where Hand Held Metal Detectors Are Used
-          </h2>
+          <div className="mb-10">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">
+              Applications
+            </p>
 
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+              Where HHMDs Are Used
+            </h2>
+          </div>
+
+          <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {applications.map((application) => (
               <div
                 key={application}
-                className="rounded-xl border border-white/10 bg-black/50 px-5 py-4 text-gray-300"
+                className="rounded-xl border border-white/10 bg-black/30 px-5 py-4 text-slate-300"
               >
-                <span className="mr-3 text-cyan-400">◆</span>
                 {application}
               </div>
             ))}
           </div>
+
         </div>
       </section>
 
       {/* CTA */}
-      <section className="border-t border-cyan-500/20 px-6 py-20">
-        <div className="mx-auto max-w-4xl text-center">
+      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+        <div className="rounded-3xl border border-cyan-400/20 bg-cyan-400/[0.06] p-8 text-center sm:p-12">
+
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">
             Technical Support
           </p>
 
-          <h2 className="mt-3 text-3xl font-bold md:text-4xl">
-            Need Hand Held Metal Detector Service?
+          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+            Need HHMD Repair or Maintenance?
           </h2>
 
-          <p className="mx-auto mt-5 max-w-2xl leading-8 text-gray-400">
-            Contact Security Equipment Maintenance BD for hand held metal
-            detector repair, maintenance, testing, spare parts and technical
-            support across Bangladesh.
+          <p className="mx-auto mt-4 max-w-2xl leading-7 text-slate-300">
+            Contact Security Equipment Maintenance BD for supply,
+            installation, repair, preventive maintenance, AMC and
+            technical support.
           </p>
 
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+
             <a
               href="tel:+8801799419011"
-              className="rounded-xl bg-cyan-400 px-7 py-4 font-bold text-black transition hover:bg-cyan-300"
+              className="rounded-xl bg-cyan-400 px-7 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
             >
-              Call for Service
+              Call Now
             </a>
 
             <a
               href="https://wa.me/8801518698236"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl border border-cyan-400 px-7 py-4 font-bold text-cyan-400 transition hover:bg-cyan-400 hover:text-black"
+              className="rounded-xl border border-white/15 bg-white/5 px-7 py-3 font-semibold text-white transition hover:bg-white/10"
             >
               WhatsApp
             </a>
+
           </div>
         </div>
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t border-white/10 px-6 py-10">
-        <div className="mx-auto max-w-6xl text-center text-sm text-gray-500">
-          <p>Security Equipment Maintenance BD</p>
-
-          <p className="mt-2">
-            Hand Held Metal Detector • Supply • Repair • Maintenance •
-            Technical Support
-          </p>
-        </div>
+      <footer className="border-t border-white/10 px-6 py-8 text-center text-sm text-slate-500">
+        © {new Date().getFullYear()} Security Equipment Maintenance BD.
+        All rights reserved.
       </footer>
+
     </main>
   );
 }

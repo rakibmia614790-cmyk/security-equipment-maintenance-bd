@@ -1,428 +1,529 @@
 "use client";
 
-import { useState } from "react";
+import { FormEvent, useState } from "react";
+
+const equipment = [
+  ["Baggage Scanner", "/equipment/baggage-scanner", "X-RAY / INSPECTION", "BAG"],
+  ["Walk Through Metal Detector", "/equipment/walk-through-metal-detector", "PEOPLE SCREENING", "WTMD"],
+  ["Hand-Held Metal Detector", "/equipment/hand-held-metal-detector", "HAND SCREENING", "HHMD"],
+  ["Explosive Trace Detection", "/equipment/explosive-trace-detection", "TRACE DETECTION", "ETD"],
+  ["CCTV System", "/equipment/cctv-system", "VIDEO SECURITY", "CCTV"],
+  ["Access Control System", "/equipment/access-control-system", "ENTRY SECURITY", "ACS"],
+  ["Road Barrier / Road Blocker", "/equipment/road-barrier-road-blocker", "VEHICLE SECURITY", "RBR"],
+  ["Car Parking Management", "/equipment/car-parking-management", "PARKING CONTROL", "CPM"],
+  ["Bollard", "/equipment/bollard", "PERIMETER SECURITY", "BLD"],
+  ["Gate / Flap Barrier", "/equipment/gate-flap-barrier", "ACCESS CONTROL", "GFB"],
+  ["ANPR", "/equipment/anpr", "VEHICLE IDENTIFICATION", "ANPR"],
+];
+
+const services = [
+  ["01", "INSPECT", "Equipment condition assessment and technical inspection."],
+  ["02", "DIAGNOSE", "Systematic fault identification and technical diagnosis."],
+  ["03", "REPAIR", "Professional repair, replacement and corrective maintenance."],
+  ["04", "TEST", "Functional testing, calibration and performance verification."],
+  ["05", "MAINTAIN", "Preventive maintenance, AMC and ongoing technical support."],
+];
+
+const capabilities = [
+  "X-RAY SCREENING",
+  "EXPLOSIVE TRACE DETECTION",
+  "METAL DETECTION",
+  "CCTV & SURVEILLANCE",
+  "ACCESS CONTROL",
+  "VEHICLE SECURITY",
+];
 
 export default function Home() {
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const equipment = [
-    "Baggage Scanner",
-    "Walk Through Metal Detector",
-    "Hand Held Metal Detector",
-    "Explosive Trace Detection",
-    "CCTV System",
-    "Access Control System",
-    "Road Barrier & Road Blocker",
-    "Car Parking Management",
-    "Bollard",
-    "Gate / Flap Barrier",
-    "ANPR",
-  ];
+  async function submitRequest(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setLoading(true);
+    setStatus("");
 
-  const services = [
-    "Equipment Repair",
-    "Preventive Maintenance",
-    "AMC & Technical Support",
-    "Installation & Commissioning",
-    "Spare Parts Supply",
-    "System Inspection",
-  ];
+    const form = event.currentTarget;
+    const data = new FormData(form);
 
-  const equipmentLinks: Record<string, string> = {
-    "Baggage Scanner": "/equipment/baggage-scanner",
-    "Walk Through Metal Detector":
-      "/equipment/walk-through-metal-detector",
-    "Hand Held Metal Detector":
-      "/equipment/hand-held-metal-detector",
-    "Explosive Trace Detection":
-      "/equipment/explosive-trace-detection",
-    "CCTV System": "/equipment/cctv-system",
-    "Access Control System": "/equipment/access-control-system",
-    "Road Barrier & Road Blocker":
-      "/equipment/road-barrier-road-blocker",
-    "Car Parking Management":
-      "/equipment/car-parking-management",
-    "Bollard": "/equipment/bollard",
-    "Gate / Flap Barrier":
-      "/equipment/gate-flap-barrier",
-    "ANPR": "/equipment/anpr",
-  };
+    try {
+      const response = await fetch("/api/service-request", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: data.get("name"),
+          authority_company: data.get("authority_company"),
+          phone: data.get("phone"),
+          email: data.get("email"),
+          equipment: data.get("equipment"),
+          message: data.get("message"),
+        }),
+      });
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
+      const result = await response.json();
 
-    const form = e.currentTarget;
-    const formData = new FormData(form);
+      if (!response.ok || !result.success) {
+        throw new Error(result.error || "Request failed");
+      }
 
-    const response = await fetch("/api/service-request", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name: formData.get("name"),
-        phone: formData.get("phone"),
-        email: formData.get("email"),
-        equipment: formData.get("equipment"),
-        message: formData.get("message"),
-      }),
-    });
-
-    const result = await response.json();
-
-    if (result.success) {
-      setSubmitted(true);
+      setStatus("SERVICE REQUEST RECEIVED — OUR TEAM WILL CONTACT YOU.");
       form.reset();
-    } else {
-      alert(result.error || "Service request could not be submitted.");
+    } catch (error) {
+      setStatus(
+        error instanceof Error
+          ? `REQUEST ERROR — ${error.message}`
+          : "REQUEST ERROR — PLEASE TRY AGAIN."
+      );
+    } finally {
+      setLoading(false);
     }
   }
 
   return (
-    <main className="min-h-screen bg-[#05070b] text-white">
+    <main className="security-page-bg min-h-screen text-white">
+      {/* TECHNOLOGY ATMOSPHERE */}
+      <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
+        <div className="absolute left-[8%] top-[18%] h-72 w-72 rounded-full border border-cyan-400/10" />
+        <div className="absolute left-[12%] top-[22%] h-56 w-56 rounded-full border border-cyan-400/5" />
+        <div className="absolute right-[8%] top-[12%] h-96 w-96 rounded-full border border-blue-400/10" />
+        <div className="absolute right-[13%] top-[17%] h-72 w-72 rounded-full border border-blue-400/5" />
+        <div className="absolute left-1/2 top-0 h-px w-[80%] -translate-x-1/2 bg-gradient-to-r from-transparent via-cyan-300/20 to-transparent" />
+      </div>
 
-      {/* Header */}
-      <header className="fixed top-0 z-50 w-full border-b border-cyan-500/20 bg-[#05070b]/95 backdrop-blur">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-
-          <div>
-            <div className="text-lg font-bold tracking-wide text-cyan-400">
+      {/* HEADER */}
+      <header className="sticky top-0 z-50 border-b border-white/10 bg-[#020611]/85 backdrop-blur-xl">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+          <a href="/" className="group">
+            <div className="text-sm font-black tracking-[0.22em] text-cyan-300">
               SECURITY EQUIPMENT
             </div>
-
-            <div className="text-xs tracking-[0.25em] text-gray-400">
+            <div className="text-xs font-semibold tracking-[0.42em] text-white/70">
               MAINTENANCE BD
             </div>
-          </div>
+          </a>
 
-          <div className="hidden items-center gap-8 md:flex">
+          <nav className="hidden items-center gap-7 text-xs font-semibold tracking-wider text-white/70 lg:flex">
+            <a href="/" className="transition hover:text-cyan-300">HOME</a>
+            <a href="#equipment" className="transition hover:text-cyan-300">EQUIPMENT</a>
+            <a href="#services" className="transition hover:text-cyan-300">SERVICES</a>
+            <a href="#request" className="transition hover:text-cyan-300">SERVICE REQUEST</a>
+            <a href="/our-team" className="transition hover:text-cyan-300">OUR TEAM</a>
+              <a href="/about-us" className="transition hover:text-cyan-300">ABOUT US</a>
+              <details className="relative">
+  <summary className="cursor-pointer list-none text-sm font-medium text-slate-300 hover:text-white transition-colors">
+    OUR PROJECT & CLIENTS ▾
+  </summary>
+  <div className="absolute left-0 top-full z-50 mt-3 w-72 rounded-xl border border-white/10 bg-slate-950/95 p-2 shadow-2xl backdrop-blur">
+    <a href="/bangladesh-clients" className="block rounded-lg px-4 py-3 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">
+      BANGLADESH CLIENTS
+    </a>
+    <a href="/international-projects" className="block rounded-lg px-4 py-3 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">
+      OUR INTERNATIONAL CLIENTS & PROJECTS
+    </a>
+  </div>
+</details>
+            <a href="#contact" className="transition hover:text-cyan-300">CONTACT</a>
+          </nav>
 
-            <a href="#home" className="hover:text-cyan-400">
-              Home
-            </a>
-
-            <a href="#equipment" className="hover:text-cyan-400">
-              Equipment
-            </a>
-
-            <a href="#services" className="hover:text-cyan-400">
-              Services
-            </a>
-
-            <a
-              href="tel:+8801799419011"
-              className="rounded-lg border border-cyan-400/40 px-4 py-2 text-cyan-400 hover:bg-cyan-400 hover:text-black"
-            >
-              Call Us
-            </a>
-
-            <a
-              href="https://wa.me/8801518698236"
-              className="rounded-lg bg-cyan-500 px-4 py-2 font-semibold text-black hover:bg-cyan-400"
-            >
-              WhatsApp
-            </a>
-
-          </div>
-        </nav>
+          <a
+            href="tel:+8801799419011"
+            className="rounded-full border border-cyan-300/30 bg-cyan-300/5 px-4 py-2 text-xs font-bold tracking-wider text-cyan-200 transition hover:bg-cyan-300/10"
+          >
+            CALL US
+          </a>
+        </div>
       </header>
 
-      {/* Hero */}
-      <section
-        id="home"
-        className="mx-auto grid min-h-screen max-w-7xl items-center gap-10 px-6 pt-28 md:grid-cols-2"
-      >
+      {/* HERO */}
+      
 
-        <div>
+      <section className="relative z-10 mx-auto max-w-7xl px-5 pb-24 pt-16 lg:px-8 lg:pt-24">
+        <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+          <div>
+            <div className="mb-6 flex items-center gap-3 text-[10px] font-bold tracking-[0.35em] text-cyan-300">
+              <span className="h-2 w-2 animate-pulse rounded-full bg-cyan-300" />
+              SECURITY TECHNOLOGY / FIELD ENGINEERING
+            </div>
 
-          <p className="mb-4 text-sm font-semibold tracking-[0.3em] text-cyan-400">
-            SECURITY EQUIPMENT MAINTENANCE BD
-          </p>
+            <h1 className="max-w-3xl text-5xl font-black leading-[0.9] tracking-[-0.04em] sm:text-6xl lg:text-8xl">
+              <span className="block">SECURE.</span>
+              <span className="block text-white/70">REPAIR.</span>
+              <span className="block text-cyan-300">PROTECT.</span>
+            </h1>
 
-          <h1 className="text-5xl font-bold leading-tight md:text-7xl">
-            SECURE.
-            <br />
-            REPAIR.
-            <br />
-            <span className="text-cyan-400">PROTECT.</span>
-          </h1>
+            <p className="mt-8 max-w-2xl text-base leading-7 text-white/60 sm:text-lg">
+              Security equipment supply, installation, repair and maintenance
+              services across Bangladesh, with professional technical support,
+              spare parts and AMC solutions.
+            </p>
 
-          <p className="mt-6 max-w-xl text-lg text-gray-400">
-  Security equipment supply, installation, repair and maintenance
-  services across Bangladesh, with professional technical support,
-  spare parts and AMC solutions.
-          </p>
+            <div className="mt-9 flex flex-wrap gap-4">
+              <a
+                href="#request"
+                className="rounded-xl bg-cyan-300 px-6 py-3 text-sm font-black tracking-wider text-[#020611] transition hover:bg-cyan-200"
+              >
+                REQUEST SERVICE
+              </a>
+              <a
+                href="#equipment"
+                className="rounded-xl border border-white/15 bg-white/5 px-6 py-3 text-sm font-bold tracking-wider text-white transition hover:border-cyan-300/40"
+              >
+                EXPLORE SYSTEMS
+              </a>
+            </div>
 
-          <div className="mt-8 flex gap-4">
-
-            <a
-              href="#contact"
-              className="rounded-lg bg-cyan-500 px-6 py-3 font-semibold text-black hover:bg-cyan-400"
-            >
-              Request Service
-            </a>
-
-            <a
-              href="#equipment"
-              className="rounded-lg border border-cyan-500/40 px-6 py-3 font-semibold hover:border-cyan-400"
-            >
-              View Equipment
-            </a>
-
+            <div className="mt-10 grid max-w-xl grid-cols-3 border-y border-white/10 py-5">
+              <div>
+                <div className="text-xl font-black text-cyan-300">01</div>
+                <div className="mt-1 text-[9px] tracking-[0.2em] text-white/40">FIELD SERVICE</div>
+              </div>
+              <div className="border-l border-white/10 pl-5">
+                <div className="text-xl font-black text-cyan-300">24/7</div>
+                <div className="mt-1 text-[9px] tracking-[0.2em] text-white/40">TECHNICAL SUPPORT</div>
+              </div>
+              <div className="border-l border-white/10 pl-5">
+                <div className="text-xl font-black text-cyan-300">BD</div>
+                <div className="mt-1 text-[9px] tracking-[0.2em] text-white/40">SERVICE COVERAGE</div>
+              </div>
+            </div>
           </div>
 
-        </div>
+          {/* HERO TECH CONSOLE */}
+          <div className="relative mx-auto aspect-square w-full max-w-[560px]">
+            <div className="absolute inset-[8%] rounded-full border border-cyan-300/15" />
+            <div className="absolute inset-[18%] rounded-full border border-cyan-300/10" />
+            <div className="absolute inset-[29%] rounded-full border border-cyan-300/10" />
 
-        <div className="overflow-hidden rounded-2xl border border-cyan-500/20">
-          <img
-            src="/security-hero.png"
-            alt="Security Equipment"
-            className="w-full"
-          />
-        </div>
+            <div className="absolute inset-[8%] animate-[spin_28s_linear_infinite] rounded-full border border-dashed border-cyan-300/15" />
 
+            <div className="absolute left-1/2 top-1/2 h-36 w-36 -translate-x-1/2 -translate-y-1/2 rounded-full border border-cyan-300/30 bg-cyan-300/5 shadow-[0_0_80px_rgba(34,211,238,0.12)]">
+              <div className="absolute inset-5 rounded-full border border-cyan-300/30" />
+              <div className="absolute inset-12 rounded-full bg-cyan-300/20 shadow-[0_0_35px_rgba(34,211,238,0.45)]" />
+            </div>
+
+            <div className="absolute left-1/2 top-[8%] h-[84%] w-px -translate-x-1/2 bg-gradient-to-b from-transparent via-cyan-300/20 to-transparent" />
+            <div className="absolute left-[8%] top-1/2 h-px w-[84%] -translate-y-1/2 bg-gradient-to-r from-transparent via-cyan-300/20 to-transparent" />
+
+            <div className="absolute left-[7%] top-[25%] rounded-lg border border-white/10 bg-black/40 px-3 py-2 backdrop-blur-md">
+              <div className="text-[9px] tracking-[0.22em] text-cyan-300">X-RAY SCREENING</div>
+              <div className="mt-1 text-[8px] text-white/40">SYSTEM READY</div>
+            </div>
+
+            <div className="absolute bottom-[24%] right-[4%] rounded-lg border border-white/10 bg-black/40 px-3 py-2 backdrop-blur-md">
+              <div className="text-[9px] tracking-[0.22em] text-cyan-300">THREAT DETECTION</div>
+              <div className="mt-1 text-[8px] text-white/40">MONITORING ACTIVE</div>
+            </div>
+
+            <div className="absolute right-[8%] top-[9%] rounded-lg border border-white/10 bg-black/40 px-3 py-2 backdrop-blur-md">
+              <div className="text-[9px] tracking-[0.22em] text-cyan-300">SECURITY NETWORK</div>
+              <div className="mt-1 text-[8px] text-white/40">CONNECTED</div>
+            </div>
+
+            <div className="absolute bottom-[8%] left-[14%] text-[8px] tracking-[0.3em] text-white/25">
+              SYSTEM // DIAGNOSTIC // FIELD ENGINEERING
+            </div>
+          </div>
+        </div>
       </section>
 
-      {/* Equipment */}
-      <section
-        id="equipment"
-        className="mx-auto max-w-7xl px-6 py-24"
-      >
-
-        <h2 className="text-4xl font-bold">
-          Security <span className="text-cyan-400">Equipment</span>
-        </h2>
-
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-
-          {equipment.map((item) => (
-
+      {/* CAPABILITY STRIP */}
+      <section className="relative z-10 border-y border-white/10 bg-black/20">
+        <div className="mx-auto grid max-w-7xl grid-cols-2 px-5 py-5 sm:grid-cols-3 lg:grid-cols-6 lg:px-8">
+          {capabilities.map((item) => (
             <div
               key={item}
-              className="rounded-xl border border-white/10 bg-white/[0.03] p-6 hover:border-cyan-400/50"
+              className="border-white/10 px-4 py-3 text-center text-[9px] font-bold tracking-[0.16em] text-white/45 sm:border-r"
             >
+              {item}
+            </div>
+          ))}
+        </div>
+      </section>
 
-              <h3 className="font-semibold">
-                {item}
+      {/* EQUIPMENT */}
+      <section id="equipment" className="relative z-10 mx-auto max-w-7xl px-5 py-24 lg:px-8">
+        <div className="mb-12 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+          <div>
+            <div className="text-[10px] font-bold tracking-[0.35em] text-cyan-300">
+              01 / SECURITY SYSTEMS
+            </div>
+            <h2 className="mt-3 text-4xl font-black tracking-tight sm:text-5xl">
+              SECURITY EQUIPMENT
+            </h2>
+          </div>
+          <p className="max-w-xl text-sm leading-6 text-white/45">
+            Supply, installation, repair, preventive maintenance, AMC and
+            technical support for critical security systems.
+          </p>
+        </div>
+
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {equipment.map(([name, link, type, code]) => (
+            <a
+              href={link}
+              key={name}
+              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.025] p-6 transition duration-300 hover:-translate-y-1 hover:border-cyan-300/30 hover:bg-cyan-300/[0.035]"
+            >
+              <div className="absolute right-0 top-0 h-24 w-24 rounded-bl-full border-b border-l border-cyan-300/10" />
+
+              <div className="flex items-start justify-between">
+                <span className="rounded-md border border-cyan-300/15 bg-cyan-300/5 px-2 py-1 text-[9px] font-bold tracking-widest text-cyan-300">
+                  {code}
+                </span>
+                <span className="text-[8px] tracking-[0.2em] text-white/25">
+                  SYSTEM
+                </span>
+              </div>
+
+              <div className="mt-12 h-px w-16 bg-cyan-300/40 transition-all group-hover:w-28" />
+
+              <div className="mt-5 text-xs font-bold tracking-[0.18em] text-cyan-300/70">
+                {type}
+              </div>
+              <h3 className="mt-2 text-xl font-black text-white">
+                {name}
               </h3>
 
-              <p className="mt-3 text-sm text-gray-400">
-                Supply, installation, repair, preventive maintenance, AMC and technical support across Bangladesh.
+              <div className="mt-7 flex items-center justify-between border-t border-white/10 pt-4">
+                <span className="text-[9px] tracking-[0.2em] text-white/35">
+                  TECHNICAL DETAILS
+                </span>
+                <span className="text-sm text-cyan-300 transition group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      {/* SERVICES */}
+      <section id="services" className="relative z-10 border-y border-white/10 bg-black/20">
+        <div className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+          <div className="text-[10px] font-bold tracking-[0.35em] text-cyan-300">
+            02 / ENGINEERING PROCESS
+          </div>
+          <h2 className="mt-3 text-4xl font-black tracking-tight sm:text-5xl">
+            SECURITY EQUIPMENT SERVICES
+          </h2>
+
+          <div className="mt-12 grid gap-3 lg:grid-cols-5">
+            {services.map(([number, title, text]) => (
+              <div
+                key={number}
+                className="rounded-2xl border border-white/10 bg-white/[0.025] p-6"
+              >
+                <div className="text-3xl font-black text-cyan-300/60">
+                  {number}
+                </div>
+                <div className="mt-8 text-sm font-black tracking-[0.2em]">
+                  {title}
+                </div>
+                <p className="mt-3 text-xs leading-5 text-white/40">
+                  {text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* REQUEST */}
+      <section className="mx-auto max-w-7xl px-6 py-8">
+        <a
+          href="/international-projects"
+          className="group block rounded-3xl border border-cyan-400/20 bg-slate-950/70 p-8 transition hover:border-cyan-400/50 hover:bg-cyan-400/5"
+        >
+          <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
+            <div>
+              <p className="text-sm font-semibold tracking-[0.3em] text-cyan-300">
+                INTERNATIONAL EXPERIENCE
               </p>
 
-              <a
-                href={equipmentLinks[item]}
-                className="mt-5 inline-block text-sm font-semibold text-cyan-400 hover:text-cyan-300"
-              >
-                View Details →
-              </a>
+              <h2 className="mt-3 text-2xl font-black md:text-3xl">
+                International Clients & Projects
+              </h2>
 
+              <p className="mt-3 max-w-2xl leading-7 text-slate-400">
+                Explore our international clients, projects and technical
+                experience beyond Bangladesh.
+              </p>
             </div>
 
-          ))}
-
-        </div>
-      </section>
-
-      {/* Services */}
-      <section
-        id="services"
-        className="border-y border-white/10 bg-white/[0.02] px-6 py-24"
-      >
-
-        <div className="mx-auto max-w-7xl">
-
-          <h2 className="text-4xl font-bold">
-            Our <span className="text-cyan-400">Security Equipment Services</span>
-          </h2>
-
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-
-            {services.map((service) => (
-
-              <div
-                key={service}
-                className="rounded-xl border border-cyan-500/20 p-7"
-              >
-
-                <h3 className="text-xl font-semibold">
-                  {service}
-                </h3>
-
-                <p className="mt-3 text-gray-400">
-                  Reliable professional service by experienced technical
-                  personnel.
-                </p>
-
-              </div>
-
-            ))}
-
+            <div className="shrink-0 rounded-xl border border-cyan-400/30 px-6 py-3 font-bold text-cyan-300 transition group-hover:bg-cyan-400 group-hover:text-slate-950">
+              VIEW INTERNATIONAL PROJECTS →
+            </div>
           </div>
-        </div>
+        </a>
       </section>
 
-      {/* About Us */}
-      <section className="mx-auto max-w-7xl px-6 py-24">
+      <section id="request" className="relative z-10 mx-auto max-w-7xl px-5 py-24 lg:px-8">
+        <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+          <div>
+            <div className="text-[10px] font-bold tracking-[0.35em] text-cyan-300">
+              03 / FIELD REQUEST
+            </div>
+            <h2 className="mt-3 text-4xl font-black tracking-tight sm:text-5xl">
+              REQUEST A SERVICE
+            </h2>
+            <p className="mt-6 max-w-lg text-sm leading-7 text-white/45">
+              Tell us about your equipment, system or technical requirement.
+              Our service team can review the request and coordinate the next
+              technical step.
+            </p>
 
-        <h2 className="text-4xl font-bold">
-          About <span className="text-cyan-400">Us</span>
-        </h2>
-
-        <p className="mt-6 max-w-4xl text-lg leading-8 text-gray-400">
-          Security Equipment Maintenance BD provides professional security
-          equipment supply, installation, repair, preventive maintenance and
-          technical support services across Bangladesh.
-        </p>
-
-        <p className="mt-4 max-w-4xl text-lg leading-8 text-gray-400">
-          Our experienced technical team supports X-Ray baggage scanners,
-          metal detectors, ETD systems, CCTV, access control, vehicle
-          security systems and other critical security equipment.
-        </p>
-
-      </section>
-
-      {/* Why Choose Us */}
-      <section className="border-y border-white/10 bg-white/[0.02] px-6 py-24">
-
-        <div className="mx-auto max-w-7xl">
-
-          <h2 className="text-4xl font-bold">
-            Why <span className="text-cyan-400">Choose Us</span>
-          </h2>
-
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-
-            {[
-              "Experienced Technical Team",
-              "Professional Repair & Maintenance",
-              "Genuine Spare Parts Support",
-              "Nationwide Service Coverage",
-              "Fast Technical Response",
-              "Security Equipment Expertise",
-            ].map((item) => (
-
-              <div
-                key={item}
-                className="rounded-xl border border-cyan-500/20 bg-white/[0.03] p-7"
-              >
-
-                <h3 className="text-xl font-semibold">
+            <div className="mt-10 space-y-3">
+              {[
+                "Repair & Corrective Maintenance",
+                "Preventive Maintenance & AMC",
+                "Installation & Commissioning",
+                "Spare Parts & Technical Support",
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.025] px-4 py-3 text-xs text-white/60"
+                >
+                  <span className="h-1.5 w-1.5 rounded-full bg-cyan-300" />
                   {item}
-                </h3>
-
-                <p className="mt-3 text-gray-400">
-                  Reliable service focused on safety, performance and
-                  long-term equipment reliability.
-                </p>
-
-              </div>
-
-            ))}
-
-          </div>
-
-        </div>
-
-      </section>
-
-      {/* Contact */}
-      <section
-        id="contact"
-        className="mx-auto max-w-7xl px-6 py-24"
-      >
-
-        <div className="rounded-2xl border border-cyan-500/20 bg-cyan-500/[0.04] p-8 md:p-12">
-
-          <h2 className="text-4xl font-bold">
-            Request <span className="text-cyan-400">Service</span>
-          </h2>
-
-          <p className="mt-4 max-w-2xl text-gray-400">
-            Tell us about your equipment and service requirement.
-            Our technical team will contact you.
-          </p>
-
-          {submitted && (
-            <div className="mt-6 rounded-lg border border-green-400/30 bg-green-400/10 p-4 text-green-300">
-              Your service request has been submitted successfully.
+                </div>
+              ))}
             </div>
-          )}
+          </div>
 
           <form
-            onSubmit={handleSubmit}
-            className="mt-10 grid gap-5 md:grid-cols-2"
+            onSubmit={submitRequest}
+            className="rounded-3xl border border-white/10 bg-white/[0.025] p-6 shadow-2xl backdrop-blur-xl sm:p-8"
           >
+            <div className="mb-7 flex items-center justify-between">
+              <div>
+                <div className="text-xs font-black tracking-[0.2em] text-cyan-300">
+                  SERVICE REQUEST
+                </div>
+                <div className="mt-1 text-[9px] tracking-widest text-white/30">
+                  TECHNICAL INTAKE FORM
+                </div>
+              </div>
+              <div className="h-2 w-2 animate-pulse rounded-full bg-cyan-300" />
+            </div>
 
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              required
-              className="rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-white outline-none placeholder:text-gray-500 focus:border-cyan-400"
-            />
-
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Phone Number"
-              required
-              className="rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-white outline-none placeholder:text-gray-500 focus:border-cyan-400"
-            />
-
-            <input
-              type="email"
-              name="email"
-              placeholder="Email Address"
-              className="rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-white outline-none placeholder:text-gray-500 focus:border-cyan-400"
-            />
+            <div className="grid gap-4 sm:grid-cols-2">
+              <input
+                name="name"
+                required
+                placeholder="Your Name"
+                className="rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none placeholder:text-white/25 focus:border-cyan-300/40"
+              />
+              <input
+                name="authority_company"
+                placeholder="Company / Authority"
+                className="rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none placeholder:text-white/25 focus:border-cyan-300/40"
+              />
+              <input
+                name="phone"
+                required
+                placeholder="Phone Number"
+                className="rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none placeholder:text-white/25 focus:border-cyan-300/40"
+              />
+              <input
+                name="email"
+                type="email"
+                placeholder="Email Address"
+                className="rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none placeholder:text-white/25 focus:border-cyan-300/40"
+              />
+            </div>
 
             <select
               name="equipment"
-              defaultValue=""
               required
-              className="rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-white outline-none focus:border-cyan-400"
+              defaultValue=""
+              className="mt-4 w-full rounded-xl border border-white/10 bg-[#050a14] px-4 py-3 text-sm text-white/70 outline-none focus:border-cyan-300/40"
             >
-
-              <option value="" disabled>
-                Select Equipment
-              </option>
-
-              {equipment.map((item) => (
-                <option key={item} value={item}>
-                  {item}
-                </option>
+              <option value="" disabled>Select Equipment / System</option>
+              {equipment.map(([name]) => (
+                <option key={name} value={name}>{name}</option>
               ))}
-
             </select>
 
             <textarea
               name="message"
-              placeholder="Describe your problem or service requirement"
-              rows={5}
               required
-              className="md:col-span-2 rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-white outline-none placeholder:text-gray-500 focus:border-cyan-400"
+              rows={6}
+              placeholder="Describe the equipment, fault, maintenance requirement or project..."
+              className="mt-4 w-full resize-none rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none placeholder:text-white/25 focus:border-cyan-300/40"
             />
 
             <button
               type="submit"
-              className="md:col-span-2 rounded-lg bg-cyan-500 px-6 py-3 font-semibold text-black hover:bg-cyan-400"
+              disabled={loading}
+              className="mt-4 w-full rounded-xl bg-cyan-300 px-5 py-3.5 text-sm font-black tracking-wider text-[#020611] transition hover:bg-cyan-200 disabled:opacity-50"
             >
-              Submit Service Request
+              {loading ? "TRANSMITTING REQUEST..." : "SUBMIT SERVICE REQUEST →"}
             </button>
 
+            {status && (
+              <div className="mt-4 rounded-xl border border-cyan-300/20 bg-cyan-300/5 px-4 py-3 text-xs leading-5 text-cyan-200">
+                {status}
+              </div>
+            )}
           </form>
-
         </div>
-
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-white/10 px-6 py-8 text-center text-sm text-gray-500">
-        © 2026 Security Equipment Maintenance BD. All Rights Reserved.
-      </footer>
+      {/* CONTACT */}
+      <section id="contact" className="relative z-10 border-t border-white/10">
+        <div className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
+          <div className="text-[10px] font-bold tracking-[0.35em] text-cyan-300">
+            04 / COMMUNICATION
+          </div>
+          <h2 className="mt-3 text-4xl font-black tracking-tight sm:text-5xl">
+            CONTACT US
+          </h2>
 
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <a
+              href="tel:+8801799419011"
+              className="rounded-2xl border border-white/10 bg-white/[0.025] p-6 transition hover:border-cyan-300/30"
+            >
+              <div className="text-[9px] tracking-[0.25em] text-white/30">CALL US</div>
+              <div className="mt-3 text-lg font-black text-cyan-300">01799 419011</div>
+            </a>
+
+            <a
+              href="https://wa.me/8801518698236"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-2xl border border-white/10 bg-white/[0.025] p-6 transition hover:border-cyan-300/30"
+            >
+              <div className="text-[9px] tracking-[0.25em] text-white/30">WHATSAPP</div>
+              <div className="mt-3 text-lg font-black text-cyan-300">01518 698236</div>
+            </a>
+
+            <a
+              href="mailto:rakibmia614790@gmail.com"
+              className="rounded-2xl border border-white/10 bg-white/[0.025] p-6 transition hover:border-cyan-300/30"
+            >
+              <div className="text-[9px] tracking-[0.25em] text-white/30">EMAIL</div>
+              <div className="mt-3 break-all text-sm font-black text-cyan-300">
+                rakibmia614790@gmail.com
+              </div>
+            </a>
+
+            <div className="rounded-2xl border border-white/10 bg-white/[0.025] p-6">
+              <div className="text-[9px] tracking-[0.25em] text-white/30">SERVICE AREA</div>
+              <div className="mt-3 text-lg font-black text-cyan-300">
+                BANGLADESH
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="relative z-10 border-t border-white/10 bg-[#01040a]">
+        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 px-5 py-8 text-[9px] tracking-[0.18em] text-white/30 sm:flex-row lg:px-8">
+          <div>SECURITY EQUIPMENT MAINTENANCE BD</div>
+          <div>© 2026 ALL RIGHTS RESERVED</div>
+        </div>
+      </footer>
     </main>
   );
 }

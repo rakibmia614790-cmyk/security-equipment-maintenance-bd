@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
+
 console.log("SERVICE REQUEST API LOADED");
 
 export async function POST(request: Request) {
@@ -11,14 +12,20 @@ export async function POST(request: Request) {
 
     if (!url) {
       return NextResponse.json(
-        { success: false, error: "SUPABASE URL missing" },
+        {
+          success: false,
+          error: "SUPABASE URL missing",
+        },
         { status: 500 }
       );
     }
 
     if (!key) {
       return NextResponse.json(
-        { success: false, error: "SUPABASE KEY missing" },
+        {
+          success: false,
+          error: "SUPABASE KEY missing",
+        },
         { status: 500 }
       );
     }
@@ -30,6 +37,7 @@ export async function POST(request: Request) {
       .insert([
         {
           name: body.name,
+          authority_company: body.authority_company,
           phone: body.phone,
           email: body.email,
           equipment: body.equipment,
@@ -38,7 +46,6 @@ export async function POST(request: Request) {
       ]);
 
     if (error) {
-  console.log("SUPABASE ERROR:", error);
       return NextResponse.json(
         {
           success: false,
@@ -51,12 +58,17 @@ export async function POST(request: Request) {
       );
     }
 
-    return NextResponse.json({ success: true });
+    return NextResponse.json({
+      success: true,
+    });
   } catch (error) {
     return NextResponse.json(
       {
         success: false,
-        error: error instanceof Error ? error.message : String(error),
+        error:
+          error instanceof Error
+            ? error.message
+            : String(error),
       },
       { status: 500 }
     );
