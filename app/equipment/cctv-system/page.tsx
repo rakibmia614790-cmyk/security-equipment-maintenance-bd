@@ -72,7 +72,7 @@ export const metadata = {
         <div className="mt-14">
           <a
             href="/#contact"
-            className="inline-block rounded-lg bg-cyan-500 px-7 py-3 font-semibold text-black hover:bg-cyan-400"
+            className="inline-flex items-center justify-center rounded-xl border-2 border-cyan-400 bg-cyan-500 px-6 py-3 font-semibold text-black shadow-lg shadow-cyan-500/30 transition-all hover:bg-cyan-400 hover:shadow-cyan-400/40"
           >
             Request Service
           </a>
