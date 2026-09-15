@@ -328,7 +328,33 @@ export default function Home() {
       </section>
 
       {/* REQUEST */}
-      
+      <section className="mx-auto max-w-7xl px-6 py-8">
+        <a
+          href="/international-projects"
+          className="group block rounded-3xl border border-cyan-400/20 bg-slate-950/70 p-8 transition hover:border-cyan-400/50 hover:bg-cyan-400/5"
+        >
+          <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
+            <div>
+              <p className="text-sm font-semibold tracking-[0.3em] text-cyan-300">
+                INTERNATIONAL EXPERIENCE
+              </p>
+
+              <h2 className="mt-3 text-2xl font-black md:text-3xl">
+                International Clients & Projects
+              </h2>
+
+              <p className="mt-3 max-w-2xl leading-7 text-slate-400">
+                Explore our international clients, projects and technical
+                experience beyond Bangladesh.
+              </p>
+            </div>
+
+            <div className="shrink-0 rounded-xl border border-cyan-400/30 px-6 py-3 font-bold text-cyan-300 transition group-hover:bg-cyan-400 group-hover:text-slate-950">
+              VIEW INTERNATIONAL PROJECTS →
+            </div>
+          </div>
+        </a>
+      </section>
 
       <section id="request" className="relative z-10 mx-auto max-w-7xl px-5 py-24 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
