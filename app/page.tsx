@@ -112,7 +112,7 @@ export default function Home() {
   <summary className="cursor-pointer list-none text-sm font-medium text-slate-300 hover:text-white transition-colors">
     OUR PROJECT & CLIENTS ▾
   </summary>
-  <div className="absolute left-0 top-full z-50 mt-3 w-80 rounded-2xl border border-cyan-400/40 bg-slate-950 p-3 shadow-2xl shadow-cyan-500/20 backdrop-blur-xl">
+  <div className="absolute left-0 top-full z-50 mt-3 w-80 rounded-2xl border border-cyan-400/40 bg-slate-900 border-2 border-cyan-400/60 p-4 shadow-2xl shadow-cyan-500/30 backdrop-blur-xl">
     <a href="/bangladesh-clients" className="block rounded-xl border border-transparent bg-white/5 px-4 py-3 text-sm font-semibold text-slate-200 transition-all hover:border-cyan-400/50 hover:bg-cyan-500/15 hover:text-white hover:shadow-lg hover:shadow-cyan-500/10">
       BANGLADESH CLIENTS
     </a>
