@@ -122,14 +122,7 @@ export default function Home() {
   </div>
 </details>
             <a href="#contact" className="transition hover:text-cyan-300">CONTACT</a>
-          
-        <a
-          href="/partner-login"
-          className="rounded-xl border border-cyan-400/50 px-4 py-2 text-sm font-semibold text-cyan-300 transition hover:bg-cyan-400/10"
-        >
-          PARTNER LOGIN
-        </a>
-      </nav>
+          </nav>
 
           <a
             href="tel:+8801799419011"
