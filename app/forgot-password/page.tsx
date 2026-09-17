@@ -20,7 +20,7 @@ export default function ForgotPasswordPage() {
 
     const { error } = await supabase.auth.resetPasswordForEmail(email, {
       redirectTo:
-        "https://se-6topprx5h-rakib-bb40.vercel.app/reset-password",
+        "https://security-equipment-maintenance-bd.vercel.app/reset-password",
     })
 
     if (error) {
