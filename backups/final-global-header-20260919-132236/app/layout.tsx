@@ -1,4 +1,4 @@
-import SecureTechGlobalHeader from "@/components/SecureTechGlobalHeader";
+import SecureTechBranding from "@/components/SecureTechBranding";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -21,8 +21,7 @@ export default function RootLayout({
       <body><div className="w-full border-b border-cyan-400/15 bg-slate-950/95 py-5">
   
 </div>
-
-<SecureTechGlobalHeader />
+<SecureTechBranding />
 {children}</body>
     </html>
   );
