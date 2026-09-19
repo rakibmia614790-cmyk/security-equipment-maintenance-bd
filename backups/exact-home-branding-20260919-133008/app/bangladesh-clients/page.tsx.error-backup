@@ -1,0 +1,641 @@
+const clients = ['Bangladesh Navy', 'Bangladesh Army', 'Bangladesh Parliament', 'Directorate General of Forces Intelligence (DGFI)', 'National Security Intelligence (NSI)', 'Bangladesh Bank', 'Prime Minister’s Office', 'NPMC', '["Bangladesh Navy", "NAVY", "DEFENCE"]', '["Bangladesh Police", "POLICE", "LAW ENFORCEMENT"]', '["Special Branch, Bangladesh Police", "SB", "SECURITY"]', '["Bangladesh Parliament", "JS", "GOVERNMENT"]', '["Bangladesh Bank", "BB", "FINANCIAL INSTITUTION"]', '["Prime Minister’s Office", "PMO", "GOVERNMENT"]', 'Bangladesh Clients | Security Equipment Maintenance BD', 'BANGLADESH / CLIENT NETWORK', '["Civil Aviation Authority of Bangladesh", "CAAB", "CIVIL AVIATION"]', 'Bangladesh Clients', 'Airports', 'Banks and Financial Institutions', 'Airports & Aviation Facilities', 'Police & Law Enforcement', 'Banks & Financial Institutions', 'technical support for airports, government facilities, commercial', 'Police and Law Enforcement', 'Banks', 'Airport Security Projects', 'BANGLADESH CLIENTS', 'maintenance solutions for airports, government organizations', 'Reliable people screening systems for airports, government facilities, events and critical infrastructure', 'ETD solutions for explosive trace screening, airport security and high-security applications', 'Vehicle access protection systems for airports, government facilities and critical infrastructure', 'Pedestrian access control systems for offices, airports and secure facilities', 'X-Ray baggage inspection systems for airports, government facilities and high-security environments', 'text-cyan-300">BANGLADESH CLIENTS', 'text-white transition-colors">', 'sha512-wem6WaBj4NaVYVdNhLPPVacES6ZJ+KBBfSkTMD3YZxbP3rm3Di85tJU5ljaUNhaOynt+Aj0xruhYuzQBt8n71g==', 'sha512-UzGt8zg7Ny8djbYMhxl2zuEevVa7r2gJjYY5Lwr1xM7+XU2nd6CkIWFTVcCIbAP63vSz71NaVyyuSk9lHKcy0A==', 'sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==', 'sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==', 'sha512-qmp9VrzgPgMoGZyPvrQHqk02uyjA0/QrTO26Tqk6l4ZV0MPWIW6LTkqOIov+J1yEu7MbFQaDpwdwJKhbJvuRxQ==']
+
+export default function BangladeshClients() {
+  return (
+    <main className="min-h-screen bg-slate-950 px-6 py-20 text-white">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-14 text-center">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
+            Our Project & Clients
+          </p>
+          <h1 className="text-4xl font-bold md:text-5xl">
+            Bangladesh Clients
+          </h1>
+          <p className="mx-auto mt-5 max-w-4xl text-slate-300">
+            Our Bangladesh experience includes security equipment supply,
+            installation, commissioning, maintenance and technical support
+            for government and major organizations.
+          </p>
+        </div>
+
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div
+              key={'Bangladesh Navy'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                Bangladesh Navy
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'Bangladesh Army'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                Bangladesh Army
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'Bangladesh Parliament'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                Bangladesh Parliament
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'Directorate General of Forces Intelligence (DGFI)'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                Directorate General of Forces Intelligence (DGFI)
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'National Security Intelligence (NSI)'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                National Security Intelligence (NSI)
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'Bangladesh Bank'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                Bangladesh Bank
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'Prime Minister’s Office'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                Prime Minister’s Office
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'NPMC'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                NPMC
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'["Bangladesh Navy", "NAVY", "DEFENCE"]'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                ["Bangladesh Navy", "NAVY", "DEFENCE"]
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'["Bangladesh Police", "POLICE", "LAW ENFORCEMENT"]'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                ["Bangladesh Police", "POLICE", "LAW ENFORCEMENT"]
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'["Special Branch, Bangladesh Police", "SB", "SECURITY"]'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                ["Special Branch, Bangladesh Police", "SB", "SECURITY"]
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'["Bangladesh Parliament", "JS", "GOVERNMENT"]'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                ["Bangladesh Parliament", "JS", "GOVERNMENT"]
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'["Bangladesh Bank", "BB", "FINANCIAL INSTITUTION"]'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                ["Bangladesh Bank", "BB", "FINANCIAL INSTITUTION"]
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'["Prime Minister’s Office", "PMO", "GOVERNMENT"]'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                ["Prime Minister’s Office", "PMO", "GOVERNMENT"]
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'Bangladesh Clients | Security Equipment Maintenance BD'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                Bangladesh Clients | Security Equipment Maintenance BD
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'BANGLADESH / CLIENT NETWORK'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                BANGLADESH / CLIENT NETWORK
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'["Civil Aviation Authority of Bangladesh", "CAAB", "CIVIL AVIATION"]'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                ["Civil Aviation Authority of Bangladesh", "CAAB", "CIVIL AVIATION"]
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'Bangladesh Clients'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                Bangladesh Clients
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'Airports'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                Airports
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'Banks and Financial Institutions'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                Banks and Financial Institutions
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'Airports & Aviation Facilities'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                Airports & Aviation Facilities
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'Police & Law Enforcement'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                Police & Law Enforcement
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'Banks & Financial Institutions'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                Banks & Financial Institutions
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'technical support for airports, government facilities, commercial'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                technical support for airports, government facilities, commercial
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'Police and Law Enforcement'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                Police and Law Enforcement
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'Banks'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                Banks
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'Airport Security Projects'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                Airport Security Projects
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'BANGLADESH CLIENTS'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                BANGLADESH CLIENTS
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'maintenance solutions for airports, government organizations'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                maintenance solutions for airports, government organizations
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'Reliable people screening systems for airports, government facilities, events and critical infrastructure'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                Reliable people screening systems for airports, government facilities, events and critical infrastructure
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'ETD solutions for explosive trace screening, airport security and high-security applications'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                ETD solutions for explosive trace screening, airport security and high-security applications
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'Vehicle access protection systems for airports, government facilities and critical infrastructure'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                Vehicle access protection systems for airports, government facilities and critical infrastructure
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'Pedestrian access control systems for offices, airports and secure facilities'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                Pedestrian access control systems for offices, airports and secure facilities
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'X-Ray baggage inspection systems for airports, government facilities and high-security environments'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                X-Ray baggage inspection systems for airports, government facilities and high-security environments
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'text-cyan-300">BANGLADESH CLIENTS'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                text-cyan-300">BANGLADESH CLIENTS
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'text-white transition-colors">'}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                text-white transition-colors">
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'sha512-wem6WaBj4NaVYVdNhLPPVacES6ZJ+KBBfSkTMD3YZxbP3rm3Di85tJU5ljaUNhaOynt+Aj0xruhYuzQBt8n71g=='}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                sha512-wem6WaBj4NaVYVdNhLPPVacES6ZJ+KBBfSkTMD3YZxbP3rm3Di85tJU5ljaUNhaOynt+Aj0xruhYuzQBt8n71g==
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'sha512-UzGt8zg7Ny8djbYMhxl2zuEevVa7r2gJjYY5Lwr1xM7+XU2nd6CkIWFTVcCIbAP63vSz71NaVyyuSk9lHKcy0A=='}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                sha512-UzGt8zg7Ny8djbYMhxl2zuEevVa7r2gJjYY5Lwr1xM7+XU2nd6CkIWFTVcCIbAP63vSz71NaVyyuSk9lHKcy0A==
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ=='}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ=='}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+            <div
+              key={'sha512-qmp9VrzgPgMoGZyPvrQHqk02uyjA0/QrTO26Tqk6l4ZV0MPWIW6LTkqOIov+J1yEu7MbFQaDpwdwJKhbJvuRxQ=='}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                sha512-qmp9VrzgPgMoGZyPvrQHqk02uyjA0/QrTO26Tqk6l4ZV0MPWIW6LTkqOIov+J1yEu7MbFQaDpwdwJKhbJvuRxQ==
+              </h2>
+              <div className="mt-5 h-px bg-white/10" />
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance • Technical Support
+              </p>
+            </div>
+        </div>
+      </div>
+    </main>
+  )
+}
