@@ -3,21 +3,21 @@ import Image from "next/image";
 const team = [
   {
     name: "Rakib Mia",
-    designation: "Product Specialist",
-    secondaryDesignation: "Head of Self-Service Department",
+    title: "Product Specialist",
+    department: "Head of Self-Service Department",
     image:
       "/team/Rakib Mia (Product Specialist | Progressed to Head of Self-Service Department).jpg",
   },
   {
     name: "Md. Ismail Hossain",
-    designation: "Project Coordinator",
-    secondaryDesignation: "",
+    title: "Project Coordinator",
+    department: "",
     image: "/team/Md. Ismail Hossain (Project Coordinator) .jpeg",
   },
   {
     name: "S.M. Rayhan",
-    designation: "Head of Engineering Department",
-    secondaryDesignation: "",
+    title: "Head of Engineering Department",
+    department: "",
     image: "/team/S.M Rayhan (Head of Engineering Department) .jpeg",
   },
 ];
@@ -37,11 +37,12 @@ export default function OurTeamPage() {
       </div>
 
       <div className="fixed inset-0 -z-10 bg-slate-950/70" />
-      <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_50%_20%,rgba(37,99,235,0.18),transparent_45%)]" />
+
+      <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_50%_15%,rgba(37,99,235,0.18),transparent_45%)]" />
 
       <section className="relative px-6 pb-14 pt-24 sm:pt-28">
         <div className="mx-auto max-w-7xl">
-          <div className="mb-5 inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/[0.035] px-5 py-2 text-xs font-semibold tracking-[0.25em] text-blue-200 backdrop-blur-md">
+          <div className="mb-5 inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/[0.04] px-5 py-2 text-xs font-semibold tracking-[0.25em] text-blue-200 backdrop-blur-md">
             <span className="h-2 w-2 rounded-full bg-blue-400 shadow-[0_0_12px_rgba(96,165,250,0.9)]" />
             SECURETECH EQUIPMENT
           </div>
@@ -66,7 +67,7 @@ export default function OurTeamPage() {
             >
               <div className="absolute left-0 right-0 top-0 z-10 h-px bg-gradient-to-r from-transparent via-blue-400/70 to-transparent" />
 
-              <div className="relative aspect-[4/5] overflow-hidden bg-transparent">
+              <div className="relative aspect-[4/5] overflow-hidden">
                 <Image
                   src={member.image}
                   alt={member.name}
@@ -78,23 +79,34 @@ export default function OurTeamPage() {
 
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/10 to-transparent" />
 
-                <div className="absolute left-5 top-5 flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-slate-950/35 text-xs font-bold backdrop-blur-md">
+                <div className="absolute left-5 top-5 flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-slate-950/40 text-xs font-bold backdrop-blur-md">
                   {String(index + 1).padStart(2, "0")}
                 </div>
 
                 <div className="absolute bottom-0 left-0 right-0 p-7">
                   <div className="mb-3 h-1 w-12 rounded-full bg-blue-400" />
-                  <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
+
+                  <h2 className="text-3xl font-bold tracking-tight text-white">
                     {member.name}
                   </h2>
                 </div>
               </div>
 
-              <div className="border-t border-white/10 bg-transparent p-7">
-                <p className="text-base font-medium leading-7 text-slate-300">
-                  {member.designation}
-                </p>
-                <div className="mt-5 text-xs font-semibold uppercase tracking-[0.18em] text-blue-300/70">
+              <div className="border-t border-white/10 bg-white/[0.015] px-7 py-8">
+                <div className="border-l-2 border-blue-400/80 pl-5">
+                  <p className="text-xl font-bold uppercase leading-tight tracking-[0.08em] text-white sm:text-2xl">
+                    {member.title}
+                  </p>
+
+                  {member.department && (
+                    <p className="mt-4 text-lg font-bold uppercase leading-tight tracking-[0.06em] text-blue-300 sm:text-xl">
+                      {member.department}
+                    </p>
+                  )}
+                </div>
+
+                <div className="mt-7 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-blue-300/70">
+                  <span className="h-px w-8 bg-blue-400/60" />
                   SecureTech BD Team
                 </div>
               </div>
