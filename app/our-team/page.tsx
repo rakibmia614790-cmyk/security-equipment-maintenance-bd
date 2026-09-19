@@ -40,24 +40,6 @@ export default function OurTeamPage() {
 
       <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_50%_15%,rgba(37,99,235,0.18),transparent_45%)]" />
 
-      <section className="relative px-6 pb-14 pt-24 sm:pt-28">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-5 inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/[0.04] px-5 py-2 text-xs font-semibold tracking-[0.25em] text-blue-200 backdrop-blur-md">
-            <span className="h-2 w-2 rounded-full bg-blue-400 shadow-[0_0_12px_rgba(96,165,250,0.9)]" />
-            SECURETECH EQUIPMENT
-          </div>
-
-          <h1 className="text-5xl font-bold tracking-tight sm:text-6xl">
-            Our Team
-          </h1>
-
-          <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-300">
-            Experienced professionals supporting engineering, project
-            coordination and security equipment operations.
-          </p>
-        </div>
-      </section>
-
       <section className="relative px-6 pb-24">
         <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-2 lg:grid-cols-3">
           {team.map((member, index) => (
