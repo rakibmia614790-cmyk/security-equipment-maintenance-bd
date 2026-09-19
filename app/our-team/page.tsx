@@ -3,19 +3,21 @@ import Image from "next/image";
 const team = [
   {
     name: "Rakib Mia",
-    designation:
-      "Product Specialist | Progressed to Head of Self-Service Department",
+    designation: "Product Specialist",
+    secondaryDesignation: "Head of Self-Service Department",
     image:
       "/team/Rakib Mia (Product Specialist | Progressed to Head of Self-Service Department).jpg",
   },
   {
     name: "Md. Ismail Hossain",
     designation: "Project Coordinator",
+    secondaryDesignation: "",
     image: "/team/Md. Ismail Hossain (Project Coordinator) .jpeg",
   },
   {
     name: "S.M. Rayhan",
     designation: "Head of Engineering Department",
+    secondaryDesignation: "",
     image: "/team/S.M Rayhan (Head of Engineering Department) .jpeg",
   },
 ];
