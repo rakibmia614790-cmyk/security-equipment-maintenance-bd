@@ -39,7 +39,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
           <div>
             <div className="text-lg font-bold tracking-widest text-cyan-400">
-              SEMBD
+              SecureTech BD
             </div>
             <div className="text-[10px] tracking-[0.25em] text-gray-400">
               SECURETECH BD

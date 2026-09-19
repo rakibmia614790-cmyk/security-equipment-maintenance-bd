@@ -335,7 +335,7 @@ export default function BaggageScannerPage() {
             </p>
 
             <h2 className="mt-3 text-3xl font-black md:text-4xl">
-              Security Equipment Maintenance & Engineering Support
+              SecureTech BD & Engineering Support
             </h2>
 
             <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-300">

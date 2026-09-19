@@ -269,7 +269,7 @@ export default function Home() {
         </h2>
 
         <p className="mt-6 max-w-4xl text-lg leading-8 text-gray-400">
-          Security Equipment Maintenance BD provides professional security
+          SecureTech BD provides professional security
           equipment supply, installation, repair, preventive maintenance and
           technical support services across Bangladesh.
         </p>
@@ -419,7 +419,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-white/10 px-6 py-8 text-center text-sm text-gray-500">
-        © 2026 Security Equipment Maintenance BD. All Rights Reserved.
+        © 2026 SecureTech BD. All Rights Reserved.
       </footer>
 
     </main>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Walk Through Metal Detector Repair & Maintenance Bangladesh | Security Equipment Maintenance BD",
+    "Walk Through Metal Detector Repair & Maintenance Bangladesh | SecureTech BD",
   description:
     "Walk Through Metal Detector supply, installation, repair, preventive maintenance, calibration, spare parts and technical support across Bangladesh.",
 };
@@ -129,7 +129,7 @@ export default function WalkThroughMetalDetectorPage() {
         <div className="relative mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
           <div className="max-w-4xl">
             <p className="mb-5 text-sm font-bold uppercase tracking-[0.35em] text-cyan-400">
-              Security Equipment Maintenance BD
+              SecureTech BD
             </p>
 
             <h1 className="text-4xl font-black leading-tight md:text-6xl">
@@ -320,7 +320,7 @@ export default function WalkThroughMetalDetectorPage() {
           </h2>
 
           <p className="mt-5 max-w-3xl leading-8 text-slate-300">
-            Contact Security Equipment Maintenance BD for Walk Through Metal
+            Contact SecureTech BD for Walk Through Metal
             Detector troubleshooting, repair, maintenance, sensitivity
             testing, spare parts arrangement and technical support.
           </p>
@@ -352,7 +352,7 @@ export default function WalkThroughMetalDetectorPage() {
 
       {/* FOOTER */}
       <footer className="border-t border-white/10 px-6 py-8 text-center text-sm text-slate-500">
-        © {new Date().getFullYear()} Security Equipment Maintenance BD. All
+        © {new Date().getFullYear()} SecureTech BD. All
         rights reserved.
       </footer>
     </main>

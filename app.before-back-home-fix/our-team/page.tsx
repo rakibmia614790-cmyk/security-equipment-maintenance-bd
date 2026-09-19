@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our Team | Security Equipment Maintenance BD",
+  title: "Our Team | SecureTech BD",
   description:
-    "Meet the technical professional behind Security Equipment Maintenance BD, specializing in security screening systems, X-ray, ETD, WTMD, HHMD and technical maintenance.",
+    "Meet the technical professional behind SecureTech BD, specializing in security screening systems, X-ray, ETD, WTMD, HHMD and technical maintenance.",
 };
 
 const expertise = [

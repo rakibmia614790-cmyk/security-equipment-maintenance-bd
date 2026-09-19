@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Road Barrier & Road Blocker Repair & Maintenance Bangladesh | Security Equipment Maintenance BD",
+  title: "Road Barrier & Road Blocker Repair & Maintenance Bangladesh | SecureTech BD",
   description: "Professional road barrier and road blocker supply, installation, repair and maintenance services in Bangladesh.",
 };export default function RoadBarrierRoadBlockerPage() {
   return (
@@ -75,7 +75,7 @@ export const metadata = {
       </section>
 
       <footer className="border-t border-white/10 px-6 py-8 text-center text-sm text-gray-500">
-        © 2026 Security Equipment Maintenance BD. All Rights Reserved.
+        © 2026 SecureTech BD. All Rights Reserved.
       </footer>
     </main>
   );

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Request Service | Security Equipment Maintenance BD",
+  title: "Request Service | SecureTech BD",
   description:
     "Submit a security equipment service, repair, maintenance or technical support request.",
 };

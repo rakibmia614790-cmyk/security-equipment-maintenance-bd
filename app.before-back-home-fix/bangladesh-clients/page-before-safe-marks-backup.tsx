@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Bangladesh Clients | Security Equipment Maintenance BD",
+  title: "Bangladesh Clients | SecureTech BD",
   description:
-    "Organizations and institutions supported by Security Equipment Maintenance BD in Bangladesh.",
+    "Organizations and institutions supported by SecureTech BD in Bangladesh.",
 };
 
 const clients = [

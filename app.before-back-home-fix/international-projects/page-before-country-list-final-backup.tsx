@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "International Projects | Security Equipment Maintenance BD",
+  title: "International Projects | SecureTech BD",
   description:
-    "International security equipment projects, technical services, maintenance and support by Security Equipment Maintenance BD.",
+    "International security equipment projects, technical services, maintenance and support by SecureTech BD.",
 };
 
 const projectCategories = [

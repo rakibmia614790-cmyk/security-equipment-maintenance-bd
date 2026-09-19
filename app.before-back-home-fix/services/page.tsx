@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Security Equipment Services | Security Equipment Maintenance BD",
+  title: "Security Equipment Services | SecureTech BD",
   description:
     "Professional security equipment supply, installation, commissioning, repair, preventive maintenance, AMC, calibration, spare parts and technical support across Bangladesh.",
 };

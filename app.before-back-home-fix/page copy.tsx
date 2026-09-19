@@ -39,7 +39,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
           <div>
             <div className="text-lg font-bold tracking-widest text-cyan-400">
-              SEMBD
+              SecureTech BD
             </div>
             <div className="text-[10px] tracking-[0.25em] text-gray-400">
               SECURITY EQUIPMENT MAINTENANCE BD
@@ -298,7 +298,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-white/10 px-6 py-8">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-sm text-gray-500 sm:flex-row">
-          <div>© 2026 Security Equipment Maintenance BD</div>
+          <div>© 2026 SecureTech BD</div>
           <div>Security • Technology • Reliability</div>
         </div>
       </footer>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Hand Held Metal Detector Repair & Maintenance Bangladesh | Security Equipment Maintenance BD",
+    "Hand Held Metal Detector Repair & Maintenance Bangladesh | SecureTech BD",
   description:
     "Hand Held Metal Detector supply, installation, repair, preventive maintenance, sensitivity testing, spare parts and technical support across Bangladesh.",
 };
@@ -93,7 +93,7 @@ export default function HandHeldMetalDetectorPage() {
 
         <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
-            Security Equipment Maintenance BD
+            SecureTech BD
           </p>
 
           <h1 className="mt-4 max-w-4xl text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
@@ -247,7 +247,7 @@ export default function HandHeldMetalDetectorPage() {
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl leading-7 text-slate-300">
-            Contact Security Equipment Maintenance BD for supply,
+            Contact SecureTech BD for supply,
             installation, repair, preventive maintenance, AMC and
             technical support.
           </p>
@@ -276,7 +276,7 @@ export default function HandHeldMetalDetectorPage() {
 
       {/* FOOTER */}
       <footer className="border-t border-white/10 px-6 py-8 text-center text-sm text-slate-500">
-        © {new Date().getFullYear()} Security Equipment Maintenance BD.
+        © {new Date().getFullYear()} SecureTech BD.
         All rights reserved.
       </footer>
 
