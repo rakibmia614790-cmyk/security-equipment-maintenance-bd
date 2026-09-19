@@ -22,18 +22,7 @@ const expertise = [
 export default function OurTeamPage() {
   return (
     <main className="security-page-bg min-h-screen text-white">
-      <header className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
-        <a href="/" className="text-lg font-bold tracking-widest text-cyan-300">
-          SECURETECH BD
-        </a>
-
-        <nav className="hidden gap-6 text-sm text-slate-300 md:flex">
-          <a href="/">HOME</a>
-          <a href="/about-us">ABOUT US</a>
-          <a href="/bangladesh-clients">BANGLADESH CLIENTS</a>
-          <a href="/contact">CONTACT</a>
-        </nav>
-      </header>
+      
 
       <section className="mx-auto max-w-7xl px-6 pb-20 pt-12">
         <div className="mb-12 max-w-3xl">

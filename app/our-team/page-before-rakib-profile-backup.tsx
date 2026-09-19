@@ -64,24 +64,7 @@ export default function OurTeamPage() {
   return (
     <main className="min-h-screen bg-[#030712] text-white">
       {/* HEADER */}
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-[#030712]/90 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-          <a
-            href="/"
-            className="text-lg font-black tracking-tight sm:text-xl"
-          >
-            Security Equipment
-            <span className="text-cyan-400"> Maintenance BD</span>
-          </a>
-
-          <a
-            href="/"
-            className="rounded-lg border border-white/10 px-4 py-2 text-sm font-semibold text-gray-300 transition hover:border-cyan-400/40 hover:text-cyan-400"
-          >
-            ← Back to Home
-          </a>
-        </div>
-      </header>
+      
 
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/10">

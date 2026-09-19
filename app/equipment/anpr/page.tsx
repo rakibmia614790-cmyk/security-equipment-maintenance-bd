@@ -4,16 +4,7 @@ export const metadata = {
 };export default function ANPRPage() {
   return (
     <main className="min-h-screen bg-[#05070b] text-white">
-      <header className="border-b border-cyan-500/20 bg-[#05070b] px-6 py-5">
-        <div className="mx-auto max-w-7xl">
-          <a
-            href="/"
-            className="text-sm font-semibold text-cyan-400 hover:text-cyan-300"
-          >
-            ← Back to Home
-          </a>
-        </div>
-      </header>
+      
 
       <section className="mx-auto max-w-7xl px-6 py-24">
         <div className="mb-12 overflow-hidden rounded-2xl border border-cyan-500/20">

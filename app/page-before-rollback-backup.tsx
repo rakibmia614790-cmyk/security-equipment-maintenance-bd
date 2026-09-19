@@ -155,54 +155,7 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#030712] text-white">
       {/* HEADER */}
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-[#030712]/90 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-          <a
-            href="/"
-            className="text-lg font-black tracking-tight text-white sm:text-xl"
-          >
-            Security Equipment
-            <span className="text-cyan-400"> Maintenance BD</span>
-          </a>
-
-          <nav className="hidden items-center gap-7 text-sm font-medium md:flex">
-            <a href="/" className="text-cyan-400">
-              Home
-            </a>
-            <a
-              href="#equipment"
-              className="text-gray-300 transition hover:text-cyan-400"
-            >
-              Equipment
-            </a>
-            <a
-              href="#services"
-              className="text-gray-300 transition hover:text-cyan-400"
-            >
-              Services
-            </a>
-            <a
-              href="#service-request"
-              className="text-gray-300 transition hover:text-cyan-400"
-            >
-              Service Request
-            </a>
-            <a
-              href="#contact"
-              className="text-gray-300 transition hover:text-cyan-400"
-            >
-              Contact
-            </a>
-
-            <a
-              href="/our-team"
-              className="text-gray-300 transition hover:text-cyan-400"
-            >
-              Our Team
-            </a>
-          </nav>
-        </div>
-      </header>
+      
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="absolute inset-0">
   alt="SECURETECH BD"

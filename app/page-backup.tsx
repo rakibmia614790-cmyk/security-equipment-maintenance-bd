@@ -82,50 +82,7 @@ export default function Home() {
     <main className="min-h-screen bg-[#05070b] text-white">
 
       {/* Header */}
-      <header className="fixed top-0 z-50 w-full border-b border-cyan-500/20 bg-[#05070b]/95 backdrop-blur">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-
-          <div>
-            <div className="text-lg font-bold tracking-wide text-cyan-400">
-              SECURITY EQUIPMENT
-            </div>
-
-            <div className="text-xs tracking-[0.25em] text-gray-400">
-              MAINTENANCE BD
-            </div>
-          </div>
-
-          <div className="hidden items-center gap-8 md:flex">
-
-            <a href="#home" className="hover:text-cyan-400">
-              Home
-            </a>
-
-            <a href="#equipment" className="hover:text-cyan-400">
-              Equipment
-            </a>
-
-            <a href="#services" className="hover:text-cyan-400">
-              Services
-            </a>
-
-            <a
-              href="tel:+8801799419011"
-              className="rounded-lg border border-cyan-400/40 px-4 py-2 text-cyan-400 hover:bg-cyan-400 hover:text-black"
-            >
-              Call Us
-            </a>
-
-            <a
-              href="https://wa.me/8801518698236"
-              className="rounded-lg bg-cyan-500 px-4 py-2 font-semibold text-black hover:bg-cyan-400"
-            >
-              WhatsApp
-            </a>
-
-          </div>
-        </nav>
-      </header>
+      
 
       {/* Hero */}
       <section

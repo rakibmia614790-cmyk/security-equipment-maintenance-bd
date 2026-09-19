@@ -73,23 +73,7 @@ export default function Home() {
     <div className="security-page-bg">
     <main className="min-h-screen bg-[#030712] text-white">
       {/* HEADER */}
-      <header className="sticky top-0 z-50 border-b border-cyan-400/10 bg-[#030712]/90 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
-          <a href="/" className="text-lg font-bold tracking-wide">
-            <span className="text-cyan-300">Security Equipment</span>{" "}
-            <span className="text-white">Maintenance BD</span>
-          </a>
-
-          <nav className="hidden gap-6 text-sm md:flex">
-            <a href="/" className="text-cyan-300">Home</a>
-            <a href="#equipment" className="hover:text-cyan-300">Equipment</a>
-            <a href="#services" className="hover:text-cyan-300">Services</a>
-            <a href="#service-request" className="hover:text-cyan-300">Service Request</a>
-            <a href="#contact" className="hover:text-cyan-300">Contact</a>
-            <a href="/our-team" className="hover:text-cyan-300">Our Team</a>
-          </nav>
-        </div>
-      </header>
+      
 
       {/* HERO */}
       <section className="relative min-h-[680px] overflow-hidden border-b border-cyan-400/10">

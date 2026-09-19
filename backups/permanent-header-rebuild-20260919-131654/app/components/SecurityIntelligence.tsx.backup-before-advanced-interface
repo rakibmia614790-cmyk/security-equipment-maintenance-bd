@@ -1,0 +1,63 @@
+"use client"
+
+import { useEffect, useState } from "react"
+
+const messages = [
+  "ADVANCED SECURITY TECHNOLOGY",
+  "SCREENING • DETECTION • PROTECTION",
+  "FIELD SERVICE • MAINTENANCE • ENGINEERING",
+  "SECURITY SYSTEMS FOR CRITICAL INFRASTRUCTURE",
+]
+
+export default function SecurityIntelligence() {
+  const [index, setIndex] = useState(0)
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((i) => (i + 1) % messages.length)
+    }, 3500)
+
+    return () => clearInterval(timer)
+  }, [])
+
+  return (
+    <div className="group hidden lg:flex min-w-[360px] max-w-[460px] flex-1 items-center justify-center px-3">
+      <div className="relative w-full overflow-hidden rounded-xl border border-indigo-400/25 bg-gradient-to-r from-indigo-950/70 via-slate-950/80 to-cyan-950/60 px-5 py-4 backdrop-blur-md transition-all duration-500 hover:-translate-y-1 hover:border-indigo-300/50 hover:shadow-[0_0_30px_rgba(34,211,238,0.15)]">
+
+        <div className="absolute inset-y-0 left-0 w-[2px] bg-indigo-300/80 shadow-[0_0_12px_rgba(129,140,248,0.9)] animate-pulse" />
+
+        <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-cyan-300/10 to-transparent transition-transform duration-1000 group-hover:translate-x-full" />
+
+        <div className="relative flex items-center gap-4">
+          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-cyan-300/30 bg-cyan-400/5 text-cyan-300">
+            <span className="text-sm">✦</span>
+          </div>
+
+          <div className="min-w-0">
+            <div className="text-[10px] font-bold tracking-[0.3em] text-indigo-300">
+              SECURITY INTELLIGENCE
+            </div>
+
+            <div
+              key={index}
+              className="mt-1 truncate text-[12px] font-semibold tracking-[0.08em] text-slate-200 animate-pulse"
+            >
+              {messages[index]}
+            </div>
+          </div>
+
+          <div className="ml-auto flex shrink-0 gap-1">
+            {messages.map((_, i) => (
+              <span
+                key={i}
+                className={`h-1.5 w-1.5 rounded-full transition-all duration-500 ${
+                  i === index ? "bg-cyan-300 shadow-[0_0_8px_rgba(103,232,249,0.9)]" : "bg-slate-600"
+                }`}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}

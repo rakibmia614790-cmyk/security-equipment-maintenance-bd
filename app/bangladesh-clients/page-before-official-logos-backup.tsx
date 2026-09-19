@@ -21,25 +21,7 @@ const clients = [
 export default function BangladeshClients() {
   return (
     <main className="security-page-bg min-h-screen text-white">
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-[#020611]/85 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-          <a href="/" className="group">
-            <div className="text-sm font-black tracking-[0.22em] text-cyan-300">
-              SECURITY EQUIPMENT
-            </div>
-            <div className="text-xs font-semibold tracking-[0.42em] text-white/70">
-              MAINTENANCE BD
-            </div>
-          </a>
-
-          <a
-            href="/"
-            className="rounded-full border border-cyan-300/30 bg-cyan-300/5 px-4 py-2 text-xs font-bold tracking-wider text-cyan-200 transition hover:bg-cyan-300/10"
-          >
-            BACK TO HOME
-          </a>
-        </div>
-      </header>
+      
 
       <section className="relative z-10 mx-auto max-w-7xl px-5 pb-20 pt-20 lg:px-8">
         <div className="max-w-4xl">

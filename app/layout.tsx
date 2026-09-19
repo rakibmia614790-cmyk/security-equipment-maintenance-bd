@@ -19,8 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body><div className="w-full border-b border-cyan-400/15 bg-slate-950/95 py-5">
-  <SecureTechBranding />
+  
 </div>
+<SecureTechBranding />
 {children}</body>
     </html>
   );

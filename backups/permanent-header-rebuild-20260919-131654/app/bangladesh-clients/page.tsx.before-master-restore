@@ -1,0 +1,58 @@
+const clients = [
+  "Bangladesh Navy",
+  "Bangladesh Army",
+  "Bangladesh Parliament",
+  "Directorate General of Forces Intelligence (DGFI)",
+  "National Security Intelligence (NSI)",
+  "Bangladesh Bank",
+  "Prime Minister’s Office",
+  "NPMC",
+]
+
+export default function BangladeshClientsPage() {
+  return (
+    <main className="min-h-screen bg-slate-950 px-6 py-20 text-white">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-14 text-center">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
+            Our Project & Clients
+          </p>
+
+          <h1 className="text-4xl font-bold md:text-5xl">
+            Bangladesh Clients
+          </h1>
+
+          <p className="mx-auto mt-5 max-w-4xl text-slate-300">
+            Our Bangladesh experience includes security equipment supply,
+            installation, commissioning, maintenance and technical support
+            for government and major organizations.
+          </p>
+        </div>
+
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {clients.map((client) => (
+            <div
+              key={client}
+              className="rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+            >
+              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-2xl">
+                🏛️
+              </div>
+
+              <h2 className="text-xl font-semibold leading-7 text-white">
+                {client}
+              </h2>
+
+              <div className="mt-5 h-px bg-white/10" />
+
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Security Equipment Supply • Installation • Maintenance •
+                Technical Support
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </main>
+  )
+}
