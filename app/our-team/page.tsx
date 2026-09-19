@@ -93,7 +93,7 @@ export default function OurTeamPage() {
                   {member.designation}
                 </p>
                 <div className="mt-5 text-xs font-semibold uppercase tracking-[0.18em] text-blue-300/70">
-                  SecureTech Team
+                  SecureTech BD Team
                 </div>
               </div>
             </article>
