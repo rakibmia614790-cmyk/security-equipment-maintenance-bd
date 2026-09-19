@@ -42,12 +42,12 @@ const manufacturers = [
   {
     name: "Rapiscan Systems", website: "https://www.rapiscansystems.com/",
     category: "Baggage, Parcel & Hold Baggage Screening",
-    logo: "/branding/baggage-brands/transparent/rapiscan-systems.png",
+    logo: "/branding/baggage-brands/rapiscan.svg",
   },
   {
     name: "NUCTECH", website: "https://www.nuctech.com/?lang=en_US",
     category: "Security Inspection & X-Ray Screening",
-    logo: "/branding/baggage-brands/transparent//branding/baggage-brands/transparent/nuctech.png",
+    logo: "/branding/baggage-brands/transparent/nuctech.png",
   },
   {
     name: "Leidos",
@@ -87,12 +87,12 @@ const manufacturers = [
   {
     name: "XRC", website: "https://x-raycenter.com/en/main-page",
     category: "X-Ray Baggage & Security Screening",
-    logo: "/branding/baggage-brands/transparent//branding/baggage-brands/transparent/xrc.png",
+    logo: "/branding/baggage-brands/transparent/xrc.png",
   },
   {
     name: "Scanna MSC", website: "https://www.scanna-msc.com/",
     category: "Security X-Ray Inspection Systems",
-    logo: "/branding/baggage-brands/transparent//branding/baggage-brands/transparent/msc.png",
+    logo: "/branding/baggage-brands/transparent/msc.png",
   },
 ]
 
