@@ -1,164 +1,84 @@
-import type { Metadata } from "next";
+import Image from "next/image";
 
-export const metadata: Metadata = {
-  title: "Our Team | SECURETECH BD",
-  description:
-    "Meet the technical professional behind SECURETECH BD, specializing in security screening systems, X-ray, ETD, WTMD, HHMD and technical maintenance.",
-};
-
-const expertise = [
-  "X-Ray Baggage Screening Systems",
-  "Explosive Trace Detection (ETD)",
-  "IONSCAN 600",
-  "Walk-Through Metal Detector (WTMD)",
-  "Hand-Held Metal Detector (HHMD)",
-  "Installation & Commissioning",
-  "Preventive & Corrective Maintenance",
-  "Fault Diagnosis & Troubleshooting",
-  "Calibration & Performance Testing",
-  "Technical Training & Operator Support",
+const team = [
+  {
+    name: "Rakib Mia",
+    designation: "Product Specialist | Progressed to Head of Self-Service Department",
+    image: "/team/Rakib Mia (Product Specialist | Progressed to Head of Self-Service Department).jpg",
+  },
+  {
+    name: "Md. Ismail Hossain",
+    designation: "Project Coordinator",
+    image: "/team/Md. Ismail Hossain (Project Coordinator) .jpeg",
+  },
+  {
+    name: "S.M. Rayhan",
+    designation: "Head of Engineering Department",
+    image: "/team/S.M Rayhan (Head of Engineering Department) .jpeg",
+  },
 ];
 
 export default function OurTeamPage() {
   return (
-    <main className="security-page-bg min-h-screen text-white">
-      
+    <main className="min-h-screen bg-slate-50 text-slate-900">
+      <section className="relative overflow-hidden bg-slate-950 px-6 py-20 text-white">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.25),transparent_45%)]" />
 
-      <section className="mx-auto max-w-7xl px-6 pb-20 pt-12">
-        <div className="mb-12 max-w-3xl">
-          <p className="mb-3 text-sm font-semibold tracking-[0.3em] text-cyan-300">
-            OUR TEAM
+        <div className="relative mx-auto max-w-7xl">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-blue-300">
+            SecureTech Equipment
           </p>
-          <h1 className="text-4xl font-black tracking-tight md:text-6xl">
-            Technical Expertise Behind
-            <span className="block text-cyan-300">
-              Security Technology
-            </span>
+
+          <h1 className="max-w-4xl text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+            Our Team
           </h1>
-          <p className="mt-6 text-lg leading-8 text-slate-300">
-            Professional technical support for security screening systems,
-            equipment maintenance, troubleshooting, commissioning and
-            operational reliability.
+
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+            Meet the professionals supporting our security equipment,
+            engineering, project coordination and technical operations.
           </p>
-        </div>
-
-        <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
-          <section className="rounded-3xl border border-cyan-400/20 bg-slate-950/70 p-8 shadow-2xl">
-            <div className="mb-8 flex items-center gap-5">
-              <div className="flex h-20 w-20 items-center justify-center rounded-2xl border border-cyan-400/30 bg-cyan-400/10 text-2xl font-black text-cyan-300">
-                RM
-              </div>
-
-              <div>
-                <h2 className="text-3xl font-bold">Rakib Mia</h2>
-                <p className="mt-1 text-cyan-300">
-                  Field Service Engineer & Security Screening Systems Specialist
-                </p>
-              </div>
-            </div>
-
-            <p className="leading-8 text-slate-300">
-              Rakib Mia is a Level 1, 2 & 3 Certified Engineer with over 9
-              years of professional experience in security screening
-              technology and technical service. His work focuses on the
-              installation, commissioning, preventive maintenance,
-              troubleshooting, repair and performance support of security
-              screening equipment.
-            </p>
-
-            <p className="mt-5 leading-8 text-slate-300">
-              His technical focus includes X-ray baggage screening systems,
-              explosive trace detection, metal detection systems and related
-              security technologies used in demanding operational
-              environments.
-            </p>
-
-            <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-                <p className="text-xs tracking-widest text-slate-400">
-                  EXPERIENCE
-                </p>
-                <p className="mt-2 text-2xl font-bold text-cyan-300">
-                  9+ Years
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-                <p className="text-xs tracking-widest text-slate-400">
-                  ENGINEERING LEVEL
-                </p>
-                <p className="mt-2 text-2xl font-bold text-cyan-300">
-                  Level 1–3
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section className="rounded-3xl border border-white/10 bg-black/40 p-8">
-            <p className="text-xs font-semibold tracking-[0.25em] text-cyan-300">
-              CORE EXPERTISE
-            </p>
-
-            <div className="mt-6 space-y-3">
-              {expertise.map((item, index) => (
-                <div
-                  key={item}
-                  className="flex items-center gap-4 rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3"
-                >
-                  <span className="text-xs font-bold text-cyan-400">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <span className="text-sm text-slate-200">{item}</span>
-                </div>
-              ))}
-            </div>
-          </section>
-        </div>
-
-        <section className="mt-10 rounded-3xl border border-cyan-400/15 bg-slate-950/60 p-8">
-          <p className="text-xs font-semibold tracking-[0.25em] text-cyan-300">
-            PROFESSIONAL APPROACH
-          </p>
-
-          <div className="mt-6 grid gap-5 md:grid-cols-4">
-            {[
-              ["01", "INSPECT", "Understand the equipment and identify the issue."],
-              ["02", "DIAGNOSE", "Trace faults systematically and accurately."],
-              ["03", "REPAIR", "Restore equipment performance with controlled service."],
-              ["04", "TEST", "Verify operational reliability before handover."],
-            ].map(([number, title, text]) => (
-              <div
-                key={number}
-                className="rounded-2xl border border-white/10 bg-white/[0.03] p-5"
-              >
-                <span className="text-xs text-cyan-400">{number}</span>
-                <h3 className="mt-3 font-bold">{title}</h3>
-                <p className="mt-2 text-sm leading-6 text-slate-400">{text}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <div className="mt-10 flex flex-wrap gap-4">
-          <a
-            href="/service-request"
-            className="rounded-xl bg-cyan-400 px-6 py-3 font-bold text-slate-950 transition hover:bg-cyan-300"
-          >
-            REQUEST TECHNICAL SERVICE
-          </a>
-
-          <a
-            href="https://wa.me/8801518698236"
-            className="rounded-xl border border-cyan-400/30 px-6 py-3 font-bold text-cyan-300 transition hover:bg-cyan-400/10"
-          >
-            WHATSAPP
-          </a>
         </div>
       </section>
 
-      <footer className="border-t border-white/10 px-6 py-8 text-center text-xs text-slate-500">
-        SECURETECH BD · © 2026 ALL RIGHTS RESERVED
-      </footer>
+      <section className="px-6 py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {team.map((member, index) => (
+              <article
+                key={member.name}
+                className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+              >
+                <div className="relative aspect-[4/5] overflow-hidden bg-slate-100">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    priority={index === 0}
+                    className="object-cover object-center transition duration-500 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+
+                  <div className="absolute left-5 top-5 rounded-full bg-slate-950/85 px-4 py-2 text-sm font-bold text-white backdrop-blur">
+                    {String(index + 1).padStart(2, "0")}
+                  </div>
+                </div>
+
+                <div className="p-7">
+                  <h2 className="text-2xl font-bold tracking-tight text-slate-900">
+                    {member.name}
+                  </h2>
+
+                  <div className="mt-3 h-px w-12 bg-blue-600" />
+
+                  <p className="mt-4 text-base font-medium leading-7 text-slate-600">
+                    {member.designation}
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
