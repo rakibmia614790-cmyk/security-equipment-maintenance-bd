@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "International Projects | Security Equipment Maintenance BD",
+  title: "International Projects | SECURETECH BD",
   description:
-    "International security equipment projects, technical services, maintenance and support by Security Equipment Maintenance BD.",
+    "International security equipment projects, technical services, maintenance and support by SECURETECH BD.",
 };
 
 const projectCategories = [
@@ -29,7 +29,7 @@ export default function InternationalProjectsPage() {
     <main className="security-page-bg min-h-screen text-white">
       <header className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
         <a href="/" className="text-lg font-bold tracking-widest text-cyan-300">
-          SECURITY EQUIPMENT MAINTENANCE BD
+          SECURETECH BD
         </a>
         <nav className="hidden gap-6 text-sm text-slate-300 md:flex">
           <a href="/">HOME</a>
@@ -128,7 +128,7 @@ export default function InternationalProjectsPage() {
       </section>
 
       <footer className="border-t border-white/10 px-6 py-8 text-center text-xs text-slate-500">
-        SECURITY EQUIPMENT MAINTENANCE BD · © 2026 ALL RIGHTS RESERVED
+        SECURETECH BD · © 2026 ALL RIGHTS RESERVED
       </footer>
     </main>
   );

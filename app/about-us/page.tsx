@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "About Us | Security Equipment Maintenance BD",
+  title: "About Us | SECURETECH BD",
   description:
-    "Learn about Security Equipment Maintenance BD and our security equipment supply, installation, repair, maintenance and technical support services across Bangladesh.",
+    "Learn about SECURETECH BD and our security equipment supply, installation, repair, maintenance and technical support services across Bangladesh.",
 };
 
 const capabilities = [
@@ -62,7 +62,7 @@ export default function AboutUs() {
           </h1>
 
           <p className="mt-8 max-w-3xl text-base leading-8 text-white/55 sm:text-lg">
-            Security Equipment Maintenance BD provides professional security
+            SECURETECH BD provides professional security
             equipment supply, installation, repair, maintenance and technical
             support solutions for organizations across Bangladesh.
           </p>
@@ -217,7 +217,7 @@ export default function AboutUs() {
 
       <footer className="relative z-10 border-t border-white/10 bg-[#01040a]">
         <div className="mx-auto flex max-w-7xl justify-between gap-4 px-5 py-8 text-[9px] tracking-[0.18em] text-white/30 lg:px-8">
-          <div>SECURITY EQUIPMENT MAINTENANCE BD</div>
+          <div>SECURETECH BD</div>
           <div>© 2026 ALL RIGHTS RESERVED</div>
         </div>
       </footer>

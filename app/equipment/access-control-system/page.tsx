@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Access Control System Repair & Maintenance Bangladesh | Security Equipment Maintenance BD",
+  title: "Access Control System Repair & Maintenance Bangladesh | SECURETECH BD",
   description: "Professional access control system supply, installation, repair and maintenance services in Bangladesh.",
 };export default function AccessControlSystemPage() {
   return (
@@ -76,7 +76,7 @@ export const metadata = {
       </section>
 
       <footer className="border-t border-white/10 px-6 py-8 text-center text-sm text-gray-500">
-        © 2026 Security Equipment Maintenance BD. All Rights Reserved.
+        © 2026 SECURETECH BD. All Rights Reserved.
       </footer>
     </main>
   );

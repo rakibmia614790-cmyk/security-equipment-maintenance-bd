@@ -205,7 +205,7 @@ export default function HomePage() {
       </header>
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="absolute inset-0">
-  alt="Security Equipment Maintenance BD"
+  alt="SECURETECH BD"
   className="w-full h-auto object-cover rounded-2xl"
 
           <div className="absolute inset-0 bg-gradient-to-b from-[#030712]/60 via-[#030712]/80 to-[#030712]" />
@@ -602,7 +602,7 @@ export default function HomePage() {
       <footer className="border-t border-white/10 bg-black/30">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-8 text-sm text-gray-500 sm:flex-row sm:items-center sm:justify-between lg:px-8">
           <div>
-            © {new Date().getFullYear()} Security Equipment Maintenance BD.
+            © {new Date().getFullYear()} SECURETECH BD.
             All rights reserved.
           </div>
 

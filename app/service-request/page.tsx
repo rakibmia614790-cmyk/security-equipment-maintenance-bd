@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Request Service | Security Equipment Maintenance BD",
+  title: "Request Service | SECURETECH BD",
   description:
     "Submit a security equipment service, repair, maintenance or technical support request.",
 };
@@ -14,7 +14,7 @@ export default function ServiceRequestPage() {
           href="/"
           className="text-lg font-bold tracking-widest text-cyan-300"
         >
-          SECURITY EQUIPMENT MAINTENANCE BD
+          SECURETECH BD
         </a>
 
         <nav className="hidden gap-6 text-sm text-slate-300 md:flex">
@@ -165,7 +165,7 @@ export default function ServiceRequestPage() {
       </section>
 
       <footer className="border-t border-white/10 px-6 py-8 text-center text-xs text-slate-500">
-        SECURITY EQUIPMENT MAINTENANCE BD · © 2026 ALL RIGHTS RESERVED
+        SECURETECH BD · © 2026 ALL RIGHTS RESERVED
       </footer>
     </main>
   );

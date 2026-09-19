@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260">
+  <text x="500" y="145"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="100"
+        font-weight="800"
+        letter-spacing="4"
+        fill="currentColor">SCANNA MSC</text>
+  <line x1="275" y1="175" x2="725" y2="175"
+        stroke="currentColor"
+        stroke-width="8"/>
+</svg>

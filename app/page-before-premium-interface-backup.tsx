@@ -385,8 +385,8 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="border-t border-white/10 px-5 py-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-          <div>Security Equipment Maintenance BD</div>
-          <div>© 2026 Security Equipment Maintenance BD. All Rights Reserved.</div>
+          <div>SECURETECH BD</div>
+          <div>© 2026 SECURETECH BD. All Rights Reserved.</div>
         </div>
       </footer>
     </main>

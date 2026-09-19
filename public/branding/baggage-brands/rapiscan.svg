@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220">
+  <g fill="none" stroke="currentColor" stroke-width="10">
+    <path d="M55 175 C90 65 180 25 285 55 C350 74 400 115 470 115 C540 115 575 55 660 55 C735 55 805 105 845 175"/>
+  </g>
+  <text x="55" y="145"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="72"
+        font-weight="700"
+        letter-spacing="2"
+        fill="currentColor">RAPISCAN</text>
+  <text x="55" y="198"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="30"
+        font-weight="600"
+        letter-spacing="7"
+        fill="currentColor">SYSTEMS</text>
+</svg>

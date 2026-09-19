@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our Team | Security Equipment Maintenance BD",
+  title: "Our Team | SECURETECH BD",
   description:
-    "Meet the technical professional behind Security Equipment Maintenance BD, specializing in security screening systems, X-ray, ETD, WTMD, HHMD and technical maintenance.",
+    "Meet the technical professional behind SECURETECH BD, specializing in security screening systems, X-ray, ETD, WTMD, HHMD and technical maintenance.",
 };
 
 const expertise = [
@@ -24,7 +24,7 @@ export default function OurTeamPage() {
     <main className="security-page-bg min-h-screen text-white">
       <header className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
         <a href="/" className="text-lg font-bold tracking-widest text-cyan-300">
-          SECURITY EQUIPMENT MAINTENANCE BD
+          SECURETECH BD
         </a>
 
         <nav className="hidden gap-6 text-sm text-slate-300 md:flex">
@@ -168,7 +168,7 @@ export default function OurTeamPage() {
       </section>
 
       <footer className="border-t border-white/10 px-6 py-8 text-center text-xs text-slate-500">
-        SECURITY EQUIPMENT MAINTENANCE BD · © 2026 ALL RIGHTS RESERVED
+        SECURETECH BD · © 2026 ALL RIGHTS RESERVED
       </footer>
     </main>
   );

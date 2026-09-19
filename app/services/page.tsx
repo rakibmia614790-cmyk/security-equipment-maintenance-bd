@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Security Equipment Services | Security Equipment Maintenance BD",
+  title: "Security Equipment Services | SECURETECH BD",
   description:
     "Professional security equipment supply, installation, commissioning, repair, preventive maintenance, AMC, calibration, spare parts and technical support across Bangladesh.",
 };
@@ -38,7 +38,7 @@ export default function ServicesPage() {
     <main className="security-page-bg min-h-screen text-white">
       <header className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
         <a href="/" className="text-lg font-bold tracking-widest text-cyan-300">
-          SECURITY EQUIPMENT MAINTENANCE BD
+          SECURETECH BD
         </a>
 
         <nav className="hidden gap-6 text-sm text-slate-300 md:flex">
@@ -134,7 +134,7 @@ export default function ServicesPage() {
       </section>
 
       <footer className="border-t border-white/10 px-6 py-8 text-center text-xs text-slate-500">
-        SECURITY EQUIPMENT MAINTENANCE BD · © 2026 ALL RIGHTS RESERVED
+        SECURETECH BD · © 2026 ALL RIGHTS RESERVED
       </footer>
     </main>
   );

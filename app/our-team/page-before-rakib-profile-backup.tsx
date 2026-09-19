@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our Team | Security Equipment Maintenance BD",
+  title: "Our Team | SECURETECH BD",
   description:
-    "Meet the technical, engineering, installation, maintenance and support team of Security Equipment Maintenance BD.",
+    "Meet the technical, engineering, installation, maintenance and support team of SECURETECH BD.",
 };
 
 const teamAreas = [
@@ -319,7 +319,7 @@ export default function OurTeamPage() {
       <footer className="border-t border-white/10 bg-black/30">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-8 text-sm text-gray-500 sm:flex-row sm:items-center sm:justify-between lg:px-8">
           <div>
-            © {new Date().getFullYear()} Security Equipment Maintenance BD.
+            © {new Date().getFullYear()} SECURETECH BD.
             All rights reserved.
           </div>
 
@@ -327,7 +327,7 @@ export default function OurTeamPage() {
             href="/"
             className="font-semibold text-cyan-400 hover:text-cyan-300"
           >
-            Security Equipment Maintenance BD
+            SECURETECH BD
           </a>
         </div>
       </footer>

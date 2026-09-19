@@ -1,387 +1,390 @@
-import type { Metadata } from "next";
+"use client"
 
-export const metadata: Metadata = {
-  title:
-    "Baggage Scanner Repair & Maintenance Bangladesh | Security Equipment Maintenance BD",
-  description:
-    "Baggage scanner supply, installation, repair, preventive maintenance, AMC, spare parts and technical support across Bangladesh.",
-};
+import Link from "next/link"
 
-const brands = [
+const capabilities = [
+  "High-resolution X-ray image inspection",
+  "Baggage and parcel security screening",
+  "Threat and prohibited-item identification support",
+  "Advanced image enhancement for operator analysis",
+  "Conveyor-based continuous inspection",
+  "Operator workstation and monitoring",
+]
+
+const applications = [
+  "Airports & Aviation Facilities",
+  "Government & Public Facilities",
+  "Ports & Critical Infrastructure",
+  "Courts & Judicial Facilities",
+  "Corporate & Industrial Security",
+  "Cargo, Parcel & Logistics Screening",
+]
+
+const services = [
+  "Supply & Installation",
+  "Installation & Commissioning",
+  "Preventive Maintenance",
+  "Corrective Maintenance",
+  "Troubleshooting & Technical Support",
+  "Calibration & Performance Checks",
+  "Spare Parts & Replacement",
+  "AMC & Service Support",
+]
+
+const RAPISCAN_DIRECT_ASSET = "/branding/baggage-brands/transparent/rapiscan-systems.png";
+
+const manufacturers = [
   {
     name: "Smiths Detection",
-    short: "SD",
-    logo: "smiths-detection.png",
+    category: "X-Ray & CT Baggage Screening",
+    logo: "/branding/baggage-brands/smiths-detection.png",
   },
   {
-    name: "Rapiscan Systems",
-    short: "RS",
-    logo: "rapiscan-systems.png",
+    name: "Rapiscan Systems", website: "https://www.rapiscansystems.com/",
+    category: "Baggage, Parcel & Hold Baggage Screening",
+    logo: "/branding/baggage-brands/transparent/rapiscan-systems.png",
   },
   {
-    name: "Astrophysics Inc.",
-    short: "AI",
-    logo: "astrophysics.png",
+    name: "NUCTECH", website: "https://www.nuctech.com/?lang=en_US",
+    category: "Security Inspection & X-Ray Screening",
+    logo: "/branding/baggage-brands/transparent//branding/baggage-brands/transparent/nuctech.png",
   },
   {
     name: "Leidos",
-    short: "LE",
-    logo: "leidos.png",
-  },
-  {
-    name: "Gilardoni",
-    short: "GI",
-    logo: "gilardoni.png",
-  },
-  {
-    name: "Nuctech",
-    short: "NT",
-    logo: "nuctech.svg",
-  },
-  {
-    name: "L3Harris",
-    short: "L3",
-    logo: "l3harris.png",
+    category: "Aviation Security & CT Screening",
+    logo: "/branding/baggage-brands/leidos.svg",
   },
   {
     name: "Analogic",
-    short: "AN",
-    logo: "analogic.com.png",
+    category: "CT & Checked-Baggage Screening",
+    logo: "/branding/baggage-brands/analogic.png",
   },
   {
-    name: "VOTI Detection",
-    short: "VD",
-    logo: "voti-detection.png",
+    name: "Astrophysics",
+    category: "X-Ray Inspection Systems",
+    logo: "/branding/baggage-brands/astrophysics.png",
   },
   {
-    name: "CEIA",
-    short: "CE",
-    logo: "ceia.png",
+    name: "Gilardoni",
+    category: "Baggage & X-Ray Screening",
+    logo: "/branding/baggage-brands/gilardoni.png",
   },
   {
-    name: "Adani Systems",
-    short: "AS",
-    logo: "adani.svg",
+    name: "SureScan",
+    category: "Security X-Ray Inspection",
+    logo: "/branding/baggage-brands/surescan.png",
   },
   {
-    name: "Safeway Inspection Systems",
-    short: "SI",
-    logo: "safeway.png",
+    name: "L3Harris",
+    category: "Security Screening Technology",
+    logo: "/branding/baggage-brands/l3harris.svg",
   },
   {
-    name: "Vanderlande",
-    short: "VA",
-    logo: "vanderlande.png",
+    name: "VMI Security",
+    category: "X-Ray Inspection & Baggage Screening",
+    logo: "/branding/baggage-brands/vmi-security.png",
   },
   {
-    name: "LINEV Systems",
-    short: "LS",
-    logo: "linev.svg",
+    name: "XRC", website: "https://x-raycenter.com/en/main-page",
+    category: "X-Ray Baggage & Security Screening",
+    logo: "/branding/baggage-brands/transparent//branding/baggage-brands/transparent/xrc.png",
   },
   {
-    name: "Westminster International",
-    short: "WI",
-    logo: "westminster.svg",
+    name: "Scanna MSC", website: "https://www.scanna-msc.com/",
+    category: "Security X-Ray Inspection Systems",
+    logo: "/branding/baggage-brands/transparent//branding/baggage-brands/transparent/msc.png",
   },
-  {
-    name: "Autoclear",
-    short: "AC",
-    logo: "autoclear.png",
-  },
-  {
-    name: "Micro-X",
-    short: "MX",
-    logo: "micro-x.png",
-  },
-];
-
-const services = [
-  "Baggage Scanner Fault Diagnosis",
-  "X-Ray Image Quality Troubleshooting",
-  "X-Ray Generator Inspection",
-  "Detector System Inspection",
-  "Conveyor System Repair",
-  "Motor and Belt Troubleshooting",
-  "Control Board and Electronic Repair",
-  "Preventive Maintenance",
-  "Corrective Maintenance",
-  "AMC and Technical Support",
-  "Spare Parts Arrangement",
-  "On-Site Technical Service",
-];
-
-const applications = [
-  "Airports",
-  "Government Facilities",
-  "Ports and Seaports",
-  "Banks and Financial Institutions",
-  "Courts and Prisons",
-  "Military and Defence Facilities",
-  "Corporate Offices",
-  "Factories and Industrial Facilities",
-  "Shopping Malls",
-  "Hotels",
-  "Stadiums and Event Venues",
-  "Critical Infrastructure",
-];
-
-function BrandLogo({
-  name,
-  short,
-  logo,
-}: {
-  name: string;
-  short: string;
-  logo: string;
-}) {
-  return (
-    <div className="flex h-24 w-full items-center justify-center rounded-xl border border-white/10 bg-black/60 px-4">
-      <img
-        src={`/brands/baggage-scanner/${logo}`}
-        alt={`${name} logo`}
-        className="max-h-14 max-w-[80%] object-contain"
-      />
-    </div>
-  );
-}
+]
 
 export default function BaggageScannerPage() {
   return (
-    <main className="min-h-screen bg-[#020617] text-white">
-      {/* HERO */}
-      <section className="relative overflow-hidden border-b border-cyan-400/10">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(6,182,212,0.16),transparent_35%),radial-gradient(circle_at_bottom_left,rgba(14,165,233,0.10),transparent_35%)]" />
+    <main className="relative min-h-screen overflow-hidden bg-slate-950 text-white">
 
-        <div className="relative mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
-          <div className="max-w-4xl">
-            <p className="mb-5 text-sm font-bold uppercase tracking-[0.35em] text-cyan-400">
-              Security Equipment Maintenance BD
-            </p>
+      <div className="pointer-events-none fixed inset-0 z-0">
+        <div
+          className="absolute inset-0 bg-center bg-cover bg-no-repeat grayscale"
+          style={{
+            backgroundImage: 'url("/branding/baggage-xray-watermark.jpg")',
+            opacity: 0.32,
+            mixBlendMode: "screen",
+          }}
+        />
+        <div className="absolute inset-0 bg-slate-950/35" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,rgba(34,211,238,0.10),transparent_55%)]" />
+      </div>
 
-            <h1 className="text-4xl font-black leading-tight md:text-6xl">
-              Baggage Scanner
-              <span className="block text-cyan-400">
-                Repair & Maintenance
-              </span>
-            </h1>
+      <div className="relative z-10">
 
-            <p className="mt-7 max-w-3xl text-base leading-8 text-slate-300 md:text-lg">
-              Professional baggage scanner supply, installation, troubleshooting,
-              repair, preventive maintenance, spare parts arrangement and
-              technical support services across Bangladesh.
-            </p>
+        <section className="border-b border-cyan-400/10 bg-slate-950/25">
+          <div className="mx-auto max-w-7xl px-6 py-24 lg:py-32">
+            <div className="max-w-4xl">
+              <p className="mb-4 text-sm font-bold tracking-[0.35em] text-cyan-300">
+                SECURITY EQUIPMENT
+              </p>
 
-            <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-              <a
-                href="tel:+8801799419011"
-                className="rounded-xl bg-cyan-400 px-7 py-4 text-center font-black text-slate-950 transition hover:bg-cyan-300"
-              >
-                Call for Technical Support
-              </a>
+              <h1 className="text-4xl font-black tracking-tight md:text-6xl">
+                Baggage Scanner
+              </h1>
 
-              <a
-                href="https://wa.me/8801518698236"
-                className="rounded-xl border border-cyan-400/40 bg-cyan-400/5 px-7 py-4 text-center font-black text-cyan-300 transition hover:bg-cyan-400/10"
-              >
-                WhatsApp Service Request
-              </a>
+              <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+                Advanced X-ray screening solutions for the inspection of
+                baggage, parcels, cargo and other items at security-sensitive
+                facilities.
+              </p>
+
+              <div className="mt-8 flex flex-wrap gap-4">
+                <Link
+                  href="/service-request"
+                  className="rounded-xl border border-cyan-300/40 bg-cyan-400/10 px-6 py-3 text-sm font-bold tracking-[0.16em] text-cyan-200 transition hover:border-cyan-200 hover:bg-cyan-300/20"
+                >
+                  REQUEST SERVICE
+                </Link>
+
+                <Link
+                  href="/#equipment"
+                  className="rounded-xl border border-slate-600/70 bg-slate-900/60 px-6 py-3 text-sm font-bold tracking-[0.16em] text-slate-200 transition hover:border-cyan-300/40"
+                >
+                  BACK TO EQUIPMENT
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* INTRO */}
-      <section className="mx-auto max-w-7xl px-6 py-20 md:px-10">
-        <div className="grid gap-8 md:grid-cols-2">
-          <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-8">
-            <p className="mb-3 text-sm font-bold uppercase tracking-widest text-cyan-400">
-              Technical Service
-            </p>
-
-            <h2 className="text-3xl font-black">
-              Baggage Scanner Repair
-            </h2>
-
-            <p className="mt-5 leading-8 text-slate-300">
-              We provide technical troubleshooting and maintenance support for
-              baggage and X-ray inspection systems. Our service approach covers
-              electrical, electronic, mechanical, imaging and operational
-              problems.
-            </p>
-          </div>
-
-          <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-8">
-            <p className="mb-3 text-sm font-bold uppercase tracking-widest text-cyan-400">
-              Preventive Care
-            </p>
-
-            <h2 className="text-3xl font-black">
-              Maintenance & AMC Support
-            </h2>
-
-            <p className="mt-5 leading-8 text-slate-300">
-              Preventive maintenance helps reduce unexpected equipment
-              downtime. We can provide inspection, cleaning, testing,
-              troubleshooting, corrective maintenance, spare parts arrangement
-              and ongoing technical support.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* BRANDS */}
-      <section className="border-y border-white/10 bg-black/20">
-        <div className="mx-auto max-w-7xl px-6 py-20 md:px-10">
-          <div className="max-w-3xl">
-            <p className="text-sm font-bold uppercase tracking-widest text-cyan-400">
-              Market Coverage
+        <section className="mx-auto max-w-7xl px-6 py-20">
+          <div className="rounded-3xl border border-slate-700/50 bg-slate-950/55 p-8 backdrop-blur-[2px] md:p-12">
+            <p className="text-sm font-bold tracking-[0.3em] text-cyan-300">
+              EQUIPMENT OVERVIEW
             </p>
 
             <h2 className="mt-3 text-3xl font-black md:text-4xl">
-              Brands / Manufacturers in the Baggage Scanner Market
+              Intelligent X-Ray Security Screening
             </h2>
 
-            <p className="mt-5 leading-8 text-slate-400">
-              Examples of baggage scanner and X-ray inspection equipment
-              manufacturers found in the international security screening
-              market.
+            <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-300">
+              Baggage scanners provide non-intrusive inspection of baggage,
+              parcels, cargo and personal belongings using X-ray imaging.
+              Modern systems can combine high-resolution imaging, multi-view
+              inspection, automated threat recognition and advanced image
+              analysis to support security operators.
             </p>
           </div>
+        </section>
 
-          <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-            {brands.map((brand) => (
+        <section className="mx-auto max-w-7xl px-6 pb-20">
+          <div className="mb-10">
+            <p className="text-sm font-bold tracking-[0.3em] text-cyan-300">
+              CORE CAPABILITIES
+            </p>
+            <h2 className="mt-3 text-3xl font-black md:text-4xl">
+              Professional Screening Capabilities
+            </h2>
+          </div>
+
+          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {capabilities.map((item, index) => (
               <div
-                key={brand.name}
-                className="rounded-2xl border border-white/10 bg-white/[0.03] p-4 transition hover:-translate-y-1 hover:border-cyan-400/40 hover:bg-cyan-400/[0.04]"
+                key={item}
+                className="rounded-2xl border border-slate-700/50 bg-slate-950/60 p-6 transition duration-300 hover:-translate-y-1 hover:border-cyan-300/40 hover:bg-slate-900/75"
               >
-                <BrandLogo
-                  name={brand.name}
-                  short={brand.short}
-                  logo={brand.logo}
-                />
-
-                <h3 className="mt-4 text-center text-sm font-bold text-white">
-                  {brand.name}
+                <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-xl border border-cyan-300/30 bg-cyan-300/10 text-sm font-black text-cyan-300">
+                  {String(index + 1).padStart(2, "0")}
+                </div>
+                <h3 className="text-lg font-bold text-slate-100">
+                  {item}
                 </h3>
               </div>
             ))}
           </div>
+        </section>
 
-          <div className="mt-8 rounded-xl border border-amber-400/20 bg-amber-400/5 p-5 text-sm leading-7 text-slate-300">
-            <strong className="text-amber-300">Important:</strong> Brand names
-            and logos are shown for equipment identification and market
-            reference only. No authorized dealership, official partnership or
-            manufacturer authorization is claimed by this website.
-          </div>
-        </div>
-      </section>
+        <section className="mx-auto max-w-7xl px-6 pb-20">
+          <div className="grid gap-8 lg:grid-cols-2">
 
-      {/* SERVICES */}
-      <section className="mx-auto max-w-7xl px-6 py-20 md:px-10">
-        <div className="max-w-3xl">
-          <p className="text-sm font-bold uppercase tracking-widest text-cyan-400">
-            What We Provide
-          </p>
+            <div className="rounded-3xl border border-slate-700/50 bg-slate-950/60 p-8">
+              <p className="text-sm font-bold tracking-[0.3em] text-cyan-300">
+                APPLICATIONS
+              </p>
 
-          <h2 className="mt-3 text-3xl font-black md:text-4xl">
-            Baggage Scanner Services
-          </h2>
-        </div>
+              <h2 className="mt-3 text-3xl font-black">
+                Where Baggage Screening Matters
+              </h2>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((service, index) => (
-            <div
-              key={service}
-              className="rounded-2xl border border-white/10 bg-white/[0.03] p-6"
-            >
-              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-cyan-400/10 font-black text-cyan-400">
-                {String(index + 1).padStart(2, "0")}
+              <div className="mt-8 grid gap-3">
+                {applications.map((item) => (
+                  <div
+                    key={item}
+                    className="rounded-xl border border-slate-700/50 bg-slate-900/60 px-5 py-4 text-slate-200"
+                  >
+                    <span className="mr-3 text-cyan-300">◆</span>
+                    {item}
+                  </div>
+                ))}
               </div>
+            </div>
 
-              <h3 className="font-bold text-white">{service}</h3>
+            <div className="rounded-3xl border border-cyan-300/15 bg-slate-950/60 p-8">
+              <p className="text-sm font-bold tracking-[0.3em] text-cyan-300">
+                TECHNICAL SERVICE
+              </p>
 
-              <p className="mt-2 text-sm leading-6 text-slate-400">
-                Professional technical support for inspection and maintenance
-                requirements.
+              <h2 className="mt-3 text-3xl font-black">
+                Complete Equipment Support
+              </h2>
+
+              <div className="mt-8 grid gap-3 sm:grid-cols-2">
+                {services.map((item) => (
+                  <div
+                    key={item}
+                    className="rounded-xl border border-slate-700/50 bg-slate-900/60 px-4 py-4 text-sm font-semibold text-slate-200"
+                  >
+                    {item}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-7xl px-6 pb-24">
+          <div className="rounded-[2rem] border border-cyan-300/15 bg-slate-950/65 p-8 shadow-[0_0_50px_rgba(34,211,238,0.06)] backdrop-blur-sm md:p-12">
+
+            <div className="mx-auto max-w-4xl text-center">
+              <p className="text-sm font-bold tracking-[0.35em] text-cyan-300">
+                GLOBAL MANUFACTURERS
+              </p>
+
+              <h2 className="mt-3 text-3xl font-black md:text-5xl">
+                Global Baggage & X-Ray Screening Brands
+              </h2>
+
+              <p className="mt-5 text-base leading-7 text-slate-400">
+                A professional reference of international manufacturers and
+                technology providers associated with X-ray, CT, baggage,
+                parcel and security screening systems.
               </p>
             </div>
-          ))}
-        </div>
-      </section>
 
-      {/* APPLICATIONS */}
-      <section className="border-y border-white/10 bg-white/[0.02]">
-        <div className="mx-auto max-w-7xl px-6 py-20 md:px-10">
-          <div className="max-w-3xl">
-            <p className="text-sm font-bold uppercase tracking-widest text-cyan-400">
-              Applications
+            <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              {manufacturers.map((brand) => (
+                <div
+                  key={brand.name}
+                  className="group relative overflow-hidden rounded-2xl border border-slate-700/60 bg-slate-900/75 p-5 transition duration-300 hover:-translate-y-1 hover:border-cyan-300/50 hover:bg-slate-900"
+                >
+                  <div
+                    className="pointer-events-none absolute inset-0 bg-center bg-cover bg-no-repeat grayscale opacity-[0.10] mix-blend-screen transition duration-500 group-hover:opacity-[0.16]"
+                    style={{
+                      backgroundImage:
+                        'url("/branding/baggage-xray-watermark.jpg")',
+                    }}
+                  />
+
+                  <div className="pointer-events-none absolute inset-0 bg-slate-950/35" />
+
+                  <div className="relative z-10">
+                    <div className="flex h-32 items-center justify-center rounded-xl bg-transparent px-6 py-4">
+                      <img
+                        src={brand.logo} loading="eager"
+                        alt={`${brand.name} logo`}
+                        className="h-28 w-auto max-w-[90%] object-contain"
+                      />
+                      <div className="mt-2 text-center text-base font-black tracking-tight text-slate-900">
+                        {brand.name}
+                      </div>
+                    </div>
+
+                    <div className="mt-5">
+                      <h3 className="text-lg font-black text-white group-hover:text-cyan-200">
+                        {brand.name}
+                      </h3>
+
+                      <p className="mt-2 text-xs leading-5 text-slate-400">
+                        {brand.category}
+                      </p>
+
+                      <Link
+                        href="/service-request"
+                        className="mt-5 inline-flex rounded-lg border border-cyan-300/35 bg-cyan-300/10 px-4 py-2 text-[10px] font-black tracking-[0.18em] text-cyan-200 transition hover:border-cyan-200 hover:bg-cyan-300/20"
+                      >
+                        SERVICE REQUEST
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-10 rounded-2xl border border-amber-300/15 bg-amber-300/5 p-5 text-sm leading-6 text-slate-400">
+              <span className="font-bold text-amber-200">
+                Certification & approval note:
+              </span>{" "}
+              Regulatory approvals and certifications apply to specific
+              equipment models, configurations, standards and jurisdictions.
+              They are therefore not presented here as a blanket certification
+              claim for every product from every manufacturer.
+            </div>
+
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-7xl px-6 pb-20">
+          <div className="rounded-3xl border border-slate-700/50 bg-slate-950/60 p-8 md:p-12">
+            <p className="text-sm font-bold tracking-[0.3em] text-cyan-300">
+              TECHNICAL SUPPORT
             </p>
 
             <h2 className="mt-3 text-3xl font-black md:text-4xl">
-              Where Baggage Scanners Are Used
+              Security Equipment Maintenance & Engineering Support
             </h2>
-          </div>
 
-          <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
-            {applications.map((application) => (
-              <div
-                key={application}
-                className="rounded-xl border border-white/10 bg-black/30 p-5 text-sm font-bold text-slate-200"
+            <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-300">
+              Technical support can be arranged according to equipment model,
+              configuration, site requirements and service scope. Our
+              maintenance approach covers installation, commissioning,
+              troubleshooting, preventive and corrective maintenance,
+              calibration, spare parts and AMC support.
+            </p>
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-7xl px-6 pb-28">
+          <div className="rounded-[2rem] border border-cyan-300/20 bg-gradient-to-r from-cyan-950/50 via-slate-950/80 to-indigo-950/50 p-10 text-center md:p-16">
+            <p className="text-sm font-bold tracking-[0.3em] text-cyan-300">
+              SERVICE & ENGINEERING
+            </p>
+
+            <h2 className="mt-4 text-3xl font-black md:text-5xl">
+              Need Baggage Scanner Support?
+            </h2>
+
+            <p className="mx-auto mt-5 max-w-2xl text-slate-300">
+              Contact SecureTech BD for professional security equipment
+              maintenance, technical support and service requirements.
+            </p>
+
+            <div className="mt-8 flex flex-wrap justify-center gap-4">
+              <Link
+                href="/service-request"
+                className="rounded-xl border border-cyan-200/50 bg-cyan-300/10 px-7 py-3 text-sm font-black tracking-[0.16em] text-cyan-100 transition hover:bg-cyan-300/20"
               >
-                {application}
-              </div>
-            ))}
+                REQUEST SERVICE
+              </Link>
+
+              <Link
+                href="/contact"
+                className="rounded-xl border border-slate-600 bg-slate-900/70 px-7 py-3 text-sm font-black tracking-[0.16em] text-slate-100 transition hover:border-cyan-300/40"
+              >
+                CONTACT TEAM
+              </Link>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* CTA */}
-      <section className="mx-auto max-w-7xl px-6 py-20 md:px-10">
-        <div className="overflow-hidden rounded-3xl border border-cyan-400/20 bg-cyan-400/[0.05] p-8 md:p-12">
-          <p className="text-sm font-bold uppercase tracking-widest text-cyan-400">
-            Need Technical Assistance?
-          </p>
+      </div>
+    
 
-          <h2 className="mt-3 max-w-3xl text-3xl font-black md:text-5xl">
-            Baggage Scanner Repair, Maintenance & Technical Support
-          </h2>
 
-          <p className="mt-5 max-w-3xl leading-8 text-slate-300">
-            Contact Security Equipment Maintenance BD for equipment
-            troubleshooting, repair, preventive maintenance, spare parts
-            arrangement and technical support.
-          </p>
-
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a
-              href="tel:+8801799419011"
-              className="rounded-xl bg-cyan-400 px-7 py-4 text-center font-black text-slate-950"
-            >
-              +880 1799-419011
-            </a>
-
-            <a
-              href="https://wa.me/8801518698236"
-              className="rounded-xl border border-white/15 px-7 py-4 text-center font-black text-white"
-            >
-              WhatsApp: 01518-698236
-            </a>
-
-            <a
-              href="mailto:rakibmia614790@gmail.com"
-              className="rounded-xl border border-white/15 px-7 py-4 text-center font-black text-white"
-            >
-              Email Us
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* FOOTER */}
-      <footer className="border-t border-white/10 px-6 py-8 text-center text-sm text-slate-500">
-        © {new Date().getFullYear()} Security Equipment Maintenance BD. All
-        rights reserved.
-      </footer>
-    </main>
-  );
+</main>
+  )
 }

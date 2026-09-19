@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Car Parking Management System Repair & Maintenance Bangladesh | Security Equipment Maintenance BD",
+  title: "Car Parking Management System Repair & Maintenance Bangladesh | SECURETECH BD",
   description: "Professional car parking management system supply, installation, repair and maintenance services in Bangladesh.",
 };export default function CarParkingManagementPage() {
   return (
@@ -76,7 +76,7 @@ export const metadata = {
       </section>
 
       <footer className="border-t border-white/10 px-6 py-8 text-center text-sm text-gray-500">
-        © 2026 Security Equipment Maintenance BD. All Rights Reserved.
+        © 2026 SECURETECH BD. All Rights Reserved.
       </footer>
     </main>
   );

@@ -1,0 +1,101 @@
+"use client"
+
+import { useEffect, useState } from "react"
+
+export default function DhakaInfoPanel() {
+  const [time, setTime] = useState("00:00:00")
+  const [date, setDate] = useState("Loading...")
+  const [weather, setWeather] = useState("Loading weather...")
+
+  useEffect(() => {
+    const update = () => {
+      const now = new Date()
+
+      setTime(
+        now.toLocaleTimeString("en-GB", {
+          timeZone: "Asia/Dhaka",
+          hour12: false,
+        })
+      )
+
+      setDate(
+        now.toLocaleDateString("en-GB", {
+          timeZone: "Asia/Dhaka",
+          weekday: "long",
+          day: "numeric",
+          month: "long",
+          year: "numeric",
+        })
+      )
+    }
+
+    update()
+    const timer = setInterval(update, 1000)
+
+    fetch(
+      "https://api.open-meteo.com/v1/forecast?latitude=23.8103&longitude=90.4125&current=temperature_2m,weather_code&timezone=Asia%2FDhaka"
+    )
+      .then((r) => r.json())
+      .then((d) => {
+        const temp = d?.current?.temperature_2m
+        const code = d?.current?.weather_code
+
+        const text =
+          code === 0
+            ? "Clear sky"
+            : code <= 3
+            ? "Cloudy"
+            : code <= 67
+            ? "Rain"
+            : code <= 82
+            ? "Showers"
+            : "Thunderstorm"
+
+        setWeather(`${temp}°C • ${text}`)
+      })
+      .catch(() => setWeather("Weather unavailable"))
+
+    return () => clearInterval(timer)
+  }, [])
+
+  return (
+    <div className="hidden lg:flex w-[430px] -translate-y-8 min-h-[145px] items-center gap-4 rounded-2xl border border-cyan-400/25 bg-slate-950/80 px-5 py-4 shadow-[0_0_30px_rgba(34,211,238,0.12)] backdrop-blur-xl">
+      <div className="flex h-24 w-24 shrink-0 items-center justify-center rounded-full border border-cyan-300/40 bg-slate-900">
+        <div className="text-center">
+          <div className="text-[17px] font-bold tracking-wider text-cyan-200">
+            {time.slice(0, 5)}
+          </div>
+          <div className="text-[8px] tracking-widest text-slate-400">
+            DHAKA TIME
+          </div>
+        </div>
+      </div>
+
+      <div className="min-w-0">
+        <div className="text-[10px] font-bold tracking-[0.25em] text-cyan-300">
+          DHAKA • BANGLADESH
+        </div>
+
+        <div className="mt-1 text-sm font-semibold text-white">
+          {time} <span className="text-[10px] text-cyan-400">UTC+6</span>
+        </div>
+
+        <div className="mt-1 text-[11px] text-slate-300">
+          EN • {date}
+        </div>
+
+        <div className="text-[11px] text-slate-300">
+          বাংলা • বাংলাদেশ
+        </div>
+
+        <div className="text-[11px] text-slate-300">
+          هِجْرِي • التقويم الهجري
+        </div>
+
+        <div className="mt-1 text-[10px] text-cyan-200">
+          {weather}
+        </div>
+      </div>
+    </div>
+  )
+}

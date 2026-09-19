@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Bangladesh Clients | Security Equipment Maintenance BD",
+  title: "Bangladesh Clients | SECURETECH BD",
   description:
-    "Organizations and institutions supported by Security Equipment Maintenance BD in Bangladesh.",
+    "Organizations and institutions supported by SECURETECH BD in Bangladesh.",
 };
 
 const clients = [
@@ -140,7 +140,7 @@ export default function BangladeshClients() {
 
       <footer className="relative z-10 border-t border-white/10 bg-[#01040a]">
         <div className="mx-auto flex max-w-7xl justify-between gap-4 px-5 py-8 text-[9px] tracking-[0.18em] text-white/30 lg:px-8">
-          <div>SECURITY EQUIPMENT MAINTENANCE BD</div>
+          <div>SECURETECH BD</div>
           <div>© 2026 ALL RIGHTS RESERVED</div>
         </div>
       </footer>

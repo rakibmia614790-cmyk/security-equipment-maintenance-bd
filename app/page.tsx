@@ -1,6 +1,8 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import DhakaInfoPanel from "./components/DhakaInfoPanel"
+import SecurityIntelligence from "./components/SecurityIntelligence"
 
 const equipment = [
   ["Baggage Scanner", "/equipment/baggage-scanner", "X-RAY / INSPECTION", "BAG"],
@@ -90,147 +92,150 @@ export default function Home() {
       </div>
 
       {/* HEADER */}
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-[#020611]/85 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-          <a href="/" className="group">
-            <div className="text-sm font-black tracking-[0.22em] text-cyan-300">
-              SECURITY EQUIPMENT
-            </div>
-            <div className="text-xs font-semibold tracking-[0.42em] text-white/70">
-              MAINTENANCE BD
-            </div>
-          </a>
+      <header className="sticky top-0 z-50 border-b border-cyan-400/25 bg-slate-950/95 shadow-[0_12px_45px_rgba(0,0,0,0.55)] backdrop-blur-2xl">
+  <div className="mx-auto max-w-[1750px] px-4 sm:px-6 lg:px-8">
 
-          <nav className="hidden items-center gap-7 text-xs font-semibold tracking-wider text-white/70 lg:flex">
-            <a href="/" className="transition hover:text-cyan-300">HOME</a>
-            <a href="#equipment" className="transition hover:text-cyan-300">EQUIPMENT</a>
-            <a href="#services" className="transition hover:text-cyan-300">SERVICES</a>
-            <a href="#request" className="transition hover:text-cyan-300">SERVICE REQUEST</a>
-            <a href="/our-team" className="transition hover:text-cyan-300">OUR TEAM</a>
-              <a href="/about-us" className="transition hover:text-cyan-300">ABOUT US</a>
-              <details className="relative">
-  <summary className="cursor-pointer list-none text-sm font-medium text-slate-300 hover:text-white transition-colors">
-    OUR PROJECT & CLIENTS ▾
-  </summary>
-  <div className="absolute left-0 top-full z-50 mt-3 w-80 rounded-2xl border border-cyan-400/40 bg-slate-900 border-2 border-cyan-400/60 p-4 shadow-2xl shadow-cyan-500/30 backdrop-blur-xl">
-    <a href="/bangladesh-clients" className="block rounded-xl border border-transparent bg-white/5 px-4 py-3 text-sm font-semibold text-slate-200 transition-all hover:border-cyan-400/50 hover:bg-cyan-500/15 hover:text-white hover:shadow-lg hover:shadow-cyan-500/10">
-      BANGLADESH CLIENTS
-    </a>
-    <a href="/international-projects" className="block rounded-xl border border-transparent bg-white/5 px-4 py-3 text-sm font-semibold text-slate-200 transition-all hover:border-cyan-400/50 hover:bg-cyan-500/15 hover:text-white hover:shadow-lg hover:shadow-cyan-500/10">
-      OUR INTERNATIONAL CLIENTS & PROJECTS
-    </a>
-  </div>
-</details>
-            <a href="#contact" className="transition hover:text-cyan-300">CONTACT</a>
+    <div className="flex min-h-[175px] items-center justify-between gap-8 py-5">
+
+      <a href="/" className="group flex shrink-0 items-center">
+        <div className="relative">
           
-        <a
-          href="/partner-login"
-          className="rounded-xl border border-cyan-400/50 px-4 py-2 text-sm font-semibold text-cyan-300 transition hover:bg-cyan-400/10"
-        >
-          PARTNER LOGIN
-        </a>
-      </nav>
+          <img
+            src="/branding/securetech-logo.svg"
+            alt="SecureTech BD"
+            className="relative h-40 w-auto max-w-[560px] object-contain drop-shadow-[0_0_32px_rgba(34,211,238,0.5)] transition duration-500 group-hover:scale-[1.025]"
+          />
+        </div>
+      </a>
 
-          <a
-            href="tel:+8801799419011"
-            className="rounded-full border border-cyan-300/30 bg-cyan-300/5 px-4 py-2 text-xs font-bold tracking-wider text-cyan-200 transition hover:bg-cyan-300/10"
-          >
-            CALL US
+      <div className="hidden items-center gap-3 lg:flex">
+        
+        
+      </div>
+    </div>
+
+    
+<div className="flex justify-end items-start w-full px-6 -mt-36"><div className="flex-1 flex justify-center items-center [transform:translateX(200px)]"><SecurityIntelligence /></div>
+<DhakaInfoPanel /></div>
+<nav className="border-t border-cyan-400/15 py-4">
+
+  <div className="mx-auto flex max-w-6xl flex-col gap-2">
+
+    <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+      <a href="/" className="nav-premium">HOME</a>
+      <a href="/equipment" className="nav-premium">EQUIPMENT</a>
+
+      <details className="group relative">
+        <summary className="nav-premium cursor-pointer list-none">
+          OUR PROJECT & CLIENTS <span className="ml-1 text-cyan-300">▾</span>
+        </summary>
+
+        <div className="absolute left-1/2 top-full z-[100] mt-2 w-80 -translate-x-1/2 rounded-2xl border border-cyan-400/30 bg-slate-950/98 p-2 shadow-2xl shadow-cyan-950/40 backdrop-blur-2xl">
+          <a href="/bangladesh-clients" className="block rounded-xl px-5 py-4 text-sm font-bold tracking-wide text-slate-200 transition hover:bg-cyan-400/10 hover:text-cyan-300">
+            BANGLADESH CLIENTS
+          </a>
+          <a href="/international-projects" className="block rounded-xl px-5 py-4 text-sm font-bold tracking-wide text-slate-200 transition hover:bg-cyan-400/10 hover:text-cyan-300">
+            INTERNATIONAL CLIENTS & PROJECTS
           </a>
         </div>
-      </header>
+      </details>
+
+      <a href="/services" className="nav-premium">SERVICES</a>
+    </div>
+
+    <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+      <a href="/service-request" className="nav-premium nav-featured">SERVICE REQUEST</a>
+      <a href="/our-team" className="nav-premium">OUR TEAM</a>
+      <a href="/about-us" className="nav-premium">ABOUT US</a>
+      <a href="/contact" className="nav-premium">CONTACT</a>
+    </div>
+
+    <div className="mt-2 flex justify-center">
+      <div className="flex items-center gap-2 rounded-2xl border border-cyan-400/25 bg-slate-900/70 p-2 shadow-[0_0_25px_rgba(34,211,238,0.08)] backdrop-blur-xl">
+        
+
+        
+      </div>
+    </div>
+
+  </div>
+
+<div className="mt-3 flex justify-center">
+  <div className="flex items-center gap-2 rounded-2xl border border-cyan-400/30 bg-slate-900/90 p-2 shadow-[0_0_30px_rgba(34,211,238,0.15)]">
+    
+    
+  </div>
+</div>
+
+<div className="mt-3 flex justify-center">
+  <div className="flex items-center gap-2 rounded-2xl border border-cyan-400/30 bg-slate-900/90 p-2 shadow-[0_0_30px_rgba(34,211,238,0.15)]">
+    <a href="/partner-login" className="nav-premium rounded-xl border border-cyan-400/30 px-6 py-3 text-cyan-200 hover:bg-cyan-400/10">
+      LOGIN <span className="ml-2 text-[9px] tracking-[0.12em] text-slate-400">(Restricted — Only for SecureTech BD)</span>
+    </a>
+    <a href="#contact" className="nav-call rounded-xl border border-cyan-400/30 px-6 py-3 text-cyan-200 hover:bg-cyan-400/10">
+      CALL US
+    </a>
+  </div>
+</div>
+</nav>
+  </div>
+</header>
+<style>{`
+  .nav-premium {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 0.72rem 1.15rem;
+    border: 1px solid rgba(34,211,238,0.18);
+    border-radius: 0.8rem;
+    color: rgb(226 232 240);
+    background: linear-gradient(180deg, rgba(15,23,42,0.72), rgba(15,23,42,0.38));
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-shadow: 0 1px 8px rgba(34,211,238,0.22);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.05), 0 4px 14px rgba(0,0,0,0.16);
+    transition: all 220ms ease;
+  }
+
+  .nav-premium:hover {
+    color: rgb(103 232 249);
+    border-color: rgba(34,211,238,0.55);
+    background: linear-gradient(180deg, rgba(34,211,238,0.12), rgba(30,64,175,0.12));
+    transform: translateY(-2px);
+    text-shadow: 0 0 12px rgba(34,211,238,0.55);
+    box-shadow: 0 7px 22px rgba(34,211,238,0.13), inset 0 1px 0 rgba(255,255,255,0.08);
+  }
+
+  .nav-featured {
+    color: rgb(103 232 249);
+    border-color: rgba(34,211,238,0.42);
+    background: linear-gradient(180deg, rgba(34,211,238,0.14), rgba(30,64,175,0.12));
+    box-shadow: 0 0 20px rgba(34,211,238,0.08), inset 0 1px 0 rgba(255,255,255,0.07);
+  }
+
+  .nav-call {
+    display: inline-flex;
+    align-items: center;
+    min-height: 46px;
+    padding: 0.72rem 1.15rem;
+    border-radius: 0.8rem;
+    background: linear-gradient(180deg, rgb(103 232 249), rgb(34 211 238));
+    color: rgb(2 6 23);
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    box-shadow: 0 5px 0 rgb(8 47 73), 0 0 18px rgba(34,211,238,0.25);
+  }
+`}</style>
+
 
       {/* HERO */}
       
 
-      <section className="relative z-10 mx-auto max-w-7xl px-5 pb-24 pt-16 lg:px-8 lg:pt-24">
-        <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
-          <div>
-            <div className="mb-6 flex items-center gap-3 text-[10px] font-bold tracking-[0.35em] text-cyan-300">
-              <span className="h-2 w-2 animate-pulse rounded-full bg-cyan-300" />
-              SECURITY TECHNOLOGY / FIELD ENGINEERING
-            </div>
-
-            <h1 className="max-w-3xl text-5xl font-black leading-[0.9] tracking-[-0.04em] sm:text-6xl lg:text-8xl">
-              <span className="block">SECURE.</span>
-              <span className="block text-white/70">REPAIR.</span>
-              <span className="block text-cyan-300">PROTECT.</span>
-            </h1>
-
-            <p className="mt-8 max-w-2xl text-base leading-7 text-white/60 sm:text-lg">
-              Security equipment supply, installation, repair and maintenance
-              services across Bangladesh, with professional technical support,
-              spare parts and AMC solutions.
-            </p>
-
-            <div className="mt-9 flex flex-wrap gap-4">
-              <a
-                href="#request"
-                className="rounded-xl bg-cyan-300 px-6 py-3 text-sm font-black tracking-wider text-[#020611] transition hover:bg-cyan-200"
-              >
-                REQUEST SERVICE
-              </a>
-              <a
-                href="#equipment"
-                className="rounded-xl border border-white/15 bg-white/5 px-6 py-3 text-sm font-bold tracking-wider text-white transition hover:border-cyan-300/40"
-              >
-                EXPLORE SYSTEMS
-              </a>
-            </div>
-
-            <div className="mt-10 grid max-w-xl grid-cols-3 border-y border-white/10 py-5">
-              <div>
-                <div className="text-xl font-black text-cyan-300">01</div>
-                <div className="mt-1 text-[9px] tracking-[0.2em] text-white/40">FIELD SERVICE</div>
-              </div>
-              <div className="border-l border-white/10 pl-5">
-                <div className="text-xl font-black text-cyan-300">24/7</div>
-                <div className="mt-1 text-[9px] tracking-[0.2em] text-white/40">TECHNICAL SUPPORT</div>
-              </div>
-              <div className="border-l border-white/10 pl-5">
-                <div className="text-xl font-black text-cyan-300">BD</div>
-                <div className="mt-1 text-[9px] tracking-[0.2em] text-white/40">SERVICE COVERAGE</div>
-              </div>
-            </div>
-          </div>
-
-          {/* HERO TECH CONSOLE */}
-          <div className="relative mx-auto aspect-square w-full max-w-[560px]">
-            <div className="absolute inset-[8%] rounded-full border border-cyan-300/15" />
-            <div className="absolute inset-[18%] rounded-full border border-cyan-300/10" />
-            <div className="absolute inset-[29%] rounded-full border border-cyan-300/10" />
-
-            <div className="absolute inset-[8%] animate-[spin_28s_linear_infinite] rounded-full border border-dashed border-cyan-300/15" />
-
-            <div className="absolute left-1/2 top-1/2 h-36 w-36 -translate-x-1/2 -translate-y-1/2 rounded-full border border-cyan-300/30 bg-cyan-300/5 shadow-[0_0_80px_rgba(34,211,238,0.12)]">
-              <div className="absolute inset-5 rounded-full border border-cyan-300/30" />
-              <div className="absolute inset-12 rounded-full bg-cyan-300/20 shadow-[0_0_35px_rgba(34,211,238,0.45)]" />
-            </div>
-
-            <div className="absolute left-1/2 top-[8%] h-[84%] w-px -translate-x-1/2 bg-gradient-to-b from-transparent via-cyan-300/20 to-transparent" />
-            <div className="absolute left-[8%] top-1/2 h-px w-[84%] -translate-y-1/2 bg-gradient-to-r from-transparent via-cyan-300/20 to-transparent" />
-
-            <div className="absolute left-[7%] top-[25%] rounded-lg border border-white/10 bg-black/40 px-3 py-2 backdrop-blur-md">
-              <div className="text-[9px] tracking-[0.22em] text-cyan-300">X-RAY SCREENING</div>
-              <div className="mt-1 text-[8px] text-white/40">SYSTEM READY</div>
-            </div>
-
-            <div className="absolute bottom-[24%] right-[4%] rounded-lg border border-white/10 bg-black/40 px-3 py-2 backdrop-blur-md">
-              <div className="text-[9px] tracking-[0.22em] text-cyan-300">THREAT DETECTION</div>
-              <div className="mt-1 text-[8px] text-white/40">MONITORING ACTIVE</div>
-            </div>
-
-            <div className="absolute right-[8%] top-[9%] rounded-lg border border-white/10 bg-black/40 px-3 py-2 backdrop-blur-md">
-              <div className="text-[9px] tracking-[0.22em] text-cyan-300">SECURITY NETWORK</div>
-              <div className="mt-1 text-[8px] text-white/40">CONNECTED</div>
-            </div>
-
-            <div className="absolute bottom-[8%] left-[14%] text-[8px] tracking-[0.3em] text-white/25">
-              SYSTEM // DIAGNOSTIC // FIELD ENGINEERING
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* CAPABILITY STRIP */}
       <section className="relative z-10 border-y border-white/10 bg-black/20">
@@ -247,61 +252,70 @@ export default function Home() {
       </section>
 
       {/* EQUIPMENT */}
-      <section id="equipment" className="relative z-10 mx-auto max-w-7xl px-5 py-24 lg:px-8">
-        <div className="mb-12 flex flex-col justify-between gap-5 md:flex-row md:items-end">
-          <div>
-            <div className="text-[10px] font-bold tracking-[0.35em] text-cyan-300">
-              01 / SECURITY SYSTEMS
-            </div>
-            <h2 className="mt-3 text-4xl font-black tracking-tight sm:text-5xl">
-              SECURITY EQUIPMENT
-            </h2>
+      <section className="relative mx-auto w-full max-w-7xl px-6 py-20">
+  <div className="mb-12 text-center">
+    <p className="mb-3 text-sm font-bold tracking-[0.35em] text-cyan-300">
+      SECURITY EQUIPMENT
+    </p>
+    <h2 className="text-4xl font-black tracking-tight text-white md:text-5xl">
+      Advanced Security Solutions
+    </h2>
+    <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-slate-400">
+      Professional security screening, detection, surveillance, access,
+      communication, and perimeter protection solutions.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    {[
+      ["Baggage Scanner","BS","Advanced X-ray screening systems for baggage and parcel inspection.","/equipment/baggage-scanner","https://image.made-in-china.com/2f0j00bRvYCdPlrAkD/High-Conveyor-600-400mm-Tunnel-Mobile-X-ray-Small-Baggage-and-Parcel-Scanner.jpg"],
+      ["Walk Through Metal Detector","WTMD","High-performance personnel screening for controlled access points.","/equipment/walk-through-metal-detector","https://www.nicepng.com/png/detail/421-4219023_security-scan-walk-through-metal-detector-security-turnstile.png"],
+      ["Hand-Held Metal Detector","HHMD","Portable metal detection for rapid and flexible security screening.","/equipment/hand-held-metal-detector","https://thietbibuudien.vn/uploads/images/images/may-do-garrett-1165180.jpg"],
+      ["Explosive Detection System / ETD","ETD","Trace detection technology for explosive and security threat screening.","/equipment/etd","https://www.tsatrace.com/assets/images/Itemiser-DX.jpg"],
+      ["CCTV System","CCTV","Professional video surveillance and security monitoring solutions.","/equipment/cctv","https://spsecuritycamerashouston.com/assets/product-16cam-4mp-CBD2G-TT.webp"],
+      ["Road Barrier","RB","Automated vehicle access control for secure facilities and checkpoints.","/equipment/road-barrier","https://yotechno.in/wp-content/uploads/2021/06/Parking-Barrier-CMP200-800x800.png"],
+      ["Road Blocker","RBL","Heavy-duty vehicle mitigation and high-security perimeter protection.","/equipment/road-blocker","https://www.madoors.com.tr/storage/photos/May2018/road-blocker.jpeg"],
+      ["Access Control System","ACS","Secure identity, entry, and restricted-area management solutions.","/equipment/access-control","https://s.alicdn.com/%40sc04/kf/Hccf96541295d4a39b1170fd5796719c7g/Stable-Performance-Use-Low-Operation-Cost-Full-Height-Turnstile-for-Outdoor-High-security-Areas.jpg"],
+      ["Car Parking Management System","CPMS","Integrated parking access, control, and management technology.","/equipment/car-parking-management","https://yotechno.in/wp-content/uploads/2021/06/Parking-Barrier-CMP200-800x800.png"],
+      ["Bollard","BOL","Security bollards for controlled vehicle access and perimeter protection.","/equipment/bollard","https://perimeter-automation.co.uk/wp-content/uploads/2023/01/Perimeter-Solutions-Automation-Security-Bollard-Kent-5.jpg"],
+      ["Human Body Scanner","HBS","Advanced personnel screening technology for detecting concealed security threats.","/equipment/human-body-scanner","https://unival-group.com/media/3816/download/R%26S%C2%AEQPS201-02.jpg?v=1"],
+      ["Walkie-Talkie","WT","Reliable two-way communication for security teams and field operations.","/equipment/walkie-talkie","https://www.nhatthuc.com.vn/images_upload/bo-dam-motorola-apx-1000i-4.jpg"],
+    ].map(([name, shortName, description, href, image]) => (
+      <div
+        key={name}
+        className="group relative min-h-[330px] overflow-hidden rounded-2xl border border-slate-700/70 bg-slate-950/90 p-6 shadow-[0_12px_35px_rgba(0,0,0,0.3)] backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-cyan-400/60 hover:shadow-[0_20px_45px_rgba(0,0,0,0.45),0_0_30px_rgba(34,211,238,0.12)]"
+      >
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.30] grayscale transition-all duration-700 group-hover:scale-105 group-hover:opacity-[0.42]"
+          style={{ backgroundImage: `url("${image}")` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/35 via-slate-950/65 to-slate-950/90" />
+        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-400/70 to-transparent opacity-70" />
+
+        <div className="relative z-10 flex h-full flex-col">
+          <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl border border-cyan-400/40 bg-slate-950/65 text-cyan-300 shadow-[0_0_20px_rgba(34,211,238,0.12)] backdrop-blur-sm">
+            <span className="text-[11px] font-black tracking-wider">{shortName}</span>
           </div>
-          <p className="max-w-xl text-sm leading-6 text-white/45">
-            Supply, installation, repair, preventive maintenance, AMC and
-            technical support for critical security systems.
+
+          <h3 className="text-lg font-extrabold leading-7 text-white transition-colors duration-300 group-hover:text-cyan-300">
+            {name}
+          </h3>
+
+          <p className="mt-3 min-h-[72px] text-sm leading-6 text-slate-200">
+            {description}
           </p>
+
+          <a
+            href={href}
+            className="mt-auto inline-flex w-fit rounded-lg border border-cyan-400/50 bg-slate-950/65 px-4 py-2 text-xs font-bold tracking-[0.16em] text-cyan-300 backdrop-blur-sm transition-all duration-300 hover:border-cyan-200 hover:bg-cyan-950/80 hover:text-white"
+          >
+            VIEW DETAILS
+          </a>
         </div>
-
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {equipment.map(([name, link, type, code]) => (
-            <a
-              href={link}
-              key={name}
-              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.025] p-6 transition duration-300 hover:-translate-y-1 hover:border-cyan-300/30 hover:bg-cyan-300/[0.035]"
-            >
-              <div className="absolute right-0 top-0 h-24 w-24 rounded-bl-full border-b border-l border-cyan-300/10" />
-
-              <div className="flex items-start justify-between">
-                <span className="rounded-md border border-cyan-300/15 bg-cyan-300/5 px-2 py-1 text-[9px] font-bold tracking-widest text-cyan-300">
-                  {code}
-                </span>
-                <span className="text-[8px] tracking-[0.2em] text-white/25">
-                  SYSTEM
-                </span>
-              </div>
-
-              <div className="mt-12 h-px w-16 bg-cyan-300/40 transition-all group-hover:w-28" />
-
-              <div className="mt-5 text-xs font-bold tracking-[0.18em] text-cyan-300/70">
-                {type}
-              </div>
-              <h3 className="mt-2 text-xl font-black text-white">
-                {name}
-              </h3>
-
-              <div className="mt-7 flex items-center justify-between border-t border-white/10 pt-4">
-                <span className="text-[9px] tracking-[0.2em] text-white/35">
-                  TECHNICAL DETAILS
-                </span>
-                <span className="text-sm text-cyan-300 transition group-hover:translate-x-1">
-                  →
-                </span>
-              </div>
-            </a>
-          ))}
-        </div>
-      </section>
+      </div>
+    ))}
+  </div>
+</section>
 
       {/* SERVICES */}
       <section id="services" className="relative z-10 border-y border-white/10 bg-black/20">
@@ -499,9 +513,10 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="relative z-10 border-t border-white/10 bg-[#01040a]">
+      
+<footer className="relative z-10 border-t border-white/10 bg-[#01040a]">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 px-5 py-8 text-[9px] tracking-[0.18em] text-white/30 sm:flex-row lg:px-8">
-          <div>SECURITY EQUIPMENT MAINTENANCE BD</div>
+          
           <div>© 2026 ALL RIGHTS RESERVED</div>
         </div>
       </footer>

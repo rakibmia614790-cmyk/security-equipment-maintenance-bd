@@ -136,7 +136,7 @@ export default function Home() {
         <div>
 
           <p className="mb-4 text-sm font-semibold tracking-[0.3em] text-cyan-400">
-            SECURITY EQUIPMENT MAINTENANCE BD
+            SECURETECH BD
           </p>
 
           <h1 className="text-5xl font-bold leading-tight md:text-7xl">
@@ -269,7 +269,7 @@ export default function Home() {
         </h2>
 
         <p className="mt-6 max-w-4xl text-lg leading-8 text-gray-400">
-          Security Equipment Maintenance BD provides professional security
+          SECURETECH BD provides professional security
           equipment supply, installation, repair, preventive maintenance and
           technical support services across Bangladesh.
         </p>
@@ -419,7 +419,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-white/10 px-6 py-8 text-center text-sm text-gray-500">
-        © 2026 Security Equipment Maintenance BD. All Rights Reserved.
+        © 2026 SECURETECH BD. All Rights Reserved.
       </footer>
 
     </main>
