@@ -1,0 +1,257 @@
+"use client"
+
+import Link from "next/link"
+
+const capabilities = [
+  "High-resolution X-ray image inspection",
+  "Baggage and parcel security screening",
+  "Threat and prohibited-item identification support",
+  "Image enhancement for operator analysis",
+  "Conveyor-based continuous inspection",
+  "Operator workstation and monitoring",
+]
+
+const applications = [
+  "Airports & Aviation Facilities",
+  "Government & Public Facilities",
+  "Ports & Critical Infrastructure",
+  "Courts & Judicial Facilities",
+  "Corporate & Industrial Security",
+  "Cargo, Parcel & Logistics Screening",
+]
+
+const services = [
+  "Supply & Installation",
+  "Installation & Commissioning",
+  "Preventive Maintenance",
+  "Corrective Maintenance",
+  "Troubleshooting & Technical Support",
+  "Calibration & Performance Checks",
+  "Spare Parts & Replacement",
+  "AMC & Service Support",
+]
+
+const manufacturers = [
+  "Smiths Detection",
+  "Rapiscan Systems",
+  "Astrophysics",
+  "Nuctech",
+  "Gilardoni",
+  "Other Industry Manufacturers",
+]
+
+export default function BaggageScannerPage() {
+  return (
+    <main className="min-h-screen bg-slate-950 text-white">
+      <section className="relative overflow-hidden border-b border-cyan-400/10">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(34,211,238,0.12),transparent_35%),radial-gradient(circle_at_80%_60%,rgba(99,102,241,0.12),transparent_35%)]" />
+
+        <div className="relative mx-auto max-w-7xl px-6 py-20 lg:py-28">
+          <div className="grid items-center gap-12 lg:grid-cols-2">
+            <div>
+              <p className="mb-4 text-sm font-bold tracking-[0.35em] text-cyan-300">
+                SECURITY EQUIPMENT
+              </p>
+
+              <h1 className="text-4xl font-black tracking-tight md:text-6xl">
+                Baggage Scanner
+              </h1>
+
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
+                Advanced X-ray screening solutions for the inspection of
+                baggage, parcels, cargo and other items at security-sensitive
+                facilities.
+              </p>
+
+              <div className="mt-8 flex flex-wrap gap-4">
+                <Link
+                  href="/service-request"
+                  className="rounded-xl border border-cyan-300/50 bg-cyan-400/10 px-6 py-3 text-sm font-bold tracking-wider text-cyan-200 transition hover:border-cyan-200 hover:bg-cyan-300/20"
+                >
+                  REQUEST SERVICE
+                </Link>
+
+                <Link
+                  href="/#equipment"
+                  className="rounded-xl border border-slate-600 bg-slate-900/70 px-6 py-3 text-sm font-bold tracking-wider text-slate-200 transition hover:border-cyan-400/50 hover:text-cyan-200"
+                >
+                  BACK TO EQUIPMENT
+                </Link>
+              </div>
+            </div>
+
+            <div className="relative min-h-[330px] overflow-hidden rounded-3xl border border-cyan-300/20 bg-slate-900/70 shadow-[0_25px_80px_rgba(0,0,0,0.45)]">
+              <div
+                className="absolute inset-0 bg-cover bg-center grayscale"
+                style={{
+                  backgroundImage:
+                    'url("https://image.made-in-china.com/2f0j00bRvYCdPlrAkD/High-Conveyor-600-400mm-Tunnel-Mobile-X-ray-Small-Baggage-and-Parcel-Scanner.jpg")',
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/55 to-transparent" />
+              <div className="absolute bottom-6 left-6">
+                <p className="text-xs font-bold tracking-[0.3em] text-cyan-300">
+                  X-RAY SCREENING
+                </p>
+                <p className="mt-2 text-2xl font-black">
+                  Baggage & Parcel Inspection
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-20">
+        <div className="max-w-4xl">
+          <p className="text-sm font-bold tracking-[0.3em] text-cyan-300">
+            EQUIPMENT OVERVIEW
+          </p>
+          <h2 className="mt-3 text-3xl font-black md:text-4xl">
+            Intelligent X-ray Security Screening
+          </h2>
+          <p className="mt-6 text-base leading-8 text-slate-400">
+            Baggage scanners provide non-intrusive inspection of bags, parcels
+            and other items using X-ray imaging. They are widely deployed at
+            controlled entry points where security personnel need rapid visual
+            inspection and threat identification support.
+          </p>
+        </div>
+      </section>
+
+      <section className="border-y border-slate-800/80 bg-slate-900/30">
+        <div className="mx-auto max-w-7xl px-6 py-20">
+          <div className="mb-10">
+            <p className="text-sm font-bold tracking-[0.3em] text-cyan-300">
+              CAPABILITIES
+            </p>
+            <h2 className="mt-3 text-3xl font-black md:text-4xl">
+              Screening Capabilities
+            </h2>
+          </div>
+
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {capabilities.map((item, index) => (
+              <div
+                key={item}
+                className="rounded-2xl border border-slate-700/70 bg-slate-950/70 p-6 transition hover:-translate-y-1 hover:border-cyan-400/40"
+              >
+                <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-xl border border-cyan-400/30 bg-cyan-400/10 text-sm font-black text-cyan-300">
+                  {String(index + 1).padStart(2, "0")}
+                </div>
+                <p className="font-semibold leading-7 text-slate-200">
+                  {item}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-20">
+        <div className="grid gap-12 lg:grid-cols-2">
+          <div>
+            <p className="text-sm font-bold tracking-[0.3em] text-cyan-300">
+              APPLICATIONS
+            </p>
+            <h2 className="mt-3 text-3xl font-black md:text-4xl">
+              Where It Is Used
+            </h2>
+
+            <div className="mt-8 space-y-3">
+              {applications.map((item) => (
+                <div
+                  key={item}
+                  className="rounded-xl border border-slate-800 bg-slate-900/60 px-5 py-4 text-slate-300"
+                >
+                  <span className="mr-3 text-cyan-300">◆</span>
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <p className="text-sm font-bold tracking-[0.3em] text-cyan-300">
+              TECHNICAL SERVICE
+            </p>
+            <h2 className="mt-3 text-3xl font-black md:text-4xl">
+              Engineering & Maintenance
+            </h2>
+
+            <div className="mt-8 grid gap-3 sm:grid-cols-2">
+              {services.map((item) => (
+                <div
+                  key={item}
+                  className="rounded-xl border border-slate-800 bg-slate-900/60 px-4 py-4 text-sm font-semibold text-slate-300 transition hover:border-cyan-400/30 hover:text-cyan-200"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-slate-800/80 bg-slate-900/30">
+        <div className="mx-auto max-w-7xl px-6 py-20">
+          <p className="text-sm font-bold tracking-[0.3em] text-cyan-300">
+            MANUFACTURERS & TECHNOLOGY
+          </p>
+
+          <h2 className="mt-3 text-3xl font-black md:text-4xl">
+            Major Industry Manufacturers
+          </h2>
+
+          <p className="mt-5 max-w-3xl leading-7 text-slate-400">
+            We support security screening equipment from established
+            international manufacturers, subject to equipment model,
+            configuration, availability and service requirements.
+          </p>
+
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {manufacturers.map((brand) => (
+              <div
+                key={brand}
+                className="rounded-2xl border border-cyan-400/10 bg-slate-950/70 px-6 py-5 font-bold text-slate-200 transition hover:border-cyan-400/40 hover:text-cyan-200"
+              >
+                {brand}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-5xl px-6 py-24 text-center">
+        <p className="text-sm font-bold tracking-[0.3em] text-cyan-300">
+          SECURETECH BD
+        </p>
+
+        <h2 className="mt-4 text-3xl font-black md:text-5xl">
+          Need Baggage Scanner Support?
+        </h2>
+
+        <p className="mx-auto mt-5 max-w-2xl leading-7 text-slate-400">
+          Contact our technical team for equipment supply, installation,
+          maintenance, troubleshooting, spare parts and service support.
+        </p>
+
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <Link
+            href="/service-request"
+            className="rounded-xl bg-cyan-400 px-7 py-3 text-sm font-black tracking-wider text-slate-950 transition hover:bg-cyan-300"
+          >
+            REQUEST SERVICE
+          </Link>
+
+          <Link
+            href="/contact"
+            className="rounded-xl border border-slate-600 px-7 py-3 text-sm font-bold tracking-wider text-slate-200 transition hover:border-cyan-400/50 hover:text-cyan-200"
+          >
+            CONTACT TEAM
+          </Link>
+        </div>
+      </section>
+    </main>
+  )
+}
