@@ -1,3 +1,4 @@
+import SecureTechBranding from "@/components/SecureTechBranding";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -17,7 +18,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body><div className="border-b border-cyan-400/20 bg-slate-950/95 px-6 py-4">
+  <div className="mx-auto max-w-7xl">
+    <SecureTechBranding />
+  </div>
+</div>
+{children}</body>
     </html>
   );
 }
