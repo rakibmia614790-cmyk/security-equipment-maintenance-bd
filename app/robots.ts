@@ -1,13 +1,17 @@
 import type { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = "https://securityequipmentmaintenancebd.com";
-
   return {
     rules: {
       userAgent: "*",
       allow: "/",
+      disallow: [
+        "/partner-dashboard/",
+        "/partner-signup/",
+        "/reset-password/",
+        "/forgot-password/",
+      ],
     },
-    sitemap: `${baseUrl}/sitemap.xml`,
+    sitemap: "https://securetechequipment.com/sitemap.xml",
   };
 }
