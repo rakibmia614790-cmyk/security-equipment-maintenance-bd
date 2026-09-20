@@ -78,7 +78,7 @@ export default function ForgotPasswordPage() {
               href="/partner-login"
               className="text-cyan-400 hover:text-cyan-300"
             >
-              Back to Partner Login
+              Back to Login
             </Link>
           </div>
         </div>

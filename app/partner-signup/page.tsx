@@ -137,7 +137,7 @@ export default function PartnerSignupPage() {
               href="/partner-login"
               className="font-semibold text-cyan-400 hover:text-cyan-300"
             >
-              Partner Login
+              Login
             </Link>
           </div>
         </div>

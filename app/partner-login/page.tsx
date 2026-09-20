@@ -7,7 +7,7 @@ export default function PartnerLoginPage() {
             SecureTech BD
           </p>
           <h1 className="mt-5 text-4xl font-bold tracking-tight sm:text-5xl">
-            Partner Login
+            Login
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-300">
             Secure access portal for selected partners, engineers, technicians
