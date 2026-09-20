@@ -1,43 +1,18 @@
 import Link from "next/link";
 
 const manufacturers = [
-  ["Smiths Detection", ""],
-  ["Rapiscan Systems", ""],
-  ["OSI Systems", ""],
-  ["Nuctech", ""],
-  ["Leidos", ""],
-  ["L3Harris Technologies", ""],
-  ["Analogic", ""],
-  ["Astrophysics", ""],
-  ["Gilardoni", ""],
-  ["Adani Systems", ""],
-  ["VOTI Detection", ""],
-  ["Autoclear", ""],
-  ["American Science and Engineering (AS&E)", ""],
-  ["Westminster International", ""],
-  ["Teledyne Technologies", ""],
-  ["3DX-RAY", ""],
-  ["Rohde & Schwarz", ""],
-  ["Thales", ""],
-  ["Safran / Morpho Detection", ""],
-  ["Vanderlande", ""],
-  ["Siemens Logistics", ""],
-  ["Daifuku", ""],
-  ["BEUMER Group", ""],
-  ["Glidepath", ""],
-  ["Scan-X Security", ""],
-  ["Cobalt Light Systems", ""],
-  ["Kromek", ""],
-  ["Todd Research", ""],
-  ["Vidisco", ""],
-  ["Viken Detection", ""],
-  ["Scanna MSC", ""],
-  ["Mekitec", ""],
-  ["LINEV Systems", ""],
-  ["VJ Technologies", ""],
-  ["Micro-X", ""],
-  ["Optosecurity", ""],
-  ["Aventura Technologies", ""],
+  ["Smiths Detection", "/branding/baggage-brands/smiths-detection.svg"],
+  ["Rapiscan Systems", "/branding/baggage-brands/rapiscan.svg"],
+  ["NUCTECH", "/branding/baggage-brands/nuctech.svg"],
+  ["Leidos", "/branding/baggage-brands/leidos.svg"],
+  ["Analogic", "/branding/baggage-brands/analogic.svg"],
+  ["Astrophysics", "/branding/baggage-brands/astrophysics.svg"],
+  ["Gilardoni", "/branding/baggage-brands/gilardoni.svg"],
+  ["SureScan", "/branding/baggage-brands/surescan.svg"],
+  ["L3Harris Security", "/branding/baggage-brands/l3harris.svg"],
+  ["VMI Security", "/branding/baggage-brands/vmi-security.svg"],
+  ["Scanna MSC", "/branding/baggage-brands/scanna-msc.svg"],
+  ["XRC", "/branding/baggage-brands/xrc.svg"],
 ];
 
 const capabilities = [
@@ -191,7 +166,7 @@ export default function BaggageScannerPage() {
           </p>
         </div>
 
-        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+        <div className="mt-12 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
           {manufacturers.map(([name, logo]) => (
             <div
               key={name}

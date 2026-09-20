@@ -1,42 +1,42 @@
 const manufacturers = [
-  ["Motorola Solutions", ""],
-  ["Hytera", ""],
-  ["Kenwood", ""],
-  ["Icom", ""],
-  ["Sepura", ""],
-  ["Tait Communications", ""],
-  ["JVCKENWOOD", ""],
-  ["Vertex Standard", ""],
-  ["Yaesu", ""],
-  ["Uniden", ""],
-  ["Midland", ""],
-  ["Baofeng", ""],
-  ["RugGear", ""],
-  ["Entel", ""],
-  ["Simoco", ""],
-  ["Codan", ""],
-  ["Zebra Technologies", ""],
-  ["Honeywell", ""],
-  ["Rohde & Schwarz", ""],
-  ["Thales", ""],
+  ["Smiths Detection", ""],
+  ["Rapiscan Systems", ""],
+  ["Leidos", ""],
+  ["Nuctech", ""],
+  ["Scanna MSC", ""],
+  ["DetectaChem", ""],
+  ["Rapiscan AS&E", ""],
+  ["Bruker", ""],
+  ["FLIR / Teledyne", ""],
+  ["Implant Sciences", ""],
+  ["Thermo Fisher Scientific", ""],
+  ["American Science and Engineering", ""],
+  ["Autoclear", ""],
+  ["General Electric", ""],
+  ["Hitachi", ""],
+  ["Agilent Technologies", ""],
+  ["FLIR Systems", ""],
+  ["M2M", ""],
+  ["IONSCAN", ""],
+  ["Scentian", ""],
 ];
 
-export default function WalkieTalkiePage() {
+export default function ExplosiveTraceDetectorPage() {
   return (
     <main className="min-h-screen bg-[#06111f] text-white">
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(14,165,233,0.18),transparent_40%),radial-gradient(circle_at_bottom_left,rgba(37,99,235,0.12),transparent_40%)]" />
         <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-sky-400">
-            Professional Communication Systems
+            Security Screening Equipment
           </p>
           <h1 className="max-w-4xl text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-            Walkie-Talkie & Two-Way Radio
+            Explosive Trace Detector
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-            Reliable two-way radio communication solutions for security teams,
-            airports, industrial facilities, emergency operations and large
-            organizations.
+            Professional explosive trace detection solutions for aviation,
+            transportation, government facilities, critical infrastructure,
+            cargo screening and high-security environments.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <a
@@ -59,25 +59,26 @@ export default function WalkieTalkiePage() {
         <div className="grid gap-10 lg:grid-cols-2">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
-              System Overview
+              Equipment Overview
             </p>
             <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-              Mission-Critical Communication
+              Advanced Trace Detection for Security Screening
             </h2>
           </div>
           <p className="text-lg leading-8 text-slate-300">
-            Professional two-way radio systems support fast, dependable
-            communication between security personnel, technical teams,
-            operations staff and emergency-response teams.
+            Explosive Trace Detection systems are used for rapid screening and
+            analysis of trace residues during security inspection operations.
+            Reliable equipment support is essential for maintaining detection
+            performance and operational readiness.
           </p>
         </div>
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {[
-            ["Two-Way Communication", "Fast and reliable team communication."],
-            ["Digital Radio", "Modern digital communication capabilities."],
-            ["Wide-Area Coverage", "Solutions for large operational environments."],
-            ["Emergency Operations", "Communication support for critical situations."],
+            ["Trace Analysis", "Detection of microscopic trace residues."],
+            ["Rapid Screening", "Designed for efficient security inspection workflows."],
+            ["Field Deployment", "Suitable for checkpoints and controlled environments."],
+            ["Technical Support", "Maintenance, troubleshooting and service support."],
           ].map(([title, text]) => (
             <div
               key={title}
@@ -96,17 +97,17 @@ export default function WalkieTalkiePage() {
             Applications
           </p>
           <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-            Professional Communication Applications
+            Security Screening Applications
           </h2>
 
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              "Airports & Aviation Facilities",
-              "Security & Guarding Operations",
-              "Industrial & Manufacturing Sites",
+              "Airports & Aviation Security",
+              "Cargo & Freight Screening",
               "Government & Critical Infrastructure",
-              "Construction & Large Projects",
-              "Emergency & Event Operations",
+              "Ports & Transportation Facilities",
+              "Border & Customs Security",
+              "High-Security Facilities",
             ].map((item) => (
               <div
                 key={item}
@@ -124,18 +125,18 @@ export default function WalkieTalkiePage() {
           Manufacturer Ecosystem
         </p>
         <h2 className="mt-3 max-w-3xl text-3xl font-bold sm:text-4xl">
-          Two-Way Radio Technology
+          Explosive Trace Detection Technology
         </h2>
         <p className="mt-5 max-w-3xl leading-7 text-slate-400">
           Our technical coverage is structured around a broad ecosystem of
-          professional radio communication technologies and manufacturers.
+          explosive trace detection technologies, systems and manufacturers.
         </p>
 
-        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+        <div className="mt-12 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
           {manufacturers.map(([name, logo]) => (
             <div
               key={name}
-              className="flex min-h-36 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.045] p-6 text-center shadow-[0_8px_30px_rgba(0,0,0,0.18)] transition duration-300 hover:-translate-y-1 hover:border-sky-400/40 hover:bg-white/[0.07]"
+              className="flex min-h-32 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.045] p-7 text-center transition hover:border-sky-400/40 hover:bg-white/[0.07]"
             >
               {logo ? (
                 <img
@@ -158,15 +159,14 @@ export default function WalkieTalkiePage() {
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
             Technical Services
           </p>
-
           <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {[
-              "Installation & Commissioning",
+              "Equipment Inspection",
               "Preventive Maintenance",
               "Corrective Repair",
-              "Radio Programming & Configuration",
-              "Battery & Accessory Support",
-              "System Diagnostics & Technical Support",
+              "System Diagnostics",
+              "Calibration & Performance Support",
+              "Spare Parts & Technical Support",
             ].map((service) => (
               <div
                 key={service}
@@ -184,12 +184,11 @@ export default function WalkieTalkiePage() {
           SecureTech Equipment
         </p>
         <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
-          Need Two-Way Radio Support?
+          Need ETD Technical Support?
         </h2>
         <p className="mx-auto mt-5 max-w-2xl leading-7 text-slate-400">
-          Contact our technical team for installation, maintenance,
-          troubleshooting, repair, configuration and communication-system
-          support.
+          Contact our technical team for inspection, maintenance, repair,
+          performance support and equipment service requirements.
         </p>
         <a
           href="/service-request"

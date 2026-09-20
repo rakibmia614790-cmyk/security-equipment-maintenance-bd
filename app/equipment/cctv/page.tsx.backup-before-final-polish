@@ -1,42 +1,42 @@
 const manufacturers = [
-  ["Motorola Solutions", ""],
-  ["Hytera", ""],
-  ["Kenwood", ""],
-  ["Icom", ""],
-  ["Sepura", ""],
-  ["Tait Communications", ""],
-  ["JVCKENWOOD", ""],
-  ["Vertex Standard", ""],
-  ["Yaesu", ""],
-  ["Uniden", ""],
-  ["Midland", ""],
-  ["Baofeng", ""],
-  ["RugGear", ""],
-  ["Entel", ""],
-  ["Simoco", ""],
-  ["Codan", ""],
-  ["Zebra Technologies", ""],
+  ["Hikvision", ""],
+  ["Dahua Technology", ""],
+  ["Axis Communications", ""],
+  ["Bosch Security", ""],
+  ["Hanwha Vision", ""],
   ["Honeywell", ""],
-  ["Rohde & Schwarz", ""],
-  ["Thales", ""],
+  ["Pelco", ""],
+  ["Avigilon", ""],
+  ["Vivotek", ""],
+  ["Uniview", ""],
+  ["Johnson Controls", ""],
+  ["Panasonic", ""],
+  ["Sony", ""],
+  ["Cisco", ""],
+  ["FLIR Systems", ""],
+  ["Mobotix", ""],
+  ["Tiandy", ""],
+  ["IDIS", ""],
+  ["Milestone Systems", ""],
+  ["Genetec", ""],
 ];
 
-export default function WalkieTalkiePage() {
+export default function CCTVPage() {
   return (
     <main className="min-h-screen bg-[#06111f] text-white">
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(14,165,233,0.18),transparent_40%),radial-gradient(circle_at_bottom_left,rgba(37,99,235,0.12),transparent_40%)]" />
         <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-sky-400">
-            Professional Communication Systems
+            Security & Surveillance Systems
           </p>
           <h1 className="max-w-4xl text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-            Walkie-Talkie & Two-Way Radio
+            CCTV Surveillance System
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-            Reliable two-way radio communication solutions for security teams,
-            airports, industrial facilities, emergency operations and large
-            organizations.
+            Professional video surveillance solutions for airports, government
+            facilities, critical infrastructure, commercial sites and
+            high-security environments.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <a
@@ -62,22 +62,22 @@ export default function WalkieTalkiePage() {
               System Overview
             </p>
             <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-              Mission-Critical Communication
+              Intelligent Video Surveillance
             </h2>
           </div>
           <p className="text-lg leading-8 text-slate-300">
-            Professional two-way radio systems support fast, dependable
-            communication between security personnel, technical teams,
-            operations staff and emergency-response teams.
+            Modern CCTV systems combine network cameras, video management,
+            recording, monitoring and analytics to provide continuous
+            situational awareness and security visibility.
           </p>
         </div>
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {[
-            ["Two-Way Communication", "Fast and reliable team communication."],
-            ["Digital Radio", "Modern digital communication capabilities."],
-            ["Wide-Area Coverage", "Solutions for large operational environments."],
-            ["Emergency Operations", "Communication support for critical situations."],
+            ["IP Camera Systems", "High-definition network surveillance."],
+            ["Video Management", "Centralized monitoring and recording."],
+            ["Video Analytics", "Intelligent detection and event analysis."],
+            ["System Integration", "Integrated security and infrastructure solutions."],
           ].map(([title, text]) => (
             <div
               key={title}
@@ -96,17 +96,17 @@ export default function WalkieTalkiePage() {
             Applications
           </p>
           <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-            Professional Communication Applications
+            Surveillance Across Critical Environments
           </h2>
 
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {[
               "Airports & Aviation Facilities",
-              "Security & Guarding Operations",
-              "Industrial & Manufacturing Sites",
               "Government & Critical Infrastructure",
-              "Construction & Large Projects",
-              "Emergency & Event Operations",
+              "Banks & Financial Institutions",
+              "Ports & Transport Facilities",
+              "Industrial & Commercial Sites",
+              "Hospitals, Campuses & Public Facilities",
             ].map((item) => (
               <div
                 key={item}
@@ -124,18 +124,18 @@ export default function WalkieTalkiePage() {
           Manufacturer Ecosystem
         </p>
         <h2 className="mt-3 max-w-3xl text-3xl font-bold sm:text-4xl">
-          Two-Way Radio Technology
+          CCTV & Video Surveillance Technology
         </h2>
         <p className="mt-5 max-w-3xl leading-7 text-slate-400">
-          Our technical coverage is structured around a broad ecosystem of
-          professional radio communication technologies and manufacturers.
+          Our technical coverage spans a broad ecosystem of CCTV, video
+          management and surveillance technology manufacturers.
         </p>
 
-        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+        <div className="mt-12 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
           {manufacturers.map(([name, logo]) => (
             <div
               key={name}
-              className="flex min-h-36 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.045] p-6 text-center shadow-[0_8px_30px_rgba(0,0,0,0.18)] transition duration-300 hover:-translate-y-1 hover:border-sky-400/40 hover:bg-white/[0.07]"
+              className="flex min-h-32 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.045] p-7 text-center transition hover:border-sky-400/40 hover:bg-white/[0.07]"
             >
               {logo ? (
                 <img
@@ -158,15 +158,14 @@ export default function WalkieTalkiePage() {
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
             Technical Services
           </p>
-
           <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {[
-              "Installation & Commissioning",
+              "CCTV Installation & Commissioning",
               "Preventive Maintenance",
               "Corrective Repair",
-              "Radio Programming & Configuration",
-              "Battery & Accessory Support",
-              "System Diagnostics & Technical Support",
+              "Camera & Network Diagnostics",
+              "NVR / VMS Support",
+              "System Upgrades & Expansion",
             ].map((service) => (
               <div
                 key={service}
@@ -184,12 +183,11 @@ export default function WalkieTalkiePage() {
           SecureTech Equipment
         </p>
         <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
-          Need Two-Way Radio Support?
+          Need CCTV Technical Support?
         </h2>
         <p className="mx-auto mt-5 max-w-2xl leading-7 text-slate-400">
-          Contact our technical team for installation, maintenance,
-          troubleshooting, repair, configuration and communication-system
-          support.
+          Contact our technical team for CCTV installation, maintenance,
+          troubleshooting, repair, upgrades and system support.
         </p>
         <a
           href="/service-request"
