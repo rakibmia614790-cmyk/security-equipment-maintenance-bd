@@ -101,6 +101,14 @@ export default function InternationalProjectsPage() {
                         <p className="mt-1 text-xs uppercase tracking-wider text-slate-500">
                           International Coverage
                         </p>
+                        <div className="mt-3 border-t border-white/10 pt-3">
+                          <span className="text-xs text-slate-500">
+                            Projects & Clients
+                          </span>
+                          <p className="mt-1 text-sm text-slate-400">
+                            Project portfolio to be added
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -108,6 +116,47 @@ export default function InternationalProjectsPage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="border-t border-white/10">
+        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+          <div className="mb-10">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-300">
+              Project Portfolio
+            </p>
+            <h2 className="mt-3 text-3xl font-bold">
+              International Projects
+            </h2>
+            <p className="mt-3 max-w-3xl text-slate-400">
+              Selected international projects and technical engagements will be
+              presented here with verified project information.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {[
+              ["Saudi Arabia", "Airport & Aviation Security"],
+              ["United Arab Emirates", "Security Technology & Support"],
+              ["Asia", "Regional Engineering & Technical Support"],
+            ].map(([location, category]) => (
+              <div
+                key={location}
+                className="rounded-2xl border border-white/10 bg-white/[0.04] p-7"
+              >
+                <p className="text-sm font-semibold uppercase tracking-wider text-blue-300">
+                  {location}
+                </p>
+                <h3 className="mt-3 text-xl font-bold text-white">
+                  {category}
+                </h3>
+                <p className="mt-4 text-sm leading-6 text-slate-400">
+                  Verified project details, equipment scope and service
+                  information will be added during the final content phase.
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

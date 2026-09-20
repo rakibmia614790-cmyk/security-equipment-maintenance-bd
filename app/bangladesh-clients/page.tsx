@@ -1,7 +1,7 @@
 const clientGroups = [
   {
     title: "Government & National Institutions",
-    items: [
+    clients: [
       "Office of the Prime Minister",
       "Office of the President",
       "Cabinet Division",
@@ -14,7 +14,7 @@ const clientGroups = [
   },
   {
     title: "Defence & Intelligence",
-    items: [
+    clients: [
       "Bangladesh Army",
       "Bangladesh Navy",
       "Bangladesh Air Force",
@@ -27,7 +27,7 @@ const clientGroups = [
   },
   {
     title: "Aviation & Critical Infrastructure",
-    items: [
+    clients: [
       "Civil Aviation Authority of Bangladesh (CAAB)",
       "Government Airports & Aviation Facilities",
       "Ports & Critical Infrastructure",
@@ -36,7 +36,7 @@ const clientGroups = [
   },
   {
     title: "Judicial & Public Facilities",
-    items: [
+    clients: [
       "Supreme Court of Bangladesh",
       "High Court Division",
       "Appellate Division",
@@ -46,7 +46,7 @@ const clientGroups = [
   },
   {
     title: "Education, Research & Healthcare",
-    items: [
+    clients: [
       "Government Educational Institutions",
       "Research & Technical Institutions",
       "Public Healthcare Facilities",
@@ -66,14 +66,14 @@ export default function BangladeshClientsPage() {
             SecureTech BD
           </p>
 
-          <h1 className="mt-5 max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
+          <h1 className="mt-5 text-4xl font-bold tracking-tight md:text-6xl">
             Bangladesh Clients
           </h1>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-            Security equipment, technical services and engineering support
-            across government, defence, aviation, judicial and critical
-            infrastructure environments in Bangladesh.
+            Government, defence, aviation, judicial and critical-infrastructure
+            sectors supported through security-equipment and technical
+            capabilities.
           </p>
         </div>
       </section>
@@ -83,101 +83,82 @@ export default function BangladeshClientsPage() {
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">
             Client Portfolio
           </p>
+
           <h2 className="mt-3 text-3xl font-bold md:text-4xl">
-            Government & Institutional Sectors
+            Organisations & Sectors
           </h2>
+
           <p className="mt-4 max-w-3xl leading-7 text-slate-400">
-            Our experience encompasses security screening, detection,
-            inspection, access control and related security technologies.
+            A structured presentation of organisations and sectors associated
+            with our Bangladesh security-equipment experience.
           </p>
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-2">
-          {clientGroups.map((group, index) => (
-            <article
-              key={group.title}
-              className="rounded-3xl border border-white/10 bg-white/[0.04] p-7 shadow-2xl backdrop-blur-sm transition hover:border-cyan-300/30 hover:bg-white/[0.06] md:p-8"
-            >
-              <div className="flex items-center gap-4">
-                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl border border-cyan-300/20 bg-cyan-300/10 text-lg font-bold text-cyan-300">
-                  {String(index + 1).padStart(2, "0")}
-                </div>
+        <div className="space-y-14">
+          {clientGroups.map((group, groupIndex) => (
+            <section key={group.title}>
+              <div className="mb-7 flex items-center gap-4">
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-cyan-300/20 bg-cyan-300/10 text-sm font-bold text-cyan-300">
+                  {String(groupIndex + 1).padStart(2, "0")}
+                </span>
 
-                <h3 className="text-xl font-bold md:text-2xl">
-                  {group.title}
-                </h3>
+                <h3 className="text-2xl font-bold">{group.title}</h3>
               </div>
 
-              <div className="mt-7 grid gap-3">
-                {group.items.map((item) => (
-                  <div
-                    key={item}
-                    className="flex items-start gap-4 rounded-xl border border-white/5 bg-black/20 px-4 py-4"
+              <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                {group.clients.map((client, index) => (
+                  <article
+                    key={client}
+                    className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.045] p-5 shadow-xl backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-cyan-300/30 hover:bg-white/[0.07]"
                   >
-                    <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-cyan-300" />
-                    <span className="text-sm leading-6 text-slate-300 md:text-base">
-                      {item}
-                    </span>
-                  </div>
+                    <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-cyan-300/0 via-cyan-300/50 to-cyan-300/0 opacity-0 transition group-hover:opacity-100" />
+
+                    <div className="flex h-28 items-center justify-center rounded-xl border border-white/10 bg-slate-900/70">
+                      <div className="text-center">
+                        <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-cyan-300/20 bg-cyan-300/10 text-xs font-bold text-cyan-300">
+                          LOGO
+                        </div>
+                        <p className="mt-2 text-[10px] uppercase tracking-widest text-slate-500">
+                          Official Logo
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="mt-5 flex items-start gap-3">
+                      <span className="mt-1 text-xs font-bold text-cyan-300">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+
+                      <h4 className="text-sm font-semibold leading-6 text-slate-200">
+                        {client}
+                      </h4>
+                    </div>
+                  </article>
                 ))}
               </div>
-            </article>
+            </section>
           ))}
         </div>
       </section>
 
       <section className="border-y border-white/10 bg-white/[0.03]">
         <div className="mx-auto max-w-7xl px-6 py-16 md:px-10">
-          <div className="grid gap-6 md:grid-cols-3">
-            <div className="rounded-2xl border border-white/10 bg-slate-950/50 p-7">
-              <p className="text-sm font-bold uppercase tracking-widest text-cyan-300">
-                Defence
-              </p>
-              <p className="mt-3 text-slate-400">
-                Screening and detection technologies for high-security
-                environments.
-              </p>
-            </div>
+          <div className="rounded-3xl border border-cyan-300/15 bg-gradient-to-br from-cyan-300/10 via-white/[0.03] to-transparent p-8 md:p-12">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">
+              Security Technology
+            </p>
 
-            <div className="rounded-2xl border border-white/10 bg-slate-950/50 p-7">
-              <p className="text-sm font-bold uppercase tracking-widest text-cyan-300">
-                Aviation
-              </p>
-              <p className="mt-3 text-slate-400">
-                Security screening and inspection support for aviation
-                environments.
-              </p>
-            </div>
+            <h2 className="mt-3 max-w-3xl text-3xl font-bold md:text-4xl">
+              Professional Security Equipment & Technical Support
+            </h2>
 
-            <div className="rounded-2xl border border-white/10 bg-slate-950/50 p-7">
-              <p className="text-sm font-bold uppercase tracking-widest text-cyan-300">
-                Critical Infrastructure
-              </p>
-              <p className="mt-3 text-slate-400">
-                Security technology support for important public facilities
-                and infrastructure.
-              </p>
-            </div>
+            <p className="mt-5 max-w-3xl leading-7 text-slate-400">
+              Our capabilities cover security screening, detection,
+              inspection, access control and related security technologies,
+              supported by installation, commissioning, maintenance and
+              technical assistance.
+            </p>
           </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:py-20">
-        <div className="rounded-3xl border border-cyan-300/15 bg-gradient-to-br from-cyan-300/10 via-white/[0.03] to-transparent p-8 md:p-12">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">
-            SecureTech Equipment
-          </p>
-
-          <h2 className="mt-3 max-w-3xl text-3xl font-bold md:text-4xl">
-            Trusted Technical Capability for Security-Critical Operations
-          </h2>
-
-          <p className="mt-5 max-w-3xl leading-7 text-slate-400">
-            From screening and detection equipment to integrated security
-            systems, our technical capability is built around installation,
-            commissioning, maintenance, troubleshooting and operational
-            support.
-          </p>
         </div>
       </section>
     </main>

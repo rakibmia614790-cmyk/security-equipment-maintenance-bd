@@ -1,208 +1,138 @@
-export const metadata = {
-  title: "About Us | SECURETECH BD",
-  description:
-    "Learn about SECURETECH BD and our security equipment supply, installation, repair, maintenance and technical support services across Bangladesh.",
-};
+export default function AboutUsPage() {
+  const capabilities = [
+    "Security Screening Systems",
+    "Installation & Commissioning",
+    "Preventive & Corrective Maintenance",
+    "Repair & Troubleshooting",
+    "Calibration & Technical Support",
+    "Spare Parts & Equipment Support",
+    "AMC & Field Service",
+    "Technical Training & Knowledge Transfer",
+  ];
 
-const capabilities = [
-  "Security Equipment Supply",
-  "Installation & Commissioning",
-  "Repair & Corrective Maintenance",
-  "Preventive Maintenance & AMC",
-  "Spare Parts & Technical Support",
-  "Security System Technical Support",
-];
+  const leadership = [
+    ["01", "Chairman", "Strategic Leadership & Corporate Direction"],
+    ["02", "Director", "Business Development & Operations"],
+    ["03", "Chief Executive Officer", "Executive Management & Client Relations"],
+  ];
 
-const systems = [
-  "Baggage Scanner",
-  "Walk Through Metal Detector",
-  "Hand-Held Metal Detector",
-  "Explosive Trace Detection",
-  "CCTV System",
-  "Access Control System",
-  "Road Barrier & Road Blocker",
-  "Car Parking Management",
-  "Bollard",
-  "Gate / Flap Barrier",
-  "ANPR",
-];
-
-export default function AboutUs() {
   return (
-    <main className="security-page-bg min-h-screen text-white">
-      
-
-      <section className="relative z-10 mx-auto max-w-7xl px-5 pb-20 pt-20 lg:px-8">
-        <div className="max-w-4xl">
-          <div className="text-[10px] font-bold tracking-[0.35em] text-cyan-300">
-            COMPANY / ABOUT US
-          </div>
-
-          <h1 className="mt-4 text-5xl font-black tracking-[-0.04em] sm:text-6xl lg:text-8xl">
-            SECURITY
-            <span className="block text-cyan-300">ENGINEERING.</span>
+    <main className="min-h-screen bg-slate-950 text-white">
+      <section className="border-b border-white/10 bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950/40">
+        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-300">
+            SecureTech BD
+          </p>
+          <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+            About Us
           </h1>
-
-          <p className="mt-8 max-w-3xl text-base leading-8 text-white/55 sm:text-lg">
-            SECURETECH BD provides professional security
-            equipment supply, installation, repair, maintenance and technical
-            support solutions for organizations across Bangladesh.
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+            Professional security equipment engineering, technical services
+            and lifecycle support for demanding security environments.
           </p>
         </div>
       </section>
 
-      <section className="relative z-10 border-y border-white/10 bg-black/20">
-        <div className="mx-auto grid max-w-7xl gap-10 px-5 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
+      <section className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+        <div className="grid gap-12 lg:grid-cols-2">
           <div>
-            <div className="text-[10px] font-bold tracking-[0.35em] text-cyan-300">
-              OUR APPROACH
-            </div>
-
-            <h2 className="mt-3 text-3xl font-black sm:text-4xl">
-              TECHNOLOGY. PRECISION. RELIABILITY.
-            </h2>
-
-            <p className="mt-6 text-sm leading-7 text-white/45">
-              Our approach is focused on keeping critical security systems
-              operational, reliable and properly maintained. From initial
-              technical assessment to repair, testing and preventive
-              maintenance, we focus on practical engineering solutions.
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-300">
+              Company Profile
             </p>
-
-            <p className="mt-5 text-sm leading-7 text-white/45">
-              We support organizations with technical assistance for security
-              screening, detection, surveillance, access control and vehicle
-              security systems.
+            <h2 className="mt-3 text-3xl font-bold">
+              Security Technology & Engineering
+            </h2>
+            <p className="mt-6 leading-8 text-slate-400">
+              SecureTech BD focuses on security screening equipment,
+              installation, commissioning, maintenance, repair, calibration,
+              spare parts and technical support.
+            </p>
+            <p className="mt-5 leading-8 text-slate-400">
+              Our approach combines field engineering, equipment knowledge and
+              practical technical support to help organizations maintain
+              reliable security operations throughout the equipment lifecycle.
             </p>
           </div>
 
-          <div className="grid gap-3 sm:grid-cols-2">
-            {capabilities.map((item, index) => (
+          <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-300">
+              Our Approach
+            </p>
+            <div className="mt-6 space-y-5">
+              {[
+                ["Reliability", "Focus on dependable equipment performance."],
+                ["Technical Excellence", "Structured engineering and field support."],
+                ["Lifecycle Support", "Support from installation through maintenance."],
+                ["Professional Service", "Clear, responsive and project-focused execution."],
+              ].map(([title, text]) => (
+                <div key={title} className="border-b border-white/10 pb-5 last:border-0">
+                  <h3 className="font-semibold">{title}</h3>
+                  <p className="mt-1 text-sm text-slate-400">{text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-white/10 bg-white/[0.03]">
+        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-300">
+            Leadership
+          </p>
+          <h2 className="mt-3 text-3xl font-bold">Management</h2>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {leadership.map(([number, title, text]) => (
               <div
-                key={item}
-                className="rounded-xl border border-white/10 bg-white/[0.025] p-5"
+                key={number}
+                className="rounded-2xl border border-white/10 bg-slate-950/60 p-7"
               >
-                <div className="text-xl font-black text-cyan-300/60">
-                  0{index + 1}
-                </div>
-                <div className="mt-5 text-xs font-bold tracking-[0.12em] text-white/70">
-                  {item}
-                </div>
+                <span className="text-sm font-bold text-blue-300">{number}</span>
+                <h3 className="mt-5 text-xl font-bold">{title}</h3>
+                <p className="mt-3 text-sm leading-6 text-slate-400">{text}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="relative z-10 mx-auto max-w-7xl px-5 py-20 lg:px-8">
-        <div className="text-[10px] font-bold tracking-[0.35em] text-cyan-300">
-          SYSTEM CAPABILITY
-        </div>
+      <section className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-300">
+          Core Capabilities
+        </p>
+        <h2 className="mt-3 text-3xl font-bold">What We Do</h2>
 
-        <h2 className="mt-3 text-3xl font-black sm:text-4xl">
-          SECURITY SYSTEMS WE SUPPORT
-        </h2>
-
-        <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {systems.map((system, index) => (
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {capabilities.map((item, index) => (
             <div
-              key={system}
-              className="flex items-center gap-4 rounded-xl border border-white/10 bg-white/[0.025] px-5 py-4"
+              key={item}
+              className="rounded-2xl border border-white/10 bg-white/[0.04] p-6"
             >
-              <span className="text-[10px] font-black text-cyan-300">
+              <span className="text-xs font-bold text-blue-300">
                 {String(index + 1).padStart(2, "0")}
               </span>
-              <span className="text-sm font-semibold text-white/65">
-                {system}
-              </span>
+              <h3 className="mt-4 font-semibold leading-6">{item}</h3>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="relative z-10 border-y border-white/10 bg-black/20">
-        <div className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
-          <div className="grid gap-10 lg:grid-cols-2">
-            <div>
-              <div className="text-[10px] font-bold tracking-[0.35em] text-cyan-300">
-                LEADERSHIP & MANAGEMENT
-              </div>
-
-              <h2 className="mt-3 text-3xl font-black sm:text-4xl">
-                PEOPLE BEHIND THE SERVICE
-              </h2>
-
-              <p className="mt-6 text-sm leading-7 text-white/45">
-                Our management and technical teams coordinate service
-                requirements, field engineering, installation, maintenance and
-                customer support with a focus on professional execution.
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-cyan-300/10 bg-cyan-300/[0.025] p-7">
-              <div className="text-[9px] tracking-[0.3em] text-cyan-300">
-                ENGINEERING PRINCIPLES
-              </div>
-
-              <div className="mt-6 grid gap-3 sm:grid-cols-2">
-                {[
-                  "Professional Service",
-                  "Technical Accuracy",
-                  "System Reliability",
-                  "Customer Support",
-                ].map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-lg border border-white/10 bg-black/20 px-4 py-3 text-xs font-semibold text-white/60"
-                  >
-                    {item}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="relative z-10 mx-auto max-w-7xl px-5 py-20 lg:px-8">
-        <div className="rounded-3xl border border-cyan-300/15 bg-cyan-300/[0.035] p-8 text-center sm:p-12">
-          <div className="text-[10px] font-bold tracking-[0.35em] text-cyan-300">
-            NEED TECHNICAL SUPPORT?
-          </div>
-
-          <h2 className="mt-4 text-3xl font-black sm:text-5xl">
-            LET&apos;S SECURE YOUR SYSTEM.
-          </h2>
-
-          <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-white/45">
-            Contact our team for security equipment supply, repair,
-            maintenance, installation or technical support.
+      <section className="border-t border-white/10 bg-gradient-to-r from-blue-950/30 to-slate-950">
+        <div className="mx-auto max-w-4xl px-6 py-20 text-center lg:px-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-300">
+            Our Vision
           </p>
-
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <a
-              href="/#request"
-              className="rounded-xl bg-cyan-300 px-6 py-3 text-sm font-black tracking-wider text-[#020611] transition hover:bg-cyan-200"
-            >
-              REQUEST SERVICE
-            </a>
-
-            <a
-              href="tel:+8801799419011"
-              className="rounded-xl border border-white/15 bg-white/5 px-6 py-3 text-sm font-bold tracking-wider text-white transition hover:border-cyan-300/40"
-            >
-              CALL US
-            </a>
-          </div>
+          <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
+            Building dependable security technology support
+          </h2>
+          <p className="mt-5 leading-8 text-slate-400">
+            To develop a trusted professional platform for security equipment
+            supply, engineering, maintenance and technical support across
+            Bangladesh and international markets.
+          </p>
         </div>
       </section>
-
-      <footer className="relative z-10 border-t border-white/10 bg-[#01040a]">
-        <div className="mx-auto flex max-w-7xl justify-between gap-4 px-5 py-8 text-[9px] tracking-[0.18em] text-white/30 lg:px-8">
-          <div>SECURETECH BD</div>
-          <div>© 2026 ALL RIGHTS RESERVED</div>
-        </div>
-      </footer>
     </main>
   );
 }
