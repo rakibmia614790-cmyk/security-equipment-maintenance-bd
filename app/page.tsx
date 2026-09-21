@@ -286,10 +286,10 @@ export default function Home() {
         className="group relative min-h-[330px] overflow-hidden rounded-2xl border border-slate-700/70 bg-slate-950/90 p-6 shadow-[0_12px_35px_rgba(0,0,0,0.3)] backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-cyan-400/60 hover:shadow-[0_20px_45px_rgba(0,0,0,0.45),0_0_30px_rgba(34,211,238,0.12)]"
       >
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.30] grayscale transition-all duration-700 group-hover:scale-105 group-hover:opacity-[0.42]"
+          className="absolute inset-0 pointer-events-none bg-cover bg-center bg-no-repeat opacity-[0.30] grayscale transition-all duration-700 group-hover:scale-105 group-hover:opacity-[0.42]"
           style={{ backgroundImage: `url("${image}")` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/35 via-slate-950/65 to-slate-950/90" />
+        <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-slate-950/35 via-slate-950/65 to-slate-950/90" />
         <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-400/70 to-transparent opacity-70" />
 
         <div className="relative z-10 flex h-full flex-col">
