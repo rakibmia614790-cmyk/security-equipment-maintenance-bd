@@ -307,7 +307,7 @@ export default function Home() {
 
           <a
             href={href}
-            className="mt-auto inline-flex w-fit rounded-lg border border-cyan-400/50 bg-slate-950/65 px-4 py-2 text-xs font-bold tracking-[0.16em] text-cyan-300 backdrop-blur-sm transition-all duration-300 hover:border-cyan-200 hover:bg-cyan-950/80 hover:text-white"
+            className="mt-auto inline-flex w-fit rounded-lg border border-cyan-400/50 bg-slate-950/65 px-4 py-2 text-xs font-bold tracking-[0.16em] text-cyan-300 backdrop-blur-sm transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 hover:border-cyan-200 hover:bg-cyan-950/80 hover:text-white"
           >
             VIEW DETAILS
           </a>

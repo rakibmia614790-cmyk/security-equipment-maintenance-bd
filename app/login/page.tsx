@@ -20,7 +20,7 @@ export default function LoginPage() {
         <div className="mt-10">
           <Link
             href="/partner-login"
-            className="inline-flex items-center justify-center rounded-xl bg-cyan-500 px-7 py-3.5 font-semibold text-slate-950 shadow-[0_8px_30px_rgba(6,182,212,0.22)] transition-all duration-300 hover:bg-cyan-400 hover:shadow-[0_12px_38px_rgba(6,182,212,0.34)]"
+            className="inline-flex items-center justify-center rounded-xl bg-cyan-500 px-7 py-3.5 font-semibold text-slate-950 shadow-[0_8px_30px_rgba(6,182,212,0.22)] transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 hover:bg-cyan-400 hover:shadow-[0_12px_38px_rgba(6,182,212,0.34)]"
           >
             Continue to Login
           </Link>
