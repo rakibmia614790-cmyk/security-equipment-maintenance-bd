@@ -1,0 +1,216 @@
+import EquipmentBrandLogos from "../EquipmentBrandLogos";
+
+const walkieTalkieBrands = [
+  "Motorola Solutions",
+  "Hytera",
+  "Kenwood",
+  "Icom",
+  "Tait",
+];
+const manufacturers = [
+  ["Motorola Solutions", ""],
+  ["Hytera", ""],
+  ["Kenwood", ""],
+  ["Icom", ""],
+  ["Sepura", ""],
+  ["Tait Communications", ""],
+  ["JVCKENWOOD", ""],
+  ["Vertex Standard", ""],
+  ["Yaesu", ""],
+  ["Uniden", ""],
+  ["Midland", ""],
+  ["Baofeng", ""],
+  ["RugGear", ""],
+  ["Entel", ""],
+  ["Simoco", ""],
+  ["Codan", ""],
+  ["Zebra Technologies", ""],
+  ["Honeywell", ""],
+  ["Rohde & Schwarz", ""],
+  ["Thales", ""],
+];
+
+export default function WalkieTalkiePage() {
+  return (
+    <main className="min-h-screen bg-[#06111f] text-white">
+      <section className="relative overflow-hidden border-b border-white/10">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(14,165,233,0.18),transparent_40%),radial-gradient(circle_at_bottom_left,rgba(37,99,235,0.12),transparent_40%)]" />
+        <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-sky-400">
+            Professional Communication Systems
+          </p>
+          <h1 className="max-w-4xl text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+            Walkie-Talkie & Two-Way Radio
+          </h1>
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+            Reliable two-way radio communication solutions for security teams,
+            airports, industrial facilities, emergency operations and large
+            organizations.
+          </p>
+          <div className="mt-10 flex flex-wrap gap-4">
+            <a
+              href="/service-request"
+              className="rounded-xl bg-sky-500 px-6 py-3 font-semibold transition hover:bg-sky-400"
+            >
+              Service Request
+            </a>
+            <a
+              href="/contact"
+              className="rounded-xl border border-white/15 bg-white/5 px-6 py-3 font-semibold transition hover:bg-white/10"
+            >
+              Contact Our Team
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+        <div className="grid gap-10 lg:grid-cols-2">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
+              System Overview
+            </p>
+            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+              Mission-Critical Communication
+            </h2>
+          </div>
+          <p className="text-lg leading-8 text-slate-300">
+            Professional two-way radio systems support fast, dependable
+            communication between security personnel, technical teams,
+            operations staff and emergency-response teams.
+          </p>
+        </div>
+
+        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {[
+            ["Two-Way Communication", "Fast and reliable team communication."],
+            ["Digital Radio", "Modern digital communication capabilities."],
+            ["Wide-Area Coverage", "Solutions for large operational environments."],
+            ["Emergency Operations", "Communication support for critical situations."],
+          ].map(([title, text]) => (
+            <div
+              key={title}
+              className="rounded-2xl border border-white/10 bg-white/[0.045] p-7"
+            >
+              <h3 className="text-lg font-bold">{title}</h3>
+              <p className="mt-3 text-sm leading-6 text-slate-400">{text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="border-y border-white/10 bg-white/[0.02]">
+        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
+            Applications
+          </p>
+          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+            Professional Communication Applications
+          </h2>
+
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              "Airports & Aviation Facilities",
+              "Security & Guarding Operations",
+              "Industrial & Manufacturing Sites",
+              "Government & Critical Infrastructure",
+              "Construction & Large Projects",
+              "Emergency & Event Operations",
+            ].map((item) => (
+              <div
+                key={item}
+                className="rounded-xl border border-white/10 bg-[#0a1728] px-6 py-5 text-slate-200"
+              >
+                {item}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
+          Manufacturer Ecosystem
+        </p>
+        <h2 className="mt-3 max-w-3xl text-3xl font-bold sm:text-4xl">
+          Two-Way Radio Technology
+        </h2>
+        <p className="mt-5 max-w-3xl leading-7 text-slate-400">
+          Our technical coverage is structured around a broad ecosystem of
+          professional radio communication technologies and manufacturers.
+        </p>
+
+        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+          {manufacturers.map(([name, logo]) => (
+            <div
+              key={name}
+              className="flex min-h-36 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.045] p-6 text-center shadow-[0_8px_30px_rgba(0,0,0,0.18)] transition duration-300 hover:-translate-y-1 hover:border-sky-400/40 hover:bg-white/[0.07]"
+            >
+              {logo ? (
+                <img
+                  src={logo}
+                  alt={name}
+                  className="max-h-12 max-w-full object-contain"
+                />
+              ) : (
+                <span className="text-base font-semibold text-slate-200">
+                  {name}
+                </span>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="border-y border-white/10 bg-white/[0.02]">
+        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
+            Technical Services
+          </p>
+
+          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {[
+              "Installation & Commissioning",
+              "Preventive Maintenance",
+              "Corrective Repair",
+              "Radio Programming & Configuration",
+              "Battery & Accessory Support",
+              "System Diagnostics & Technical Support",
+            ].map((service) => (
+              <div
+                key={service}
+                className="rounded-2xl border border-white/10 bg-[#0a1728] p-7"
+              >
+                <h3 className="font-bold">{service}</h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-5xl px-6 py-24 text-center lg:px-8">
+        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
+          SecureTech Equipment
+        </p>
+        <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
+          Need Two-Way Radio Support?
+        </h2>
+        <p className="mx-auto mt-5 max-w-2xl leading-7 text-slate-400">
+          Contact our technical team for installation, maintenance,
+          troubleshooting, repair, configuration and communication-system
+          support.
+        </p>
+        <a
+          href="/service-request"
+          className="mt-9 inline-flex rounded-xl bg-sky-500 px-7 py-3.5 font-semibold transition hover:bg-sky-400"
+        >
+          Submit Service Request
+        </a>
+      </section>
+    
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-8">
+        <EquipmentBrandLogos brands={walkieTalkieBrands} />
+      </div>
+</main>
+  );
+}

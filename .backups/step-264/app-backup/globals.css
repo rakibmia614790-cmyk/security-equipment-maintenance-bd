@@ -1,0 +1,263 @@
+@import "tailwindcss";
+
+:root {
+  --background: #05070b;
+  --foreground: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.3);
+  color: white;
+}
+
+.scan-line {
+  animation: scan 3s linear infinite;
+}
+
+@keyframes scan {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(500%);
+    opacity: 0;
+  }
+}
+
+.float {
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}:root {
+  --tech-cyan: rgba(55, 220, 255, 0.16);
+  --tech-blue: rgba(70, 110, 255, 0.12);
+  --tech-line: rgba(120, 210, 255, 0.055);
+}
+
+.security-page-bg {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 18% 12%, var(--tech-cyan), transparent 24%),
+    radial-gradient(circle at 82% 22%, var(--tech-blue), transparent 28%),
+    radial-gradient(circle at 50% 100%, rgba(0, 170, 255, 0.07), transparent 35%),
+    linear-gradient(135deg, #01030a 0%, #061225 48%, #02050d 100%);
+}
+
+.security-page-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(var(--tech-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--tech-line) 1px, transparent 1px);
+  background-size: 52px 52px;
+  mask-image: linear-gradient(to bottom, black 0%, black 65%, transparent 100%);
+}
+
+.security-page-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 50% 35%, transparent 0 18%, rgba(80, 220, 255, 0.025) 18.2%, transparent 18.6%),
+    radial-gradient(circle at 50% 35%, transparent 0 32%, rgba(80, 220, 255, 0.018) 32.2%, transparent 32.5%);
+}
+
+.security-page-bg > * {
+  position: relative;
+  z-index: 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .security-page-bg::before,
+  .security-page-bg::after {
+    animation: none;
+  }
+}
+
+.security-page-bg {
+  isolation: isolate;
+}
+
+.security-page-bg::after {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(0, 220, 255, 0.08), transparent 22%),
+    radial-gradient(circle at 88% 28%, rgba(60, 90, 255, 0.07), transparent 24%),
+    radial-gradient(circle at 50% 90%, rgba(0, 180, 255, 0.05), transparent 30%);
+}
+
+.security-page-bg::before {
+  background-image:
+    linear-gradient(rgba(100, 210, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(100, 210, 255, 0.045) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+/* FINAL MOBILE HEADER FIX */
+
+
+@media (max-width: 767px) {
+  header {
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+  }
+
+  header > div {
+    flex-wrap: wrap !important;
+    height: auto !important;
+    min-height: 0 !important;
+    gap: 12px !important;
+  }
+
+  header nav {
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    overflow-x: auto !important;
+    overflow-y: visible !important;
+  }
+
+  header nav > div,
+  header nav > ul {
+    flex-wrap: wrap !important;
+    height: auto !important;
+    max-width: 100% !important;
+  }
+
+  header nav a {
+    white-space: nowrap !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-nav-fix {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+    width: 100% !important;
+    height: auto !important;
+    position: relative !important;
+  }
+
+  .mobile-nav-fix a,
+  .mobile-nav-fix button {
+    display: block !important;
+    width: 100% !important;
+    white-space: normal !important;
+  }
+}
+
+/* SecureTech Responsive Foundation */
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 1279px) {
+  .mx-auto {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1023px) {
+  main {
+    width: 100%;
+  }
+
+  section {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    min-width: 0;
+  }
+
+  main {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  section {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  h2,
+  h3,
+  p {
+    overflow-wrap: break-word;
+  }
+}
+
+@media (max-width: 767px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+  }
+
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
