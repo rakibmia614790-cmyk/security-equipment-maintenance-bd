@@ -1,5 +1,13 @@
 import EquipmentBrandLogos from "../EquipmentBrandLogos";
 
+const hhmdBrands = [
+  "Garrett",
+  "CEIA",
+  "Smiths Detection",
+  "Rapiscan Systems",
+  "Nuctech",
+];
+
 const wtmdBrands = [
   "CEIA",
   "Garrett",
@@ -209,6 +217,10 @@ export default function HandHeldMetalDetectorPage() {
     
       <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-8">
         <EquipmentBrandLogos brands={wtmdBrands} />
+      </div>
+
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-8">
+        <EquipmentBrandLogos brands={hhmdBrands} />
       </div>
 </main>
   );
