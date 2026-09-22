@@ -1,3 +1,15 @@
+import EquipmentBrandLogos from "../EquipmentBrandLogos";
+
+const baggageScannerBrands = [
+  "Smiths Detection",
+  "Rapiscan Systems",
+  "Nuctech",
+  "L3Harris",
+  "Analogic",
+  "Astrophysics",
+  "Gilardoni",
+  "Scanna MSC",
+];
 const manufacturers = [
   ["Smiths Detection", ""],
   ["Rapiscan Systems", ""],
@@ -169,6 +181,9 @@ export default function HumanBodyScannerPage() {
           Submit Service Request
         </a>
       </section>
-    </main>
+    
+
+      <EquipmentBrandLogos brands={baggageScannerBrands} />
+</main>
   );
 }
