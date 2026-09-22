@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360">
+  <rect width="800" height="360" fill="#071421"/>
+  <g fill="none" stroke="#38bdf8" stroke-opacity=".18">
+    <path d="M0 60h800M0 120h800M0 180h800M0 240h800M0 300h800"/>
+    <path d="M80 0v360M160 0v360M240 0v360M320 0v360M400 0v360M480 0v360M560 0v360M640 0v360M720 0v360"/>
+  </g>
+  <rect x="90" y="70" width="620" height="220" rx="12" fill="#0b2030" stroke="#38bdf8" stroke-opacity=".35"/>
+  <rect x="145" y="105" width="510" height="150" rx="8" fill="#020b12"/>
+  <path d="M185 220c45-75 75-70 115-20s70 50 105-20 65-75 105-5 70 45 105-15" fill="none" stroke="#67e8f9" stroke-width="7" stroke-opacity=".7"/>
+  <path d="M205 185c35-35 70-35 105 0s70 35 105 0 70-35 105 0 70 35 105 0" fill="none" stroke="#facc15" stroke-width="4" stroke-opacity=".45"/>
+  <rect x="390" y="78" width="5" height="204" fill="#38bdf8" opacity=".8"/>
+  <circle cx="680" cy="48" r="5" fill="#22d3ee"/>
+  <text x="110" y="330" fill="#67e8f9" font-family="Arial,sans-serif" font-size="18" letter-spacing="4">HIGH-ENERGY X-RAY</text>
+</svg>
