@@ -1,3 +1,11 @@
+import EquipmentBrandLogos from "../EquipmentBrandLogos";
+
+const roadBlockerBrands = [
+  "FAAC",
+  "CAME",
+  "BFT",
+  "Magnetic Autocontrol",
+];
 const manufacturers = [
   ["FAAC", ""],
   ["Nice", ""],
@@ -150,6 +158,10 @@ export default function RoadBlockerPage() {
           Submit Service Request
         </a>
       </section>
-    </main>
+    
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-8">
+        <EquipmentBrandLogos brands={roadBlockerBrands} />
+      </div>
+</main>
   );
 }
