@@ -1,16 +1,19 @@
 const manufacturers = [
   "CEIA",
   "Garrett Metal Detectors",
-  "Rapiscan Systems",
-  "Metor",
-  "AutoClear",
-  "Vallon",
-  "Ranger Security Detectors",
-  "View Systems",
-  "Westminster International",
+  "Rapiscan Systems — Metor",
   "ZKTeco",
   "Dahua Technology",
-  "Hikvision",
+  "Securina Detection System",
+  "PEACENTURY",
+  "Shenzhen Security Electronic Equipment",
+  "Smart Check Security Equipment",
+  "Aoyodi Electronic",
+  "CETC",
+  "Dongguan Viking Technology",
+  "Safeway Inspection System",
+  "Juzheng",
+  "Mama Security",
 ];
 
 export default function WTMDManufacturerIdentityGrid() {
