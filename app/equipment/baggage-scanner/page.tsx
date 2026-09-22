@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import ManufacturerIdentityGrid from "@/app/components/ManufacturerIdentityGrid";
 const manufacturers = [
   ["Smiths Detection", ""],
   ["Rapiscan Systems", ""],
@@ -191,20 +192,7 @@ export default function BaggageScannerPage() {
           </p>
         </div>
 
-        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-          {manufacturers.map(([name, logo]) => (
-            <div
-              key={name}
-              className="flex min-h-32 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.045] p-7 transition hover:border-sky-400/40 hover:bg-white/[0.07]"
-            >
-              <img
-                src={logo}
-                alt={name}
-                className="max-h-16 w-full object-contain"
-              />
-            </div>
-          ))}
-        </div>
+        <ManufacturerIdentityGrid />
       </section>
 
       {/* Services */}
