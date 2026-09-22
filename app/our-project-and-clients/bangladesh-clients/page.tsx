@@ -84,11 +84,24 @@ export default function BangladeshClientsPage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
+        <div className="mb-12 max-w-3xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-400">
+            Selected Sectors & Organizations
+          </p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+            Bangladesh Security & Infrastructure Experience
+          </h2>
+          <p className="mt-4 text-base leading-7 text-slate-400">
+            A structured overview of public-sector, security, defence,
+            aviation and critical-infrastructure sectors associated with our
+            professional security-equipment activities.
+          </p>
+        </div>
         <div className="grid gap-8 md:grid-cols-2">
           {clientGroups.map((group) => (
             <article
               key={group.title}
-              className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 shadow-2xl shadow-black/20 backdrop-blur-sm transition hover:border-sky-400/30 hover:bg-white/[0.05]"
+              className="group rounded-2xl border border-white/10 bg-white/[0.03] p-7 shadow-2xl shadow-black/20 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-sky-400/30 hover:bg-white/[0.05]"
             >
               <div className="mb-6 h-1 w-14 rounded-full bg-sky-400" />
 
