@@ -1,3 +1,11 @@
+import EquipmentBrandLogos from "../EquipmentBrandLogos";
+
+const bollardBrands = [
+  "FAAC",
+  "CAME",
+  "BFT",
+  "Pilomat",
+];
 const manufacturers = [
   ["FAAC", ""],
   ["CAME", ""],
@@ -150,6 +158,10 @@ export default function BollardPage() {
           Submit Service Request
         </a>
       </section>
-    </main>
+    
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-8">
+        <EquipmentBrandLogos brands={bollardBrands} />
+      </div>
+</main>
   );
 }
