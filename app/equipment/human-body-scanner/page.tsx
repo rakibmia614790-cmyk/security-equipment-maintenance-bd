@@ -1,4 +1,5 @@
 import EquipmentBrandLogos from "../EquipmentBrandLogos";
+import ManufacturerIdentityGrid from "@/app/components/ManufacturerIdentityGrid";
 
 const humanBodyScannerBrands = [
   "Rohde & Schwarz",
@@ -124,6 +125,8 @@ export default function HumanBodyScannerPage() {
         <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
           Manufacturer Ecosystem
         </p>
+<ManufacturerIdentityGrid />
+
         <h2 className="mt-3 max-w-3xl text-3xl font-bold sm:text-4xl">
           Personnel Screening Technology
         </h2>
@@ -139,58 +142,7 @@ export default function HumanBodyScannerPage() {
               className="flex min-h-36 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.045] p-6 text-center shadow-[0_8px_30px_rgba(0,0,0,0.18)] transition duration-300 hover:-translate-y-1 hover:border-sky-400/40 hover:bg-white/[0.07]"
             >
               {logo ? (
-                <img src={logo} alt={name} className="max-h-12 max-w-full object-contain" />
-              ) : (
-                <span className="text-lg font-semibold tracking-tight text-slate-100">{name}</span>
-              )}
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="border-y border-white/10 bg-white/[0.02]">
-        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
-            Technical Services
-          </p>
-          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {[
-              "Installation & Commissioning",
-              "Preventive Maintenance",
-              "Corrective Repair",
-              "System Diagnostics",
-              "Calibration & Performance Checks",
-              "Spare Parts & Technical Support",
-            ].map((service) => (
-              <div key={service} className="rounded-2xl border border-white/10 bg-[#0a1728] p-7">
-                <h3 className="font-bold">{service}</h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-5xl px-6 py-24 text-center lg:px-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
-          SecureTech Equipment
-        </p>
-        <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
-          Need Human Body Scanner Support?
-        </h2>
-        <p className="mx-auto mt-5 max-w-2xl leading-7 text-slate-400">
-          Contact our technical team for installation, maintenance,
-          troubleshooting, repair and security-screening system support.
-        </p>
-        <a
-          href="/service-request"
-          className="mt-9 inline-flex rounded-xl bg-sky-500 px-7 py-3.5 font-semibold transition hover:bg-sky-400"
-        >
-          Submit Service Request
-        </a>
-      </section>
-    
-
-      <EquipmentBrandLogos brands={baggageScannerBrands} />
+                
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-8">
         <EquipmentBrandLogos brands={humanBodyScannerBrands} />
