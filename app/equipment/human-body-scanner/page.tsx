@@ -1,5 +1,12 @@
 import EquipmentBrandLogos from "../EquipmentBrandLogos";
 
+const humanBodyScannerBrands = [
+  "Rohde & Schwarz",
+  "Nuctech",
+  "Smiths Detection",
+  "L3Harris",
+];
+
 const baggageScannerBrands = [
   "Smiths Detection",
   "Rapiscan Systems",
@@ -184,6 +191,10 @@ export default function HumanBodyScannerPage() {
     
 
       <EquipmentBrandLogos brands={baggageScannerBrands} />
+
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-8">
+        <EquipmentBrandLogos brands={humanBodyScannerBrands} />
+      </div>
 </main>
   );
 }
