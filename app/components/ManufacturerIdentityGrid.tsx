@@ -43,39 +43,43 @@ const manufacturers = [
 
 export default function ManufacturerIdentityGrid() {
   return (
-    <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {manufacturers.map((name, index) => (
         <article
           key={name}
-          className="group relative min-h-[118px] overflow-hidden rounded-xl border border-white/10 bg-[#091827] p-4 transition duration-300 hover:-translate-y-1 hover:border-sky-400/40 hover:bg-[#0c2034]"
+          className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#071421] shadow-[0_12px_35px_rgba(0,0,0,0.28)] transition duration-500 hover:-translate-y-1 hover:border-sky-400/50 hover:shadow-[0_18px_45px_rgba(14,165,233,0.16)]"
         >
-          <div className="absolute inset-0 overflow-hidden opacity-70">
-            <img src="/xray-baggage-scan.svg" alt="" className="absolute inset-0 h-full w-full object-contain opacity-35" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(56,189,248,0.16),transparent_62%)]" />
-            <div className="absolute inset-y-0 -left-1/3 w-1/3 bg-gradient-to-r from-transparent via-sky-400/25 to-transparent animate-[scan_3.8s_ease-in-out_infinite]" />
-            <div
-              className="absolute inset-0 opacity-40"
-              style={{
-                backgroundImage:
-                  "linear-gradient(rgba(56,189,248,0.08) 1px,transparent 1px),linear-gradient(90deg,rgba(56,189,248,0.08) 1px,transparent 1px)",
-                backgroundSize: "18px 18px",
-              }}
+          <div className="relative h-[175px] overflow-hidden border-b border-white/10 bg-[#020b12]">
+            <img
+              src="/xray-baggage-scan.svg"
+              alt=""
+              className="absolute inset-0 h-full w-full object-contain opacity-75 transition duration-500 group-hover:scale-[1.03]"
             />
-          </div>
 
-          <div className="relative z-10 flex h-full flex-col justify-between">
-            <div className="flex items-center justify-between">
-              <span className="text-[9px] font-semibold uppercase tracking-[0.22em] text-sky-400/80">
+            <div
+              className="absolute inset-y-0 left-0 w-[18%] bg-gradient-to-r from-transparent via-cyan-300/55 to-transparent blur-[2px] animate-[scan_4.8s_ease-in-out_infinite]"
+              style={{ animationDelay: `${index * 0.42}s` }}
+            />
+
+            <div className="absolute inset-0 bg-gradient-to-t from-[#071421] via-transparent to-transparent" />
+
+            <div className="absolute left-4 top-4 rounded-md border border-cyan-300/20 bg-[#06131f]/80 px-3 py-1.5 backdrop-blur-sm">
+              <span className="text-[9px] font-bold uppercase tracking-[0.2em] text-cyan-300">
                 CONVENTIONAL X-RAY SYSTEM
               </span>
-              <span className="h-2 w-2 rounded-full bg-sky-400/70 shadow-[0_0_10px_rgba(56,189,248,0.7)]" />
             </div>
 
-            <div className="mt-5">
-              <h3 className="text-sm font-bold leading-tight text-white">
-                {name}
-              </h3>
-              <p className="mt-1 text-[9px] uppercase tracking-[0.16em] text-slate-500">
+            <div className="absolute right-4 top-4 h-2.5 w-2.5 rounded-full bg-cyan-300 shadow-[0_0_14px_rgba(103,232,249,0.9)]" />
+          </div>
+
+          <div className="px-5 py-5">
+            <h3 className="text-lg font-extrabold leading-tight tracking-tight text-white sm:text-xl">
+              {name}
+            </h3>
+
+            <div className="mt-2 flex items-center gap-2">
+              <span className="h-px w-8 bg-cyan-400/70" />
+              <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-400">
                 HIGH-ENERGY X-RAY SYSTEM
               </p>
             </div>

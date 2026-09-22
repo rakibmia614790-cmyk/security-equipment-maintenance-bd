@@ -331,3 +331,18 @@ body {
   0%, 100% { transform: translateX(-120%); opacity: 0.15; }
   50% { transform: translateX(420%); opacity: 0.8; }
 }
+
+@keyframes scan {
+  0%, 18% {
+    transform: translateX(-140%);
+    opacity: 0;
+  }
+  28%, 58% {
+    transform: translateX(520%);
+    opacity: 0.85;
+  }
+  68%, 100% {
+    transform: translateX(520%);
+    opacity: 0;
+  }
+}
