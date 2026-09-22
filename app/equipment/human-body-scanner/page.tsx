@@ -194,7 +194,8 @@ export default function HumanBodyScannerPage() {
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-8">
         <EquipmentBrandLogos brands={humanBodyScannerBrands} />
-      </div>
+      
+</div>
 </main>
   );
 }
