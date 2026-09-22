@@ -1,3 +1,10 @@
+import EquipmentBrandLogos from "../EquipmentBrandLogos";
+
+const etdBrands = [
+  "Smiths Detection",
+  "Rapiscan Systems",
+  "Nuctech",
+];
 const manufacturers = [
   ["Smiths Detection", ""],
   ["Rapiscan Systems", ""],
@@ -197,6 +204,10 @@ export default function ExplosiveTraceDetectorPage() {
           Submit Service Request
         </a>
       </section>
-    </main>
+    
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-8">
+        <EquipmentBrandLogos brands={etdBrands} />
+      </div>
+</main>
   );
 }
