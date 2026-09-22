@@ -135,21 +135,12 @@ export default function HumanBodyScannerPage() {
           personnel-screening and security-inspection technologies.
         </p>
 
-        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-          {manufacturers.map(([name, logo]) => (
-            <div
-              key={name}
-              className="flex min-h-36 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.045] p-6 text-center shadow-[0_8px_30px_rgba(0,0,0,0.18)] transition duration-300 hover:-translate-y-1 hover:border-sky-400/40 hover:bg-white/[0.07]"
-            >
-              {logo ? (
-                
-
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-8">
-        <EquipmentBrandLogos brands={humanBodyScannerBrands} />
-      
-</div>
-</main>
-  );
-}
-
-
+        <div className="mt-12">
+            <p className="text-sm leading-7 text-slate-400">
+              Manufacturer information is presented as a technology ecosystem reference and does not imply manufacturer authorization or affiliation.
+            </p>
+          </div>
+        </section>
+      </main>
+    );
+  }
