@@ -1,3 +1,4 @@
+import WTMDManufacturerIdentityGrid from "@/app/components/WTMDManufacturerIdentityGrid";
 import Link from "next/link";
 
 const manufacturers = [
