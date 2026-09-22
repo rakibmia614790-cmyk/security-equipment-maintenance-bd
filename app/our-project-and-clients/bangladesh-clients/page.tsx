@@ -1,0 +1,130 @@
+export const metadata = {
+  title: "Bangladesh Clients | Security Equipment Maintenance BD",
+  description:
+    "Organizations and sectors served through security equipment supply, installation, commissioning, maintenance, calibration, and technical support in Bangladesh.",
+};
+
+const clientGroups = [
+  {
+    title: "Government & National Institutions",
+    clients: [
+      "Prime Minister’s Office",
+      "Office of the President",
+      "Cabinet Division",
+      "Bangladesh Parliament (Jatiya Sangsad)",
+      "Bangladesh Bank",
+    ],
+  },
+  {
+    title: "Defence & Security",
+    clients: [
+      "Bangladesh Army",
+      "Bangladesh Navy",
+      "Bangladesh Air Force",
+      "Armed Forces Division",
+      "Ministry of Defence",
+      "Military Engineer Services",
+      "National Security Intelligence",
+      "Directorate General of Forces Intelligence",
+    ],
+  },
+  {
+    title: "Law Enforcement & Public Safety",
+    clients: [
+      "Bangladesh Police",
+      "Special Branch",
+      "Armed Police Battalion",
+      "National Telecommunication Monitoring Centre",
+    ],
+  },
+  {
+    title: "Aviation & Critical Infrastructure",
+    clients: [
+      "Civil Aviation Authority of Bangladesh",
+      "Government Airports & Aviation Facilities",
+      "Ports & Critical Infrastructure",
+    ],
+  },
+  {
+    title: "Judiciary, Education & Public Sector",
+    clients: [
+      "Supreme Court of Bangladesh",
+      "High Court Division",
+      "Appellate Division",
+      "Government-Owned & Public-Sector Organizations",
+      "Education & Research Institutions",
+      "Healthcare Institutions",
+    ],
+  },
+];
+
+export default function BangladeshClientsPage() {
+  return (
+    <main className="min-h-screen bg-slate-950 text-white">
+      <section className="relative overflow-hidden border-b border-white/10">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.16),transparent_40%),radial-gradient(circle_at_bottom_left,rgba(14,165,233,0.10),transparent_35%)]" />
+
+        <div className="relative mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-28">
+          <div className="max-w-4xl">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
+              Our Project & Clients
+            </p>
+
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+              Bangladesh Clients
+            </h1>
+
+            <p className="mt-6 max-w-3xl text-base leading-8 text-slate-300 sm:text-lg">
+              Supporting organizations across Bangladesh with security
+              screening systems, detection technologies, surveillance,
+              access-control solutions, and professional technical services.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
+        <div className="grid gap-8 md:grid-cols-2">
+          {clientGroups.map((group) => (
+            <article
+              key={group.title}
+              className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 shadow-2xl shadow-black/20 backdrop-blur-sm transition hover:border-sky-400/30 hover:bg-white/[0.05]"
+            >
+              <div className="mb-6 h-1 w-14 rounded-full bg-sky-400" />
+
+              <h2 className="text-xl font-semibold text-white">
+                {group.title}
+              </h2>
+
+              <ul className="mt-6 space-y-3">
+                {group.clients.map((client) => (
+                  <li
+                    key={client}
+                    className="flex items-start gap-3 text-sm leading-6 text-slate-300"
+                  >
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-400" />
+                    <span>{client}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="border-t border-white/10 bg-white/[0.02]">
+        <div className="mx-auto max-w-7xl px-6 py-16 text-center lg:px-8">
+          <h2 className="text-2xl font-semibold sm:text-3xl">
+            Security Technology & Technical Support
+          </h2>
+
+          <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-400 sm:text-base">
+            Our experience spans security screening, explosive and narcotics
+            trace detection, access control, surveillance, and related
+            security infrastructure.
+          </p>
+        </div>
+      </section>
+    </main>
+  );
+}
