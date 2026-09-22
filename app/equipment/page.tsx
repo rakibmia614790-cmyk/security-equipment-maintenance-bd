@@ -1,5 +1,3 @@
-import EquipmentBrandLogos from "./EquipmentBrandLogos";
-
 const equipment = [
   ["Baggage Scanner","BS","Advanced X-ray screening systems for baggage and parcel inspection.","/equipment/baggage-scanner","https://image.made-in-china.com/2f0j00bRvYCdPlrAkD/High-Conveyor-600-400mm-Tunnel-Mobile-X-ray-Small-Baggage-and-Parcel-Scanner.jpg"],
   ["Walk Through Metal Detector","WTMD","High-performance personnel screening for controlled access points.","/equipment/walk-through-metal-detector","https://www.nicepng.com/png/detail/421-4219023_security-scan-walk-through-metal-detector-security-turnstile.png"],
@@ -14,21 +12,6 @@ const equipment = [
   ["Human Body Scanner","HBS","Advanced personnel screening technology for detecting concealed security threats.","/equipment/human-body-scanner","https://unival-group.com/media/3816/download/R%26S%C2%AEQPS201-02.jpg?v=1"],
   ["Walkie-Talkie","WT","Reliable two-way communication for security teams and field operations.","/equipment/walkie-talkie","https://www.nhatthuc.com.vn/images_upload/bo-dam-motorola-apx-1000i-4.jpg"],
 ];
-
-const brandMap: Record<string, string[]> = {
-  "Baggage Scanner": ["Smiths Detection","Rapiscan Systems","Nuctech","L3Harris","Analogic","Astrophysics","Gilardoni","Scanna MSC"],
-  "Walk Through Metal Detector": ["CEIA","Garrett","Smiths Detection","Rapiscan Systems","Nuctech"],
-  "Hand-Held Metal Detector": ["Garrett","CEIA","Smiths Detection","Rapiscan Systems","Nuctech"],
-  "Explosive Detection System / ETD": ["Smiths Detection","Rapiscan Systems","Nuctech"],
-  "CCTV System": ["Hikvision","Dahua Technology","Axis Communications","Bosch","Hanwha Vision","UNV"],
-  "Road Barrier": ["FAAC","CAME","BFT","Magnetic Autocontrol"],
-  "Road Blocker": ["FAAC","CAME","BFT","Magnetic Autocontrol"],
-  "Access Control System": ["HID","Suprema","ZKTeco","Hikvision","Dahua Technology"],
-  "Car Parking Management System": ["SKIDATA","DESIGNA","Amano","FAAC"],
-  "Bollard": ["FAAC","CAME","BFT","Pilomat"],
-  "Human Body Scanner": ["Rohde & Schwarz","Nuctech","Smiths Detection","L3Harris"],
-  "Walkie-Talkie": ["Motorola Solutions","Hytera","Kenwood","Icom","Tait"],
-};
 
 export default function EquipmentPage() {
   return (
@@ -75,7 +58,6 @@ export default function EquipmentPage() {
                   {description}
                 </p>
 
-                <EquipmentBrandLogos brands={brandMap[name] ?? []} />
 
                 <a
                   href={href}
