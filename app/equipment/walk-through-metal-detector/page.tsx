@@ -197,37 +197,20 @@ export default function WalkThroughMetalDetectorPage() {
 
       <section className="border-y border-white/10 bg-slate-900/60">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
-              Manufacturer Ecosystem
+          <div className="mb-10 max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-300">
+              Manufacturer Technologies
             </p>
-
-            <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
-              Supporting multiple technology platforms
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Walk-Through Metal Detector Manufacturers
             </h2>
-
-            <p className="mt-5 leading-8 text-slate-300">
-              Our technical capability is designed to support equipment from
-              different manufacturers and technology platforms, subject to
-              equipment model, configuration and available technical
-              documentation.
+            <p className="mt-4 text-base leading-7 text-slate-300">
+              A curated technical showcase of established walk-through metal
+              detection technologies and security screening manufacturers.
             </p>
           </div>
 
-          <div className="mt-10 grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-5">
-            {manufacturers.map(([name, logo]) => (
-              <div
-                key={name}
-                className="flex min-h-32 items-center justify-center rounded-2xl border border-white/10 bg-white p-6"
-              >
-                <img
-                  src={logo}
-                  alt={name}
-                  className="max-h-16 max-w-[150px] object-contain"
-                />
-              </div>
-            ))}
-          </div>
+          <WTMDManufacturerIdentityGrid />
         </div>
       </section>
 
