@@ -5,7 +5,7 @@ const manufacturers = [
   ["CEIA", ""],
   ["Garrett", ""],
   ["Rapiscan Systems", ""],
-  ["Smiths Detection", ""],
+  ["", ""],
   ["Nuctech", ""],
   ["Leidos", ""],
   ["ZKTeco", ""],
