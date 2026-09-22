@@ -125,6 +125,34 @@ export default function BangladeshClientsPage() {
         </div>
       </section>
 
+      <section className="border-t border-white/10 bg-slate-900/40">
+        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+          <div className="mb-10 text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-400">
+              Client Recognition
+            </p>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+              Organizations We Have Served
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-400 sm:text-base">
+              Official logos will be displayed here only when suitable,
+              publicly available and appropriately verified.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+            {clientGroups.flatMap((group) => group.clients).map((client) => (
+              <div
+                key={client}
+                className="flex min-h-28 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.035] px-4 py-6 text-center text-sm font-medium text-slate-300 transition hover:border-sky-400/30 hover:bg-white/[0.06]"
+              >
+                {client}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="border-t border-white/10 bg-white/[0.02]">
         <div className="mx-auto max-w-7xl px-6 py-16 text-center lg:px-8">
           <h2 className="text-2xl font-semibold sm:text-3xl">
