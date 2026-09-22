@@ -1,3 +1,11 @@
+import EquipmentBrandLogos from "../EquipmentBrandLogos";
+
+const carParkingBrands = [
+  "SKIDATA",
+  "DESIGNA",
+  "Amano",
+  "FAAC",
+];
 const manufacturers = [
   ["SKIDATA", ""],
   ["Hikvision", ""],
@@ -151,6 +159,10 @@ export default function CarParkingManagementPage() {
           Submit Service Request
         </a>
       </section>
-    </main>
+    
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-8">
+        <EquipmentBrandLogos brands={carParkingBrands} />
+      </div>
+</main>
   );
 }
