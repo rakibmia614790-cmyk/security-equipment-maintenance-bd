@@ -358,3 +358,104 @@ body {
   38%, 62% { transform: translateX(-50%) scaleX(1); opacity: 0.85; }
   78%, 100% { transform: translateX(-50%) scaleX(0.35); opacity: 0; }
 }
+
+@keyframes cctvScan {
+  0%, 18% { transform: translate(-50%, -50%) scaleX(0.25); opacity: 0; }
+  35%, 62% { transform: translate(-50%, -50%) scaleX(1); opacity: 0.9; }
+  78%, 100% { transform: translate(-50%, -50%) scaleX(0.25); opacity: 0; }
+}
+
+@keyframes cctvSweep {
+  0%, 18% { left: 12%; opacity: 0; }
+  35%, 62% { left: 88%; opacity: 0.75; }
+  78%, 100% { left: 12%; opacity: 0; }
+}
+
+@keyframes barrierArm {
+  0%, 18% { transform: rotate(0deg); }
+  38%, 58% { transform: rotate(-28deg); }
+  78%, 100% { transform: rotate(0deg); }
+}
+
+@keyframes barrierPulse {
+  0%, 18% { transform: scaleX(0.35); opacity: 0; }
+  38%, 58% { transform: scaleX(1); opacity: 0.9; }
+  78%, 100% { transform: scaleX(0.35); opacity: 0; }
+}
+
+
+@keyframes roadBlockerRise {
+  0%, 18% { transform: translate(-50%, 48%); }
+  38%, 58% { transform: translate(-50%, 0); }
+  78%, 100% { transform: translate(-50%, 48%); }
+}
+
+@keyframes roadBlockerPulse {
+  0%, 18% { transform: translateX(-50%) scaleX(0.35); opacity: 0; }
+  38%, 58% { transform: translateX(-50%) scaleX(1); opacity: 0.9; }
+  78%, 100% { transform: translateX(-50%) scaleX(0.35); opacity: 0; }
+}
+
+
+@keyframes accessPulse {
+  0%, 18% { transform: translate(-50%, -50%) scale(0.65); opacity: 0; }
+  38%, 58% { transform: translate(-50%, -50%) scale(1); opacity: 0.8; }
+  78%, 100% { transform: translate(-50%, -50%) scale(1.25); opacity: 0; }
+}
+
+
+@keyframes parkingScan {
+  0%, 18% { transform: translate(-50%, -50%) scaleX(0.25); opacity: 0; }
+  38%, 58% { transform: translate(-50%, -50%) scaleX(1); opacity: 0.9; }
+  78%, 100% { transform: translate(-50%, -50%) scaleX(0.25); opacity: 0; }
+}
+
+@keyframes parkingBarrier {
+  0%, 18% { transform: rotate(0deg); }
+  38%, 58% { transform: rotate(70deg); }
+  78%, 100% { transform: rotate(0deg); }
+}
+
+@keyframes parkingPulse {
+  0%, 18% { transform: translateX(-50%) scaleX(0.3); opacity: 0; }
+  38%, 58% { transform: translateX(-50%) scaleX(1); opacity: 0.85; }
+  78%, 100% { transform: translateX(-50%) scaleX(0.3); opacity: 0; }
+}
+
+
+@keyframes bollardRise {
+  0%, 18% { transform: translate(-50%, 45%); }
+  38%, 58% { transform: translate(-50%, 0); }
+  78%, 100% { transform: translate(-50%, 45%); }
+}
+
+@keyframes bollardPulse {
+  0%, 18% { transform: translateX(-50%) scaleX(0.3); opacity: 0; }
+  38%, 58% { transform: translateX(-50%) scaleX(1); opacity: 0.9; }
+  78%, 100% { transform: translateX(-50%) scaleX(0.3); opacity: 0; }
+}
+
+
+@keyframes bodyScannerSweep {
+  0%, 100% {
+    top: 8%;
+    opacity: 0.15;
+  }
+  50% {
+    top: 88%;
+    opacity: 0.85;
+  }
+}
+
+@keyframes radioSignalPulse {
+  0%, 100% {
+    width: 3rem;
+    opacity: 0.15;
+    box-shadow: 0 0 4px rgba(103, 232, 249, 0.25);
+  }
+  50% {
+    width: 8rem;
+    opacity: 0.9;
+    box-shadow: 0 0 22px rgba(103, 232, 249, 0.9);
+  }
+}

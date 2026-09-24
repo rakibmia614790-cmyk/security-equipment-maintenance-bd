@@ -1,50 +1,42 @@
-import EquipmentBrandLogos from "../EquipmentBrandLogos";
-
-const carParkingBrands = [
-  "SKIDATA",
-  "DESIGNA",
-  "Amano",
-  "FAAC",
-];
 const manufacturers = [
-  ["SKIDATA", ""],
-  ["Hikvision", ""],
-  ["Dahua Technology", ""],
-  ["ZKTeco", ""],
-  ["Nedap", ""],
   ["FAAC", ""],
+  ["Nice", ""],
   ["CAME", ""],
   ["Magnetic Autocontrol", ""],
-  ["Kapsch", ""],
-  ["SWARCO", ""],
-  ["TIBA Parking", ""],
-  ["DESIGNA", ""],
-  ["ParkingEye", ""],
-  ["Amano McGann", ""],
-  ["Hub Parking Technology", ""],
-  ["Flowbird", ""],
-  ["Scheidt & Bachmann", ""],
-  ["WPS Parking Solutions", ""],
-  ["Hectronic", ""],
-  ["Parkeon", ""],
+  ["BFT", ""],
+  ["Hikvision", ""],
+  ["ZKTeco", ""],
+  ["Dahua Technology", ""],
+  ["Automatic Systems", ""],
+  ["Boon Edam", ""],
+  ["Gunnebo", ""],
+  ["PERCo", ""],
+  ["Dormakaba", ""],
+  ["Nedap", ""],
+  ["Roger Technology", ""],
+  ["DEA System", ""],
+  ["TAU", ""],
+  ["Parking Pro", ""],
+  ["CAME Americas", ""],
+  ["Allegion", ""],
 ];
 
-export default function CarParkingManagementPage() {
+export default function RoadBarrierPage() {
   return (
     <main className="min-h-screen bg-[#06111f] text-white">
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(14,165,233,0.18),transparent_40%),radial-gradient(circle_at_bottom_left,rgba(37,99,235,0.12),transparent_40%)]" />
         <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-sky-400">
-            Smart Mobility & Vehicle Management
+            Vehicle Access Control
           </p>
           <h1 className="max-w-4xl text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-            Car Parking Management System
+            Automatic Road Barrier
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-            Intelligent parking management solutions for airports, commercial
-            facilities, government sites, hospitals, campuses and large-scale
-            vehicle-access environments.
+            Professional vehicle access control and automatic barrier
+            solutions for airports, government facilities, commercial sites,
+            parking areas and critical infrastructure.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <a href="/service-request" className="rounded-xl bg-sky-500 px-6 py-3 font-semibold transition hover:bg-sky-400">
@@ -61,22 +53,21 @@ export default function CarParkingManagementPage() {
         <div className="grid gap-10 lg:grid-cols-2">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">System Overview</p>
-            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Intelligent Parking Operations</h2>
+            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Controlled Vehicle Access</h2>
           </div>
           <p className="text-lg leading-8 text-slate-300">
-            Modern parking management combines vehicle identification,
-            barriers, ticketing or credential systems, payment, occupancy
-            monitoring and centralized management to streamline parking
-            operations.
+            Automatic road barriers provide controlled vehicle entry and exit
+            while integrating with access control, parking management,
+            identification and security systems.
           </p>
         </div>
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {[
-            ["Vehicle Access", "Automated entry and exit management."],
-            ["License Plate Recognition", "Vehicle identification and monitoring."],
-            ["Parking Guidance", "Improved visibility of parking availability."],
-            ["Central Management", "Integrated monitoring and operational control."],
+            ["Automatic Operation", "Fast and controlled vehicle movement."],
+            ["Access Integration", "Integration with modern access systems."],
+            ["Traffic Control", "Reliable management of vehicle entry and exit."],
+            ["Technical Support", "Installation, maintenance and repair services."],
           ].map(([title, text]) => (
             <div key={title} className="rounded-2xl border border-white/10 bg-white/[0.045] p-7">
               <h3 className="text-lg font-bold">{title}</h3>
@@ -89,15 +80,15 @@ export default function CarParkingManagementPage() {
       <section className="border-y border-white/10 bg-white/[0.02]">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">Applications</p>
-          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Parking & Vehicle Management Applications</h2>
+          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Vehicle Security Applications</h2>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {[
               "Airports & Aviation Facilities",
-              "Shopping Malls & Commercial Centers",
-              "Government & Public Facilities",
-              "Hospitals & Healthcare Facilities",
-              "Corporate & Residential Complexes",
-              "Universities & Large Campuses",
+              "Government & Critical Infrastructure",
+              "Corporate & Commercial Sites",
+              "Parking Facilities",
+              "Industrial & Logistics Sites",
+              "Residential & Controlled Communities",
             ].map((item) => (
               <div key={item} className="rounded-xl border border-white/10 bg-[#0a1728] px-6 py-5 text-slate-200">
                 {item}
@@ -109,10 +100,10 @@ export default function CarParkingManagementPage() {
 
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
         <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">Manufacturer Ecosystem</p>
-        <h2 className="mt-3 max-w-3xl text-3xl font-bold sm:text-4xl">Parking Management Technology</h2>
+        <h2 className="mt-3 max-w-3xl text-3xl font-bold sm:text-4xl">Barrier & Vehicle Access Technology</h2>
         <p className="mt-5 max-w-3xl leading-7 text-slate-400">
           Our technical coverage is structured around a broad ecosystem of
-          parking management, vehicle access and smart mobility technologies.
+          automatic barrier and vehicle access control technologies.
         </p>
 
         <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
@@ -133,12 +124,12 @@ export default function CarParkingManagementPage() {
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">Technical Services</p>
           <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {[
-              "System Installation & Commissioning",
+              "Installation & Commissioning",
               "Preventive Maintenance",
               "Corrective Repair",
-              "Barrier & Controller Diagnostics",
-              "LPR & Camera System Support",
-              "Software & System Integration",
+              "Barrier Controller Diagnostics",
+              "Access Control Integration",
+              "Spare Parts & Technical Support",
             ].map((service) => (
               <div key={service} className="rounded-2xl border border-white/10 bg-[#0a1728] p-7">
                 <h3 className="font-bold">{service}</h3>
@@ -150,19 +141,15 @@ export default function CarParkingManagementPage() {
 
       <section className="mx-auto max-w-5xl px-6 py-24 text-center lg:px-8">
         <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">SecureTech Equipment</p>
-        <h2 className="mt-4 text-3xl font-bold sm:text-4xl">Need Parking System Support?</h2>
+        <h2 className="mt-4 text-3xl font-bold sm:text-4xl">Need Road Barrier Support?</h2>
         <p className="mx-auto mt-5 max-w-2xl leading-7 text-slate-400">
           Contact our technical team for installation, maintenance,
-          troubleshooting, repair and parking-system integration support.
+          troubleshooting, repair and access-control integration support.
         </p>
         <a href="/service-request" className="mt-9 inline-flex rounded-xl bg-sky-500 px-7 py-3.5 font-semibold transition hover:bg-sky-400">
           Submit Service Request
         </a>
       </section>
-    
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-8">
-        <EquipmentBrandLogos brands={carParkingBrands} />
-      </div>
-</main>
+    </main>
   );
 }

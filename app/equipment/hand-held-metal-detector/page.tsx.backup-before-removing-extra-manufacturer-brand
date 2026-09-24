@@ -1,57 +1,65 @@
 import EquipmentBrandLogos from "../EquipmentBrandLogos";
-import WalkieTalkieManufacturerIdentityGrid from "@/app/components/WalkieTalkieManufacturerIdentityGrid";
+import HandHandMetalManufacturerIdentityGrid from "@/app/components/HandHandMetalManufacturerIdentityGrid";
 
-const walkieTalkieBrands = [
-  "Motorola Solutions",
-  "Hytera",
-  "Kenwood",
-  "Icom",
-  "Tait",
+const hhmdBrands = [
+  "Garrett",
+  "CEIA",
+  "Smiths Detection",
+  "Rapiscan Systems",
+  "Nuctech",
+];
+
+const wtmdBrands = [
+  "CEIA",
+  "Garrett",
+  "Smiths Detection",
+  "Rapiscan Systems",
+  "Nuctech",
 ];
 const manufacturers = [
-  ["Motorola Solutions", ""],
-  ["Hytera", ""],
-  ["Kenwood", ""],
-  ["Icom", ""],
-  ["Sepura", ""],
-  ["Tait Communications", ""],
-  ["JVCKENWOOD", ""],
-  ["Vertex Standard", ""],
-  ["Yaesu", ""],
-  ["Uniden", ""],
-  ["Midland", ""],
-  ["Baofeng", ""],
-  ["RugGear", ""],
-  ["Entel", ""],
-  ["Simoco", ""],
-  ["Codan", ""],
-  ["Zebra Technologies", ""],
-  ["Honeywell", ""],
-  ["Rohde & Schwarz", ""],
-  ["Thales", ""],
+  ["Garrett", ""],
+  ["CEIA", ""],
+  ["Rapiscan Systems", ""],
+  ["Smiths Detection", ""],
+  ["Nuctech", ""],
+  ["ZKTeco", ""],
+  ["Westminster International", ""],
+  ["Adani Defence", ""],
+  ["Fisher Research Labs", ""],
+  ["Minelab", ""],
+  ["Skanray Technologies", ""],
+  ["DetectaChem", ""],
+  ["WIPOTEC-OCS", ""],
+  ["Security Metal Detectors", ""],
+  ["Autoclear", ""],
+  ["VMI Security", ""],
+  ["Viken Detection", ""],
+  ["Metrasens", ""],
+  ["Metal Detector Corporation", ""],
+  ["KJB Security Products", ""],
 ];
 
-export default function WalkieTalkiePage() {
+export default function HandHeldMetalDetectorPage() {
   return (
     <main className="min-h-screen bg-[#06111f] text-white">
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(14,165,233,0.18),transparent_40%),radial-gradient(circle_at_bottom_left,rgba(37,99,235,0.12),transparent_40%)]" />
         <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-sky-400">
-            Professional Communication Systems
+            Security Screening Equipment
           </p>
           <h1 className="max-w-4xl text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-            Walkie-Talkie & Two-Way Radio
+            Hand-Held Metal Detector
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-            Reliable two-way radio communication solutions for security teams,
-            airports, industrial facilities, emergency operations and large
-            organizations.
+            Professional hand-held metal detection solutions for security
+            screening, access control, event security, aviation, critical
+            infrastructure and high-security environments.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <a
               href="/service-request"
-              className="rounded-xl bg-sky-500 px-6 py-3 font-semibold transition hover:bg-sky-400"
+              className="rounded-xl bg-sky-500 px-6 py-3 font-semibold text-white transition hover:bg-sky-400"
             >
               Service Request
             </a>
@@ -69,25 +77,25 @@ export default function WalkieTalkiePage() {
         <div className="grid gap-10 lg:grid-cols-2">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
-              System Overview
+              Equipment Overview
             </p>
             <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-              Mission-Critical Communication
+              Portable Screening. Reliable Detection.
             </h2>
           </div>
           <p className="text-lg leading-8 text-slate-300">
-            Professional two-way radio systems support fast, dependable
-            communication between security personnel, technical teams,
-            operations staff and emergency-response teams.
+            Hand-held metal detectors provide rapid secondary screening and
+            targeted inspection where portability, ease of operation and
+            dependable detection performance are essential.
           </p>
         </div>
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {[
-            ["Two-Way Communication", "Fast and reliable team communication."],
-            ["Digital Radio", "Modern digital communication capabilities."],
-            ["Wide-Area Coverage", "Solutions for large operational environments."],
-            ["Emergency Operations", "Communication support for critical situations."],
+            ["Targeted Screening", "Focused inspection of people and belongings."],
+            ["Portable Operation", "Lightweight solutions for flexible deployment."],
+            ["Security Checkpoints", "Suitable for entrances and controlled areas."],
+            ["Technical Support", "Inspection, repair, maintenance and testing."],
           ].map(([title, text]) => (
             <div
               key={title}
@@ -106,17 +114,17 @@ export default function WalkieTalkiePage() {
             Applications
           </p>
           <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-            Professional Communication Applications
+            Designed for Diverse Security Environments
           </h2>
 
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {[
               "Airports & Aviation Facilities",
-              "Security & Guarding Operations",
-              "Industrial & Manufacturing Sites",
               "Government & Critical Infrastructure",
-              "Construction & Large Projects",
-              "Emergency & Event Operations",
+              "Ports & Transport Facilities",
+              "Corporate & Commercial Security",
+              "Events & Public Venues",
+              "Industrial & Restricted Areas",
             ].map((item) => (
               <div
                 key={item}
@@ -129,54 +137,36 @@ export default function WalkieTalkiePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
-          Manufacturer Ecosystem
-        </p>
-        <h2 className="mt-3 max-w-3xl text-3xl font-bold sm:text-4xl">
-          Two-Way Radio Technology
-        </h2>
-        <p className="mt-5 max-w-3xl leading-7 text-slate-400">
-          Our technical coverage is structured around a broad ecosystem of
-          professional radio communication technologies and manufacturers.
-        </p>
-
-        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-          {manufacturers.map(([name, logo]) => (
-            <div
-              key={name}
-              className="flex min-h-36 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.045] p-6 text-center shadow-[0_8px_30px_rgba(0,0,0,0.18)] transition duration-300 hover:-translate-y-1 hover:border-sky-400/40 hover:bg-white/[0.07]"
-            >
-              {logo ? (
-                <img
-                  src={logo}
-                  alt={name}
-                  className="max-h-12 max-w-full object-contain"
-                />
-              ) : (
-                <span className="text-base font-semibold text-slate-200">
-                  {name}
-                </span>
-              )}
-            </div>
-          ))}
-        </div>
-      </section>
+      <section className="border-y border-white/10 bg-slate-900/60">
+  <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+    <div className="mb-10 max-w-3xl">
+      <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-300">
+        Manufacturer Technologies
+      </p>
+      <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Hand-Held Metal Detector Manufacturers
+      </h2>
+      <p className="mt-4 text-base leading-7 text-slate-300">
+        A professional showcase of established hand-held metal detection technologies and security screening manufacturers.
+      </p>
+    </div>
+    <HandHandMetalManufacturerIdentityGrid />
+  </div>
+</section>
 
       <section className="border-y border-white/10 bg-white/[0.02]">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
             Technical Services
           </p>
-
           <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {[
-              "Installation & Commissioning",
+              "Inspection & Troubleshooting",
               "Preventive Maintenance",
               "Corrective Repair",
-              "Radio Programming & Configuration",
-              "Battery & Accessory Support",
-              "System Diagnostics & Technical Support",
+              "Performance Testing",
+              "Spare Parts Support",
+              "Technical Consultation",
             ].map((service) => (
               <div
                 key={service}
@@ -194,12 +184,11 @@ export default function WalkieTalkiePage() {
           SecureTech Equipment
         </p>
         <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
-          Need Two-Way Radio Support?
+          Need Technical Support for Your Metal Detector?
         </h2>
         <p className="mx-auto mt-5 max-w-2xl leading-7 text-slate-400">
-          Contact our technical team for installation, maintenance,
-          troubleshooting, repair, configuration and communication-system
-          support.
+          Contact our technical team for inspection, maintenance, repair,
+          calibration-related support and equipment service requirements.
         </p>
         <a
           href="/service-request"
@@ -210,7 +199,11 @@ export default function WalkieTalkiePage() {
       </section>
     
       <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-8">
-        <EquipmentBrandLogos brands={walkieTalkieBrands} />
+        <EquipmentBrandLogos brands={wtmdBrands} />
+      </div>
+
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-8">
+        <EquipmentBrandLogos brands={hhmdBrands} />
       </div>
 </main>
   );

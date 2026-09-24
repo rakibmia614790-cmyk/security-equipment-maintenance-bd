@@ -1,5 +1,4 @@
 import EquipmentBrandLogos from "../EquipmentBrandLogos";
-import WalkieTalkieManufacturerIdentityGrid from "@/app/components/WalkieTalkieManufacturerIdentityGrid";
 
 const walkieTalkieBrands = [
   "Motorola Solutions",

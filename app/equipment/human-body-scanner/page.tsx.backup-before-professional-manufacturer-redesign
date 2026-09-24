@@ -1,6 +1,5 @@
 import EquipmentBrandLogos from "../EquipmentBrandLogos";
 import ManufacturerIdentityGrid from "@/app/components/ManufacturerIdentityGrid";
-import HumanBodyScannerManufacturerIdentityGrid from "@/app/components/HumanBodyScannerManufacturerIdentityGrid";
 
 const humanBodyScannerBrands = [
   "Rohde & Schwarz",
