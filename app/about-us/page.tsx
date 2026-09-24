@@ -135,4 +135,5 @@ export default function AboutUsPage() {
       </section>
     </main>
   );
+
 }

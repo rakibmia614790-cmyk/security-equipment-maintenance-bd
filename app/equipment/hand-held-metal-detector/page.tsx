@@ -1,4 +1,5 @@
 import EquipmentBrandLogos from "../EquipmentBrandLogos";
+import HandHandMetalManufacturerIdentityGrid from "@/app/components/HandHandMetalManufacturerIdentityGrid";
 
 const hhmdBrands = [
   "Garrett",
@@ -136,40 +137,22 @@ export default function HandHeldMetalDetectorPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
-          Manufacturer Ecosystem
-        </p>
-        <h2 className="mt-3 max-w-3xl text-3xl font-bold sm:text-4xl">
-          Hand-Held Metal Detection Technology
-        </h2>
-        <p className="mt-5 max-w-3xl leading-7 text-slate-400">
-          Our technical coverage can support equipment from a broad range of
-          established security-screening and metal-detection technology
-          manufacturers.
-        </p>
-
-        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-          {manufacturers.map(([name, logo]) => (
-            <div
-              key={name}
-              className="flex min-h-36 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.045] p-6 text-center shadow-[0_8px_30px_rgba(0,0,0,0.18)] transition duration-300 hover:-translate-y-1 hover:border-sky-400/40 hover:bg-white/[0.07]"
-            >
-              {logo ? (
-                <img
-                  src={logo}
-                  alt={name}
-                  className="max-h-12 max-w-full object-contain"
-                />
-              ) : (
-                <span className="text-base font-semibold text-slate-200">
-                  {name}
-                </span>
-              )}
-            </div>
-          ))}
-        </div>
-      </section>
+      <section className="border-y border-white/10 bg-slate-900/60">
+  <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+    <div className="mb-10 max-w-3xl">
+      <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-300">
+        Manufacturer Technologies
+      </p>
+      <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Hand-Held Metal Detector Manufacturers
+      </h2>
+      <p className="mt-4 text-base leading-7 text-slate-300">
+        A professional showcase of established hand-held metal detection technologies and security screening manufacturers.
+      </p>
+    </div>
+    <HandHandMetalManufacturerIdentityGrid />
+  </div>
+</section>
 
       <section className="border-y border-white/10 bg-white/[0.02]">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
