@@ -459,3 +459,30 @@ body {
     box-shadow: 0 0 22px rgba(103, 232, 249, 0.9);
   }
 }
+
+@keyframes handMetalSweep {
+  0%, 100% {
+    transform: translateY(-42px);
+    opacity: 0.15;
+  }
+  50% {
+    transform: translateY(42px);
+    opacity: 0.95;
+  }
+}
+
+@keyframes etd-scan {
+  0%, 100% { transform: translateX(-100%); opacity: 0; }
+  50% { transform: translateX(100%); opacity: 1; }
+}
+@keyframes etd-pulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(.75); opacity: .35; }
+  50% { transform: translate(-50%, -50%) scale(1.15); opacity: .9; }
+}
+@keyframes etd-beam {
+  0%, 100% { width: 3rem; opacity: .3; }
+  50% { width: 10rem; opacity: 1; }
+}
+.animate-etd-scan { animation: etd-scan 3.2s ease-in-out infinite; }
+.animate-etd-pulse { animation: etd-pulse 2.4s ease-in-out infinite; }
+.animate-etd-beam { animation: etd-beam 2s ease-in-out infinite; }

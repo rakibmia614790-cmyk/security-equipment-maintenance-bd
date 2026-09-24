@@ -1,213 +1,91 @@
-import EquipmentBrandLogos from "../EquipmentBrandLogos";
+import Link from "next/link";
+import ETDManufacturerIdentityGrid from "@/app/components/ETDManufacturerIdentityGrid";
 
-const etdBrands = [
-  "Smiths Detection",
-  "Rapiscan Systems",
-  "Nuctech",
-];
-const manufacturers = [
-  ["Smiths Detection", ""],
-  ["Rapiscan Systems", ""],
-  ["Leidos", ""],
-  ["Nuctech", ""],
-  ["Scanna MSC", ""],
-  ["DetectaChem", ""],
-  ["Rapiscan AS&E", ""],
-  ["Bruker", ""],
-  ["FLIR / Teledyne", ""],
-  ["Implant Sciences", ""],
-  ["Thermo Fisher Scientific", ""],
-  ["American Science and Engineering", ""],
-  ["Autoclear", ""],
-  ["General Electric", ""],
-  ["Hitachi", ""],
-  ["Agilent Technologies", ""],
-  ["FLIR Systems", ""],
-  ["M2M", ""],
-  ["IONSCAN", ""],
-  ["Scentian", ""],
-];
+export const metadata = {
+  title: "Explosive Trace Detection System | Security Equipment Maintenance BD",
+  description:
+    "Explosive Trace Detection systems for aviation, critical infrastructure, government and high-security screening environments.",
+};
 
-export default function ExplosiveTraceDetectorPage() {
+export default function ETDPage() {
   return (
-    <main className="min-h-screen bg-[#06111f] text-white">
-      <section className="relative overflow-hidden border-b border-white/10">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(14,165,233,0.18),transparent_40%),radial-gradient(circle_at_bottom_left,rgba(37,99,235,0.12),transparent_40%)]" />
-        <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-sky-400">
-            Security Screening Equipment
+    <main className="min-h-screen bg-slate-950 text-white">
+      <section className="relative overflow-hidden border-b border-white/10 bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-950/40">
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute left-1/2 top-1/2 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full border border-cyan-400/20 animate-etd-pulse" />
+          <div className="absolute left-1/2 top-1/2 h-52 w-52 -translate-x-1/2 -translate-y-1/2 rounded-full border border-cyan-400/20" />
+        </div>
+        <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <Link href="/equipment" className="text-sm font-medium text-cyan-300">
+            ← Back to Equipment
+          </Link>
+          <p className="mt-10 text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">
+            Explosive Trace Detection
           </p>
-          <h1 className="max-w-4xl text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-            Explosive Trace Detector
+          <h1 className="mt-4 max-w-4xl text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+            Explosive Trace Detection System
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-            Professional explosive trace detection solutions for aviation,
-            transportation, government facilities, critical infrastructure,
-            cargo screening and high-security environments.
+            Advanced trace-detection technology for identifying microscopic
+            traces of explosives and related threats in professional security
+            screening environments.
           </p>
-          <div className="mt-10 flex flex-wrap gap-4">
-            <a
-              href="/service-request"
-              className="rounded-xl bg-sky-500 px-6 py-3 font-semibold transition hover:bg-sky-400"
-            >
-              Service Request
-            </a>
-            <a
-              href="/contact"
-              className="rounded-xl border border-white/15 bg-white/5 px-6 py-3 font-semibold transition hover:bg-white/10"
-            >
-              Contact Our Team
-            </a>
+          <div className="mt-8 flex flex-wrap gap-4">
+            <Link href="/service-request" className="rounded-xl bg-cyan-400 px-6 py-3 font-semibold text-slate-950">
+              Request Service
+            </Link>
+            <Link href="/contact" className="rounded-xl border border-white/15 bg-white/5 px-6 py-3 font-semibold">
+              Contact Us
+            </Link>
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <div className="grid gap-10 lg:grid-cols-2">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
-              Equipment Overview
-            </p>
-            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-              Advanced Trace Detection for Security Screening
-            </h2>
-          </div>
-          <p className="text-lg leading-8 text-slate-300">
-            Explosive Trace Detection systems are used for rapid screening and
-            analysis of trace residues during security inspection operations.
-            Reliable equipment support is essential for maintaining detection
-            performance and operational readiness.
-          </p>
-        </div>
-
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 md:grid-cols-3">
           {[
-            ["Trace Analysis", "Detection of microscopic trace residues."],
-            ["Rapid Screening", "Designed for efficient security inspection workflows."],
-            ["Field Deployment", "Suitable for checkpoints and controlled environments."],
-            ["Technical Support", "Maintenance, troubleshooting and service support."],
+            ["Trace Analysis", "Detection of minute traces collected from surfaces and objects."],
+            ["Rapid Screening", "Designed for fast analysis at demanding security checkpoints."],
+            ["Professional Deployment", "Suitable for aviation and high-security environments."],
           ].map(([title, text]) => (
-            <div
-              key={title}
-              className="rounded-2xl border border-white/10 bg-white/[0.045] p-7"
-            >
-              <h3 className="text-lg font-bold">{title}</h3>
-              <p className="mt-3 text-sm leading-6 text-slate-400">{text}</p>
+            <div key={title} className="rounded-2xl border border-white/10 bg-white/[0.04] p-7">
+              <h2 className="text-xl font-semibold">{title}</h2>
+              <p className="mt-3 text-sm leading-7 text-slate-400">{text}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="border-y border-white/10 bg-white/[0.02]">
+      <section className="border-y border-white/10 bg-slate-900/60">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
-            Applications
+          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-300">
+            Manufacturer Technologies
           </p>
           <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-            Security Screening Applications
+            Explosive Trace Detection Manufacturers
           </h2>
-
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              "Airports & Aviation Security",
-              "Cargo & Freight Screening",
-              "Government & Critical Infrastructure",
-              "Ports & Transportation Facilities",
-              "Border & Customs Security",
-              "High-Security Facilities",
-            ].map((item) => (
-              <div
-                key={item}
-                className="rounded-xl border border-white/10 bg-[#0a1728] px-6 py-5 text-slate-200"
-              >
-                {item}
-              </div>
-            ))}
+          <p className="mt-4 max-w-3xl text-slate-300">
+            Original technical identity cards representing established ETD
+            technology manufacturers without using third-party logos.
+          </p>
+          <div className="mt-10">
+            <ETDManufacturerIdentityGrid />
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
-          Manufacturer Ecosystem
-        </p>
-        <h2 className="mt-3 max-w-3xl text-3xl font-bold sm:text-4xl">
-          Explosive Trace Detection Technology
-        </h2>
-        <p className="mt-5 max-w-3xl leading-7 text-slate-400">
-          Our technical coverage is structured around a broad ecosystem of
-          explosive trace detection technologies, systems and manufacturers.
-        </p>
-
-        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-          {manufacturers.map(([name, logo]) => (
-            <div
-              key={name}
-              className="flex min-h-36 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.045] p-6 text-center shadow-[0_8px_30px_rgba(0,0,0,0.18)] transition duration-300 hover:-translate-y-1 hover:border-sky-400/40 hover:bg-white/[0.07]"
-            >
-              {logo ? (
-                <img
-                  src={logo}
-                  alt={name}
-                  className="max-h-12 max-w-full object-contain"
-                />
-              ) : (
-                <span className="text-base font-semibold text-slate-200">
-                  {name}
-                </span>
-              )}
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="border-y border-white/10 bg-white/[0.02]">
-        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
-            Technical Services
+        <div className="rounded-3xl border border-cyan-400/15 bg-cyan-950/20 p-8 text-center sm:p-12">
+          <h2 className="text-3xl font-bold">ETD Technical Support</h2>
+          <p className="mx-auto mt-4 max-w-2xl leading-7 text-slate-300">
+            Installation, commissioning, preventive maintenance, corrective
+            repair, calibration support and technical assistance.
           </p>
-          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {[
-              "Equipment Inspection",
-              "Preventive Maintenance",
-              "Corrective Repair",
-              "System Diagnostics",
-              "Calibration & Performance Support",
-              "Spare Parts & Technical Support",
-            ].map((service) => (
-              <div
-                key={service}
-                className="rounded-2xl border border-white/10 bg-[#0a1728] p-7"
-              >
-                <h3 className="font-bold">{service}</h3>
-              </div>
-            ))}
-          </div>
+          <Link href="/service-request" className="mt-8 inline-flex rounded-xl bg-cyan-400 px-7 py-3 font-semibold text-slate-950">
+            Submit Service Request
+          </Link>
         </div>
       </section>
-
-      <section className="mx-auto max-w-5xl px-6 py-24 text-center lg:px-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
-          SecureTech Equipment
-        </p>
-        <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
-          Need ETD Technical Support?
-        </h2>
-        <p className="mx-auto mt-5 max-w-2xl leading-7 text-slate-400">
-          Contact our technical team for inspection, maintenance, repair,
-          performance support and equipment service requirements.
-        </p>
-        <a
-          href="/service-request"
-          className="mt-9 inline-flex rounded-xl bg-sky-500 px-7 py-3.5 font-semibold transition hover:bg-sky-400"
-        >
-          Submit Service Request
-        </a>
-      </section>
-    
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-8">
-        <EquipmentBrandLogos brands={etdBrands} />
-      </div>
-</main>
+    </main>
   );
 }
