@@ -2,25 +2,14 @@
 
 const manufacturers = [
   "Novus Automation",
-  "Zorba Security Systems",
-  "Security Control Systems",
   "CEIA",
   "Garrett Metal Detectors",
   "ZKTeco",
-  "Reliance Equipments",
+  "Reliance Electronics",
   "Siddhi Equipments",
+  "PM Global Equipments",
   "Qualifina Systems",
-  "Secureye",
-  "ProScan Global",
-  "Shanghai Tianxun Electronic Equipment",
-  "Shanghai Niuhui Industrial",
-  "Smart Check Security Equipment",
-  "Shenzhen Heping Century Technology",
-  "Shenzhen MCD Electronics",
-  "PEACENTURY",
-  "Shenzhen Yisiteng Electronic Technology",
-  "Hewei Yongtai",
-]
+];
 
 export default function HandHandMetalManufacturerIdentityGrid() {
   return (
