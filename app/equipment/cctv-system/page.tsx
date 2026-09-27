@@ -30,17 +30,21 @@ export default function CCTVPage() {
           <Link href="/equipment" className="text-sm font-semibold text-cyan-300">
             ← Back to Equipment
           </Link>
+
           <p className="mt-10 text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">
             Video Surveillance Technology
           </p>
+
           <h1 className="mt-4 max-w-5xl text-5xl font-bold tracking-tight sm:text-6xl">
             CCTV System
           </h1>
+
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
             Professional CCTV surveillance solutions for airports, government
             facilities, commercial buildings, critical infrastructure and
             high-security environments.
           </p>
+
           <div className="mt-9 flex flex-wrap gap-4">
             <Link href="/service-request" className="rounded-xl bg-cyan-400 px-7 py-3 font-semibold text-slate-950">
               Request Service
@@ -68,12 +72,8 @@ export default function CCTVPage() {
         </div>
 
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {features.map(([title, text], index) => (
-            <div
-              key={title}
-              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-7 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30"
-              style={{ animationDelay: `${index * 120}ms` }}
-            >
+          {features.map(([title, text]) => (
+            <div key={title} className="rounded-2xl border border-white/10 bg-white/[0.04] p-7 transition hover:-translate-y-1 hover:border-cyan-400/30">
               <div className="mb-5 h-1 w-12 rounded-full bg-cyan-400" />
               <h3 className="text-xl font-semibold">{title}</h3>
               <p className="mt-3 text-sm leading-7 text-slate-400">{text}</p>
@@ -102,22 +102,19 @@ export default function CCTVPage() {
 
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
         <div className="rounded-3xl border border-cyan-400/15 bg-gradient-to-br from-cyan-950/40 to-slate-900 p-8 sm:p-12">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-300">
-              Professional Technical Services
-            </p>
-            <h2 className="mt-3 text-3xl font-bold">
-              Installation, maintenance & technical support
-            </h2>
-            <p className="mt-4 leading-8 text-slate-300">
-              Installation, commissioning, configuration, preventive
-              maintenance, corrective repair and technical troubleshooting for
-              CCTV surveillance infrastructure.
-            </p>
-            <Link href="/service-request" className="mt-8 inline-flex rounded-xl bg-cyan-400 px-7 py-3 font-semibold text-slate-950">
-              Submit Service Request
-            </Link>
-          </div>
+          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-300">
+            Professional Technical Services
+          </p>
+          <h2 className="mt-3 text-3xl font-bold">
+            Installation, maintenance & technical support
+          </h2>
+          <p className="mt-4 max-w-3xl leading-8 text-slate-300">
+            Installation, commissioning, configuration, preventive maintenance,
+            corrective repair and technical troubleshooting.
+          </p>
+          <Link href="/service-request" className="mt-8 inline-flex rounded-xl bg-cyan-400 px-7 py-3 font-semibold text-slate-950">
+            Submit Service Request
+          </Link>
         </div>
       </section>
     </main>
