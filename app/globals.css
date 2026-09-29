@@ -486,3 +486,20 @@ body {
 .animate-etd-scan { animation: etd-scan 3.2s ease-in-out infinite; }
 .animate-etd-pulse { animation: etd-pulse 2.4s ease-in-out infinite; }
 .animate-etd-beam { animation: etd-beam 2s ease-in-out infinite; }
+
+@keyframes cctv-pulse {
+  0%,100% { transform: scale(.85); opacity:.35; }
+  50% { transform: scale(1.15); opacity:1; }
+}
+@keyframes cctv-scan {
+  0% { transform: translateY(-180px); opacity:0; }
+  20%,80% { opacity:1; }
+  100% { transform: translateY(180px); opacity:0; }
+}
+@keyframes cctv-sweep {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-cctv-pulse { animation:cctv-pulse 2.2s ease-in-out infinite; }
+.animate-cctv-scan { animation:cctv-scan 2.8s ease-in-out infinite; }
+.animate-cctv-sweep { animation:cctv-sweep 10s linear infinite; }
