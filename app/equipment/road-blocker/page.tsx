@@ -1,124 +1,138 @@
+"use client";
+
 import Link from "next/link";
-import RoadBlockerManufacturerIdentityGrid from "@/app/components/RoadBlockerManufacturerIdentityGrid";
+import { useState } from "react";
 
-export const metadata = {
-  title: "Road Blocker System | Security Equipment Maintenance BD",
-  description:
-    "Professional hydraulic road blocker systems for high-security vehicle access control, airports, government facilities and critical infrastructure.",
-};
-
-const features = [
-  ["High-Security Vehicle Control", "Heavy-duty road blocking systems for controlled vehicle access."],
-  ["Hydraulic Protection", "Engineered rising barriers for demanding security environments."],
-  ["Critical Infrastructure", "Suitable for airports, government facilities and sensitive sites."],
-  ["Integrated Security", "Designed for integration with access control and vehicle security systems."],
-  ["Preventive Maintenance", "Inspection and maintenance support for dependable operation."],
-  ["Technical Support", "Installation, commissioning, troubleshooting, repair and field service."],
+const manufacturers = [
+  "Frontier Pitts",
+  "Heald",
+  "Delta Scientific",
+  "FAAC",
+  "CAME",
+  "BFT",
+  "Nice",
+  "Automatic Systems",
+  "Gunnebo",
+  "Magnetic Autocontrol",
+  "Hörmann",
+  "ATG Access",
+  "Jacksons Fencing",
+  "Cova Security Gates",
+  "Pilomat",
+  "Bollards International",
+  "ZKTeco",
+  "Dahua Technology",
+  "Hikvision",
+  "TIBA Parking",
+  "Roger Technology",
+  "SEA",
 ];
 
 export default function RoadBlockerPage() {
+  const [selected, setSelected] = useState<string | null>(null);
+
   return (
-    <main className="min-h-screen bg-slate-950 text-white">
-      <section className="relative overflow-hidden border-b border-cyan-400/20 bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-950/60">
-        <div className="absolute inset-0 pointer-events-none flex items-center justify-center opacity-40">
-          <div className="h-96 w-96 rounded-full border border-cyan-400/20 animate-road-blocker-pulse" />
-          <div className="absolute h-64 w-64 rounded-full border border-cyan-400/30" />
-          <div className="absolute bottom-[18%] left-[12%] right-[12%] h-5 rounded-t-lg bg-cyan-300/60 shadow-[0_0_25px_rgba(34,211,238,.7)] animate-road-blocker-rise" />
-        </div>
+    <main className="equipment-master-page road-blocker-master-page">
+      <section className="equipment-master-hero">
+        <Link href="/" className="equipment-back-link">← Back to Home</Link>
 
-        <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8">
-          <Link href="/equipment" className="text-sm font-semibold text-cyan-300">
-            ← Back to Equipment
-          </Link>
+        <div className="equipment-hero-grid">
+          <div>
+            <span className="equipment-eyebrow">HIGH-SECURITY VEHICLE PROTECTION</span>
+            <h1>Road Blocker</h1>
+            <p>
+              High-security rising road blocker systems designed to protect
+              controlled vehicle entrances and critical infrastructure.
+            </p>
+          </div>
 
-          <p className="mt-12 text-sm font-bold uppercase tracking-[0.28em] text-cyan-300">
-            High-Security Vehicle Protection
-          </p>
-
-          <h1 className="mt-4 text-5xl font-black tracking-tight sm:text-6xl">
-            Road Blocker System
-          </h1>
-
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-            Professional hydraulic road blocker solutions for high-security
-            vehicle access control, airports, government facilities and
-            critical infrastructure.
-          </p>
-
-          <div className="mt-9 flex flex-wrap gap-4">
-            <Link href="/service-request" className="rounded-xl bg-cyan-400 px-7 py-3 font-bold text-slate-950">
-              Request Service
-            </Link>
-            <Link href="/contact" className="rounded-xl border border-white/15 bg-white/5 px-7 py-3 font-semibold">
-              Contact Us
-            </Link>
+          <div className="road-blocker-visual">
+            <div className="road-blocker-real-frame">
+              <img
+                src="/road-blocker-real-photo.jpg"
+                alt="High-security rising road blocker"
+                className="road-blocker-real-photo"
+              />
+              <div className="road-blocker-overlay" />
+              <div className="road-blocker-hydraulic-line" />
+              <div className="road-blocker-status">HYDRAULIC SECURITY</div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <div className="mb-12 max-w-3xl">
-          <p className="text-sm font-bold uppercase tracking-[0.22em] text-cyan-300">
-            Perimeter Security
-          </p>
-          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-            Heavy-duty vehicle access protection
-          </h2>
-          <p className="mt-4 leading-8 text-slate-300">
-            Road blockers provide a robust physical security layer for
-            controlling and restricting unauthorized vehicle movement.
+      <section className="equipment-manufacturer-section">
+        <div className="equipment-section-heading">
+          <span>TECHNOLOGY PROFILES</span>
+          <h2>Leading Road Blocker Manufacturers</h2>
+          <p>
+            Explore high-security vehicle barrier and road blocker technology
+            manufacturers.
           </p>
         </div>
 
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {features.map(([title, description]) => (
-            <div key={title} className="rounded-2xl border border-white/10 bg-white/[0.04] p-7 transition duration-500 hover:-translate-y-1 hover:border-cyan-400/50">
-              <div className="mb-5 h-1 w-12 rounded-full bg-cyan-400" />
-              <h3 className="text-xl font-bold">{title}</h3>
-              <p className="mt-3 text-sm leading-7 text-slate-400">{description}</p>
-            </div>
+        <div className="equipment-manufacturer-grid">
+          {manufacturers.map((name, index) => (
+            <button
+              key={name}
+              className="equipment-manufacturer-card road-blocker-card"
+              style={{ "--card-delay": `${index * 65}ms` } as React.CSSProperties}
+              onClick={() => setSelected(name)}
+            >
+              <div className="road-blocker-card-visual">
+                <div className="mini-road-blocker">
+                  <span className="mini-blocker-plate" />
+                  <span className="mini-ground" />
+                </div>
+                <div className="hydraulic-pulse" />
+              </div>
+
+              <strong>{name}</strong>
+              <small>High-Security Road Blocker</small>
+              <em>View Details →</em>
+            </button>
           ))}
         </div>
       </section>
 
-      <section className="border-y border-white/10 bg-slate-900/70">
-        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <p className="text-sm font-bold uppercase tracking-[0.22em] text-cyan-300">
-            Manufacturer Technologies
-          </p>
+      <section className="equipment-service-cta">
+        <span>TECHNICAL SUPPORT</span>
+        <h2>Need Road Blocker Installation or Maintenance?</h2>
+        <p>
+          SecureTech supports installation, commissioning, hydraulic-system
+          inspection, troubleshooting and preventive maintenance.
+        </p>
+        <Link href="/service-request">Request Service →</Link>
+      </section>
 
-          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-            Road Blocker Manufacturers
-          </h2>
-
-          <p className="mt-4 max-w-3xl leading-7 text-slate-300">
-            Professional manufacturer identity cards with dedicated hydraulic
-            road-blocking visuals and product-specific animations.
-          </p>
-
-          <div className="mt-10">
-            <RoadBlockerManufacturerIdentityGrid />
+      {selected && (
+        <div className="equipment-modal-backdrop" onClick={() => setSelected(null)}>
+          <div className="equipment-modal" onClick={(e) => e.stopPropagation()}>
+            <button className="equipment-modal-close" onClick={() => setSelected(null)}>×</button>
+            <span>MANUFACTURER TECHNOLOGY PROFILE</span>
+            <h2>{selected}</h2>
+            <p>
+              {selected} high-security vehicle protection technology profile
+              covering rising road blockers, perimeter protection and
+              technical support.
+            </p>
+            <div className="equipment-modal-points">
+              <div>
+                <b>Technology</b>
+                <span>Hydraulic and electromechanical rising road blocker systems</span>
+              </div>
+              <div>
+                <b>Applications</b>
+                <span>Critical infrastructure, government, military and high-security entrances</span>
+              </div>
+              <div>
+                <b>Support</b>
+                <span>Installation, commissioning, inspection and maintenance</span>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <div className="rounded-3xl border border-cyan-400/20 bg-gradient-to-br from-cyan-950/50 to-slate-900 p-8 sm:p-12">
-          <p className="text-sm font-bold uppercase tracking-[0.22em] text-cyan-300">
-            Professional Technical Services
-          </p>
-          <h2 className="mt-3 text-3xl font-bold">
-            Installation, Maintenance & Technical Support
-          </h2>
-          <p className="mt-4 max-w-3xl leading-8 text-slate-300">
-            Installation, commissioning, configuration, preventive maintenance,
-            corrective repair and technical troubleshooting.
-          </p>
-          <Link href="/service-request" className="mt-8 inline-flex rounded-xl bg-cyan-400 px-7 py-3 font-bold text-slate-950">
-            Submit Service Request
-          </Link>
-        </div>
-      </section>
+      )}
     </main>
   );
 }

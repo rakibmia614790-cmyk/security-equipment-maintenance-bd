@@ -1,0 +1,2675 @@
+<!doctype html><html lang="en"><head>
+    <meta charset="utf-8">
+    
+    
+      <link rel="shortcut icon" href="https://144098965.fs1.hubspotusercontent-eu1.net/hubfs/144098965/FAAC_favicon.jpg">
+    
+    <meta name="description" content="">
+    
+    
+    
+    <link rel="preload" as="font" href="https://144098965.fs1.hubspotusercontent-eu1.net/hubfs/144098965/raw_assets/public/faac/fonts/BarlowCondensed-Regular.ttf" type="font/ttf" crossorigin="anonymous">
+
+  <link rel="preload" as="font" href="https://144098965.fs1.hubspotusercontent-eu1.net/hubfs/144098965/raw_assets/public/faac/fonts/BarlowCondensed-Medium.ttf" type="font/ttf" crossorigin="anonymous">
+
+  <link rel="preload" as="font" href="https://144098965.fs1.hubspotusercontent-eu1.net/hubfs/144098965/raw_assets/public/faac/fonts/BarlowCondensed-Bold.ttf" type="font/ttf" crossorigin="anonymous">
+
+  <link rel="preload" as="font" href="https://144098965.fs1.hubspotusercontent-eu1.net/hubfs/144098965/raw_assets/public/faac/fonts/Raleway-VariableFont_wght.ttf" type="font/ttf" crossorigin="anonymous">
+  
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:description" content="">
+    <meta property="og:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:title" content="">
+
+    
+
+    
+    <style>
+a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}.hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}.hs-breadcrumb-menu-divider:before{content:'›';padding-left:10px}.hs-featured-image-link{border:0}.hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}@media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}.hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
+</style>
+
+<link rel="stylesheet" href="https://144098965.fs1.hubspotusercontent-eu1.net/hubfs/144098965/hub_generated/template_assets/1/103065497802/1790346023008/template_main.min.css">
+
+    <style>
+      @font-face {
+        font-family: "Barlow Condensed";
+        src: url("https://144098965.fs1.hubspotusercontent-eu1.net/hubfs/144098965/raw_assets/public/faac/fonts/BarlowCondensed-Regular.ttf") format("truetype");
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Barlow Condensed";
+        src: url("https://144098965.fs1.hubspotusercontent-eu1.net/hubfs/144098965/raw_assets/public/faac/fonts/BarlowCondensed-Medium.ttf") format("truetype");
+        font-display: swap;
+        font-weight: 500;
+      }
+
+      @font-face {
+        font-family: "Barlow Condensed";
+        src: url("https://144098965.fs1.hubspotusercontent-eu1.net/hubfs/144098965/raw_assets/public/faac/fonts/BarlowCondensed-Bold.ttf") format("truetype");
+        font-display: swap;
+        font-weight: 600;
+      }
+
+      @font-face {
+        font-family: "Raleway";
+        src: url("https://144098965.fs1.hubspotusercontent-eu1.net/hubfs/144098965/raw_assets/public/faac/fonts/Raleway-VariableFont_wght.ttf") format("truetype-variations");
+        font-display: swap;
+        font-weight: 1 999;
+      }
+    </style>
+  
+
+    <noscript>
+      <style>
+        .loader {
+          display: none;
+        }
+      </style>
+    </noscript>
+  
+
+      <style>
+        html.lenis,
+        html.lenis body {
+          height: auto;
+        }
+
+        .lenis.lenis-smooth {
+          scroll-behavior: auto !important;
+        }
+
+        .lenis.lenis-smooth [data-lenis-prevent] {
+          overscroll-behavior: contain;
+        }
+
+        .lenis.lenis-stopped {
+          overflow: hidden;
+        }
+
+        .lenis.lenis-smooth iframe {
+          pointer-events: none;
+        }
+      </style>
+    
+    
+
+    
+<!--  Added by GoogleAnalytics4 integration -->
+<script data-cookieconsent="ignore">
+var _hsp = window._hsp = window._hsp || [];
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+var useGoogleConsentModeV2 = true;
+var waitForUpdateMillis = 1000;
+
+
+if (!window._hsGoogleConsentRunOnce) {
+  window._hsGoogleConsentRunOnce = true;
+
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'wait_for_update': waitForUpdateMillis
+  });
+
+  if (useGoogleConsentModeV2) {
+    _hsp.push(['useGoogleConsentModeV2'])
+  } else {
+    _hsp.push(['addPrivacyConsentListener', function(consent){
+      var hasAnalyticsConsent = consent && (consent.allowed || (consent.categories && consent.categories.analytics));
+      var hasAdsConsent = consent && (consent.allowed || (consent.categories && consent.categories.advertisement));
+
+      gtag('consent', 'update', {
+        'ad_storage': hasAdsConsent ? 'granted' : 'denied',
+        'analytics_storage': hasAnalyticsConsent ? 'granted' : 'denied',
+        'ad_user_data': hasAdsConsent ? 'granted' : 'denied',
+        'ad_personalization': hasAdsConsent ? 'granted' : 'denied'
+      });
+    }]);
+  }
+}
+
+gtag('js', new Date());
+gtag('set', 'developer_id.dZTQ1Zm', true);
+gtag('config', 'G-WW465CFJ9Z');
+</script>
+<script data-cookieconsent="ignore" async src="https://www.googletagmanager.com/gtag/js?id=G-WW465CFJ9Z"></script>
+
+<!-- /Added by GoogleAnalytics4 integration -->
+
+<!--  Added by GoogleTagManager integration -->
+<script data-cookieconsent="ignore">
+var _hsp = window._hsp = window._hsp || [];
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+var useGoogleConsentModeV2 = true;
+var waitForUpdateMillis = 1000;
+
+if (useGoogleConsentModeV2) {
+
+  gtag('set','developer_id.dZTQ1Zm',true);
+
+  gtag('consent', 'default', {
+  'ad_storage': 'denied',
+  'analytics_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied',
+  'wait_for_update': waitForUpdateMillis
+  });
+}
+
+var hsLoadGtm = function loadGtm() {
+    if(window._hsGtmLoadOnce) {
+      return;
+    }
+
+    if (useGoogleConsentModeV2) {
+      _hsp.push(['useGoogleConsentModeV2'])
+    }
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TCPTS6GK');
+
+    window._hsGtmLoadOnce = true;
+};
+
+_hsp.push(['addPrivacyConsentListener', function(consent){
+  if(consent.allowed || (consent.categories && consent.categories.analytics)){
+    hsLoadGtm();
+  }
+}]);
+
+</script>
+
+<!-- /Added by GoogleTagManager integration -->
+
+    <link rel="canonical" href="http://www.faac.biz/404">
+
+<script type="text/javascript">
+var _iub = _iub || [];
+_iub.csConfiguration = {"askConsentAtCookiePolicyUpdate":true,"cookiePolicyInOtherWindow":true,"countryDetection":true,"enableFadp":true,"enableLgpd":true,"enableRemoteConsent":true,"enableUspr":true,"floatingPreferencesButtonDisplay":"anchored-center-right","floatingPreferencesButtonIcon":false,"lang":"en","lgpdAppliesGlobally":false,"perPurposeConsent":true,"preferenceCookie":{"expireAfter":180},"siteId":1249813,"cookiePolicyId":32392495,"floatingPreferencesButtonCaption":true,"banner":{"acceptButtonCaptionColor":"white","acceptButtonColor":"#0073CE","acceptButtonDisplay":true,"backgroundColor":"#5A5A5A","closeButtonDisplay":false,"customizeButtonCaptionColor":"white","customizeButtonColor":"#212121","customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"ownerName":"faac.biz","position":"float-top-center","rejectButtonDisplay":true,"showPurposesToggles":true,"showTotalNumberOfProviders":true,"textColor":"#dadada"}};
+</script>
+<script type="text/javascript" src="https://cs.iubenda.com/autoblocking/1249813.js"></script>
+<script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
+<script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TCPTS6GK');</script>
+<!-- End Google Tag Manager -->
+<meta property="og:url" content="http://www.faac.biz/404">
+<meta name="twitter:card" content="summary">
+<meta http-equiv="content-language" content="en">
+
+
+
+
+
+
+  <meta name="generator" content="HubSpot"></head>
+  <body class="overflow-x-clip">
+<!--  Added by GoogleTagManager integration -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCPTS6GK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- /Added by GoogleTagManager integration -->
+
+    
+  <div class="js-loader loader" style="
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+      left: 0;
+      top: 0;
+      z-index: 999;
+      position: fixed;
+      background-color: #000;
+    ">
+    <div class="animate-spin">
+      <div class="animate-pulse w-12 h-12 border-white border-y-2 border-l-2 rounded-full"></div>
+    </div>
+  </div>
+    
+    
+    
+    
+    
+    <div class="text-base overflow-x-clip antialiased text-black bg-white font-body   hs-content-id-0 hs-site-page page ">
+      
+        <div data-global-resource-path="faac-biz/templates/partials/header.html">
+
+
+
+
+
+<header class="js-header header hs-search-hidden z-50 top-0 left-0 w-full fixed transition-all ">
+  <a href="#main-content" class="h-[1px] w-[1px] -left-[1000px] -top-[1000px] overflow-hidden absolute text-left focus:h-auto focus:w-auto focus:left-0 focus:top-0 active:h-auto active:w-auto active:left-0 active:top-0 hover:h-auto hover:w-auto hover:left-0 hover:top-0">Skip to content</a>
+  <div class="hs-search-hidden px-6 lg:px-12">
+    <div class="mx-auto w-full">
+      <div class="flex lg:min-h-[90px] items-center justify-between">
+        
+          <div class="lg:z-10 max-lg:overflow-x-hidden max-lg:overflow-y-auto lg:relative">
+            <div class="js-header-bg-white bg-white absolute top-0 left-0 w-[calc(100%+223px)] h-vh hidden after:bg-white after:content-[''] after:block after:absolute after:h-full after:w-screen after:pointer-events-none after:right-0 after:top-0"></div>
+            <button class="js-menu-back text-sm font-light hidden lg:hidden w-full flex items-center px-6 py-4 bg-neutral-lightest space-x-3 fixed top-[var(--header-height)] z-10 left-0" aria-label="Menu Back">
+              
+    <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="12px" viewbox="0 0 18 12" fill="none" class="w-5 h-5">
+      <path d="M17.5 6L2 6" stroke="black" stroke-width="1.5"></path>
+      <path d="M6.54545 10.5L2 6L6.54545 1.5" stroke="black" stroke-width="1.5"></path>
+    </svg>
+
+  
+
+
+              <span></span>
+            </button>
+            <div class="header-menu hidden pt-11 pb-6 lg:py-0 lg:flex justify-between items-center w-auto max-h-vh-header max-lg:h-vh-header transition-transform max-lg:translate-x-[var(--menu-offset,0)]">
+              
+
+
+
+
+
+
+
+
+
+
+
+<nav class="menu menu--primary w-full lg:w-auto lg:p-0 select-none" aria-label="Main menu">
+  <ul class="menu-wrapper no-list lg:flex lg:items-center lg:space-x-6 p-6 lg:p-0 relative font-medium lg:font-semibold max-h-vh-submenu">
+    
+
+  
+
+  
+
+  
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item lg:text-sm lg:min-h-[90px] flex flex-wrap lg:flex-nowrap items-center justify-between lg:justify-start max-lg:border-b border-neutral-lightest py-4 lg:p-0 [&amp;>.menu-link]:lg:py-4 transition-opacity duration-300  menu-item--depth-1  menu-item--has-submenu hs-skip-lang-url-rewrite" data-depth="1">
+      
+        
+          
+            
+          
+          <button class="menu-link menu-link--toggle text-left menu-child-toggle" aria-haspopup="true" aria-expanded="false">
+            
+            <span>Products</span>
+            
+          </button>
+        
+      
+      
+
+        
+          <button class="menu-child-toggle lg:hidden no-button w-5 h-5 flex items-center justify-center" aria-expanded="false">
+            <span class="sr-only">Show submenu for
+              Products</span>
+            <span class="menu-child-toggle-icon block transition-transform">
+    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="12px" viewbox="0 0 17 12" fill="none" class="">
+      <path d="M0 5.99951L15.5 5.99951" stroke="black" stroke-width="1.5"></path>
+      <path d="M10.9545 10.4995L15.5 5.99951L10.9545 1.49951" stroke="black" stroke-width="1.5"></path>
+    </svg>
+
+  
+
+</span>
+          </button>
+          <div class="menu-submenu absolute lg:p-10 lg:pl-0 bg-white lg:shadow-md hidden w-full lg:w-auto left-full lg:left-0 top-2.5 lg:top-full  menu-submenu--level-2">
+            <ul class="max-lg:h-vh-submenu max-lg:overflow-auto p-6 lg:p-0 lg:text-base">
+              
+              
+              
+    
+    
+    
+    
+      
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item flex flex-wrap lg:flex-nowrap items-center justify-between max-lg:border-b border-neutral-lightest py-4 lg:py-2.5 lg:w-[315px] transition-opacity duration-300  menu-item--depth-2  menu-item--has-submenu hs-skip-lang-url-rewrite" data-depth="2">
+      
+        
+          
+            
+          
+          <button class="menu-link menu-link--toggle text-left menu-child-toggle" aria-haspopup="true" aria-expanded="false">
+            
+              <img class="menu-image" src="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Automazioni%20Cancelli%20e%20Barriere/Automazioni_Cancelli_Barriere_FAAC_Voce_Menu.jpg?width=380&amp;height=546&amp;name=Automazioni_Cancelli_Barriere_FAAC_Voce_Menu.jpg" width="380" height="546" loading="lazy" alt="Gate Automation" style="display: none" srcset="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Automazioni%20Cancelli%20e%20Barriere/Automazioni_Cancelli_Barriere_FAAC_Voce_Menu.jpg?width=190&amp;height=273&amp;name=Automazioni_Cancelli_Barriere_FAAC_Voce_Menu.jpg 190w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Automazioni%20Cancelli%20e%20Barriere/Automazioni_Cancelli_Barriere_FAAC_Voce_Menu.jpg?width=380&amp;height=546&amp;name=Automazioni_Cancelli_Barriere_FAAC_Voce_Menu.jpg 380w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Automazioni%20Cancelli%20e%20Barriere/Automazioni_Cancelli_Barriere_FAAC_Voce_Menu.jpg?width=570&amp;height=819&amp;name=Automazioni_Cancelli_Barriere_FAAC_Voce_Menu.jpg 570w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Automazioni%20Cancelli%20e%20Barriere/Automazioni_Cancelli_Barriere_FAAC_Voce_Menu.jpg?width=760&amp;height=1092&amp;name=Automazioni_Cancelli_Barriere_FAAC_Voce_Menu.jpg 760w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Automazioni%20Cancelli%20e%20Barriere/Automazioni_Cancelli_Barriere_FAAC_Voce_Menu.jpg?width=950&amp;height=1365&amp;name=Automazioni_Cancelli_Barriere_FAAC_Voce_Menu.jpg 950w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Automazioni%20Cancelli%20e%20Barriere/Automazioni_Cancelli_Barriere_FAAC_Voce_Menu.jpg?width=1140&amp;height=1638&amp;name=Automazioni_Cancelli_Barriere_FAAC_Voce_Menu.jpg 1140w" sizes="(max-width: 380px) 100vw, 380px">
+            
+            <span>Gate Automation</span>
+            
+          </button>
+        
+      
+      
+
+        
+          <button class="menu-child-toggle lg:hidden no-button w-5 h-5 flex items-center justify-center" aria-expanded="false">
+            <span class="sr-only">Show submenu for
+              Gate Automation</span>
+            <span class="menu-child-toggle-icon block transition-transform">
+    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="12px" viewbox="0 0 17 12" fill="none" class="">
+      <path d="M0 5.99951L15.5 5.99951" stroke="black" stroke-width="1.5"></path>
+      <path d="M10.9545 10.4995L15.5 5.99951L10.9545 1.49951" stroke="black" stroke-width="1.5"></path>
+    </svg>
+
+  
+
+</span>
+          </button>
+          <div class="menu-submenu lg:p-10 bg-white lg:shadow-md hidden w-full lg:w-auto left-full top-0 absolute  menu-submenu--level-3">
+            <ul class="max-lg:h-vh-submenu max-lg:overflow-auto p-6 lg:p-0">
+              
+              
+              
+    
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item flex flex-wrap lg:flex-nowrap items-center justify-between max-lg:border-b border-neutral-lightest py-4 lg:py-2.5 lg:w-[315px] transition-opacity duration-300  menu-item--depth-3   hs-skip-lang-url-rewrite" data-depth="3">
+      
+        <a class="menu-link   " href="http://www.faac.biz/products/gate-automation/swing-gate-automation">
+          
+          <span>Swing Gate Automation</span>
+          
+        </a>
+      
+      
+    </li>
+    
+  
+              
+              
+    
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item flex flex-wrap lg:flex-nowrap items-center justify-between max-lg:border-b border-neutral-lightest py-4 lg:py-2.5 lg:w-[315px] transition-opacity duration-300  menu-item--depth-3   hs-skip-lang-url-rewrite" data-depth="3">
+      
+        <a class="menu-link   " href="http://www.faac.biz/products/gate-automation/sliding-gate-automation">
+          
+          <span>Sliding Gate Automation</span>
+          
+        </a>
+      
+      
+    </li>
+    
+  
+              
+              
+    
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item flex flex-wrap lg:flex-nowrap items-center justify-between max-lg:border-b border-neutral-lightest py-4 lg:py-2.5 lg:w-[315px] transition-opacity duration-300  menu-item--depth-3   hs-skip-lang-url-rewrite" data-depth="3">
+      
+        <a class="menu-link   " href="http://www.faac.biz/products/gate-automation/garage-door-automation">
+          
+          <span>Garage Door Automation</span>
+          
+        </a>
+      
+      
+    </li>
+    
+  
+              
+              
+    
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item flex flex-wrap lg:flex-nowrap items-center justify-between max-lg:border-b border-neutral-lightest py-4 lg:py-2.5 lg:w-[315px] transition-opacity duration-300  menu-item--depth-3   hs-skip-lang-url-rewrite" data-depth="3">
+      
+        <a class="menu-link   " href="http://www.faac.biz/products/gate-automation/industrial-door-automation">
+          
+          <span>Industrial Door Automation</span>
+          
+        </a>
+      
+      
+    </li>
+    
+  
+              
+            </ul>
+          </div>
+        
+      
+    </li>
+    
+  
+              
+              
+    
+    
+    
+    
+      
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item flex flex-wrap lg:flex-nowrap items-center justify-between max-lg:border-b border-neutral-lightest py-4 lg:py-2.5 lg:w-[315px] transition-opacity duration-300  menu-item--depth-2  menu-item--has-submenu hs-skip-lang-url-rewrite" data-depth="2">
+      
+        
+          
+            
+          
+          <button class="menu-link menu-link--toggle text-left menu-child-toggle" aria-haspopup="true" aria-expanded="false">
+            
+              <img class="menu-image" src="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti/Automazioni%20Cancelli%20e%20Barriere/Barriere%20Automatiche/Barriere_Automatiche_FAAC_Hero_Mobile.jpg?width=380&amp;height=546&amp;name=Barriere_Automatiche_FAAC_Hero_Mobile.jpg" width="380" height="546" loading="lazy" alt="Automatic Barriers" style="display: none" srcset="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti/Automazioni%20Cancelli%20e%20Barriere/Barriere%20Automatiche/Barriere_Automatiche_FAAC_Hero_Mobile.jpg?width=190&amp;height=273&amp;name=Barriere_Automatiche_FAAC_Hero_Mobile.jpg 190w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti/Automazioni%20Cancelli%20e%20Barriere/Barriere%20Automatiche/Barriere_Automatiche_FAAC_Hero_Mobile.jpg?width=380&amp;height=546&amp;name=Barriere_Automatiche_FAAC_Hero_Mobile.jpg 380w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti/Automazioni%20Cancelli%20e%20Barriere/Barriere%20Automatiche/Barriere_Automatiche_FAAC_Hero_Mobile.jpg?width=570&amp;height=819&amp;name=Barriere_Automatiche_FAAC_Hero_Mobile.jpg 570w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti/Automazioni%20Cancelli%20e%20Barriere/Barriere%20Automatiche/Barriere_Automatiche_FAAC_Hero_Mobile.jpg?width=760&amp;height=1092&amp;name=Barriere_Automatiche_FAAC_Hero_Mobile.jpg 760w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti/Automazioni%20Cancelli%20e%20Barriere/Barriere%20Automatiche/Barriere_Automatiche_FAAC_Hero_Mobile.jpg?width=950&amp;height=1365&amp;name=Barriere_Automatiche_FAAC_Hero_Mobile.jpg 950w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti/Automazioni%20Cancelli%20e%20Barriere/Barriere%20Automatiche/Barriere_Automatiche_FAAC_Hero_Mobile.jpg?width=1140&amp;height=1638&amp;name=Barriere_Automatiche_FAAC_Hero_Mobile.jpg 1140w" sizes="(max-width: 380px) 100vw, 380px">
+            
+            <span>Automatic Barriers</span>
+            
+          </button>
+        
+      
+      
+
+        
+          <button class="menu-child-toggle lg:hidden no-button w-5 h-5 flex items-center justify-center" aria-expanded="false">
+            <span class="sr-only">Show submenu for
+              Automatic Barriers</span>
+            <span class="menu-child-toggle-icon block transition-transform">
+    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="12px" viewbox="0 0 17 12" fill="none" class="">
+      <path d="M0 5.99951L15.5 5.99951" stroke="black" stroke-width="1.5"></path>
+      <path d="M10.9545 10.4995L15.5 5.99951L10.9545 1.49951" stroke="black" stroke-width="1.5"></path>
+    </svg>
+
+  
+
+</span>
+          </button>
+          <div class="menu-submenu lg:p-10 bg-white lg:shadow-md hidden w-full lg:w-auto left-full top-0 absolute  menu-submenu--level-3">
+            <ul class="max-lg:h-vh-submenu max-lg:overflow-auto p-6 lg:p-0">
+              
+              
+              
+    
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item flex flex-wrap lg:flex-nowrap items-center justify-between max-lg:border-b border-neutral-lightest py-4 lg:py-2.5 lg:w-[315px] transition-opacity duration-300  menu-item--depth-3   hs-skip-lang-url-rewrite" data-depth="3">
+      
+        <a class="menu-link   " href="http://www.faac.biz/products/automatic-barriers/faac-barriers">
+          
+          <span>FAAC Automatic Barriers</span>
+          
+        </a>
+      
+      
+    </li>
+    
+  
+              
+              
+    
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item flex flex-wrap lg:flex-nowrap items-center justify-between max-lg:border-b border-neutral-lightest py-4 lg:py-2.5 lg:w-[315px] transition-opacity duration-300  menu-item--depth-3   hs-skip-lang-url-rewrite" data-depth="3">
+      
+        <a class="menu-link   " href="http://www.faac.biz/products/automatic-barriers/magnetic-barriers">
+          
+          <span>Magnetic Automatic Barriers</span>
+          
+        </a>
+      
+      
+    </li>
+    
+  
+              
+            </ul>
+          </div>
+        
+      
+    </li>
+    
+  
+              
+              
+    
+    
+    
+    
+      
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item flex flex-wrap lg:flex-nowrap items-center justify-between max-lg:border-b border-neutral-lightest py-4 lg:py-2.5 lg:w-[315px] transition-opacity duration-300  menu-item--depth-2  menu-item--has-submenu hs-skip-lang-url-rewrite" data-depth="2">
+      
+        
+          
+            
+          
+          <button class="menu-link menu-link--toggle text-left menu-child-toggle" aria-haspopup="true" aria-expanded="false">
+            
+              <img class="menu-image" src="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Porte_Ingressi_Automatici_FAAC_Voce_Menu.jpg?width=380&amp;height=546&amp;name=Porte_Ingressi_Automatici_FAAC_Voce_Menu.jpg" width="380" height="546" loading="lazy" alt="Automatic Doors and Entrances" style="display: none" srcset="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Porte_Ingressi_Automatici_FAAC_Voce_Menu.jpg?width=190&amp;height=273&amp;name=Porte_Ingressi_Automatici_FAAC_Voce_Menu.jpg 190w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Porte_Ingressi_Automatici_FAAC_Voce_Menu.jpg?width=380&amp;height=546&amp;name=Porte_Ingressi_Automatici_FAAC_Voce_Menu.jpg 380w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Porte_Ingressi_Automatici_FAAC_Voce_Menu.jpg?width=570&amp;height=819&amp;name=Porte_Ingressi_Automatici_FAAC_Voce_Menu.jpg 570w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Porte_Ingressi_Automatici_FAAC_Voce_Menu.jpg?width=760&amp;height=1092&amp;name=Porte_Ingressi_Automatici_FAAC_Voce_Menu.jpg 760w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Porte_Ingressi_Automatici_FAAC_Voce_Menu.jpg?width=950&amp;height=1365&amp;name=Porte_Ingressi_Automatici_FAAC_Voce_Menu.jpg 950w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Porte_Ingressi_Automatici_FAAC_Voce_Menu.jpg?width=1140&amp;height=1638&amp;name=Porte_Ingressi_Automatici_FAAC_Voce_Menu.jpg 1140w" sizes="(max-width: 380px) 100vw, 380px">
+            
+            <span>Automatic Doors and Entrances</span>
+            
+          </button>
+        
+      
+      
+
+        
+          <button class="menu-child-toggle lg:hidden no-button w-5 h-5 flex items-center justify-center" aria-expanded="false">
+            <span class="sr-only">Show submenu for
+              Automatic Doors and Entrances</span>
+            <span class="menu-child-toggle-icon block transition-transform">
+    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="12px" viewbox="0 0 17 12" fill="none" class="">
+      <path d="M0 5.99951L15.5 5.99951" stroke="black" stroke-width="1.5"></path>
+      <path d="M10.9545 10.4995L15.5 5.99951L10.9545 1.49951" stroke="black" stroke-width="1.5"></path>
+    </svg>
+
+  
+
+</span>
+          </button>
+          <div class="menu-submenu lg:p-10 bg-white lg:shadow-md hidden w-full lg:w-auto left-full top-0 absolute  menu-submenu--level-3">
+            <ul class="max-lg:h-vh-submenu max-lg:overflow-auto p-6 lg:p-0">
+              
+              
+              
+    
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item flex flex-wrap lg:flex-nowrap items-center justify-between max-lg:border-b border-neutral-lightest py-4 lg:py-2.5 lg:w-[315px] transition-opacity duration-300  menu-item--depth-3   hs-skip-lang-url-rewrite" data-depth="3">
+      
+        <a class="menu-link   " href="http://www.faac.biz/products/automatic-doors-and-entrances/automatic-swing-doors">
+          
+          <span>Automatic Swing Doors</span>
+          
+        </a>
+      
+      
+    </li>
+    
+  
+              
+              
+    
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item flex flex-wrap lg:flex-nowrap items-center justify-between max-lg:border-b border-neutral-lightest py-4 lg:py-2.5 lg:w-[315px] transition-opacity duration-300  menu-item--depth-3   hs-skip-lang-url-rewrite" data-depth="3">
+      
+        <a class="menu-link   " href="http://www.faac.biz/products/automatic-doors-and-entrances/automatic-sliding-doors">
+          
+          <span>Automatic Sliding Doors</span>
+          
+        </a>
+      
+      
+    </li>
+    
+  
+              
+              
+    
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item flex flex-wrap lg:flex-nowrap items-center justify-between max-lg:border-b border-neutral-lightest py-4 lg:py-2.5 lg:w-[315px] transition-opacity duration-300  menu-item--depth-3   hs-skip-lang-url-rewrite" data-depth="3">
+      
+        <a class="menu-link   " href="http://www.faac.biz/products/automatic-doors-and-entrances/automatic-revolving-doors">
+          
+          <span>Automatic Revolving Doors</span>
+          
+        </a>
+      
+      
+    </li>
+    
+  
+              
+              
+    
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item flex flex-wrap lg:flex-nowrap items-center justify-between max-lg:border-b border-neutral-lightest py-4 lg:py-2.5 lg:w-[315px] transition-opacity duration-300  menu-item--depth-3   hs-skip-lang-url-rewrite" data-depth="3">
+      
+        <a class="menu-link   " href="https://www.faac.biz/products/velo-d-flexible-high-speed-doors">
+          
+          <span>High-Speed Doors</span>
+          
+        </a>
+      
+      
+    </li>
+    
+  
+              
+            </ul>
+          </div>
+        
+      
+    </li>
+    
+  
+              
+              
+    
+    
+    
+    
+      
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item flex flex-wrap lg:flex-nowrap items-center justify-between max-lg:border-b border-neutral-lightest py-4 lg:py-2.5 lg:w-[315px] transition-opacity duration-300  menu-item--depth-2  menu-item--has-submenu hs-skip-lang-url-rewrite" data-depth="2">
+      
+        
+          
+            
+          
+          <button class="menu-link menu-link--toggle text-left menu-child-toggle" aria-haspopup="true" aria-expanded="false">
+            
+              <img class="menu-image" src="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Sicurezza%20e%20Controllo%20Accessi/Sicurezza_Controllo_Accessi_FAAC_Voce_Menu.jpg?width=380&amp;height=546&amp;name=Sicurezza_Controllo_Accessi_FAAC_Voce_Menu.jpg" width="380" height="546" loading="lazy" alt="Security and Access Control" style="display: none" srcset="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Sicurezza%20e%20Controllo%20Accessi/Sicurezza_Controllo_Accessi_FAAC_Voce_Menu.jpg?width=190&amp;height=273&amp;name=Sicurezza_Controllo_Accessi_FAAC_Voce_Menu.jpg 190w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Sicurezza%20e%20Controllo%20Accessi/Sicurezza_Controllo_Accessi_FAAC_Voce_Menu.jpg?width=380&amp;height=546&amp;name=Sicurezza_Controllo_Accessi_FAAC_Voce_Menu.jpg 380w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Sicurezza%20e%20Controllo%20Accessi/Sicurezza_Controllo_Accessi_FAAC_Voce_Menu.jpg?width=570&amp;height=819&amp;name=Sicurezza_Controllo_Accessi_FAAC_Voce_Menu.jpg 570w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Sicurezza%20e%20Controllo%20Accessi/Sicurezza_Controllo_Accessi_FAAC_Voce_Menu.jpg?width=760&amp;height=1092&amp;name=Sicurezza_Controllo_Accessi_FAAC_Voce_Menu.jpg 760w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Sicurezza%20e%20Controllo%20Accessi/Sicurezza_Controllo_Accessi_FAAC_Voce_Menu.jpg?width=950&amp;height=1365&amp;name=Sicurezza_Controllo_Accessi_FAAC_Voce_Menu.jpg 950w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Sicurezza%20e%20Controllo%20Accessi/Sicurezza_Controllo_Accessi_FAAC_Voce_Menu.jpg?width=1140&amp;height=1638&amp;name=Sicurezza_Controllo_Accessi_FAAC_Voce_Menu.jpg 1140w" sizes="(max-width: 380px) 100vw, 380px">
+            
+            <span>Security and Access Control</span>
+            
+          </button>
+        
+      
+      
+
+        
+          <button class="menu-child-toggle lg:hidden no-button w-5 h-5 flex items-center justify-center" aria-expanded="false">
+            <span class="sr-only">Show submenu for
+              Security and Access Control</span>
+            <span class="menu-child-toggle-icon block transition-transform">
+    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="12px" viewbox="0 0 17 12" fill="none" class="">
+      <path d="M0 5.99951L15.5 5.99951" stroke="black" stroke-width="1.5"></path>
+      <path d="M10.9545 10.4995L15.5 5.99951L10.9545 1.49951" stroke="black" stroke-width="1.5"></path>
+    </svg>
+
+  
+
+</span>
+          </button>
+          <div class="menu-submenu lg:p-10 bg-white lg:shadow-md hidden w-full lg:w-auto left-full top-0 absolute  menu-submenu--level-3">
+            <ul class="max-lg:h-vh-submenu max-lg:overflow-auto p-6 lg:p-0">
+              
+              
+              
+    
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item flex flex-wrap lg:flex-nowrap items-center justify-between max-lg:border-b border-neutral-lightest py-4 lg:py-2.5 lg:w-[315px] transition-opacity duration-300  menu-item--depth-3   hs-skip-lang-url-rewrite" data-depth="3">
+      
+        <a class="menu-link   " href="http://www.faac.biz/products/security-and-access-control/keydom-access-control-system">
+          
+          <span>Keydom Access Control System</span>
+          
+        </a>
+      
+      
+    </li>
+    
+  
+              
+              
+    
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item flex flex-wrap lg:flex-nowrap items-center justify-between max-lg:border-b border-neutral-lightest py-4 lg:py-2.5 lg:w-[315px] transition-opacity duration-300  menu-item--depth-3   hs-skip-lang-url-rewrite" data-depth="3">
+      
+        <a class="menu-link   " href="https://www.magnetic-access.com/en/products/pedestrian-gates.html" target="_blank" rel="noopener">
+          
+          <span>Turnstiles and Motorized Gates</span>
+          
+        </a>
+      
+      
+        
+    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="16px" viewbox="0 0 17 16" fill="none" class="opacity-30">
+      <path d="M0 14.4999L12 14.4999L12 2.49988" stroke="black" stroke-width="1.5"></path>
+      <path d="M16.5 5.49988L12 1.49988L7.5 5.49988" stroke="black" stroke-width="1.5"></path>
+    </svg>
+
+  
+
+
+      
+    </li>
+    
+  
+              
+              
+    
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item flex flex-wrap lg:flex-nowrap items-center justify-between max-lg:border-b border-neutral-lightest py-4 lg:py-2.5 lg:w-[315px] transition-opacity duration-300  menu-item--depth-3   hs-skip-lang-url-rewrite" data-depth="3">
+      
+        <a class="menu-link   " href="https://www.cometaspa.com/en/Products/Security-Portals/" target="_blank" rel="noopener">
+          
+          <span>Security Portals</span>
+          
+        </a>
+      
+      
+        
+    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="16px" viewbox="0 0 17 16" fill="none" class="opacity-30">
+      <path d="M0 14.4999L12 14.4999L12 2.49988" stroke="black" stroke-width="1.5"></path>
+      <path d="M16.5 5.49988L12 1.49988L7.5 5.49988" stroke="black" stroke-width="1.5"></path>
+    </svg>
+
+  
+
+
+      
+    </li>
+    
+  
+              
+              
+    
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item flex flex-wrap lg:flex-nowrap items-center justify-between max-lg:border-b border-neutral-lightest py-4 lg:py-2.5 lg:w-[315px] transition-opacity duration-300  menu-item--depth-3   hs-skip-lang-url-rewrite" data-depth="3">
+      
+        <a class="menu-link   " href="http://www.faac.biz/products/security-and-access-control/traffic-and-high-security-bollards">
+          
+          <span>Traffic and High-Security Bollards</span>
+          
+        </a>
+      
+      
+    </li>
+    
+  
+              
+            </ul>
+          </div>
+        
+      
+    </li>
+    
+  
+              
+              
+    
+    
+    
+    
+      
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item flex flex-wrap lg:flex-nowrap items-center justify-between max-lg:border-b border-neutral-lightest py-4 lg:py-2.5 lg:w-[315px] transition-opacity duration-300  menu-item--depth-2   hs-skip-lang-url-rewrite" data-depth="2">
+      
+        <a class="menu-link   " href="http://www.faac.biz/products/automation-accessories">
+          
+            <img class="menu-image" src="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Accessori_Automazione_FAAC_Voce_Menu_FDS.jpg?width=380&amp;height=546&amp;name=Accessori_Automazione_FAAC_Voce_Menu_FDS.jpg" width="380" height="546" loading="lazy" alt="Automation Accessories" style="display: none" srcset="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Accessori_Automazione_FAAC_Voce_Menu_FDS.jpg?width=190&amp;height=273&amp;name=Accessori_Automazione_FAAC_Voce_Menu_FDS.jpg 190w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Accessori_Automazione_FAAC_Voce_Menu_FDS.jpg?width=380&amp;height=546&amp;name=Accessori_Automazione_FAAC_Voce_Menu_FDS.jpg 380w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Accessori_Automazione_FAAC_Voce_Menu_FDS.jpg?width=570&amp;height=819&amp;name=Accessori_Automazione_FAAC_Voce_Menu_FDS.jpg 570w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Accessori_Automazione_FAAC_Voce_Menu_FDS.jpg?width=760&amp;height=1092&amp;name=Accessori_Automazione_FAAC_Voce_Menu_FDS.jpg 760w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Accessori_Automazione_FAAC_Voce_Menu_FDS.jpg?width=950&amp;height=1365&amp;name=Accessori_Automazione_FAAC_Voce_Menu_FDS.jpg 950w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Accessori_Automazione_FAAC_Voce_Menu_FDS.jpg?width=1140&amp;height=1638&amp;name=Accessori_Automazione_FAAC_Voce_Menu_FDS.jpg 1140w" sizes="(max-width: 380px) 100vw, 380px">
+          
+          <span>Automation Accessories</span>
+          
+        </a>
+      
+      
+    </li>
+    
+  
+              
+              
+    
+    
+    
+    
+      
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item flex flex-wrap lg:flex-nowrap items-center justify-between max-lg:border-b border-neutral-lightest py-4 lg:py-2.5 lg:w-[315px] transition-opacity duration-300  menu-item--depth-2   hs-skip-lang-url-rewrite" data-depth="2">
+      
+        <a class="menu-link   " href="https://www.hubparking.com/" target="_blank" rel="noopener">
+          
+            <img class="menu-image" src="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Sistemi_Parcheggio_FAAC_Voce_Menu.jpg?width=380&amp;height=546&amp;name=Sistemi_Parcheggio_FAAC_Voce_Menu.jpg" width="380" height="546" loading="lazy" alt="Parking Systems" style="display: none" srcset="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Sistemi_Parcheggio_FAAC_Voce_Menu.jpg?width=190&amp;height=273&amp;name=Sistemi_Parcheggio_FAAC_Voce_Menu.jpg 190w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Sistemi_Parcheggio_FAAC_Voce_Menu.jpg?width=380&amp;height=546&amp;name=Sistemi_Parcheggio_FAAC_Voce_Menu.jpg 380w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Sistemi_Parcheggio_FAAC_Voce_Menu.jpg?width=570&amp;height=819&amp;name=Sistemi_Parcheggio_FAAC_Voce_Menu.jpg 570w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Sistemi_Parcheggio_FAAC_Voce_Menu.jpg?width=760&amp;height=1092&amp;name=Sistemi_Parcheggio_FAAC_Voce_Menu.jpg 760w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Sistemi_Parcheggio_FAAC_Voce_Menu.jpg?width=950&amp;height=1365&amp;name=Sistemi_Parcheggio_FAAC_Voce_Menu.jpg 950w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Sistemi_Parcheggio_FAAC_Voce_Menu.jpg?width=1140&amp;height=1638&amp;name=Sistemi_Parcheggio_FAAC_Voce_Menu.jpg 1140w" sizes="(max-width: 380px) 100vw, 380px">
+          
+          <span>Parking Systems</span>
+          
+        </a>
+      
+      
+        
+    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="16px" viewbox="0 0 17 16" fill="none" class="opacity-30">
+      <path d="M0 14.4999L12 14.4999L12 2.49988" stroke="black" stroke-width="1.5"></path>
+      <path d="M16.5 5.49988L12 1.49988L7.5 5.49988" stroke="black" stroke-width="1.5"></path>
+    </svg>
+
+  
+
+
+      
+    </li>
+    
+  
+              
+              
+    
+    
+    
+    
+      
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item flex flex-wrap lg:flex-nowrap items-center justify-between max-lg:border-b border-neutral-lightest py-4 lg:py-2.5 lg:w-[315px] transition-opacity duration-300  menu-item--depth-2   hs-skip-lang-url-rewrite" data-depth="2">
+      
+        <a class="menu-link   " href="http://www.faac.biz/simply-connect">
+          
+            <img class="menu-image" src="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Simply%20Connect/Simply_Connect_FAAC_Voce_Menu.jpg?width=380&amp;height=546&amp;name=Simply_Connect_FAAC_Voce_Menu.jpg" width="380" height="546" loading="lazy" alt="Simply Connect" style="display: none" srcset="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Simply%20Connect/Simply_Connect_FAAC_Voce_Menu.jpg?width=190&amp;height=273&amp;name=Simply_Connect_FAAC_Voce_Menu.jpg 190w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Simply%20Connect/Simply_Connect_FAAC_Voce_Menu.jpg?width=380&amp;height=546&amp;name=Simply_Connect_FAAC_Voce_Menu.jpg 380w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Simply%20Connect/Simply_Connect_FAAC_Voce_Menu.jpg?width=570&amp;height=819&amp;name=Simply_Connect_FAAC_Voce_Menu.jpg 570w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Simply%20Connect/Simply_Connect_FAAC_Voce_Menu.jpg?width=760&amp;height=1092&amp;name=Simply_Connect_FAAC_Voce_Menu.jpg 760w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Simply%20Connect/Simply_Connect_FAAC_Voce_Menu.jpg?width=950&amp;height=1365&amp;name=Simply_Connect_FAAC_Voce_Menu.jpg 950w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Simply%20Connect/Simply_Connect_FAAC_Voce_Menu.jpg?width=1140&amp;height=1638&amp;name=Simply_Connect_FAAC_Voce_Menu.jpg 1140w" sizes="(max-width: 380px) 100vw, 380px">
+          
+          <span>Simply Connect</span>
+          
+        </a>
+      
+      
+    </li>
+    
+  
+              
+              
+    
+    
+    
+    
+      
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item flex flex-wrap lg:flex-nowrap items-center justify-between max-lg:border-b border-neutral-lightest py-4 lg:py-2.5 lg:w-[315px] transition-opacity duration-300  menu-item--depth-2   hs-skip-lang-url-rewrite" data-depth="2">
+      
+        <a class="menu-link   " href="http://www.faac.biz/roller-shutter-and-awning-motors">
+          
+            <img class="menu-image" src="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Motori%20per%20Tapparelle%20e%20Tende/Motori_Tapparelle_Tende_FAAC_Voce_Menu.jpg?width=380&amp;height=546&amp;name=Motori_Tapparelle_Tende_FAAC_Voce_Menu.jpg" width="380" height="546" loading="lazy" alt="Roller Shutter and Awning Motors" style="display: none" srcset="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Motori%20per%20Tapparelle%20e%20Tende/Motori_Tapparelle_Tende_FAAC_Voce_Menu.jpg?width=190&amp;height=273&amp;name=Motori_Tapparelle_Tende_FAAC_Voce_Menu.jpg 190w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Motori%20per%20Tapparelle%20e%20Tende/Motori_Tapparelle_Tende_FAAC_Voce_Menu.jpg?width=380&amp;height=546&amp;name=Motori_Tapparelle_Tende_FAAC_Voce_Menu.jpg 380w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Motori%20per%20Tapparelle%20e%20Tende/Motori_Tapparelle_Tende_FAAC_Voce_Menu.jpg?width=570&amp;height=819&amp;name=Motori_Tapparelle_Tende_FAAC_Voce_Menu.jpg 570w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Motori%20per%20Tapparelle%20e%20Tende/Motori_Tapparelle_Tende_FAAC_Voce_Menu.jpg?width=760&amp;height=1092&amp;name=Motori_Tapparelle_Tende_FAAC_Voce_Menu.jpg 760w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Motori%20per%20Tapparelle%20e%20Tende/Motori_Tapparelle_Tende_FAAC_Voce_Menu.jpg?width=950&amp;height=1365&amp;name=Motori_Tapparelle_Tende_FAAC_Voce_Menu.jpg 950w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Prodotti%20e%20Servizi/Motori%20per%20Tapparelle%20e%20Tende/Motori_Tapparelle_Tende_FAAC_Voce_Menu.jpg?width=1140&amp;height=1638&amp;name=Motori_Tapparelle_Tende_FAAC_Voce_Menu.jpg 1140w" sizes="(max-width: 380px) 100vw, 380px">
+          
+          <span>Roller Shutter and Awning Motors</span>
+          
+        </a>
+      
+      
+    </li>
+    
+  
+              
+            </ul>
+          </div>
+        
+      
+    </li>
+    
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item lg:text-sm lg:min-h-[90px] flex flex-wrap lg:flex-nowrap items-center justify-between lg:justify-start max-lg:border-b border-neutral-lightest py-4 lg:p-0 [&amp;>.menu-link]:lg:py-4 transition-opacity duration-300  menu-item--depth-1   hs-skip-lang-url-rewrite" data-depth="1">
+      
+        <a class="menu-link   " href="http://www.faac.biz/solutions-for-enterprise-clients">
+          
+          <span>Solutions</span>
+          
+        </a>
+      
+      
+    </li>
+    
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item lg:text-sm lg:min-h-[90px] flex flex-wrap lg:flex-nowrap items-center justify-between lg:justify-start max-lg:border-b border-neutral-lightest py-4 lg:p-0 [&amp;>.menu-link]:lg:py-4 transition-opacity duration-300  menu-item--depth-1   hs-skip-lang-url-rewrite" data-depth="1">
+      
+        <a class="menu-link   " href="http://www.faac.biz/support">
+          
+          <span>Support</span>
+          
+        </a>
+      
+      
+    </li>
+    
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item lg:text-sm lg:min-h-[90px] flex flex-wrap lg:flex-nowrap items-center justify-between lg:justify-start max-lg:border-b border-neutral-lightest py-4 lg:p-0 [&amp;>.menu-link]:lg:py-4 transition-opacity duration-300  menu-item--depth-1  menu-item--has-submenu hs-skip-lang-url-rewrite" data-depth="1">
+      
+        
+          
+            
+          
+          <button class="menu-link menu-link--toggle text-left menu-child-toggle" aria-haspopup="true" aria-expanded="false">
+            
+            <span>Company</span>
+            
+          </button>
+        
+      
+      
+
+        
+          <button class="menu-child-toggle lg:hidden no-button w-5 h-5 flex items-center justify-center" aria-expanded="false">
+            <span class="sr-only">Show submenu for
+              Company</span>
+            <span class="menu-child-toggle-icon block transition-transform">
+    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="12px" viewbox="0 0 17 12" fill="none" class="">
+      <path d="M0 5.99951L15.5 5.99951" stroke="black" stroke-width="1.5"></path>
+      <path d="M10.9545 10.4995L15.5 5.99951L10.9545 1.49951" stroke="black" stroke-width="1.5"></path>
+    </svg>
+
+  
+
+</span>
+          </button>
+          <div class="menu-submenu absolute lg:p-10 lg:pl-0 bg-white lg:shadow-md hidden w-full lg:w-auto left-full lg:left-0 top-2.5 lg:top-full  menu-submenu--level-2">
+            <ul class="max-lg:h-vh-submenu max-lg:overflow-auto p-6 lg:p-0 lg:text-base">
+              
+              
+              
+    
+    
+    
+    
+      
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item flex flex-wrap lg:flex-nowrap items-center justify-between max-lg:border-b border-neutral-lightest py-4 lg:py-2.5 lg:w-[315px] transition-opacity duration-300  menu-item--depth-2   hs-skip-lang-url-rewrite" data-depth="2">
+      
+        <a class="menu-link   " href="http://www.faac.biz/about-us">
+          
+            <img class="menu-image" src="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Chi_Siamo_FAAC_Voce_Menu.jpg?width=380&amp;height=546&amp;name=Chi_Siamo_FAAC_Voce_Menu.jpg" width="380" height="546" loading="lazy" alt="About Us" style="display: none" srcset="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Chi_Siamo_FAAC_Voce_Menu.jpg?width=190&amp;height=273&amp;name=Chi_Siamo_FAAC_Voce_Menu.jpg 190w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Chi_Siamo_FAAC_Voce_Menu.jpg?width=380&amp;height=546&amp;name=Chi_Siamo_FAAC_Voce_Menu.jpg 380w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Chi_Siamo_FAAC_Voce_Menu.jpg?width=570&amp;height=819&amp;name=Chi_Siamo_FAAC_Voce_Menu.jpg 570w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Chi_Siamo_FAAC_Voce_Menu.jpg?width=760&amp;height=1092&amp;name=Chi_Siamo_FAAC_Voce_Menu.jpg 760w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Chi_Siamo_FAAC_Voce_Menu.jpg?width=950&amp;height=1365&amp;name=Chi_Siamo_FAAC_Voce_Menu.jpg 950w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Menu/Chi_Siamo_FAAC_Voce_Menu.jpg?width=1140&amp;height=1638&amp;name=Chi_Siamo_FAAC_Voce_Menu.jpg 1140w" sizes="(max-width: 380px) 100vw, 380px">
+          
+          <span>About Us</span>
+          
+        </a>
+      
+      
+    </li>
+    
+  
+              
+              
+    
+    
+    
+    
+      
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item flex flex-wrap lg:flex-nowrap items-center justify-between max-lg:border-b border-neutral-lightest py-4 lg:py-2.5 lg:w-[315px] transition-opacity duration-300  menu-item--depth-2   hs-skip-lang-url-rewrite" data-depth="2">
+      
+        <a class="menu-link   " href="http://careers.faacgroup.com/" target="_blank" rel="noopener">
+          
+            <img class="menu-image" src="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Company/Lavora%20con%20noi/Lavora_con_Noi_FAAC_Voce_Menu.jpg?width=380&amp;height=546&amp;name=Lavora_con_Noi_FAAC_Voce_Menu.jpg" width="380" height="546" loading="lazy" alt="Careers" style="display: none" srcset="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Company/Lavora%20con%20noi/Lavora_con_Noi_FAAC_Voce_Menu.jpg?width=190&amp;height=273&amp;name=Lavora_con_Noi_FAAC_Voce_Menu.jpg 190w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Company/Lavora%20con%20noi/Lavora_con_Noi_FAAC_Voce_Menu.jpg?width=380&amp;height=546&amp;name=Lavora_con_Noi_FAAC_Voce_Menu.jpg 380w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Company/Lavora%20con%20noi/Lavora_con_Noi_FAAC_Voce_Menu.jpg?width=570&amp;height=819&amp;name=Lavora_con_Noi_FAAC_Voce_Menu.jpg 570w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Company/Lavora%20con%20noi/Lavora_con_Noi_FAAC_Voce_Menu.jpg?width=760&amp;height=1092&amp;name=Lavora_con_Noi_FAAC_Voce_Menu.jpg 760w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Company/Lavora%20con%20noi/Lavora_con_Noi_FAAC_Voce_Menu.jpg?width=950&amp;height=1365&amp;name=Lavora_con_Noi_FAAC_Voce_Menu.jpg 950w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/FAAC.IT/Company/Lavora%20con%20noi/Lavora_con_Noi_FAAC_Voce_Menu.jpg?width=1140&amp;height=1638&amp;name=Lavora_con_Noi_FAAC_Voce_Menu.jpg 1140w" sizes="(max-width: 380px) 100vw, 380px">
+          
+          <span>Careers</span>
+          
+        </a>
+      
+      
+        
+    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="16px" viewbox="0 0 17 16" fill="none" class="opacity-30">
+      <path d="M0 14.4999L12 14.4999L12 2.49988" stroke="black" stroke-width="1.5"></path>
+      <path d="M16.5 5.49988L12 1.49988L7.5 5.49988" stroke="black" stroke-width="1.5"></path>
+    </svg>
+
+  
+
+
+      
+    </li>
+    
+  
+              
+            </ul>
+          </div>
+        
+      
+    </li>
+    
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item lg:text-sm lg:min-h-[90px] flex flex-wrap lg:flex-nowrap items-center justify-between lg:justify-start max-lg:border-b border-neutral-lightest py-4 lg:p-0 [&amp;>.menu-link]:lg:py-4 transition-opacity duration-300  menu-item--depth-1   hs-skip-lang-url-rewrite" data-depth="1">
+      
+        <a class="menu-link   " href="http://www.faac.biz/news">
+          
+          <span>News</span>
+          
+        </a>
+      
+      
+    </li>
+    
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    <li class="menu-item lg:text-sm lg:min-h-[90px] flex flex-wrap lg:flex-nowrap items-center justify-between lg:justify-start max-lg:border-b border-neutral-lightest py-4 lg:p-0 [&amp;>.menu-link]:lg:py-4 transition-opacity duration-300  menu-item--depth-1   hs-skip-lang-url-rewrite" data-depth="1">
+      
+        <a class="menu-link   " href="http://www.faac.biz/contacts">
+          
+          <span>Contacts</span>
+          
+        </a>
+      
+      
+    </li>
+    
+  
+  
+
+
+  </ul>
+</nav>
+
+
+              
+                <div class="mt-auto lg:hidden pl-6 self-start">
+                  <div id="hs_cos_wrapper_country_selector_header_mobile" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+  
+  
+  
+  
+  <a class="" href="http://www.faac.biz/country-selector">
+    
+<span class="flex items-center space-x-2 country-selector">
+  <span class="border border-neutral-light p-1 rounded-full">
+    
+
+  
+    
+  
+
+  
+    
+    
+      
+    
+    
+    <img class="rounded-full lg:w-[18px]" src="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=25&amp;height=25&amp;name=Country_Selector_BIZ_Export_International.png" alt="International" loading="lazy" width="25" height="25" style="max-width: 100%; height: auto;" srcset="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=13&amp;height=13&amp;name=Country_Selector_BIZ_Export_International.png 13w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=25&amp;height=25&amp;name=Country_Selector_BIZ_Export_International.png 25w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=38&amp;height=38&amp;name=Country_Selector_BIZ_Export_International.png 38w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=50&amp;height=50&amp;name=Country_Selector_BIZ_Export_International.png 50w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=63&amp;height=63&amp;name=Country_Selector_BIZ_Export_International.png 63w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=75&amp;height=75&amp;name=Country_Selector_BIZ_Export_International.png 75w" sizes="(max-width: 25px) 100vw, 25px">
+  
+  </span>
+  <span class="font-semibold text-xs">International</span>
+</span>
+
+  </a></div>
+                </div>
+              
+            </div>
+          </div>
+        
+        <div class="lg:mr-auto ml-4 lg:ml-6 max-lg:order-1">
+          
+            <button class="js-header-toggle w-8 h-8 flex items-center justify-center" aria-label="Menu toggle">
+              <span class="hamburger-open">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewbox="0 0 16 16" fill="none" class="">
+      <g clip-path="url(#clip0_12221_993)">
+        <path d="M0 2.5H20" stroke="black"></path>
+        <path d="M0 8H20" stroke="black"></path>
+        <path d="M0 13.5H20" stroke="black"></path>
+      </g>
+      <defs>
+        <clippath id="clip0_12221_993">
+          <rect width="16" height="16" fill="white"></rect>
+        </clippath>
+      </defs>
+    </svg>
+
+  
+
+</span>
+              <span class="hamburger-close">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewbox="0 0 16 16" fill="none" class="">
+      <g clip-path="url(#clip0_12221_995)">
+        <path d="M1 1L15 15" stroke="black" stroke-linejoin="round"></path>
+        <path d="M15 1L1 15" stroke="black" stroke-linejoin="round"></path>
+      </g>
+      <defs>
+        <clippath id="clip0_12221_995">
+          <rect width="16" height="16" fill="white"></rect>
+        </clippath>
+      </defs>
+    </svg>
+
+  
+
+</span>
+            </button>
+          
+        </div>
+        <div class="flex items-center justify-between w-full lg:w-auto lg:absolute lg:left-1/2 lg:-translate-x-1/2 max-lg:z-10">
+          <div class="max-w-[110px] lg:max-w-[180px] py-3">
+            <div id="hs_cos_wrapper_logo-header" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+<div>
+  
+    
+  
+  
+  
+  
+  <a class="" href="http://www.faac.biz">
+    
+    
+
+  
+    
+  
+
+  
+    
+    
+      
+    
+    
+    <img class="" src="https://144098965.fs1.hubspotusercontent-eu1.net/hubfs/144098965/raw_assets/public/faac/images/faac-logo.svg" alt="FAAC" width="180" height="46" style="max-width: 100%; height: auto;">
+  
+    
+  </a>
+  
+</div></div>
+          </div>
+        </div>
+        
+          <div class="flex items-center space-x-6">
+            <div id="hs_cos_wrapper_search-header" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+
+  
+
+
+
+
+<div class="hs-search-field relative group max-lg:overflow-hidden focus-within:max-lg:overflow-visible focus-within:max-lg:px-6 focus-within:max-lg:bg-white focus-within:max-lg:flex focus-within:max-lg:items-center focus-within:max-lg:justify-center focus-within:max-lg:h-[var(--header-height)] focus-within:max-lg:absolute focus-within:max-lg:top-0 focus-within:max-lg:left-0 focus-within:max-lg:w-full focus-within:z-20">
+  <div class="hs-search-field__bar relative group-focus-within:max-lg:w-full">
+    <form data-hs-do-not-collect="true" action="/hs-search-results">
+      
+      <input type="text" class="hs-search-field__input lg:bg-transparent relative border-0 text-sm lg:text-xs border-neutral-lightest font-semibold placeholder:text-black/60 placeholder:lg:text-primary group-focus-within:max-lg:!border-b group-focus-within:max-lg:w-full group-focus-within:max-lg:h-auto group-focus-within:max-lg:opacity-100 max-lg:opacity-0 group-focus-within:max-lg:z-auto max-lg:w-8 max-lg:h-8 max-lg:z-10" name="term" autocomplete="off" aria-label="Search" data-results-for="Results for" placeholder="Search here...">
+
+      
+        <input type="hidden" name="type" value="SITE_PAGE">
+      
+      
+      
+        <input type="hidden" name="type" value="BLOG_POST">
+        <input type="hidden" name="type" value="LISTING_PAGE">
+      
+      
+
+      
+        <button class="absolute top-1/2 -translate-y-1/2 right-0 w-8 h-8 flex items-center justify-center" aria-label="Search">
+          
+    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewbox="0 0 16 16" fill="none" class="">
+      <g clip-path="url(#clip0_12209_43046)">
+        <path d="M10.5128 10.5147L14.998 15M6.5483 12.1005C9.61362 12.1005 12.0986 9.61557 12.0986 6.55025C12.0986 3.48493 9.61362 1 6.5483 1C3.48298 1 0.998047 3.48493 0.998047 6.55025C0.998047 9.61557 3.48298 12.1005 6.5483 12.1005Z" stroke="black"></path>
+      </g>
+      <defs>
+        <clippath id="clip0_12209_43046">
+          <rect width="16" height="16" fill="white" transform="translate(-0.00195312)"></rect>
+        </clippath>
+      </defs>
+    </svg>
+
+  
+
+
+        </button>
+      
+    </form>
+  </div>
+  <ul class="hs-search-field__suggestions empty:hidden absolute top-full left-0 w-full px-6 py-3 lg:p-3 bg-white shadow-lg [&amp;_.hs-highlight-title]:text-primary [&amp;_#results-for]:mb-2 [&amp;_#results-for]:font-semibold z-10"></ul>
+</div></div>
+            
+              <span class="country-selector-divider hidden lg:inline-block h-4 border-l border-black"></span>
+              <div class="hidden lg:inline-block">
+                <div id="hs_cos_wrapper_country_selector_header" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+  
+  
+  
+  
+  <a class="" href="http://www.faac.biz/country-selector">
+    
+<span class="flex items-center space-x-2 country-selector">
+  <span class="border border-neutral-light p-1 rounded-full">
+    
+
+  
+    
+  
+
+  
+    
+    
+      
+    
+    
+    <img class="rounded-full lg:w-[18px]" src="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=25&amp;height=25&amp;name=Country_Selector_BIZ_Export_International.png" alt="International" loading="lazy" width="25" height="25" style="max-width: 100%; height: auto;" srcset="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=13&amp;height=13&amp;name=Country_Selector_BIZ_Export_International.png 13w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=25&amp;height=25&amp;name=Country_Selector_BIZ_Export_International.png 25w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=38&amp;height=38&amp;name=Country_Selector_BIZ_Export_International.png 38w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=50&amp;height=50&amp;name=Country_Selector_BIZ_Export_International.png 50w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=63&amp;height=63&amp;name=Country_Selector_BIZ_Export_International.png 63w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=75&amp;height=75&amp;name=Country_Selector_BIZ_Export_International.png 75w" sizes="(max-width: 25px) 100vw, 25px">
+  
+  </span>
+  <span class="font-semibold text-xs">International</span>
+</span>
+
+  </a></div>
+              </div>
+            
+          </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="js-header-bg max-lg:!hidden hidden fixed inset-0 w-full h-full bg-[#00000059] pointer-events-auto"></div>
+</header>
+<div class="h-[var(--header-height)]"></div></div>
+      
+
+      <main id="main-content">
+        
+  
+  <main id="main-content" class="body-container-wrapper">
+    <section class="dnd-section">
+      <div class="row-fluid">
+        <div class="error-page" data-error="404">
+          <div id="hs_cos_wrapper_content" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_content_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><h1>Page not found.</h1></span></div>
+          <div id="hs_cos_wrapper_button" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+
+  
+
+
+
+  
+
+
+<div class=" lg:text-left text-left">
+  
+  
+
+  
+    
+    
+      
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <a class="group py-2.5 px-5 lg:py-3 lg:px-6 font-semibold text-xs lg:text-base inline-block transition-colors text-center border bg-primary border-primary hover:bg-neutral-dark hover:border-neutral-dark text-white " href="/">
+    <span class="flex flex-row items-center space-x-3 group-hover:space-x-4 [&amp;>*]:transition-all [&amp;>*]:duration-300">
+      
+      <span>
+        
+  Go Home
+  
+      </span>
+      
+    </span>
+  </a>
+</div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+      </main>
+      
+        <div data-global-resource-path="faac-biz/templates/partials/footer.html"><footer class="bg-primary text-white hs-search-hidden overflow-hidden">
+  
+    <div class="px-6 lg:px-12">
+      <div class="max-w-content mx-auto w-full">
+        <div class="js-anim-container flex flex-col lg:flex-row lg:justify-between space-y-4 lg:space-y-0 lg:divide-x">
+          <div class="lg:w-1/4 lg:pl-0 lg:px-11 pt-10 lg:pt-8 lg:pb-20 border-white/20 flex flex-col">
+            <div class="mb-10 lg:mb-6 lg:mt-3 max-w-[237px]">
+              <div id="hs_cos_wrapper_logo-footer" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+<div>
+  
+    
+
+  
+    
+  
+
+  
+    
+    
+      
+    
+    
+    <img class="" src="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/raw_assets/public/faac/images/a-company-of-faac-technologies.png?width=237&amp;height=27&amp;name=a-company-of-faac-technologies.png" alt="A Company of FAAC Technologies" width="237" height="27" style="max-width: 100%; height: auto;" srcset="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/raw_assets/public/faac/images/a-company-of-faac-technologies.png?width=119&amp;height=14&amp;name=a-company-of-faac-technologies.png 119w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/raw_assets/public/faac/images/a-company-of-faac-technologies.png?width=237&amp;height=27&amp;name=a-company-of-faac-technologies.png 237w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/raw_assets/public/faac/images/a-company-of-faac-technologies.png?width=356&amp;height=41&amp;name=a-company-of-faac-technologies.png 356w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/raw_assets/public/faac/images/a-company-of-faac-technologies.png?width=474&amp;height=54&amp;name=a-company-of-faac-technologies.png 474w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/raw_assets/public/faac/images/a-company-of-faac-technologies.png?width=593&amp;height=68&amp;name=a-company-of-faac-technologies.png 593w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/raw_assets/public/faac/images/a-company-of-faac-technologies.png?width=711&amp;height=81&amp;name=a-company-of-faac-technologies.png 711w" sizes="(max-width: 237px) 100vw, 237px">
+  
+  
+</div></div>
+            </div>
+            <div class="[&amp;_a]:text-2xs lg:[&amp;_a]:text-xs [&amp;_svg]:w-3 [&amp;_svg]:h-3 mb-6 lg:mb-0">
+              <div id="hs_cos_wrapper_footer_cta" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+
+  
+
+
+
+  
+
+
+<div class=" lg:text-left text-left">
+  
+  
+
+  
+    
+    
+      
+      
+    
+    
+  
+
+  
+  
+  
+  
+  
+    
+  
+  <a class="group pr-5 lg:pr-6 font-semibold text-xs lg:text-sm inline-block transition-colors text-center text-white after:bg-white " href="https://faactechnologies.com/" target="_blank" rel="noopener">
+    <span class="flex flex-row items-center space-x-3 group-hover:space-x-4 [&amp;>*]:transition-all [&amp;>*]:duration-300">
+      
+      <span>
+        
+  FAAC Technologies
+  
+      </span>
+      
+        
+    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="16px" viewbox="0 0 17 16" fill="none" class="w-4 h-4 lg:w-5 lg:h-5 [&amp;_*]:stroke-white">
+      <path d="M0 14.4999L12 14.4999L12 2.49988" stroke="black" stroke-width="1.5"></path>
+      <path d="M16.5 5.49988L12 1.49988L7.5 5.49988" stroke="black" stroke-width="1.5"></path>
+    </svg>
+
+  
+
+
+      
+    </span>
+  </a>
+</div></div>
+            </div>
+            
+              <div class="mt-auto hidden lg:block">
+                <div id="hs_cos_wrapper_country_selector_footer" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+  
+  
+  
+  
+  <a class="" href="http://www.faac.biz/country-selector">
+    
+<span class="flex items-center space-x-2 country-selector">
+  <span class="border border-neutral-light p-1 rounded-full">
+    
+
+  
+    
+  
+
+  
+    
+    
+      
+    
+    
+    <img class="rounded-full lg:w-[18px]" src="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=25&amp;height=25&amp;name=Country_Selector_BIZ_Export_International.png" alt="International" loading="lazy" width="25" height="25" style="max-width: 100%; height: auto;" srcset="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=13&amp;height=13&amp;name=Country_Selector_BIZ_Export_International.png 13w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=25&amp;height=25&amp;name=Country_Selector_BIZ_Export_International.png 25w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=38&amp;height=38&amp;name=Country_Selector_BIZ_Export_International.png 38w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=50&amp;height=50&amp;name=Country_Selector_BIZ_Export_International.png 50w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=63&amp;height=63&amp;name=Country_Selector_BIZ_Export_International.png 63w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=75&amp;height=75&amp;name=Country_Selector_BIZ_Export_International.png 75w" sizes="(max-width: 25px) 100vw, 25px">
+  
+  </span>
+  <span class="font-semibold text-xs">International</span>
+</span>
+
+  </a></div>
+              </div>
+            
+          </div>
+          <div class="lg:w-1/4 lg:px-11 lg:pt-8 lg:pb-20 border-white/20">
+            <div id="hs_cos_wrapper_footer-menu-1" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+<div class="text-2xs lg:text-xs border-b lg:border-b-0 border-white/20 px-3 py-4 lg:p-0">
+  <div class="font-semibold lg:opacity-20 lg:mb-11 flex flex-row items-center justify-between js-footer-menu-toggle [&amp;.open_svg]:rotate-45">
+    <span>Company</span>
+    <button class="lg:hidden">
+      
+    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewbox="0 0 24 24" fill="none" class="[&amp;_*]:stroke-white w-5 h-5 transition-transform duration-300">
+      <path d="M12 2V22" stroke="black"></path>
+      <path d="M22 12L2 12" stroke="black"></path>
+    </svg>
+
+  
+
+
+    </button>
+  </div>
+  <nav class="js-footer-menu hidden lg:block mt-6 lg:mt-0">
+    <ul class="space-y-2">
+      
+      <li>
+        
+          <a href="http://www.faac.biz/about-us" target="">
+            About Us
+          </a>
+        
+      </li>
+      
+      <li>
+        
+          <a href="http://www.faac.biz/news" target="">
+            News
+          </a>
+        
+      </li>
+      
+      <li>
+        
+          <a href="http://careers.faacgroup.com/" target="">
+            Careers
+          </a>
+        
+      </li>
+      
+    </ul>
+  </nav>
+</div></div>
+          </div>
+          <div class="lg:w-1/4 lg:px-11 lg:pt-8 lg:pb-20 border-white/20">
+            <div id="hs_cos_wrapper_footer-menu-2" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+<div class="text-2xs lg:text-xs border-b lg:border-b-0 border-white/20 px-3 py-4 lg:p-0">
+  <div class="font-semibold lg:opacity-20 lg:mb-11 flex flex-row items-center justify-between js-footer-menu-toggle [&amp;.open_svg]:rotate-45">
+    <span>Support</span>
+    <button class="lg:hidden">
+      
+    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewbox="0 0 24 24" fill="none" class="[&amp;_*]:stroke-white w-5 h-5 transition-transform duration-300">
+      <path d="M12 2V22" stroke="black"></path>
+      <path d="M22 12L2 12" stroke="black"></path>
+    </svg>
+
+  
+
+
+    </button>
+  </div>
+  <nav class="js-footer-menu hidden lg:block mt-6 lg:mt-0">
+    <ul class="space-y-2">
+      
+      <li>
+        
+          <a href="http://www.faac.biz/support" target="">
+            Support
+          </a>
+        
+      </li>
+      
+      <li>
+        
+          <a href="http://www.faac.biz/bim" target="">
+            BIM Objects
+          </a>
+        
+      </li>
+      
+      <li>
+        
+          <a href="http://www.faac.biz/contacts" target="">
+            Contacts
+          </a>
+        
+      </li>
+      
+    </ul>
+  </nav>
+</div></div>
+          </div>
+          <div class="lg:w-1/4 lg:px-11 lg:pt-8 lg:pb-20 border-white/20 hidden lg:block">
+            <p class="text-xs font-semibold text-white opacity-20 mb-11">
+              <span id="hs_cos_wrapper_social-title_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="text">Social</span>
+            </p>
+            <div id="hs_cos_wrapper_social-follow-desktop" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+  
+
+
+
+  
+
+
+<ul class="space-y-2 text-white [&amp;_svg_*]:fill-white">
+  
+  <li class="text-xs">
+    
+  
+  
+  
+  
+    
+  
+  <a class="" href="https://www.linkedin.com/company/faac-access-solutions/" aria-label="LinkedIn" target="_blank" rel="noopener">
+    
+    <span class="flex flex-row items-center space-x-6">
+      
+    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewbox="0 0 16 16" fill="none" class="">
+      <path d="M14 2.88235V13.1176C14 13.3517 13.907 13.5761 13.7416 13.7416C13.5761 13.907 13.3517 14 13.1176 14H2.88235C2.64834 14 2.42391 13.907 2.25844 13.7416C2.09296 13.5761 2 13.3517 2 13.1176V2.88235C2 2.64834 2.09296 2.42391 2.25844 2.25844C2.42391 2.09296 2.64834 2 2.88235 2H13.1176C13.3517 2 13.5761 2.09296 13.7416 2.25844C13.907 2.42391 14 2.64834 14 2.88235ZM5.52941 6.58824H3.76471V12.2353H5.52941V6.58824ZM5.68824 4.64706C5.68917 4.51357 5.66379 4.38121 5.61357 4.25753C5.56334 4.13385 5.48925 4.02128 5.39552 3.92623C5.30178 3.83119 5.19025 3.75554 5.06728 3.7036C4.94431 3.65166 4.81231 3.62445 4.67882 3.62353H4.64706C4.3756 3.62353 4.11526 3.73137 3.92331 3.92331C3.73137 4.11526 3.62353 4.3756 3.62353 4.64706C3.62353 4.91852 3.73137 5.17885 3.92331 5.3708C4.11526 5.56275 4.3756 5.67059 4.64706 5.67059C4.78055 5.67387 4.91339 5.65082 5.03797 5.60275C5.16255 5.55468 5.27644 5.48253 5.37313 5.39043C5.46982 5.29833 5.54742 5.18808 5.60149 5.06598C5.65555 4.94388 5.68503 4.81232 5.68824 4.67882V4.64706ZM12.2353 8.80471C12.2353 7.10706 11.1553 6.44706 10.0824 6.44706C9.73105 6.42947 9.38128 6.50429 9.06791 6.66407C8.75456 6.82385 8.48856 7.06299 8.29647 7.35765H8.24706V6.58824H6.58824V12.2353H8.35294V9.23176C8.32743 8.92415 8.42433 8.6189 8.62258 8.38232C8.82084 8.14573 9.10443 7.99693 9.41177 7.96824H9.47882C10.04 7.96824 10.4565 8.32118 10.4565 9.21059V12.2353H12.2212L12.2353 8.80471Z" fill="black"></path>
+    </svg>
+
+  
+
+
+      
+        <span>LinkedIn</span>
+      
+    </span>
+    
+  </a>
+  </li>
+  
+  <li class="text-xs">
+    
+  
+  
+  
+  
+    
+  
+  <a class="" href="https://www.youtube.com/user/FAACGROUP" aria-label="Youtube" target="_blank" rel="noopener">
+    
+    <span class="flex flex-row items-center space-x-6">
+      
+    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewbox="0 0 16 16" fill="none" class="">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1944 3.6098C13.7678 3.76385 14.2213 4.21742 14.3754 4.79081C14.6578 5.83488 14.6663 8.00005 14.6663 8.00005C14.6663 8.00005 14.6663 10.1738 14.3839 11.2093C14.2299 11.7827 13.7763 12.2362 13.2029 12.3903C12.1674 12.6727 7.99967 12.6727 7.99967 12.6727C7.99967 12.6727 3.83194 12.6727 2.79642 12.3903C2.22304 12.2362 1.76947 11.7827 1.61542 11.2093C1.33301 10.1652 1.33301 8.00005 1.33301 8.00005C1.33301 8.00005 1.33301 5.83488 1.60686 4.79937C1.76091 4.22598 2.21448 3.77241 2.78786 3.61837C3.82338 3.33595 7.99112 3.32739 7.99112 3.32739C7.99112 3.32739 12.1589 3.32739 13.1944 3.6098ZM10.1221 8.00005L6.66463 10.0026V5.99748L10.1221 8.00005Z" fill="black"></path>
+    </svg>
+  
+
+
+      
+        <span>Youtube</span>
+      
+    </span>
+    
+  </a>
+  </li>
+  
+  <li class="text-xs">
+    
+  
+  
+  
+  
+    
+  
+  <a class="" href="https://vimeo.com/faacgroup" aria-label="Vimeo" target="_blank" rel="noopener">
+    
+    <span class="flex flex-row items-center space-x-6">
+      
+    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewbox="0 0 8.32 8.324" class="">
+      <path d="M8.318 2.232c-.037.808-.603 1.915-1.697 3.32-1.132 1.467-2.09 2.2-2.873 2.2-.485 0-.896-.448-1.23-1.343l-.67-2.462c-.25-.896-.517-1.343-.802-1.343-.062 0-.28.13-.653.392l-.392-.504L1.21 1.41c.547-.473.957-.72 1.23-.746C3.09.603 3.487 1.044 3.636 2l.336 1.903c.186.846.392 1.27.615 1.27.174 0 .435-.274.784-.82s.535-.964.56-1.25c.05-.473-.137-.71-.56-.71-.2 0-.404.044-.615.13.4-1.33 1.194-1.977 2.35-1.94.858.025 1.262.578 1.212 1.66z" fill="black"></path>
+    </svg>
+
+  
+
+
+      
+        <span>Vimeo</span>
+      
+    </span>
+    
+  </a>
+  </li>
+  
+  <li class="text-xs">
+    
+  
+  
+  
+  
+    
+  
+  <a class="" href="https://www.calameo.com/accounts/681578" aria-label="Calameo" target="_blank" rel="noopener">
+    
+    <span class="flex flex-row items-center space-x-6">
+      
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewbox="0 0 195 195" width="16px" height="16px" class="">
+      <title>calameo</title>
+      <defs>
+        <image width="113" height="144" id="img1" href="data:image/png;base64,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"></image>
+        <image width="72" height="22" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAAAWBAMAAACRR8fzAAAAAXNSR0IB2cksfwAAABtQTFRF////////////////////////////////////BwUW3wAAAAl0Uk5T7//PAF9/37+fhtKaYAAAADxJREFUeJxjZBRgIASEGAUJqmFgGlU0qojeipippoiJMfBoEv8HBob/QMwoAM4V/z+AOCDNgu9BahhPAwDb7wv7qR1d3wAAAABJRU5ErkJggg=="></image>
+      </defs>
+      <style></style>
+      <use id="Livello 2" href="#img1" x="40" y="45"></use>
+      <use id="Livello 1" href="#img2" x="61" y="5"></use>
+    </svg>
+
+  
+
+
+      
+        <span>Calameo</span>
+      
+    </span>
+    
+  </a>
+  </li>
+  
+</ul></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <div class="px-6 max-lg:mt-16 lg:px-12 lg:border-t border-white/20">
+    <div class="max-w-content mx-auto w-full">
+      
+        <div class="lg:hidden mb-8">
+          <div id="hs_cos_wrapper_country_selector_footer_mobile" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+  
+  
+  
+  
+  <a class="" href="http://www.faac.biz/country-selector">
+    
+<span class="flex items-center space-x-2 country-selector">
+  <span class="border border-neutral-light p-1 rounded-full">
+    
+
+  
+    
+  
+
+  
+    
+    
+      
+    
+    
+    <img class="rounded-full lg:w-[18px]" src="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=25&amp;height=25&amp;name=Country_Selector_BIZ_Export_International.png" alt="International" loading="lazy" width="25" height="25" style="max-width: 100%; height: auto;" srcset="https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=13&amp;height=13&amp;name=Country_Selector_BIZ_Export_International.png 13w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=25&amp;height=25&amp;name=Country_Selector_BIZ_Export_International.png 25w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=38&amp;height=38&amp;name=Country_Selector_BIZ_Export_International.png 38w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=50&amp;height=50&amp;name=Country_Selector_BIZ_Export_International.png 50w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=63&amp;height=63&amp;name=Country_Selector_BIZ_Export_International.png 63w, https://144098965.fs1.hubspotusercontent-eu1.net/hub/144098965/hubfs/Country_Selector_BIZ_Export_International.png?width=75&amp;height=75&amp;name=Country_Selector_BIZ_Export_International.png 75w" sizes="(max-width: 25px) 100vw, 25px">
+  
+  </span>
+  <span class="font-semibold text-xs">International</span>
+</span>
+
+  </a></div>
+        </div>
+      
+      <div class="text-3xs">
+        <div class="js-anim-container flex flex-col lg:flex-row lg:justify-between space-y-1 lg:space-y-0">
+          <div class="lg:w-1/4 lg:pl-0 lg:px-11 lg:py-6">
+            <div id="hs_cos_wrapper_footer_bottom_text_1" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_footer_bottom_text_1_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="text"><p>© 2026 FAAC S.p.A. Soc. Unipersonale</p></span></div>
+          </div>
+          <div class="lg:w-1/4 lg:px-11 lg:py-6">
+            <div id="hs_cos_wrapper_footer_bottom_text_2" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_footer_bottom_text_2_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="text"><p>EU VAT IT03820731200</p></span></div>
+          </div>
+          <div class="lg:w-1/4 pb-6 lg:px-11 lg:py-6">
+            <div id="hs_cos_wrapper_footer_bottom_text_3" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_footer_bottom_text_3_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="text"><div><a href="https://productcompliance.faactechnologies.com/" target="blank" rel="nofollow">Compliance &amp; vulnerabilities</a></div></span></div>
+          </div>
+          <div class="relative lg:w-1/4 py-6 lg:px-11 lg:py-6 lg:before:hidden before:w-screen before:border-white/20 before:border-t before:absolute before:-left-6 before:top-0 flex items-center justify-between">
+            <div id="hs_cos_wrapper_footer_bottom_text_4" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_footer_bottom_text_4_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="text"><div class="space-x-3 lg:space-x-6"><a href="https://faac.biz/privacy-policy/" target="blank">LEGAL</a> <a href="https://customer-portal.smartintegrityplatform.com/IT/faacgroup-237/third-party/home" target="blank">Whistleblowing</a></div></span></div>
+            <div class="lg:hidden">
+              <div id="hs_cos_wrapper_social-follow-mobile" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+  
+
+
+
+  
+
+
+<ul class="space-x-4 flex flex-row items-center text-white [&amp;_svg_*]:fill-white">
+  
+  <li class="text-xs">
+    
+  
+  
+  
+  
+    
+  
+  <a class="" href="https://www.linkedin.com/company/faac-access-solutions/" aria-label="LinkedIn" target="_blank" rel="noopener">
+    
+    <span class="flex flex-row items-center space-x-6">
+      
+    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewbox="0 0 16 16" fill="none" class="">
+      <path d="M14 2.88235V13.1176C14 13.3517 13.907 13.5761 13.7416 13.7416C13.5761 13.907 13.3517 14 13.1176 14H2.88235C2.64834 14 2.42391 13.907 2.25844 13.7416C2.09296 13.5761 2 13.3517 2 13.1176V2.88235C2 2.64834 2.09296 2.42391 2.25844 2.25844C2.42391 2.09296 2.64834 2 2.88235 2H13.1176C13.3517 2 13.5761 2.09296 13.7416 2.25844C13.907 2.42391 14 2.64834 14 2.88235ZM5.52941 6.58824H3.76471V12.2353H5.52941V6.58824ZM5.68824 4.64706C5.68917 4.51357 5.66379 4.38121 5.61357 4.25753C5.56334 4.13385 5.48925 4.02128 5.39552 3.92623C5.30178 3.83119 5.19025 3.75554 5.06728 3.7036C4.94431 3.65166 4.81231 3.62445 4.67882 3.62353H4.64706C4.3756 3.62353 4.11526 3.73137 3.92331 3.92331C3.73137 4.11526 3.62353 4.3756 3.62353 4.64706C3.62353 4.91852 3.73137 5.17885 3.92331 5.3708C4.11526 5.56275 4.3756 5.67059 4.64706 5.67059C4.78055 5.67387 4.91339 5.65082 5.03797 5.60275C5.16255 5.55468 5.27644 5.48253 5.37313 5.39043C5.46982 5.29833 5.54742 5.18808 5.60149 5.06598C5.65555 4.94388 5.68503 4.81232 5.68824 4.67882V4.64706ZM12.2353 8.80471C12.2353 7.10706 11.1553 6.44706 10.0824 6.44706C9.73105 6.42947 9.38128 6.50429 9.06791 6.66407C8.75456 6.82385 8.48856 7.06299 8.29647 7.35765H8.24706V6.58824H6.58824V12.2353H8.35294V9.23176C8.32743 8.92415 8.42433 8.6189 8.62258 8.38232C8.82084 8.14573 9.10443 7.99693 9.41177 7.96824H9.47882C10.04 7.96824 10.4565 8.32118 10.4565 9.21059V12.2353H12.2212L12.2353 8.80471Z" fill="black"></path>
+    </svg>
+
+  
+
+
+      
+    </span>
+    
+  </a>
+  </li>
+  
+  <li class="text-xs">
+    
+  
+  
+  
+  
+    
+  
+  <a class="" href="https://www.youtube.com/user/FAACGROUP" aria-label="Youtube" target="_blank" rel="noopener">
+    
+    <span class="flex flex-row items-center space-x-6">
+      
+    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewbox="0 0 16 16" fill="none" class="">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1944 3.6098C13.7678 3.76385 14.2213 4.21742 14.3754 4.79081C14.6578 5.83488 14.6663 8.00005 14.6663 8.00005C14.6663 8.00005 14.6663 10.1738 14.3839 11.2093C14.2299 11.7827 13.7763 12.2362 13.2029 12.3903C12.1674 12.6727 7.99967 12.6727 7.99967 12.6727C7.99967 12.6727 3.83194 12.6727 2.79642 12.3903C2.22304 12.2362 1.76947 11.7827 1.61542 11.2093C1.33301 10.1652 1.33301 8.00005 1.33301 8.00005C1.33301 8.00005 1.33301 5.83488 1.60686 4.79937C1.76091 4.22598 2.21448 3.77241 2.78786 3.61837C3.82338 3.33595 7.99112 3.32739 7.99112 3.32739C7.99112 3.32739 12.1589 3.32739 13.1944 3.6098ZM10.1221 8.00005L6.66463 10.0026V5.99748L10.1221 8.00005Z" fill="black"></path>
+    </svg>
+  
+
+
+      
+    </span>
+    
+  </a>
+  </li>
+  
+  <li class="text-xs">
+    
+  
+  
+  
+  
+    
+  
+  <a class="" href="https://vimeo.com/faacgroup" aria-label="Vimeo" target="_blank" rel="noopener">
+    
+    <span class="flex flex-row items-center space-x-6">
+      
+    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewbox="0 0 8.32 8.324" class="">
+      <path d="M8.318 2.232c-.037.808-.603 1.915-1.697 3.32-1.132 1.467-2.09 2.2-2.873 2.2-.485 0-.896-.448-1.23-1.343l-.67-2.462c-.25-.896-.517-1.343-.802-1.343-.062 0-.28.13-.653.392l-.392-.504L1.21 1.41c.547-.473.957-.72 1.23-.746C3.09.603 3.487 1.044 3.636 2l.336 1.903c.186.846.392 1.27.615 1.27.174 0 .435-.274.784-.82s.535-.964.56-1.25c.05-.473-.137-.71-.56-.71-.2 0-.404.044-.615.13.4-1.33 1.194-1.977 2.35-1.94.858.025 1.262.578 1.212 1.66z" fill="black"></path>
+    </svg>
+
+  
+
+
+      
+    </span>
+    
+  </a>
+  </li>
+  
+  <li class="text-xs">
+    
+  
+  
+  
+  
+    
+  
+  <a class="" href="https://www.calameo.com/accounts/681578" aria-label="Calameo" target="_blank" rel="noopener">
+    
+    <span class="flex flex-row items-center space-x-6">
+      
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewbox="0 0 195 195" width="16px" height="16px" class="">
+      <title>calameo</title>
+      <defs>
+        <image width="113" height="144" id="img1" href="data:image/png;base64,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"></image>
+        <image width="72" height="22" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAAAWBAMAAACRR8fzAAAAAXNSR0IB2cksfwAAABtQTFRF////////////////////////////////////BwUW3wAAAAl0Uk5T7//PAF9/37+fhtKaYAAAADxJREFUeJxjZBRgIASEGAUJqmFgGlU0qojeipippoiJMfBoEv8HBob/QMwoAM4V/z+AOCDNgu9BahhPAwDb7wv7qR1d3wAAAABJRU5ErkJggg=="></image>
+      </defs>
+      <style></style>
+      <use id="Livello 2" href="#img1" x="40" y="45"></use>
+      <use id="Livello 1" href="#img2" x="61" y="5"></use>
+    </svg>
+
+  
+
+
+      
+    </span>
+    
+  </a>
+  </li>
+  
+</ul></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer></div>
+      
+      
+        <div id="hs_cos_wrapper_country_selector" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+
+
+  
+
+
+
+</div>
+      
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!-- HubSpot performance collection script -->
+<script defer src="/hs/hsstatic/content-cwv-embed/static-1.1293/embed.js"></script>
+<script>
+var hsVars = hsVars || {}; hsVars['language'] = 'en';
+</script>
+
+<script src="/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js"></script>
+
+
+    <div class="modal aria-hidden:hidden fixed w-full h-full top-0 left-0 z-50 " id="country-selector-modal" aria-hidden="true">
+      <div class="modal-overlay h-full bg-black/50 flex items-center justify-center max-h-screen overflow-auto" tabindex="-1" data-micromodal-close data-lenis-prevent>
+        <div class="modal-container max-h-screen relative" role="dialog" aria-modal="true" aria-labelledby="country-selector-modal-title">
+          <div class="modal-inner-wrapper bg-white rounded-[4px] p-6 lg:py-14 lg:px-16 relative max-w-[806px] mx-auto my-6 lg:my-12 overflow-hidden">
+            <header class="modal-header flex items-center justify-end absolute top-6 right-6">
+              <button class="modal-close z-10" data-micromodal-close>
+                
+    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewbox="0 0 16 16" fill="none" class="pointer-events-none">
+      <g clip-path="url(#clip0_12221_995)">
+        <path d="M1 1L15 15" stroke="black" stroke-linejoin="round"></path>
+        <path d="M15 1L1 15" stroke="black" stroke-linejoin="round"></path>
+      </g>
+      <defs>
+        <clippath id="clip0_12221_995">
+          <rect width="16" height="16" fill="white"></rect>
+        </clippath>
+      </defs>
+    </svg>
+
+  
+
+
+              </button>
+            </header>
+            <main class="modal-content" id="country-selector-modal-content">
+              
+<div class="text-center">
+  <p class="js-csm-tagline font-serif text-xs md:text-sm uppercase mb-4"></p>
+  <p class="js-csm-title text-2xl md:text-5xl mb-8"></p>
+  <p class="js-csm-description text-lg md:text-3xl font-medium text-neutral mb-8"></p>
+  <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center">
+    
+  
+
+  
+    
+    
+      
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <button class="group py-2.5 px-5 lg:py-3 lg:px-6 group font-semibold text-xs lg:text-base inline-block transition-colors text-center border border-primary hover:bg-primary hover:text-white text-primary [&amp;_*]:pointer-events-none" data-micromodal-close>
+    <span class="flex flex-row items-center space-x-3 group-hover:space-x-4 [&amp;>*]:transition-all [&amp;>*]:duration-300">
+      
+      <span>
+        
+      <span class="js-csm-cta-left-text"></span>
+    
+      </span>
+      
+        
+    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="12px" viewbox="0 0 17 12" fill="none" class="w-4 h-4 lg:w-5 lg:h-5 group-hover:[&amp;_*]:stroke-white">
+      <path d="M0 5.99951L15.5 5.99951" stroke="black" stroke-width="1.5"></path>
+      <path d="M10.9545 10.4995L15.5 5.99951L10.9545 1.49951" stroke="black" stroke-width="1.5"></path>
+    </svg>
+
+  
+
+
+      
+    </span>
+  </button>
+    
+  
+
+  
+    
+    
+      
+      
+    
+  
+
+  
+  
+  
+  
+  
+    
+  
+  <a class="group py-2.5 px-5 lg:py-3 lg:px-6 font-semibold text-xs lg:text-base inline-block transition-colors text-center border bg-primary border-primary hover:bg-neutral-dark hover:border-neutral-dark text-white " href="http://www.faac.biz/country-selector" target="_blank" rel="noopener">
+    <span class="flex flex-row items-center space-x-3 group-hover:space-x-4 [&amp;>*]:transition-all [&amp;>*]:duration-300">
+      
+      <span>
+        
+      <span class="js-csm-cta-right-text"></span>
+    
+      </span>
+      
+        
+    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="12px" viewbox="0 0 17 12" fill="none" class="w-4 h-4 lg:w-5 lg:h-5 [&amp;_*]:stroke-white">
+      <path d="M0 5.99951L15.5 5.99951" stroke="black" stroke-width="1.5"></path>
+      <path d="M10.9545 10.4995L15.5 5.99951L10.9545 1.49951" stroke="black" stroke-width="1.5"></path>
+    </svg>
+
+  
+
+
+      
+    </span>
+  </a>
+  </div>
+</div>
+
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+<script defer src="https://144098965.fs1.hubspotusercontent-eu1.net/hubfs/144098965/hub_generated/template_assets/1/103127178701/1790346023701/template_micromodal.min.js"></script>
+
+  <script>
+    (function() {
+      const moduleJson = {"country_selector":{"no_follow":false,"open_in_new_tab":true,"rel":"noopener","sponsored":false,"url":{"content_id":272007001314,"href":"http://www.faac.biz/country-selector","href_with_scheme":null,"type":"CONTENT"},"user_generated_content":false},"translations":[{"cta_left_text":"Continue on this site","cta_right_text":"Change website","description":"Your browser is set to","language_codes":"DEFAULT","tagline":"Choose your website","title":"Hello! You are currently viewing the site"},{"cta_left_text":"Continua su questo sito","cta_right_text":"Cambia sito web","description":"Il tuo browser è impostato su","language_codes":"\"it\", \"it-CH\", \"it-IT\"","tagline":"Scegli il sito web","title":"Ciao! Stai visualizzando il sito"},{"cta_left_text":"Continuer sur ce site","cta_right_text":"Changer de site web","description":"Votre navigateur est configuré pour","language_codes":"\"fr\", \"fr-FR\", \"fr-BE\", \"fr-CH\", \"fr-CA\", \"fr-LU\", \"fr-MC\", \"fr-MA\", \"fr-TN\", \"fr-DZ\"","tagline":"Choisissez le site web","title":"Bienvenue ! Vous consultez actuellement le site"},{"cta_left_text":"Kontynuuj na tej witrynie","cta_right_text":"Zmień witrynę","description":"Państwa przeglądarka jest ustawiona na","language_codes":"\"pl\", \"pl-PL\"","tagline":"Wybierz witrynę","title":"Witamy! Przeglądają Państwo witrynę"},{"cta_left_text":"Auf dieser Website bleiben","cta_right_text":"Website wechseln","description":"Ihr Browser ist eingestellt auf","language_codes":"\"de-AT\"","tagline":"Website auswählen","title":"Hallo! Sie befinden sich derzeit auf der Website"},{"cta_left_text":"Continue on this site","cta_right_text":"Change website","description":"Your browser is set to","language_codes":"\"en-IE\"","tagline":"Choose your website","title":"Hello! You are currently viewing the site"},{"cta_left_text":"Auf dieser Website bleiben","cta_right_text":"Website wechseln","description":"Ihr Browser ist eingestellt auf","language_codes":"\"de\", \"de-DE\", \"de-CH\", \"de-LU\"","tagline":"Website auswählen","title":"Hallo! Sie befinden sich derzeit auf der Website"}],"type":"module"};
+      const websiteName = "FAAC International";
+  const allowedLangsRaw = '"en", "en-AU", "en-CA", "en-GB", "en-IN", "en-NZ", "en-US", "en-ZA", "en-SG", "en-AE", "en-MY", "en-NG"';
+
+      const getBrowserLangs = () => {
+        const langs = [];
+        if (navigator.languages && navigator.languages.length) langs.push(...navigator.languages);
+        if (navigator.language) langs.push(navigator.language);
+        // IE/legacy fallbacks (harmless elsewhere)
+        if (navigator.userLanguage) langs.push(navigator.userLanguage);
+        if (navigator.browserLanguage) langs.push(navigator.browserLanguage);
+        return Array.from(new Set(langs.map(l => String(l).toLowerCase())));
+      };
+
+      const parseLanguageCodes = (val) => {
+        if (val == null) return [];
+        // Se già array
+        if (Array.isArray(val)) {
+          return val
+            .map(x => (x == null ? '' : String(x)))
+            .map(x => x.trim())
+            .map(x => x.replace(/^['"]|['"]$/g, ''))
+            .map(x => x.toLowerCase())
+            .filter(Boolean);
+        }
+        let s = String(val).trim();
+        if (s.toUpperCase() === 'DEFAULT') return ['default'];
+        // Rimuovi eventuali bracket JSON e normalizza separatori
+        s = s.replace(/^\[/, '').replace(/\]$/, '');
+        s = s.replace(/[\n\r;]+/g, ',');
+        return s
+          .split(',')
+          .map(p => p.trim())
+          .map(p => p.replace(/^['"]|['"]$/g, '')) // rimuove apici iniziali/finali
+          .map(p => p.toLowerCase())
+          .filter(Boolean);
+      };
+
+      // Helpers per matching case-insensitive e per base linguistica
+      const normalizeLangCode = (code) => String(code || '').trim().toLowerCase();
+      const langBase = (code) => normalizeLangCode(code).split('-')[0];
+      const codesToSets = (codes) => {
+        const arr = parseLanguageCodes(codes);
+        const full = new Set(arr.map(normalizeLangCode));
+        const base = new Set(arr.map(langBase));
+        return { full, base };
+      };
+
+      // Normalizzazione language_codes delle traduzioni del modulo
+      const toQuotedListString = (arr) => arr.map(c => `"${c}"`).join(', ');
+      const normalizeModuleTranslations = (translations) => {
+        if (!Array.isArray(translations)) return [];
+        return translations.map((t) => {
+          const out = { ...t };
+          const raw = t && t.language_codes;
+          if (raw == null) { out.language_codes = ''; return out; }
+          const s = String(raw).trim();
+          if (s.toUpperCase() === 'DEFAULT') { out.language_codes = 'DEFAULT'; return out; }
+          const codes = parseLanguageCodes(s);
+          out.language_codes = codes.length ? toQuotedListString(codes) : '';
+          return out;
+        });
+      };
+
+      const pickTranslation = (translations, userLangs) => {
+        if (!Array.isArray(translations) || translations.length === 0) return null;
+        const userLangsNorm = (userLangs || []).map(normalizeLangCode);
+        const userBases = userLangsNorm.map(langBase);
+
+        // 1) match esatto con codici completi
+        for (const lang of userLangsNorm) {
+          const found = translations.find(t => codesToSets(t.language_codes).full.has(lang));
+          if (found) return found;
+        }
+
+        // 2) match per base (es. it da it-IT) controllando le basi derivate dalle varianti
+        for (const base of userBases) {
+          const found = translations.find(t => codesToSets(t.language_codes).base.has(base));
+          if (found) return found;
+        }
+
+        // 3) fallback DEFAULT
+        const def = translations.find(t => String(t.language_codes).trim().toUpperCase() === 'DEFAULT');
+        if (def) return def;
+
+        // 4) ultimo fallback: primo elemento
+        return translations[0];
+      };
+
+  moduleJson.translations = normalizeModuleTranslations(moduleJson.translations || []);
+  const userLangs = getBrowserLangs();
+  const selected = pickTranslation(moduleJson.translations, userLangs);
+
+      // Espone il risultato per l'uso da altri script (se necessario)
+      window.countrySelector = window.countrySelector || {};
+      window.countrySelector.userLangs = userLangs;
+      window.countrySelector.translation = selected;
+
+      // Mappa i valori del selected agli elementi con classi js-csm-<kebab-case-chiave>
+      const getDisplayLocale = (langs) => (Array.isArray(langs) && langs[0]) || navigator.language || 'en';
+
+      const formatBrowserLanguageLabel = (langTag, displayLocale) => {
+        if (!langTag) return '';
+        const tag = String(langTag);
+        const [langPartRaw, regionPartRaw] = tag.split('-');
+        const langPart = langPartRaw ? langPartRaw.toLowerCase() : '';
+        const regionPart = regionPartRaw ? regionPartRaw.toUpperCase() : '';
+        let languageName = langPart || tag;
+        let regionName = regionPart || '';
+        try {
+          if (typeof Intl !== 'undefined' && typeof Intl.DisplayNames === 'function') {
+            const languageNames = new Intl.DisplayNames([displayLocale || tag], { type: 'language' });
+            const regionNames = new Intl.DisplayNames([displayLocale || tag], { type: 'region' });
+            if (langPart) languageName = languageNames.of(langPart) || languageName;
+            if (regionPart) regionName = regionNames.of(regionPart) || regionName;
+          }
+        } catch (_) {
+          // fallback silenzioso
+        }
+        // Se abbiamo sia regione che lingua, es. "Italia (Italiano)"; altrimenti solo lingua
+        return regionName ? `${regionName} (${languageName})` : `${languageName}`;
+      };
+
+      const bindSelectedToDom = (sel) => {
+        if (!sel || typeof sel !== 'object') return;
+        Object.entries(sel).forEach(([key, value]) => {
+          if (key === 'language_codes') return; // non renderizzare la lista codici
+          const cls = 'js-csm-' + key.replace(/_/g, '-');
+          const nodes = document.querySelectorAll('.' + cls);
+          nodes.forEach((el) => {
+            if (value == null) return;
+            // Preferiamo textContent per sicurezza XSS
+            el.textContent = String(value);
+            // Caso speciale: description -> aggiungi a capo la lingua del browser
+            if (key === 'description') {
+              const br = document.createElement('br');
+              el.appendChild(br);
+              const label = formatBrowserLanguageLabel(userLangs && userLangs[0], getDisplayLocale(userLangs));
+              el.appendChild(document.createTextNode(label));
+            }
+            // Caso speciale: title -> aggiungi a capo il nome del sito da i18n
+            if (key === 'title' && websiteName) {
+              const br = document.createElement('br');
+              el.appendChild(br);
+              el.appendChild(document.createTextNode(websiteName));
+            }
+          });
+        });
+      };
+
+      bindSelectedToDom(selected);
+
+      // Se la lingua del browser non è in i18n.country_selector.language_codes, apri il modale
+      const allowedLangs = parseLanguageCodes(allowedLangsRaw);
+      const isAllowed = (() => {
+        if (!allowedLangs || allowedLangs.length === 0) return false;
+        const allowedSets = codesToSets(allowedLangs);
+        const userLangsNorm = (userLangs || []).map(normalizeLangCode);
+        for (const lang of userLangsNorm) {
+          if (allowedSets.full.has(lang) || allowedSets.base.has(langBase(lang))) return true;
+        }
+        return false;
+      })();
+
+      // Cookie helpers per memorizzare la chiusura (6 mesi)
+      const COOKIE_NAME = 'faac_csm_closed';
+      const COOKIE_MAX_AGE = 60 * 60 * 24 * 180; // 180 giorni
+      const setDismissCookie = () => {
+        try {
+          const secure = location.protocol === 'https:' ? '; Secure' : '';
+          document.cookie = `${COOKIE_NAME}=1; Max-Age=${COOKIE_MAX_AGE}; Path=/; SameSite=Lax${secure}`;
+        } catch (_) { /* no-op */ }
+      };
+      const hasDismissCookie = () => {
+        try {
+          return document.cookie.split(';').some(c => c.trim().startsWith(COOKIE_NAME + '='));
+        } catch (_) { return false; }
+      };
+
+      const showModalWhenReady = (() => {
+        let attempts = 0;
+        const maxAttempts = 20; // ~2s con delay 100ms
+        const modalId = 'country-selector-modal';
+        const tryShow = () => {
+          attempts += 1;
+          if (typeof window !== 'undefined' && window.MicroModal && typeof window.MicroModal.show === 'function') {
+            try {
+              window.MicroModal.show(modalId, {
+                onClose: (modal /*, activeEl, evt */) => {
+                  // set cookie e reset eventuali iframe
+                  setDismissCookie();
+                  try {
+                    const iframes = modal ? modal.querySelectorAll('iframe') : [];
+                    if (iframes && iframes.forEach) iframes.forEach(iframe => iframe.setAttribute('src', iframe.src));
+                  } catch (_) { /* no-op */ }
+                }
+              });
+            } catch (_) {}
+            return;
+          }
+          if (attempts < maxAttempts) setTimeout(tryShow, 100);
+        };
+        return tryShow;
+      })();
+
+      if (!isAllowed && !hasDismissCookie()) {
+        if (document.readyState === 'complete' || document.readyState === 'interactive') {
+          setTimeout(showModalWhenReady, 0);
+        } else {
+          document.addEventListener('DOMContentLoaded', showModalWhenReady, { once: true });
+        }
+      }
+    })();
+  </script>
+
+<script defer src="https://144098965.fs1.hubspotusercontent-eu1.net/hubfs/144098965/hub_generated/template_assets/1/108657568204/1790346044467/template_lenis.min.js"></script>
+<script defer src="https://144098965.fs1.hubspotusercontent-eu1.net/hubfs/144098965/hub_generated/template_assets/1/103127178700/1790346006619/template_split-type.min.js"></script>
+<script defer src="https://144098965.fs1.hubspotusercontent-eu1.net/hubfs/144098965/hub_generated/template_assets/1/103127633867/1790346066139/template_gsap.min.js"></script>
+<script defer src="https://144098965.fs1.hubspotusercontent-eu1.net/hubfs/144098965/hub_generated/template_assets/1/103127633869/1790346006613/template_scroll-trigger.min.js"></script>
+<script defer src="https://144098965.fs1.hubspotusercontent-eu1.net/hubfs/144098965/hub_generated/template_assets/1/103125427142/1790346041781/template_main.min.js"></script>
+<script defer src="https://144098965.fs1.hubspotusercontent-eu1.net/hubfs/144098965/hub_generated/template_assets/1/103125427143/1790346058599/template_animations.min.js"></script>
+<script defer src="https://144098965.fs1.hubspotusercontent-eu1.net/hubfs/144098965/hub_generated/template_assets/1/103125427145/1790346011667/template_menu.min.js"></script>
+<script defer src="https://144098965.fs1.hubspotusercontent-eu1.net/hubfs/144098965/hub_generated/module_assets/1/103127178692/1790578752995/module_search.min.js"></script>
+<script defer src="https://144098965.fs1.hubspotusercontent-eu1.net/hubfs/144098965/hub_generated/module_assets/1/105208112609/1790578750456/module_footer-menu.min.js"></script>
+
+<!-- Start of HubSpot Analytics Code -->
+<script type="text/javascript">
+var _hsq = _hsq || [];
+_hsq.push(["setContentType", "standard-page"]);
+_hsq.push(["setCanonicalUrl", "http:\/\/www.faac.biz\/404"]);
+_hsq.push(["setPageId", ""]);
+_hsq.push(["setContentMetadata", {
+    "contentPageId": null,
+    "legacyPageId": null,
+    "contentFolderId": null,
+    "contentGroupId": null,
+    "abTestId": null,
+    "languageVariantId": null,
+    "languageCode": "en",
+    
+    
+}]);
+</script>
+
+<script type="text/javascript" id="hs-script-loader" async defer src="/hs/scriptloader/144098965.js"></script>
+<!-- End of HubSpot Analytics Code -->
+
+
+<script type="text/javascript">
+var hsVars = {
+    render_id: "9d4fd55a-6b3d-479c-8b95-1ab6598f2724",
+    ticks: 1790579987355,
+    page_id: 0,
+    
+    content_group_id: 0,
+    portal_id: 144098965,
+    app_hs_base_url: "https://app-eu1.hubspot.com",
+    cp_hs_base_url: "https://cp-eu1.hubspot.com",
+    language: "en",
+    analytics_page_type: "standard-page",
+    scp_content_type: "",
+    
+    analytics_page_id: "null",
+    category_id: 1,
+    folder_id: 0,
+    is_hubspot_user: false
+}
+</script>
+
+
+<script defer src="/hs/hsstatic/HubspotToolsMenu/static-1.640/js/index.js"></script>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCPTS6GK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+  
+</body></html>
