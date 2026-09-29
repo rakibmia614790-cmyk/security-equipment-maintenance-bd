@@ -1,153 +1,88 @@
-"use client";
+import type { Metadata } from "next";
+import EquipmentManufacturerShowcase from "@/app/components/EquipmentManufacturerShowcase";
 
-import Link from "next/link";
-import { useState } from "react";
+export const metadata: Metadata = {
+  title: "Human Body Scanner | Security Equipment Maintenance BD",
+  description: "Advanced security screening systems for detecting concealed threats and prohibited items in controlled, aviation and high-security environments.",
+};
 
 const manufacturers = [
-  "Smiths Detection",
-  "Rapiscan Systems",
-  "NUCTECH",
-  "Tek84",
-  "Rohde & Schwarz",
-  "ADANI Systems",
-  "OD Security",
-  "Thruvision",
-  "Apstec Systems",
-  "Leidos Security Detection & Automation",
-  "Viken Detection",
-  "Evolv Technology",
-  "LINEV Systems",
-  "Liberty Defense",
+    { name: "Tek84", category: "Personnel Screening", technology: "Low-dose X-ray body scanning", applications: "Correctional, government and security facilities", capability: "Advanced personnel screening" },
+    { name: "Rapiscan Systems", category: "Security Screening", technology: "Advanced body screening", applications: "Aviation and high-security facilities", capability: "People screening technology" },
+    { name: "NUCTECH", category: "Security Inspection", technology: "Personnel security inspection", applications: "Airports and customs", capability: "Advanced screening systems" },
+    { name: "Smiths Detection", category: "Security Screening", technology: "Advanced people screening", applications: "Aviation and critical facilities", capability: "Security screening technology" },
+    { name: "ADANI Systems", category: "Security Screening", technology: "X-ray personnel screening", applications: "Government and security facilities", capability: "People inspection systems" },
+    { name: "Thruvision", category: "Security Screening", technology: "Passive concealed-object detection", applications: "Transport and public security", capability: "Personnel screening technology" }
 ];
 
-export default function HumanBodyScannerPage() {
-  const [selected, setSelected] = useState<string | null>(null);
-
+export default function EquipmentPage() {
   return (
-    <main className="equipment-master-page body-scanner-master-page">
-      <section className="equipment-master-hero">
-        <Link href="/" className="equipment-back-link">← Back to Home</Link>
+    <main className="equipment-master-page">
+      <div className="equipment-master-grid" />
 
-        <div className="equipment-hero-grid">
-          <div>
-            <span className="equipment-eyebrow">ADVANCED PEOPLE SCREENING</span>
+      <div className="equipment-master-shell">
+        <a className="equipment-master-back" href="/">← Back to Home</a>
+
+        <section className="equipment-master-hero">
+          <div className="equipment-master-copy">
+            <span>ADVANCED PERSONNEL SCREENING</span>
             <h1>Human Body Scanner</h1>
-            <p>
-              Advanced people-screening technology for detecting concealed
-              metallic and non-metallic threats in high-security environments.
-            </p>
+            <p>Advanced security screening systems for detecting concealed threats and prohibited items in controlled, aviation and high-security environments.</p>
           </div>
 
-          <div className="body-scanner-visual">
-            <div className="body-scanner-real-frame">
-              <img
-                src="/human-body-scanner-real-photo.jpg"
-                alt="Professional human body security scanner"
-                className="body-scanner-real-photo"
-              />
-              <div className="body-scanner-overlay" />
-              <div className="body-scan-silhouette">
-                <span className="body-head" />
-                <span className="body-torso" />
-                <span className="body-leg left" />
-                <span className="body-leg right" />
-              </div>
-              <div className="body-scan-grid" />
-              <div className="body-scanline" />
-              <div className="body-live-status">BODY SCREENING • ACTIVE</div>
+          <div className="equipment-product-visual">
+            <img
+              src="/human-body-scanner-real-photo.jpg"
+              alt="Human body security scanner"
+              className="equipment-product-image"
+            />
+            <div className="equipment-visual-glow" />
+            <div className="equipment-scanline" />
+            <div className="equipment-visual-label">HUMAN SCREENING SCAN</div>
+            <div className="equipment-status">
+              <i />
+              SYSTEM READY
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="equipment-manufacturer-section">
-        <div className="equipment-section-heading">
-          <span>TECHNOLOGY PROFILES</span>
-          <h2>Leading Human Body Scanner Manufacturers</h2>
-          <p>
-            Advanced X-ray, millimeter-wave and people-screening technologies
-            for aviation, government, correctional and critical facilities.
-          </p>
-        </div>
+        <section className="equipment-section-heading">
+          <span>TECHNOLOGY PARTNERS</span>
+          <h2>Manufacturer Technology Profiles</h2>
+          <p>Explore relevant human body scanner technologies, applications and technical capabilities.</p>
+        </section>
 
-        <div className="equipment-manufacturer-grid">
-          {manufacturers.map((name, index) => (
-            <button
-              key={name}
-              className="equipment-manufacturer-card body-scanner-card"
-              style={{ "--card-delay": `${index * 65}ms` } as React.CSSProperties}
-              onClick={() => setSelected(name)}
-            >
-              <div className="body-card-visual">
-                <div className="mini-body-scanner">
-                  <span className="mini-scanner-arch" />
-                  <span className="mini-person" />
-                  <span className="mini-scan-beam" />
-                </div>
-              </div>
+        <EquipmentManufacturerShowcase manufacturers={manufacturers} />
 
-              <strong>{name}</strong>
-              <small>People Screening Technology</small>
-              <em>View Details →</em>
-            </button>
-          ))}
-        </div>
-      </section>
-
-      <section className="equipment-service-cta">
-        <span>TECHNICAL SUPPORT</span>
-        <h2>Need Body Scanner Installation or Maintenance?</h2>
-        <p>
-          SecureTech supports equipment installation, commissioning,
-          configuration, preventive maintenance, troubleshooting and technical
-          support for security-screening systems.
-        </p>
-        <Link href="/service-request">Request Service →</Link>
-      </section>
-
-      {selected && (
-        <div className="equipment-modal-backdrop" onClick={() => setSelected(null)}>
-          <div className="equipment-modal" onClick={(e) => e.stopPropagation()}>
-            <button
-              className="equipment-modal-close"
-              onClick={() => setSelected(null)}
-            >
-              ×
-            </button>
-
-            <span>MANUFACTURER TECHNOLOGY PROFILE</span>
-            <h2>{selected}</h2>
-
-            <p>
-              {selected} technology profile for advanced people-screening and
-              concealed-threat detection applications.
-            </p>
-
-            <div className="equipment-modal-points">
-              <div>
-                <b>Technology</b>
-                <span>
-                  Advanced imaging, millimeter-wave or X-ray people screening
-                </span>
-              </div>
-
-              <div>
-                <b>Applications</b>
-                <span>
-                  Airports, borders, government, correctional and critical infrastructure
-                </span>
-              </div>
-
-              <div>
-                <b>Support</b>
-                <span>
-                  Installation, commissioning, calibration and maintenance
-                </span>
-              </div>
-            </div>
+        <section id="service-request" className="equipment-service-request">
+          <div className="equipment-service-copy">
+            <span>SERVICE REQUEST</span>
+            <h2>Need technical support?</h2>
+            <p>Submit your requirement and our technical team can review the request.</p>
           </div>
-        </div>
-      )}
+
+          <form action="/api/service-request" method="POST" className="equipment-service-form">
+            <input type="hidden" name="equipment" value="Human Body Scanner" />
+            <input name="name" placeholder="Full Name" required />
+            <input name="company" placeholder="Company / Organization" />
+            <input name="phone" placeholder="Phone" required />
+            <input name="email" type="email" placeholder="Email" required />
+            <input name="model" placeholder="Equipment / Model" />
+            <select name="serviceType" defaultValue="Maintenance">
+              <option>Maintenance</option>
+              <option>Repair</option>
+              <option>Installation</option>
+              <option>Commissioning</option>
+              <option>Technical Support</option>
+              <option>AMC</option>
+            </select>
+            <textarea name="message" placeholder="Service Requirement" required />
+            <button type="submit">Submit Service Request →</button>
+          </form>
+        </section>
+
+        <a className="equipment-master-back equipment-master-bottom" href="/">← Back to Home</a>
+      </div>
     </main>
   );
 }

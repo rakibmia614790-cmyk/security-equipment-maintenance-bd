@@ -1,143 +1,88 @@
-"use client";
+import type { Metadata } from "next";
+import EquipmentManufacturerShowcase from "@/app/components/EquipmentManufacturerShowcase";
 
-import Link from "next/link";
-import { useState } from "react";
+export const metadata: Metadata = {
+  title: "Car Parking Management System | Security Equipment Maintenance BD",
+  description: "Intelligent parking management systems integrating vehicle identification, access control, occupancy management and automated parking operations.",
+};
 
 const manufacturers = [
-  "SKIDATA",
-  "DESIGNA",
-  "Kapsch TrafficCom",
-  "TIBA Parking",
-  "Nedap",
-  "Hikvision",
-  "Dahua Technology",
-  "ZKTeco",
-  "FAAC",
-  "CAME",
-  "Magnetic Autocontrol",
-  "SWARCO",
-  "TKH Security",
-  "Amano McGann",
-  "WPS Parking Solutions",
-  "Hub Parking Technology",
-  "Scheidt & Bachmann",
-  "Flowbird",
-  "Conduent Transportation",
-  "Q-Free",
+    { name: "SKIDATA", category: "Parking Technology", technology: "Intelligent parking access", applications: "Airports, malls and facilities", capability: "Parking management systems" },
+    { name: "DESIGNA", category: "Parking Technology", technology: "Automated parking systems", applications: "Commercial and transport facilities", capability: "Parking access management" },
+    { name: "Kapsch TrafficCom", category: "Intelligent Mobility", technology: "Traffic and parking technology", applications: "Transport infrastructure", capability: "Smart mobility systems" },
+    { name: "TIBA Parking", category: "Parking Technology", technology: "Parking access and revenue control", applications: "Commercial and public facilities", capability: "Parking management" },
+    { name: "Nedap", category: "Vehicle Identification", technology: "ANPR and vehicle recognition", applications: "Parking and access control", capability: "Vehicle identification technology" },
+    { name: "Scheidt & Bachmann", category: "Parking Systems", technology: "Parking management technology", applications: "Transport and commercial facilities", capability: "Automated parking solutions" }
 ];
 
-export default function CarParkingPage() {
-  const [selected, setSelected] = useState<string | null>(null);
-
+export default function EquipmentPage() {
   return (
-    <main className="equipment-master-page car-parking-master-page">
-      <section className="equipment-master-hero">
-        <Link href="/" className="equipment-back-link">← Back to Home</Link>
+    <main className="equipment-master-page">
+      <div className="equipment-master-grid" />
 
-        <div className="equipment-hero-grid">
-          <div>
-            <span className="equipment-eyebrow">SMART VEHICLE ACCESS</span>
+      <div className="equipment-master-shell">
+        <a className="equipment-master-back" href="/">← Back to Home</a>
+
+        <section className="equipment-master-hero">
+          <div className="equipment-master-copy">
+            <span>SMART PARKING TECHNOLOGY</span>
             <h1>Car Parking Management System</h1>
-            <p>
-              Intelligent parking access, ticketless operation, ANPR/LPR,
-              payment, occupancy monitoring and centralized parking management.
-            </p>
+            <p>Intelligent parking management systems integrating vehicle identification, access control, occupancy management and automated parking operations.</p>
           </div>
 
-          <div className="parking-visual">
-            <div className="parking-real-frame">
-              <img
-                src="/car-parking-real-photo.jpg"
-                alt="Professional car parking management system"
-                className="parking-real-photo"
-              />
-              <div className="parking-photo-overlay" />
-              <div className="parking-lpr-box">
-                <span>LICENSE PLATE</span>
-                <strong>SCAN</strong>
-              </div>
-              <div className="parking-lpr-line" />
-              <div className="parking-live-status">ANPR SYSTEM • ONLINE</div>
+          <div className="equipment-product-visual">
+            <img
+              src="/car-parking-real-photo.jpg"
+              alt="Professional parking management system"
+              className="equipment-product-image"
+            />
+            <div className="equipment-visual-glow" />
+            <div className="equipment-scanline" />
+            <div className="equipment-visual-label">VEHICLE RECOGNITION</div>
+            <div className="equipment-status">
+              <i />
+              SYSTEM READY
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="equipment-manufacturer-section">
-        <div className="equipment-section-heading">
-          <span>TECHNOLOGY PROFILES</span>
-          <h2>Leading Parking Technology Manufacturers</h2>
-          <p>
-            Parking access, ANPR/LPR, payment, guidance and centralized
-            management technologies from established manufacturers.
-          </p>
-        </div>
+        <section className="equipment-section-heading">
+          <span>TECHNOLOGY PARTNERS</span>
+          <h2>Manufacturer Technology Profiles</h2>
+          <p>Explore relevant car parking management system technologies, applications and technical capabilities.</p>
+        </section>
 
-        <div className="equipment-manufacturer-grid">
-          {manufacturers.map((name, index) => (
-            <button
-              key={name}
-              className="equipment-manufacturer-card parking-card"
-              style={{ "--card-delay": `${index * 65}ms` } as React.CSSProperties}
-              onClick={() => setSelected(name)}
-            >
-              <div className="parking-card-visual">
-                <div className="mini-parking-terminal">
-                  <span className="terminal-display" />
-                  <span className="terminal-slot" />
-                  <span className="terminal-status" />
-                </div>
-                <div className="parking-car-scan">
-                  <span />
-                </div>
-              </div>
+        <EquipmentManufacturerShowcase manufacturers={manufacturers} />
 
-              <strong>{name}</strong>
-              <small>Parking Management Technology</small>
-              <em>View Details →</em>
-            </button>
-          ))}
-        </div>
-      </section>
-
-      <section className="equipment-service-cta">
-        <span>TECHNICAL SUPPORT</span>
-        <h2>Need Parking System Installation or Maintenance?</h2>
-        <p>
-          SecureTech supports parking-system installation, ANPR/LPR,
-          barrier integration, payment systems, commissioning and maintenance.
-        </p>
-        <Link href="/service-request">Request Service →</Link>
-      </section>
-
-      {selected && (
-        <div className="equipment-modal-backdrop" onClick={() => setSelected(null)}>
-          <div className="equipment-modal" onClick={(e) => e.stopPropagation()}>
-            <button className="equipment-modal-close" onClick={() => setSelected(null)}>×</button>
-            <span>MANUFACTURER TECHNOLOGY PROFILE</span>
-            <h2>{selected}</h2>
-            <p>
-              {selected} technology profile for parking access, vehicle
-              identification, payment and parking-management applications.
-            </p>
-
-            <div className="equipment-modal-points">
-              <div>
-                <b>Technology</b>
-                <span>Parking access, ANPR/LPR, payment and management systems</span>
-              </div>
-              <div>
-                <b>Applications</b>
-                <span>Airports, shopping malls, hospitals, offices and urban facilities</span>
-              </div>
-              <div>
-                <b>Support</b>
-                <span>Installation, integration, commissioning and maintenance</span>
-              </div>
-            </div>
+        <section id="service-request" className="equipment-service-request">
+          <div className="equipment-service-copy">
+            <span>SERVICE REQUEST</span>
+            <h2>Need technical support?</h2>
+            <p>Submit your requirement and our technical team can review the request.</p>
           </div>
-        </div>
-      )}
+
+          <form action="/api/service-request" method="POST" className="equipment-service-form">
+            <input type="hidden" name="equipment" value="Car Parking Management System" />
+            <input name="name" placeholder="Full Name" required />
+            <input name="company" placeholder="Company / Organization" />
+            <input name="phone" placeholder="Phone" required />
+            <input name="email" type="email" placeholder="Email" required />
+            <input name="model" placeholder="Equipment / Model" />
+            <select name="serviceType" defaultValue="Maintenance">
+              <option>Maintenance</option>
+              <option>Repair</option>
+              <option>Installation</option>
+              <option>Commissioning</option>
+              <option>Technical Support</option>
+              <option>AMC</option>
+            </select>
+            <textarea name="message" placeholder="Service Requirement" required />
+            <button type="submit">Submit Service Request →</button>
+          </form>
+        </section>
+
+        <a className="equipment-master-back equipment-master-bottom" href="/">← Back to Home</a>
+      </div>
     </main>
   );
 }

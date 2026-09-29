@@ -1,170 +1,88 @@
-"use client";
+import type { Metadata } from "next";
+import EquipmentManufacturerShowcase from "@/app/components/EquipmentManufacturerShowcase";
 
-import Link from "next/link";
-import { useState } from "react";
+export const metadata: Metadata = {
+  title: "Walkie-Talkie | Security Equipment Maintenance BD",
+  description: "Professional two-way radio communication systems for security, aviation, industrial, emergency and operational teams.",
+};
 
 const manufacturers = [
-  "Motorola Solutions",
-  "Hytera",
-  "KENWOOD",
-  "Tait Communications",
-  "Sepura",
-  "Icom",
-  "Vertex Standard",
-  "JVCKENWOOD",
-  "EF Johnson Technologies",
-  "BK Technologies",
-  "RugGear",
-  "Simoco Wireless Solutions",
-  "Entel",
-  "Codan",
-  "Barrett Communications",
-  "Rohill",
-  "DAMM Cellular Systems",
-  "Teltronic",
-  "Telo Systems",
-  "Bittium",
+    { name: "Motorola Solutions", category: "Two-Way Radio", technology: "Professional digital radio communication", applications: "Security, aviation and public safety", capability: "Mission-critical radio systems" },
+    { name: "Hytera", category: "Two-Way Radio", technology: "Digital professional radio", applications: "Security and industrial operations", capability: "Professional communication systems" },
+    { name: "KENWOOD", category: "Radio Communication", technology: "Professional two-way radio", applications: "Security and operational teams", capability: "Digital radio systems" },
+    { name: "Tait Communications", category: "Critical Communications", technology: "Mission-critical radio", applications: "Public safety and infrastructure", capability: "Professional communication" },
+    { name: "Sepura", category: "Professional Radio", technology: "Digital radio communication", applications: "Public safety and transport", capability: "Mission-critical communications" },
+    { name: "Icom", category: "Radio Communication", technology: "Professional two-way radios", applications: "Security, marine and industrial", capability: "Professional radio systems" }
 ];
 
-export default function WalkieTalkiePage() {
-  const [selected, setSelected] = useState<string | null>(null);
-
+export default function EquipmentPage() {
   return (
-    <main className="equipment-master-page walkie-talkie-master-page">
-      <section className="equipment-master-hero">
-        <Link href="/" className="equipment-back-link">← Back to Home</Link>
+    <main className="equipment-master-page">
+      <div className="equipment-master-grid" />
 
-        <div className="equipment-hero-grid">
-          <div>
-            <span className="equipment-eyebrow">CRITICAL COMMUNICATIONS</span>
+      <div className="equipment-master-shell">
+        <a className="equipment-master-back" href="/">← Back to Home</a>
+
+        <section className="equipment-master-hero">
+          <div className="equipment-master-copy">
+            <span>PROFESSIONAL RADIO COMMUNICATION</span>
             <h1>Walkie-Talkie</h1>
-            <p>
-              Professional two-way radio communication systems for secure,
-              reliable voice communication across security, aviation,
-              industrial and emergency-response environments.
-            </p>
+            <p>Professional two-way radio communication systems for security, aviation, industrial, emergency and operational teams.</p>
           </div>
 
-          <div className="walkie-visual">
-            <div className="walkie-real-frame">
-              <img
-                src="/walkie-talkie-real-photo.jpg"
-                alt="Professional two-way radio"
-                className="walkie-real-photo"
-              />
-              <div className="walkie-photo-overlay" />
-              <div className="walkie-signal-ring ring-one" />
-              <div className="walkie-signal-ring ring-two" />
-              <div className="walkie-signal-ring ring-three" />
-              <div className="walkie-live-status">
-                RADIO LINK • TRANSMITTING
-              </div>
-              <div className="walkie-wave-line" />
+          <div className="equipment-product-visual">
+            <img
+              src="/walkie-talkie-real-photo.jpg"
+              alt="Professional two-way radio"
+              className="equipment-product-image"
+            />
+            <div className="equipment-visual-glow" />
+            <div className="equipment-scanline" />
+            <div className="equipment-visual-label">RADIO TRANSMISSION WAVES</div>
+            <div className="equipment-status">
+              <i />
+              SYSTEM READY
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="equipment-manufacturer-section">
-        <div className="equipment-section-heading">
-          <span>TECHNOLOGY PROFILES</span>
-          <h2>Leading Two-Way Radio Manufacturers</h2>
-          <p>
-            Professional portable-radio, mobile-radio, DMR, TETRA, P25 and
-            mission-critical communication technologies.
-          </p>
-        </div>
+        <section className="equipment-section-heading">
+          <span>TECHNOLOGY PARTNERS</span>
+          <h2>Manufacturer Technology Profiles</h2>
+          <p>Explore relevant walkie-talkie technologies, applications and technical capabilities.</p>
+        </section>
 
-        <div className="equipment-manufacturer-grid">
-          {manufacturers.map((name, index) => (
-            <button
-              key={name}
-              className="equipment-manufacturer-card walkie-card"
-              style={{ "--card-delay": `${index * 65}ms` } as React.CSSProperties}
-              onClick={() => setSelected(name)}
-            >
-              <div className="walkie-card-visual">
-                <div className="mini-radio">
-                  <span className="radio-antenna" />
-                  <span className="radio-display" />
-                  <span className="radio-knob" />
-                  <span className="radio-speaker" />
-                  <span className="radio-button" />
-                </div>
+        <EquipmentManufacturerShowcase manufacturers={manufacturers} />
 
-                <div className="mini-radio-wave wave-a" />
-                <div className="mini-radio-wave wave-b" />
-              </div>
-
-              <strong>{name}</strong>
-              <small>Professional Two-Way Radio</small>
-              <em>View Details →</em>
-            </button>
-          ))}
-        </div>
-      </section>
-
-      <section className="equipment-service-cta">
-        <span>TECHNICAL SUPPORT</span>
-        <h2>Need Radio Programming or Maintenance?</h2>
-        <p>
-          SecureTech supports radio installation, programming, configuration,
-          system commissioning, troubleshooting and preventive maintenance.
-        </p>
-        <Link href="/service-request">Request Service →</Link>
-      </section>
-
-      {selected && (
-        <div
-          className="equipment-modal-backdrop"
-          onClick={() => setSelected(null)}
-        >
-          <div
-            className="equipment-modal"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              className="equipment-modal-close"
-              onClick={() => setSelected(null)}
-            >
-              ×
-            </button>
-
-            <span>MANUFACTURER TECHNOLOGY PROFILE</span>
-            <h2>{selected}</h2>
-
-            <p>
-              {selected} professional radio technology profile for reliable
-              two-way communication and mission-critical operations.
-            </p>
-
-            <div className="equipment-modal-points">
-              <div>
-                <b>Technology</b>
-                <span>
-                  DMR, TETRA, P25, analog and professional two-way radio
-                  communication
-                </span>
-              </div>
-
-              <div>
-                <b>Applications</b>
-                <span>
-                  Airports, security, industrial sites, emergency response,
-                  logistics and critical infrastructure
-                </span>
-              </div>
-
-              <div>
-                <b>Support</b>
-                <span>
-                  Programming, configuration, commissioning and maintenance
-                </span>
-              </div>
-            </div>
+        <section id="service-request" className="equipment-service-request">
+          <div className="equipment-service-copy">
+            <span>SERVICE REQUEST</span>
+            <h2>Need technical support?</h2>
+            <p>Submit your requirement and our technical team can review the request.</p>
           </div>
-        </div>
-      )}
+
+          <form action="/api/service-request" method="POST" className="equipment-service-form">
+            <input type="hidden" name="equipment" value="Walkie-Talkie" />
+            <input name="name" placeholder="Full Name" required />
+            <input name="company" placeholder="Company / Organization" />
+            <input name="phone" placeholder="Phone" required />
+            <input name="email" type="email" placeholder="Email" required />
+            <input name="model" placeholder="Equipment / Model" />
+            <select name="serviceType" defaultValue="Maintenance">
+              <option>Maintenance</option>
+              <option>Repair</option>
+              <option>Installation</option>
+              <option>Commissioning</option>
+              <option>Technical Support</option>
+              <option>AMC</option>
+            </select>
+            <textarea name="message" placeholder="Service Requirement" required />
+            <button type="submit">Submit Service Request →</button>
+          </form>
+        </section>
+
+        <a className="equipment-master-back equipment-master-bottom" href="/">← Back to Home</a>
+      </div>
     </main>
   );
 }

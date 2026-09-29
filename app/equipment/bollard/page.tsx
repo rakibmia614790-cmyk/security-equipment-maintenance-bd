@@ -1,137 +1,88 @@
-"use client";
+import type { Metadata } from "next";
+import EquipmentManufacturerShowcase from "@/app/components/EquipmentManufacturerShowcase";
 
-import Link from "next/link";
-import { useState } from "react";
+export const metadata: Metadata = {
+  title: "Bollard | Security Equipment Maintenance BD",
+  description: "Security and traffic bollard systems for perimeter protection, vehicle control, pedestrian areas and controlled-access environments.",
+};
 
 const manufacturers = [
-  "FAAC",
-  "CAME",
-  "BFT",
-  "Nice",
-  "Frontier Pitts",
-  "ATG Access",
-  "Pilomat",
-  "Automatic Systems",
-  "Gunnebo",
-  "Delta Scientific",
-  "Heald",
-  "Bollards International",
-  "Roger Technology",
-  "SEA",
-  "FADINI",
-  "Benincà",
-  "DITEC",
-  "ELKA",
-  "ZKTeco",
-  "Hikvision",
-  "Dahua Technology",
-  "Perimeter Protection Systems",
+    { name: "FAAC", category: "Security Bollards", technology: "High-security retractable bollards", applications: "Critical infrastructure and public spaces", capability: "Vehicle perimeter protection" },
+    { name: "CAME", category: "Access Security", technology: "Automatic bollard systems", applications: "Commercial and public facilities", capability: "Vehicle access control" },
+    { name: "Frontier Pitts", category: "Perimeter Security", technology: "High-security bollards", applications: "Government and critical infrastructure", capability: "Hostile vehicle mitigation" },
+    { name: "ATG Access", category: "Perimeter Security", technology: "Security bollard technology", applications: "Critical facilities", capability: "Vehicle protection" },
+    { name: "Pilomat", category: "Security Bollards", technology: "Automatic and fixed bollards", applications: "Urban and high-security sites", capability: "Perimeter protection" },
+    { name: "Delta Scientific", category: "Vehicle Security", technology: "Crash-rated bollard systems", applications: "Government and critical infrastructure", capability: "High-security vehicle protection" }
 ];
 
-export default function BollardPage() {
-  const [selected, setSelected] = useState<string | null>(null);
-
+export default function EquipmentPage() {
   return (
-    <main className="equipment-master-page bollard-master-page">
-      <section className="equipment-master-hero">
-        <Link href="/" className="equipment-back-link">← Back to Home</Link>
+    <main className="equipment-master-page">
+      <div className="equipment-master-grid" />
 
-        <div className="equipment-hero-grid">
-          <div>
-            <span className="equipment-eyebrow">PERIMETER SECURITY TECHNOLOGY</span>
+      <div className="equipment-master-shell">
+        <a className="equipment-master-back" href="/">← Back to Home</a>
+
+        <section className="equipment-master-hero">
+          <div className="equipment-master-copy">
+            <span>PERIMETER & VEHICLE SECURITY</span>
             <h1>Bollard</h1>
-            <p>
-              Automatic, semi-automatic and fixed security bollard solutions
-              for controlled vehicle access and perimeter protection.
-            </p>
+            <p>Security and traffic bollard systems for perimeter protection, vehicle control, pedestrian areas and controlled-access environments.</p>
           </div>
 
-          <div className="bollard-visual">
-            <div className="bollard-real-frame">
-              <img
-                src="/bollard-real-photo.jpg"
-                alt="Retractable security bollard"
-                className="bollard-real-photo"
-              />
-              <div className="bollard-overlay" />
-              <div className="bollard-scanline" />
-              <div className="bollard-status">PERIMETER SECURITY</div>
+          <div className="equipment-product-visual">
+            <img
+              src="/bollard-real-photo.jpg"
+              alt="Security bollard system"
+              className="equipment-product-image"
+            />
+            <div className="equipment-visual-glow" />
+            <div className="equipment-scanline" />
+            <div className="equipment-visual-label">RETRACTABLE BOLLARD MOVEMENT</div>
+            <div className="equipment-status">
+              <i />
+              SYSTEM READY
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="equipment-manufacturer-section">
-        <div className="equipment-section-heading">
-          <span>TECHNOLOGY PROFILES</span>
-          <h2>Leading Bollard Manufacturers</h2>
-          <p>
-            Explore traffic, automatic and high-security perimeter bollard
-            manufacturers.
-          </p>
-        </div>
+        <section className="equipment-section-heading">
+          <span>TECHNOLOGY PARTNERS</span>
+          <h2>Manufacturer Technology Profiles</h2>
+          <p>Explore relevant bollard technologies, applications and technical capabilities.</p>
+        </section>
 
-        <div className="equipment-manufacturer-grid">
-          {manufacturers.map((name, index) => (
-            <button
-              key={name}
-              className="equipment-manufacturer-card bollard-card"
-              style={{ "--card-delay": `${index * 65}ms` } as React.CSSProperties}
-              onClick={() => setSelected(name)}
-            >
-              <div className="bollard-card-visual">
-                <div className="mini-bollard">
-                  <span />
-                </div>
-                <div className="bollard-rise-ring" />
-              </div>
+        <EquipmentManufacturerShowcase manufacturers={manufacturers} />
 
-              <strong>{name}</strong>
-              <small>Traffic & Security Bollards</small>
-              <em>View Details →</em>
-            </button>
-          ))}
-        </div>
-      </section>
-
-      <section className="equipment-service-cta">
-        <span>TECHNICAL SUPPORT</span>
-        <h2>Need Bollard Installation or Maintenance?</h2>
-        <p>
-          SecureTech supports bollard installation, commissioning, access
-          integration, inspection, troubleshooting and preventive maintenance.
-        </p>
-        <Link href="/service-request">Request Service →</Link>
-      </section>
-
-      {selected && (
-        <div className="equipment-modal-backdrop" onClick={() => setSelected(null)}>
-          <div className="equipment-modal" onClick={(e) => e.stopPropagation()}>
-            <button className="equipment-modal-close" onClick={() => setSelected(null)}>×</button>
-            <span>MANUFACTURER TECHNOLOGY PROFILE</span>
-            <h2>{selected}</h2>
-            <p>
-              {selected} bollard technology profile covering vehicle access
-              control, perimeter protection and technical support.
-            </p>
-
-            <div className="equipment-modal-points">
-              <div>
-                <b>Technology</b>
-                <span>Automatic, semi-automatic and fixed bollard systems</span>
-              </div>
-              <div>
-                <b>Applications</b>
-                <span>Government, commercial, industrial and high-security sites</span>
-              </div>
-              <div>
-                <b>Support</b>
-                <span>Installation, integration, commissioning and maintenance</span>
-              </div>
-            </div>
+        <section id="service-request" className="equipment-service-request">
+          <div className="equipment-service-copy">
+            <span>SERVICE REQUEST</span>
+            <h2>Need technical support?</h2>
+            <p>Submit your requirement and our technical team can review the request.</p>
           </div>
-        </div>
-      )}
+
+          <form action="/api/service-request" method="POST" className="equipment-service-form">
+            <input type="hidden" name="equipment" value="Bollard" />
+            <input name="name" placeholder="Full Name" required />
+            <input name="company" placeholder="Company / Organization" />
+            <input name="phone" placeholder="Phone" required />
+            <input name="email" type="email" placeholder="Email" required />
+            <input name="model" placeholder="Equipment / Model" />
+            <select name="serviceType" defaultValue="Maintenance">
+              <option>Maintenance</option>
+              <option>Repair</option>
+              <option>Installation</option>
+              <option>Commissioning</option>
+              <option>Technical Support</option>
+              <option>AMC</option>
+            </select>
+            <textarea name="message" placeholder="Service Requirement" required />
+            <button type="submit">Submit Service Request →</button>
+          </form>
+        </section>
+
+        <a className="equipment-master-back equipment-master-bottom" href="/">← Back to Home</a>
+      </div>
     </main>
   );
 }

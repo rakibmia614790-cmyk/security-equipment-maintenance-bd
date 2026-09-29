@@ -1,118 +1,88 @@
-"use client";
+import type { Metadata } from "next";
+import EquipmentManufacturerShowcase from "@/app/components/EquipmentManufacturerShowcase";
 
-import Link from "next/link";
-import { useState } from "react";
+export const metadata: Metadata = {
+  title: "Walk-Through Metal Detector | Security Equipment Maintenance BD",
+  description: "Professional walk-through metal detection systems for controlled access, aviation, government, military and critical-security environments.",
+};
 
 const manufacturers = [
-  "CEIA",
-  "Garrett Metal Detectors",
-  "Rapiscan Systems",
-  "ZKTeco",
-  "Dahua Technology",
-  "Securina Detection System",
-  "PEACENTURY",
-  "Shenzhen Security Electronic Equipment",
-  "Smart Check Security Equipment",
-  "Aoyodi Electronic",
-  "CETC",
-  "Dongguan Viking Technology",
-  "Safeway Inspection System",
-  "Juzheng",
-  "Mama Security",
+    { name: "CEIA", category: "Metal Detection", technology: "Multi-zone electromagnetic detection", applications: "Airports, government and critical facilities", capability: "Walk-through security screening" },
+    { name: "Garrett Metal Detectors", category: "Metal Detection", technology: "Advanced multi-zone detection", applications: "Airports and secure facilities", capability: "Walk-through and handheld detection" },
+    { name: "Rapiscan Systems", category: "Security Screening", technology: "Advanced people screening", applications: "Aviation and high-security facilities", capability: "Security checkpoint screening" },
+    { name: "ZKTeco", category: "Security Technology", technology: "Electromagnetic detection", applications: "Access-controlled facilities", capability: "Personnel screening" },
+    { name: "Dahua Technology", category: "Security Technology", technology: "Intelligent security screening", applications: "Security checkpoints", capability: "Integrated security solutions" },
+    { name: "Securina Detection System", category: "Metal Detection", technology: "Walk-through detection technology", applications: "Security checkpoints", capability: "Personnel metal detection" }
 ];
 
-export default function WTMDPage() {
-  const [selected, setSelected] = useState<string | null>(null);
-
+export default function EquipmentPage() {
   return (
-    <main className="equipment-master-page wtmd-master-page">
-      <section className="equipment-master-hero">
-        <Link href="/" className="equipment-back-link">← Back to Home</Link>
+    <main className="equipment-master-page">
+      <div className="equipment-master-grid" />
 
-        <div className="equipment-hero-grid">
-          <div>
-            <span className="equipment-eyebrow">SECURITY SCREENING TECHNOLOGY</span>
+      <div className="equipment-master-shell">
+        <a className="equipment-master-back" href="/">← Back to Home</a>
+
+        <section className="equipment-master-hero">
+          <div className="equipment-master-copy">
+            <span>SECURITY SCREENING TECHNOLOGY</span>
             <h1>Walk-Through Metal Detector</h1>
-            <p>
-              Professional walk-through metal detection solutions for controlled
-              access, passenger screening and high-security environments.
-            </p>
+            <p>Professional walk-through metal detection systems for controlled access, aviation, government, military and critical-security environments.</p>
           </div>
 
-          <div className="wtmd-visual" aria-label="Walk-Through Metal Detector visualization">
-            <div className="wtmd-gate">
-              <div className="wtmd-side left" />
-              <div className="wtmd-top" />
-              <div className="wtmd-side right" />
-              <div className="wtmd-person">
-                <div className="wtmd-head" />
-                <div className="wtmd-body" />
-                <div className="wtmd-leg left-leg" />
-                <div className="wtmd-leg right-leg" />
-              </div>
-              <div className="wtmd-scan-field" />
+          <div className="equipment-product-visual">
+            <img
+              src="/wtmd-real-photo.jpg"
+              alt="Professional walk-through metal detector"
+              className="equipment-product-image"
+            />
+            <div className="equipment-visual-glow" />
+            <div className="equipment-scanline" />
+            <div className="equipment-visual-label">WTMD DETECTION FIELD</div>
+            <div className="equipment-status">
+              <i />
+              SYSTEM READY
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="equipment-manufacturer-section">
-        <div className="equipment-section-heading">
-          <span>TECHNOLOGY PROFILES</span>
-          <h2>Leading WTMD Manufacturers</h2>
-          <p>Explore manufacturers and their metal detection technology profiles.</p>
-        </div>
+        <section className="equipment-section-heading">
+          <span>TECHNOLOGY PARTNERS</span>
+          <h2>Manufacturer Technology Profiles</h2>
+          <p>Explore relevant walk-through metal detector technologies, applications and technical capabilities.</p>
+        </section>
 
-        <div className="equipment-manufacturer-grid">
-          {manufacturers.map((name, index) => (
-            <button
-              key={name}
-              className="equipment-manufacturer-card wtmd-card"
-              style={{ "--card-delay": `${index * 70}ms` } as React.CSSProperties}
-              onClick={() => setSelected(name)}
-            >
-              <div className="wtmd-card-visual">
-                <div className="mini-gate">
-                  <span />
-                  <span />
-                  <i />
-                </div>
-                <div className="mini-scan-line" />
-              </div>
-              <strong>{name}</strong>
-              <small>Walk-Through Metal Detection</small>
-              <em>View Details →</em>
-            </button>
-          ))}
-        </div>
-      </section>
+        <EquipmentManufacturerShowcase manufacturers={manufacturers} />
 
-      <section className="equipment-service-cta">
-        <span>TECHNICAL SUPPORT</span>
-        <h2>Need WTMD Installation, Service or Maintenance?</h2>
-        <p>Contact SecureTech for installation, commissioning, troubleshooting, preventive maintenance and technical support.</p>
-        <Link href="/service-request">Request Service →</Link>
-      </section>
-
-      {selected && (
-        <div className="equipment-modal-backdrop" onClick={() => setSelected(null)}>
-          <div className="equipment-modal" onClick={(e) => e.stopPropagation()}>
-            <button className="equipment-modal-close" onClick={() => setSelected(null)}>×</button>
-            <span>MANUFACTURER TECHNOLOGY PROFILE</span>
-            <h2>{selected}</h2>
-            <p>
-              {selected} technology profile for walk-through metal detection,
-              including screening applications, deployment environments and
-              technical service considerations.
-            </p>
-            <div className="equipment-modal-points">
-              <div><b>Technology</b><span>Walk-through metal detection</span></div>
-              <div><b>Applications</b><span>Airports, government, commercial and high-security facilities</span></div>
-              <div><b>Support</b><span>Installation, commissioning, maintenance and technical assistance</span></div>
-            </div>
+        <section id="service-request" className="equipment-service-request">
+          <div className="equipment-service-copy">
+            <span>SERVICE REQUEST</span>
+            <h2>Need technical support?</h2>
+            <p>Submit your requirement and our technical team can review the request.</p>
           </div>
-        </div>
-      )}
+
+          <form action="/api/service-request" method="POST" className="equipment-service-form">
+            <input type="hidden" name="equipment" value="Walk-Through Metal Detector" />
+            <input name="name" placeholder="Full Name" required />
+            <input name="company" placeholder="Company / Organization" />
+            <input name="phone" placeholder="Phone" required />
+            <input name="email" type="email" placeholder="Email" required />
+            <input name="model" placeholder="Equipment / Model" />
+            <select name="serviceType" defaultValue="Maintenance">
+              <option>Maintenance</option>
+              <option>Repair</option>
+              <option>Installation</option>
+              <option>Commissioning</option>
+              <option>Technical Support</option>
+              <option>AMC</option>
+            </select>
+            <textarea name="message" placeholder="Service Requirement" required />
+            <button type="submit">Submit Service Request →</button>
+          </form>
+        </section>
+
+        <a className="equipment-master-back equipment-master-bottom" href="/">← Back to Home</a>
+      </div>
     </main>
   );
 }
