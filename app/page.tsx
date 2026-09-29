@@ -7,8 +7,8 @@ import SecurityIntelligence from "./components/SecurityIntelligence"
 const equipment = [
   ["Baggage Scanner", "/equipment/baggage-scanner", "X-RAY / INSPECTION", "BAG"],
   ["Walk Through Metal Detector", "/equipment/walk-through-metal-detector", "PEOPLE SCREENING", "WTMD"],
-  ["Hand-Held Metal Detector", "/equipment/hand-held-metal-detector", "HAND SCREENING", "HHMD"],
-  ["Explosive Trace Detection", "/equipment/explosive-trace-detection", "TRACE DETECTION", "ETD"],
+  ["Hand-Held Metal Detector", "/equipment/hand-hand-metal", "HAND SCREENING", "HHMD"],
+  ["Explosive Trace Detection", "/equipment/etd", "TRACE DETECTION", "ETD"],
   ["CCTV System", "/equipment/cctv-system", "VIDEO SECURITY", "CCTV"],
   ["Access Control System", "/equipment/access-control-system", "ENTRY SECURITY", "ACS"],
   ["Road Barrier / Road Blocker", "/equipment/road-barrier-road-blocker", "VEHICLE SECURITY", "RBR"],
@@ -270,8 +270,8 @@ export default function Home() {
     {[
       ["Baggage Scanner","BS","Advanced X-ray screening systems for baggage and parcel inspection.","/equipment/baggage-scanner","https://image.made-in-china.com/2f0j00bRvYCdPlrAkD/High-Conveyor-600-400mm-Tunnel-Mobile-X-ray-Small-Baggage-and-Parcel-Scanner.jpg"],
       ["Walk Through Metal Detector","WTMD","High-performance personnel screening for controlled access points.","/equipment/walk-through-metal-detector","https://www.nicepng.com/png/detail/421-4219023_security-scan-walk-through-metal-detector-security-turnstile.png"],
-      ["Hand-Held Metal Detector","HHMD","Portable metal detection for rapid and flexible security screening.","/equipment/hand-held-metal-detector","https://thietbibuudien.vn/uploads/images/images/may-do-garrett-1165180.jpg"],
-      ["Explosive Detection System / ETD","ETD","Trace detection technology for explosive and security threat screening.","/equipment/explosive-trace-detector","https://www.tsatrace.com/assets/images/Itemiser-DX.jpg"],
+      ["Hand-Held Metal Detector","HHMD","Portable metal detection for rapid and flexible security screening.","/equipment/hand-hand-metal","https://thietbibuudien.vn/uploads/images/images/may-do-garrett-1165180.jpg"],
+      ["Explosive Detection System / ETD","ETD","Trace detection technology for explosive and security threat screening.","/equipment/etd","https://www.tsatrace.com/assets/images/Itemiser-DX.jpg"],
       ["CCTV System","CCTV","Professional video surveillance and security monitoring solutions.","/equipment/cctv","https://spsecuritycamerashouston.com/assets/product-16cam-4mp-CBD2G-TT.webp"],
       ["Road Barrier","RB","Automated vehicle access control for secure facilities and checkpoints.","/equipment/road-barrier","https://yotechno.in/wp-content/uploads/2021/06/Parking-Barrier-CMP200-800x800.png"],
       ["Road Blocker","RBL","Heavy-duty vehicle mitigation and high-security perimeter protection.","/equipment/road-blocker","https://www.madoors.com.tr/storage/photos/May2018/road-blocker.jpeg"],

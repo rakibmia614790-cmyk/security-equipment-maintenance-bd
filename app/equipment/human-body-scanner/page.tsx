@@ -1,147 +1,147 @@
-import EquipmentBrandLogos from "../EquipmentBrandLogos";
-import ManufacturerIdentityGrid from "@/app/components/ManufacturerIdentityGrid";
+import Link from "next/link";
 import HumanBodyScannerManufacturerIdentityGrid from "@/app/components/HumanBodyScannerManufacturerIdentityGrid";
 
-const humanBodyScannerBrands = [
-  "Rohde & Schwarz",
-  "Nuctech",
-  "Smiths Detection",
-  "L3Harris",
-];
+export const metadata = {
+  title: "Human Body Scanner | Security Equipment Maintenance BD",
+  description:
+    "Professional human body security scanners for concealed threat detection, aviation, government, correctional and critical infrastructure security.",
+};
 
-const baggageScannerBrands = [
-  "Smiths Detection",
-  "Rapiscan Systems",
-  "Nuctech",
-  "L3Harris",
-  "Analogic",
-  "Astrophysics",
-  "Gilardoni",
-  "Scanna MSC",
-];
-const manufacturers = [
-  ["Smiths Detection", ""],
-  ["Rapiscan Systems", ""],
-  ["Leidos", ""],
-  ["Nuctech", ""],
-  ["L3Harris Technologies", ""],
-  ["Tek84", ""],
-  ["Liberty Defense", ""],
-  ["Rohde & Schwarz", ""],
-  ["ThruVision", ""],
-  ["ODSecurity", ""],
-  ["Adani Systems", ""],
-  ["Viken Detection", ""],
-  ["LINEV Systems", ""],
-  ["Westminster International", ""],
-  ["Astrophysics", ""],
-  ["Camero-Tech", ""],
-  ["Xoran Technologies", ""],
-  ["Micro-X", ""],
-  ["VOTI Detection", ""],
-  ["Autoclear", ""],
+const features = [
+  ["Advanced People Screening", "Security screening technology for detecting concealed objects and potential threats on the human body."],
+  ["Non-Intrusive Screening", "Advanced imaging technologies designed for efficient passenger and personnel screening."],
+  ["High-Resolution Detection", "Modern screening platforms designed to identify metallic and non-metallic concealed objects."],
+  ["Security Checkpoint Integration", "Suitable for aviation, government, correctional and critical infrastructure screening environments."],
+  ["Operational Efficiency", "Designed for rapid screening workflows and controlled security checkpoints."],
+  ["Professional Technical Support", "Installation, commissioning, preventive maintenance, repair and technical troubleshooting."],
 ];
 
 export default function HumanBodyScannerPage() {
   return (
-    <main className="min-h-screen bg-[#06111f] text-white">
-      <section className="relative overflow-hidden border-b border-white/10">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(14,165,233,0.18),transparent_40%),radial-gradient(circle_at_bottom_left,rgba(37,99,235,0.12),transparent_40%)]" />
-        <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-sky-400">
-            Advanced Security Screening
+    <main className="min-h-screen bg-slate-950 text-white">
+      <section className="relative overflow-hidden border-b border-cyan-400/20 bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-950/60">
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-40">
+          <div className="h-96 w-96 rounded-full border border-cyan-400/20 animate-body-scanner-pulse" />
+          <div className="absolute h-72 w-72 rounded-full border border-cyan-400/30" />
+          <div className="absolute h-56 w-28 rounded-[45%] border border-cyan-300/50 bg-cyan-400/5 animate-body-scanner-scan">
+            <div className="absolute left-1/2 top-1/2 h-44 w-10 -translate-x-1/2 -translate-y-1/2 rounded-[50%] border border-cyan-300/30" />
+          </div>
+          <div className="absolute left-[20%] right-[20%] top-1/2 h-px bg-cyan-300/80 animate-body-scanner-sweep" />
+        </div>
+
+        <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <Link href="/equipment" className="text-sm font-semibold text-cyan-300">
+            ← Back to Equipment
+          </Link>
+
+          <p className="mt-12 text-sm font-bold uppercase tracking-[0.28em] text-cyan-300">
+            Advanced People Screening
           </p>
-          <h1 className="max-w-4xl text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+
+          <h1 className="mt-4 text-5xl font-black tracking-tight sm:text-6xl">
             Human Body Scanner
           </h1>
+
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-            Advanced personnel screening solutions for detecting concealed
-            objects and supporting efficient, controlled security operations.
+            Professional people-screening solutions for detecting concealed
+            objects and threats in aviation, government, correctional and
+            critical infrastructure environments.
           </p>
-          <div className="mt-10 flex flex-wrap gap-4">
-            <a href="/service-request" className="rounded-xl bg-sky-500 px-6 py-3 font-semibold transition hover:bg-sky-400">
-              Service Request
-            </a>
-            <a href="/contact" className="rounded-xl border border-white/15 bg-white/5 px-6 py-3 font-semibold transition hover:bg-white/10">
-              Contact Our Team
-            </a>
+
+          <div className="mt-9 flex flex-wrap gap-4">
+            <Link
+              href="/service-request"
+              className="rounded-xl bg-cyan-400 px-7 py-3 font-bold text-slate-950"
+            >
+              Request Service
+            </Link>
+            <Link
+              href="/contact"
+              className="rounded-xl border border-white/15 bg-white/5 px-7 py-3 font-semibold"
+            >
+              Contact Us
+            </Link>
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <div className="grid gap-10 lg:grid-cols-2">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">System Overview</p>
-            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-              Advanced Personnel Screening
-            </h2>
-          </div>
-          <p className="text-lg leading-8 text-slate-300">
-            Human body screening technologies can provide rapid non-contact
-            inspection and help security teams identify concealed items while
-            maintaining controlled passenger and personnel throughput.
+        <div className="mb-12 max-w-3xl">
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-cyan-300">
+            People Screening Technology
+          </p>
+          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+            Advanced screening for high-security environments
+          </h2>
+          <p className="mt-4 leading-8 text-slate-300">
+            Modern human body screening technologies provide security teams
+            with efficient methods for identifying concealed objects while
+            supporting controlled checkpoint operations.
           </p>
         </div>
 
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {[
-            ["Security Screening", "Non-contact personnel inspection."],
-            ["Concealed Object Detection", "Screening support for hidden items."],
-            ["High Throughput", "Designed for controlled screening environments."],
-            ["Operational Integration", "Integration with broader security procedures."],
-          ].map(([title, text]) => (
-            <div key={title} className="rounded-2xl border border-white/10 bg-white/[0.045] p-7">
-              <h3 className="text-lg font-bold">{title}</h3>
-              <p className="mt-3 text-sm leading-6 text-slate-400">{text}</p>
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {features.map(([title, description]) => (
+            <div
+              key={title}
+              className="rounded-2xl border border-white/10 bg-white/[0.04] p-7 transition duration-500 hover:-translate-y-1 hover:border-cyan-400/50"
+            >
+              <div className="mb-5 h-1 w-12 rounded-full bg-cyan-400" />
+              <h3 className="text-xl font-bold">{title}</h3>
+              <p className="mt-3 text-sm leading-7 text-slate-400">
+                {description}
+              </p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="border-y border-white/10 bg-white/[0.02]">
+      <section className="border-y border-white/10 bg-slate-900/70">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">Applications</p>
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-cyan-300">
+            Manufacturer Technologies
+          </p>
+
           <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-            Personnel Screening Applications
+            Human Body Scanner Manufacturers
           </h2>
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              "Airports & Aviation Facilities",
-              "Government & Critical Infrastructure",
-              "Correctional & Detention Facilities",
-              "Courts & Judicial Facilities",
-              "Ports & Border Control",
-              "High-Security Commercial Facilities",
-            ].map((item) => (
-              <div key={item} className="rounded-xl border border-white/10 bg-[#0a1728] px-6 py-5 text-slate-200">
-                {item}
-              </div>
-            ))}
+
+          <p className="mt-4 max-w-3xl leading-7 text-slate-300">
+            A professional technical showcase of established people-screening
+            and security-scanner manufacturers, presented with original
+            product-specific visual interfaces.
+          </p>
+
+          <div className="mt-10">
+            <HumanBodyScannerManufacturerIdentityGrid />
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
-          Manufacturer Ecosystem
-        </p>
-<ManufacturerIdentityGrid />
+        <div className="rounded-3xl border border-cyan-400/20 bg-gradient-to-br from-cyan-950/50 to-slate-900 p-8 sm:p-12">
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-cyan-300">
+            Professional Technical Services
+          </p>
 
-        <h2 className="mt-3 max-w-3xl text-3xl font-bold sm:text-4xl">
-          Personnel Screening Technology
-        </h2>
-        <p className="mt-5 max-w-3xl leading-7 text-slate-400">
-          Our technical coverage is structured around a broad ecosystem of
-          personnel-screening and security-inspection technologies.
-        </p>
+          <h2 className="mt-3 text-3xl font-bold">
+            Installation, Maintenance & Technical Support
+          </h2>
 
-        <div className="mt-12">
-            <p className="text-sm leading-7 text-slate-400">
-              Manufacturer information is presented as a technology ecosystem reference and does not imply manufacturer authorization or affiliation.
-            </p>
-          </div>
-        </section>
-      </main>
-    );
-  }
+          <p className="mt-4 max-w-3xl leading-8 text-slate-300">
+            Professional installation, commissioning, configuration,
+            preventive maintenance, corrective repair and technical
+            troubleshooting for people-screening systems.
+          </p>
+
+          <Link
+            href="/service-request"
+            className="mt-8 inline-flex rounded-xl bg-cyan-400 px-7 py-3 font-bold text-slate-950"
+          >
+            Submit Service Request
+          </Link>
+        </div>
+      </section>
+    </main>
+  );
+}

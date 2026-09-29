@@ -19,13 +19,13 @@ const equipment = [
     title: "Hand-Held Metal Detector",
     description:
       "Portable security screening devices for fast and accurate personnel inspection.",
-    link: "/equipment/hand-held-metal-detector",
+    link: "/equipment/hand-hand-metal",
   },
   {
     title: "Explosive Trace Detection",
     description:
       "ETD solutions for explosive trace screening, airport security and high-security applications.",
-    link: "/equipment/explosive-trace-detection",
+    link: "/equipment/etd",
   },
   {
     title: "CCTV System",

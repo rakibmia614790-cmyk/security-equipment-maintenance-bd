@@ -1,269 +1,149 @@
-import WTMDManufacturerIdentityGrid from "@/app/components/WTMDManufacturerIdentityGrid";
 import Link from "next/link";
+import WTMDManufacturerIdentityGrid from "@/app/components/WTMDManufacturerIdentityGrid";
 
-const manufacturers = [
-  ["CEIA", ""],
-  ["Garrett", ""],
-  ["Rapiscan Systems", ""],
-  ["", ""],
-  ["Nuctech", ""],
-  ["Leidos", ""],
-  ["ZKTeco", ""],
-  ["Evolv Technology", ""],
-  ["Westminster International", ""],
-  ["Autoclear", ""],
-  ["Metor", ""],
-  ["Adani Defence", ""],
-  ["Safeway Inspection System", ""],
-  ["Beijing Zhongdun Anmin", ""],
-  ["OSI Systems", ""],
-  ["Bosch", ""],
-  ["Rohde & Schwarz", ""],
-  ["Thales", ""],
-  ["VMI Security", ""],
-  ["Astrophysics", ""],
-  ["Digital Barriers", ""],
-  ["C.E.I.A. USA", ""],
-  ["2M Technology", ""],
-  ["Wanzl", ""],
-  ["DetectaChem", ""],
-];
+export const metadata = {
+  title: "Walk-Through Metal Detector | Security Equipment Maintenance BD",
+  description:
+    "Professional walk-through metal detector systems for aviation, government, critical infrastructure and high-security screening environments.",
+};
 
-const applications = [
-  "Airports and aviation facilities",
-  "Government and critical infrastructure",
-  "Courts and judicial facilities",
-  "Military and defence establishments",
-  "Corporate and commercial facilities",
-  "Events and high-security venues",
-];
-
-const capabilities = [
-  "Multi-zone metal detection",
-  "Adjustable detection sensitivity",
-  "Target-zone indication",
-  "High-throughput screening",
-  "Walk-through operation",
-  "Alarm and security monitoring",
+const features = [
+  ["Advanced Metal Detection", "Professional electromagnetic screening technology for detecting metallic objects at controlled checkpoints."],
+  ["Multi-Zone Screening", "Multi-zone detection supports more precise identification of potential metal threats."],
+  ["High-Throughput Screening", "Designed for efficient personnel screening in demanding security environments."],
+  ["Adjustable Sensitivity", "Configurable detection sensitivity for different checkpoint requirements and operating conditions."],
+  ["Security Checkpoint Integration", "Suitable for airports, government facilities, critical infrastructure and controlled access areas."],
+  ["Professional Technical Support", "Installation, commissioning, calibration support, preventive maintenance, repair and troubleshooting."],
 ];
 
 export default function WalkThroughMetalDetectorPage() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
-      <section className="relative overflow-hidden border-b border-white/10">
-        <div className="absolute inset-0 bg-[url('/security-hero.png')] bg-cover bg-center opacity-15" />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/95 to-slate-900/70" />
-
-        <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
-          <div className="max-w-4xl">
-            <p className="mb-5 text-sm font-semibold uppercase tracking-[0.28em] text-cyan-300">
-              Security Screening Equipment
-            </p>
-
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-              Walk-Through Metal Detector
-            </h1>
-
-            <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-300 sm:text-xl">
-              Professional walk-through screening solutions for controlled
-              access, people screening and high-security environments.
-            </p>
-
-            <div className="mt-10 flex flex-wrap gap-4">
-              <Link
-                href="/service-request"
-                className="rounded-lg bg-cyan-400 px-6 py-3.5 font-semibold text-slate-950 transition hover:bg-cyan-300"
-              >
-                Service Request
-              </Link>
-
-              <Link
-                href="/contact"
-                className="rounded-lg border border-white/20 bg-white/5 px-6 py-3.5 font-semibold text-white transition hover:bg-white/10"
-              >
-                Contact Our Team
-              </Link>
-            </div>
+      <section className="relative overflow-hidden border-b border-cyan-400/20 bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-950/60">
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-40">
+          <div className="absolute h-96 w-96 rounded-full border border-cyan-400/20 animate-wtmd-pulse" />
+          <div className="absolute h-72 w-72 rounded-full border border-cyan-400/30" />
+          <div className="relative h-64 w-44 rounded-t-3xl border-x-4 border-t-4 border-cyan-300/50 bg-cyan-400/5">
+            <div className="absolute left-1/2 top-0 h-full w-px -translate-x-1/2 bg-cyan-300/20" />
+            <div className="absolute inset-x-3 top-1/2 h-px bg-cyan-300/80 animate-wtmd-sweep" />
+            <div className="absolute -left-2 top-1/2 h-4 w-4 -translate-y-1/2 rounded-full bg-cyan-300 shadow-[0_0_22px_rgba(103,232,249,1)]" />
+            <div className="absolute -right-2 top-1/2 h-4 w-4 -translate-y-1/2 rounded-full bg-cyan-300 shadow-[0_0_22px_rgba(103,232,249,1)]" />
           </div>
+          <div className="absolute h-44 w-44 rounded-full border border-cyan-300/20 animate-wtmd-field" />
+          <div className="absolute h-56 w-56 rounded-full border border-cyan-300/15 animate-wtmd-field" />
         </div>
-      </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <div className="grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
-              Equipment Overview
-            </p>
+        <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <Link href="/" className="text-sm font-semibold text-cyan-300">
+            ← Back to Home
+          </Link>
 
-            <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
-              Reliable people-screening technology
-            </h2>
-
-            <p className="mt-6 leading-8 text-slate-300">
-              Walk-through metal detectors are designed to screen individuals
-              for metallic objects at controlled entry points. They are widely
-              used where efficient passenger or visitor screening must be
-              combined with reliable alarm indication and operational
-              flexibility.
-            </p>
-
-            <p className="mt-5 leading-8 text-slate-300">
-              SecureTech Equipment provides technical support covering
-              installation, commissioning, inspection, preventive maintenance,
-              corrective maintenance, troubleshooting and operational support
-              for walk-through screening systems.
-            </p>
-          </div>
-
-          <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-8 shadow-2xl">
-            <p className="text-sm font-semibold uppercase tracking-wider text-slate-400">
-              Service Coverage
-            </p>
-
-            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
-              {[
-                "Installation & Commissioning",
-                "Preventive Maintenance",
-                "Corrective Maintenance",
-                "Troubleshooting",
-                "Performance Inspection",
-                "Technical Support",
-              ].map((item) => (
-                <div
-                  key={item}
-                  className="rounded-xl border border-white/10 bg-slate-900/70 px-4 py-4 text-sm font-medium text-slate-200"
-                >
-                  {item}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-y border-white/10 bg-slate-900/50">
-        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
-              Applications
-            </p>
-
-            <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
-              Built for controlled access environments
-            </h2>
-          </div>
-
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {applications.map((item, index) => (
-              <div
-                key={item}
-                className="rounded-2xl border border-white/10 bg-white/[0.035] p-6"
-              >
-                <span className="text-sm font-bold text-cyan-300">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <h3 className="mt-5 text-lg font-semibold text-white">
-                  {item}
-                </h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <div className="max-w-3xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
-            Key Capabilities
+          <p className="mt-12 text-sm font-bold uppercase tracking-[0.28em] text-cyan-300">
+            Personnel Security Screening
           </p>
 
-          <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
-            Screening features that support security operations
-          </h2>
-        </div>
+          <h1 className="mt-4 text-5xl font-black tracking-tight sm:text-6xl">
+            Walk-Through Metal Detector
+          </h1>
 
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {capabilities.map((item) => (
-            <div
-              key={item}
-              className="rounded-2xl border border-white/10 bg-white/[0.04] p-6"
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+            Professional walk-through metal detection systems for aviation,
+            government facilities, critical infrastructure and high-security
+            screening environments.
+          </p>
+
+          <div className="mt-9 flex flex-wrap gap-4">
+            <Link
+              href="/service-request"
+              className="rounded-xl bg-cyan-400 px-7 py-3 font-bold text-slate-950"
             >
-              <div className="mb-5 h-2 w-10 rounded-full bg-cyan-400" />
-              <h3 className="text-lg font-semibold">{item}</h3>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="border-y border-white/10 bg-slate-900/60">
-        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <div className="mb-10 max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-300">
-              Manufacturer Technologies
-            </p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Walk-Through Metal Detector Manufacturers
-            </h2>
-            <p className="mt-4 text-base leading-7 text-slate-300">
-              A curated technical showcase of established walk-through metal
-              detection technologies and security screening manufacturers.
-            </p>
+              Request Service
+            </Link>
+            <Link
+              href="/contact"
+              className="rounded-xl border border-white/15 bg-white/5 px-7 py-3 font-semibold"
+            >
+              Contact Us
+            </Link>
           </div>
-
-          <WTMDManufacturerIdentityGrid />
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <div className="grid gap-8 lg:grid-cols-3">
-          {[
-            {
-              title: "Preventive Maintenance",
-              text: "Routine inspection and maintenance support designed to help keep screening equipment operational.",
-            },
-            {
-              title: "Corrective Support",
-              text: "Technical troubleshooting and corrective maintenance for operational faults and equipment issues.",
-            },
-            {
-              title: "Technical Training",
-              text: "Operational and maintenance-oriented training support for relevant security screening equipment.",
-            },
-          ].map((item) => (
+        <div className="mb-12 max-w-3xl">
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-cyan-300">
+            Electromagnetic Screening
+          </p>
+          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+            Intelligent personnel screening
+          </h2>
+          <p className="mt-4 leading-8 text-slate-300">
+            Modern walk-through metal detectors provide efficient personnel
+            screening with configurable sensitivity and zone-based detection
+            for controlled security checkpoints.
+          </p>
+        </div>
+
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {features.map(([title, description]) => (
             <div
-              key={item.title}
-              className="rounded-2xl border border-white/10 bg-white/[0.04] p-8"
+              key={title}
+              className="rounded-2xl border border-white/10 bg-white/[0.04] p-7 transition duration-500 hover:-translate-y-1 hover:border-cyan-400/50"
             >
-              <h3 className="text-xl font-bold">{item.title}</h3>
-              <p className="mt-4 leading-7 text-slate-300">{item.text}</p>
+              <div className="mb-5 h-1 w-12 rounded-full bg-cyan-400" />
+              <h3 className="text-xl font-bold">{title}</h3>
+              <p className="mt-3 text-sm leading-7 text-slate-400">
+                {description}
+              </p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="px-6 pb-20 lg:px-8">
-        <div className="mx-auto max-w-7xl overflow-hidden rounded-3xl border border-cyan-400/20 bg-gradient-to-r from-cyan-400/10 to-white/[0.04] p-8 sm:p-12">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
-              Need Technical Support?
-            </p>
+      <section className="border-y border-white/10 bg-slate-900/70">
+        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-cyan-300">
+            Manufacturer Technologies
+          </p>
 
-            <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
-              Request service for your walk-through metal detector.
-            </h2>
+          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+            Walk-Through Metal Detector Manufacturers
+          </h2>
 
-            <p className="mt-5 leading-8 text-slate-300">
-              Share your equipment details and service requirement with our
-              technical team.
-            </p>
+          <p className="mt-4 max-w-3xl leading-7 text-slate-300">
+            A professional technical showcase of established personnel metal
+            detection manufacturers, presented with original product-specific
+            visual identity cards.
+          </p>
 
-            <Link
-              href="/service-request"
-              className="mt-8 inline-flex rounded-lg bg-cyan-400 px-6 py-3.5 font-semibold text-slate-950 transition hover:bg-cyan-300"
-            >
-              Submit Service Request
-            </Link>
+          <div className="mt-10">
+            <WTMDManufacturerIdentityGrid />
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+        <div className="rounded-3xl border border-cyan-400/20 bg-gradient-to-br from-cyan-950/50 to-slate-900 p-8 sm:p-12">
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-cyan-300">
+            Professional Technical Services
+          </p>
+
+          <h2 className="mt-3 text-3xl font-bold">
+            Installation, Calibration & Maintenance
+          </h2>
+
+          <p className="mt-4 max-w-3xl leading-8 text-slate-300">
+            Professional installation, commissioning, configuration,
+            calibration support, preventive maintenance, corrective repair and
+            technical troubleshooting.
+          </p>
+
+          <Link
+            href="/service-request"
+            className="mt-8 inline-flex rounded-xl bg-cyan-400 px-7 py-3 font-bold text-slate-950"
+          >
+            Submit Service Request
+          </Link>
         </div>
       </section>
     </main>

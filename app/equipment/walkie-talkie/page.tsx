@@ -1,217 +1,151 @@
-import EquipmentBrandLogos from "../EquipmentBrandLogos";
+import Link from "next/link";
 import WalkieTalkieManufacturerIdentityGrid from "@/app/components/WalkieTalkieManufacturerIdentityGrid";
 
-const walkieTalkieBrands = [
-  "Motorola Solutions",
-  "Hytera",
-  "Kenwood",
-  "Icom",
-  "Tait",
-];
-const manufacturers = [
-  ["Motorola Solutions", ""],
-  ["Hytera", ""],
-  ["Kenwood", ""],
-  ["Icom", ""],
-  ["Sepura", ""],
-  ["Tait Communications", ""],
-  ["JVCKENWOOD", ""],
-  ["Vertex Standard", ""],
-  ["Yaesu", ""],
-  ["Uniden", ""],
-  ["Midland", ""],
-  ["Baofeng", ""],
-  ["RugGear", ""],
-  ["Entel", ""],
-  ["Simoco", ""],
-  ["Codan", ""],
-  ["Zebra Technologies", ""],
-  ["Honeywell", ""],
-  ["Rohde & Schwarz", ""],
-  ["Thales", ""],
+export const metadata = {
+  title: "Walkie-Talkie Communication System | Security Equipment Maintenance BD",
+  description:
+    "Professional two-way radio and walkie-talkie communication systems for security, aviation, industrial, government and critical infrastructure operations.",
+};
+
+const features = [
+  ["Reliable Two-Way Communication", "Professional radio communication for coordinated security and operational teams."],
+  ["Clear Voice Communication", "Designed for dependable voice communication across demanding operational environments."],
+  ["Rugged Field Operation", "Professional handheld radio solutions for security, industrial and field-service applications."],
+  ["Team Coordination", "Support for rapid communication between mobile teams, control rooms and field personnel."],
+  ["Expandable Communication", "Suitable for organizations requiring scalable radio communication infrastructure."],
+  ["Professional Technical Support", "Installation, programming, configuration, preventive maintenance, repair and troubleshooting."],
 ];
 
 export default function WalkieTalkiePage() {
   return (
-    <main className="min-h-screen bg-[#06111f] text-white">
-      <section className="relative overflow-hidden border-b border-white/10">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(14,165,233,0.18),transparent_40%),radial-gradient(circle_at_bottom_left,rgba(37,99,235,0.12),transparent_40%)]" />
-        <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-sky-400">
-            Professional Communication Systems
+    <main className="min-h-screen bg-slate-950 text-white">
+      <section className="relative overflow-hidden border-b border-cyan-400/20 bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-950/60">
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-40">
+          <div className="absolute h-96 w-96 rounded-full border border-cyan-400/20 animate-radio-pulse" />
+          <div className="absolute h-72 w-72 rounded-full border border-cyan-400/30 animate-radio-pulse" />
+          <div className="relative h-64 w-32 rounded-2xl border border-cyan-300/50 bg-cyan-400/5 shadow-[0_0_35px_rgba(34,211,238,.18)]">
+            <div className="absolute -top-16 left-1/2 h-16 w-2 -translate-x-1/2 rounded-full bg-cyan-300/60" />
+            <div className="absolute left-5 right-5 top-7 h-10 rounded-lg border border-cyan-300/40 bg-cyan-400/10" />
+            <div className="absolute left-8 right-8 top-12 h-px bg-cyan-300/80 animate-radio-scan" />
+            <div className="absolute bottom-10 left-1/2 h-4 w-4 -translate-x-1/2 rounded-full border border-cyan-300/60" />
+          </div>
+          <div className="absolute h-48 w-48 rounded-full border border-cyan-300/30 animate-radio-signal" />
+          <div className="absolute h-72 w-72 rounded-full border border-cyan-300/20 animate-radio-signal" />
+        </div>
+
+        <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <Link href="/equipment" className="text-sm font-semibold text-cyan-300">
+            ← Back to Equipment
+          </Link>
+
+          <p className="mt-12 text-sm font-bold uppercase tracking-[0.28em] text-cyan-300">
+            Professional Radio Communication
           </p>
-          <h1 className="max-w-4xl text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-            Walkie-Talkie & Two-Way Radio
+
+          <h1 className="mt-4 text-5xl font-black tracking-tight sm:text-6xl">
+            Walkie-Talkie Communication System
           </h1>
+
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-            Reliable two-way radio communication solutions for security teams,
-            airports, industrial facilities, emergency operations and large
-            organizations.
+            Professional two-way radio communication solutions for security,
+            aviation, industrial, government and critical infrastructure
+            operations.
           </p>
-          <div className="mt-10 flex flex-wrap gap-4">
-            <a
+
+          <div className="mt-9 flex flex-wrap gap-4">
+            <Link
               href="/service-request"
-              className="rounded-xl bg-sky-500 px-6 py-3 font-semibold transition hover:bg-sky-400"
+              className="rounded-xl bg-cyan-400 px-7 py-3 font-bold text-slate-950"
             >
-              Service Request
-            </a>
-            <a
+              Request Service
+            </Link>
+            <Link
               href="/contact"
-              className="rounded-xl border border-white/15 bg-white/5 px-6 py-3 font-semibold transition hover:bg-white/10"
+              className="rounded-xl border border-white/15 bg-white/5 px-7 py-3 font-semibold"
             >
-              Contact Our Team
-            </a>
+              Contact Us
+            </Link>
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <div className="grid gap-10 lg:grid-cols-2">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
-              System Overview
-            </p>
-            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-              Mission-Critical Communication
-            </h2>
-          </div>
-          <p className="text-lg leading-8 text-slate-300">
-            Professional two-way radio systems support fast, dependable
-            communication between security personnel, technical teams,
-            operations staff and emergency-response teams.
-          </p>
-        </div>
-
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {[
-            ["Two-Way Communication", "Fast and reliable team communication."],
-            ["Digital Radio", "Modern digital communication capabilities."],
-            ["Wide-Area Coverage", "Solutions for large operational environments."],
-            ["Emergency Operations", "Communication support for critical situations."],
-          ].map(([title, text]) => (
-            <div
-              key={title}
-              className="rounded-2xl border border-white/10 bg-white/[0.045] p-7"
-            >
-              <h3 className="text-lg font-bold">{title}</h3>
-              <p className="mt-3 text-sm leading-6 text-slate-400">{text}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="border-y border-white/10 bg-white/[0.02]">
-        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
-            Applications
+        <div className="mb-12 max-w-3xl">
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-cyan-300">
+            Mission-Critical Communication
           </p>
           <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-            Professional Communication Applications
+            Reliable communication for field operations
           </h2>
-
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              "Airports & Aviation Facilities",
-              "Security & Guarding Operations",
-              "Industrial & Manufacturing Sites",
-              "Government & Critical Infrastructure",
-              "Construction & Large Projects",
-              "Emergency & Event Operations",
-            ].map((item) => (
-              <div
-                key={item}
-                className="rounded-xl border border-white/10 bg-[#0a1728] px-6 py-5 text-slate-200"
-              >
-                {item}
-              </div>
-            ))}
-          </div>
+          <p className="mt-4 leading-8 text-slate-300">
+            Two-way radio systems enable coordinated communication between
+            security teams, field engineers, operational staff and control
+            centers.
+          </p>
         </div>
-      </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
-          Manufacturer Ecosystem
-        </p>
-        <h2 className="mt-3 max-w-3xl text-3xl font-bold sm:text-4xl">
-          Two-Way Radio Technology
-        </h2>
-        <p className="mt-5 max-w-3xl leading-7 text-slate-400">
-          Our technical coverage is structured around a broad ecosystem of
-          professional radio communication technologies and manufacturers.
-        </p>
-
-        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-          {manufacturers.map(([name, logo]) => (
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {features.map(([title, description]) => (
             <div
-              key={name}
-              className="flex min-h-36 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.045] p-6 text-center shadow-[0_8px_30px_rgba(0,0,0,0.18)] transition duration-300 hover:-translate-y-1 hover:border-sky-400/40 hover:bg-white/[0.07]"
+              key={title}
+              className="rounded-2xl border border-white/10 bg-white/[0.04] p-7 transition duration-500 hover:-translate-y-1 hover:border-cyan-400/50"
             >
-              {logo ? (
-                <img
-                  src={logo}
-                  alt={name}
-                  className="max-h-12 max-w-full object-contain"
-                />
-              ) : (
-                <span className="text-base font-semibold text-slate-200">
-                  {name}
-                </span>
-              )}
+              <div className="mb-5 h-1 w-12 rounded-full bg-cyan-400" />
+              <h3 className="text-xl font-bold">{title}</h3>
+              <p className="mt-3 text-sm leading-7 text-slate-400">
+                {description}
+              </p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="border-y border-white/10 bg-white/[0.02]">
+      <section className="border-y border-white/10 bg-slate-900/70">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
-            Technical Services
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-cyan-300">
+            Manufacturer Technologies
           </p>
 
-          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {[
-              "Installation & Commissioning",
-              "Preventive Maintenance",
-              "Corrective Repair",
-              "Radio Programming & Configuration",
-              "Battery & Accessory Support",
-              "System Diagnostics & Technical Support",
-            ].map((service) => (
-              <div
-                key={service}
-                className="rounded-2xl border border-white/10 bg-[#0a1728] p-7"
-              >
-                <h3 className="font-bold">{service}</h3>
-              </div>
-            ))}
+          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+            Walkie-Talkie Manufacturers
+          </h2>
+
+          <p className="mt-4 max-w-3xl leading-7 text-slate-300">
+            A professional technical showcase of established two-way radio
+            communication manufacturers, presented with original
+            product-specific visual interfaces.
+          </p>
+
+          <div className="mt-10">
+            <WalkieTalkieManufacturerIdentityGrid />
           </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-5xl px-6 py-24 text-center lg:px-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
-          SecureTech Equipment
-        </p>
-        <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
-          Need Two-Way Radio Support?
-        </h2>
-        <p className="mx-auto mt-5 max-w-2xl leading-7 text-slate-400">
-          Contact our technical team for installation, maintenance,
-          troubleshooting, repair, configuration and communication-system
-          support.
-        </p>
-        <a
-          href="/service-request"
-          className="mt-9 inline-flex rounded-xl bg-sky-500 px-7 py-3.5 font-semibold transition hover:bg-sky-400"
-        >
-          Submit Service Request
-        </a>
+      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+        <div className="rounded-3xl border border-cyan-400/20 bg-gradient-to-br from-cyan-950/50 to-slate-900 p-8 sm:p-12">
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-cyan-300">
+            Professional Technical Services
+          </p>
+
+          <h2 className="mt-3 text-3xl font-bold">
+            Installation, Programming & Maintenance
+          </h2>
+
+          <p className="mt-4 max-w-3xl leading-8 text-slate-300">
+            Professional installation, radio programming, configuration,
+            preventive maintenance, corrective repair and technical
+            troubleshooting.
+          </p>
+
+          <Link
+            href="/service-request"
+            className="mt-8 inline-flex rounded-xl bg-cyan-400 px-7 py-3 font-bold text-slate-950"
+          >
+            Submit Service Request
+          </Link>
+        </div>
       </section>
-    
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-8">
-        <EquipmentBrandLogos brands={walkieTalkieBrands} />
-      </div>
-</main>
+    </main>
   );
 }

@@ -33,9 +33,9 @@ export default function Home() {
     "Walk Through Metal Detector":
       "/equipment/walk-through-metal-detector",
     "Hand Held Metal Detector":
-      "/equipment/hand-held-metal-detector",
+      "/equipment/hand-hand-metal",
     "Explosive Trace Detection":
-      "/equipment/explosive-trace-detection",
+      "/equipment/etd",
     "CCTV System": "/equipment/cctv-system",
     "Access Control System": "/equipment/access-control-system",
     "Road Barrier & Road Blocker":

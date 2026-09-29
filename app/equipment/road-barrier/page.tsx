@@ -1,154 +1,123 @@
-const manufacturers = [
-  ["FAAC", ""],
-  ["Nice", ""],
-  ["CAME", ""],
-  ["Magnetic Autocontrol", ""],
-  ["BFT", ""],
-  ["Hikvision", ""],
-  ["ZKTeco", ""],
-  ["Dahua Technology", ""],
-  ["Automatic Systems", ""],
-  ["Boon Edam", ""],
-  ["Gunnebo", ""],
-  ["PERCo", ""],
-  ["Dormakaba", ""],
-  ["Nedap", ""],
-  ["Roger Technology", ""],
-  ["DEA System", ""],
-  ["TAU", ""],
-  ["Parking Pro", ""],
-  ["CAME Americas", ""],
-  ["Allegion", ""],
+import Link from "next/link";
+import RoadBarrierManufacturerIdentityGrid from "@/app/components/RoadBarrierManufacturerIdentityGrid";
+
+export const metadata = {
+  title: "Road Barrier System | Security Equipment Maintenance BD",
+  description:
+    "Professional automatic road barrier systems for vehicle access control, security facilities, airports, parking and critical infrastructure.",
+};
+
+const features = [
+  ["Automatic Vehicle Control", "Reliable boom barrier systems for controlled vehicle entry and exit."],
+  ["High-Security Access", "Designed for airports, government facilities, commercial sites and critical infrastructure."],
+  ["Integrated Operation", "Compatible with access control, RFID, ANPR and parking management systems."],
+  ["Fast & Reliable", "Efficient barrier operation for demanding traffic-control environments."],
+  ["Preventive Maintenance", "Scheduled inspection and maintenance for dependable operation."],
+  ["Technical Support", "Installation, commissioning, troubleshooting, repair and field support."],
 ];
 
 export default function RoadBarrierPage() {
   return (
-    <main className="min-h-screen bg-[#06111f] text-white">
-      <section className="relative overflow-hidden border-b border-white/10">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(14,165,233,0.18),transparent_40%),radial-gradient(circle_at_bottom_left,rgba(37,99,235,0.12),transparent_40%)]" />
-        <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-sky-400">
+    <main className="min-h-screen bg-slate-950 text-white">
+      <section className="relative overflow-hidden border-b border-cyan-400/20 bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-950/60">
+        <div className="absolute inset-0 pointer-events-none flex items-center justify-center opacity-40">
+          <div className="h-80 w-80 rounded-full border border-cyan-400/20 animate-barrier-pulse" />
+          <div className="absolute h-48 w-48 rounded-full border border-cyan-400/30" />
+          <div className="absolute left-[15%] right-[15%] top-1/2 h-1 origin-left bg-cyan-300 shadow-[0_0_20px_rgba(34,211,238,.8)] animate-barrier-arm" />
+        </div>
+
+        <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <Link href="/equipment" className="text-sm font-semibold text-cyan-300">
+            ← Back to Equipment
+          </Link>
+
+          <p className="mt-12 text-sm font-bold uppercase tracking-[0.28em] text-cyan-300">
             Vehicle Access Control
           </p>
-          <h1 className="max-w-4xl text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-            Automatic Road Barrier
+
+          <h1 className="mt-4 text-5xl font-black tracking-tight sm:text-6xl">
+            Road Barrier System
           </h1>
+
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-            Professional vehicle access control and automatic barrier
-            solutions for airports, government facilities, commercial sites,
-            parking areas and critical infrastructure.
+            Professional automatic road barrier solutions for secure vehicle
+            access, traffic control, parking facilities, airports and critical
+            infrastructure.
           </p>
-          <div className="mt-10 flex flex-wrap gap-4">
-            <a href="/service-request" className="rounded-xl bg-sky-500 px-6 py-3 font-semibold transition hover:bg-sky-400">
-              Service Request
-            </a>
-            <a href="/contact" className="rounded-xl border border-white/15 bg-white/5 px-6 py-3 font-semibold transition hover:bg-white/10">
-              Contact Our Team
-            </a>
+
+          <div className="mt-9 flex flex-wrap gap-4">
+            <Link href="/service-request" className="rounded-xl bg-cyan-400 px-7 py-3 font-bold text-slate-950">
+              Request Service
+            </Link>
+            <Link href="/contact" className="rounded-xl border border-white/15 bg-white/5 px-7 py-3 font-semibold">
+              Contact Us
+            </Link>
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <div className="grid gap-10 lg:grid-cols-2">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">System Overview</p>
-            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Controlled Vehicle Access</h2>
-          </div>
-          <p className="text-lg leading-8 text-slate-300">
-            Automatic road barriers provide controlled vehicle entry and exit
-            while integrating with access control, parking management,
-            identification and security systems.
+        <div className="mb-12 max-w-3xl">
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-cyan-300">
+            Vehicle Security Infrastructure
+          </p>
+          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+            Intelligent vehicle access control
+          </h2>
+          <p className="mt-4 leading-8 text-slate-300">
+            Automated boom barriers provide controlled vehicle movement while
+            supporting integrated security and parking infrastructure.
           </p>
         </div>
 
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {[
-            ["Automatic Operation", "Fast and controlled vehicle movement."],
-            ["Access Integration", "Integration with modern access systems."],
-            ["Traffic Control", "Reliable management of vehicle entry and exit."],
-            ["Technical Support", "Installation, maintenance and repair services."],
-          ].map(([title, text]) => (
-            <div key={title} className="rounded-2xl border border-white/10 bg-white/[0.045] p-7">
-              <h3 className="text-lg font-bold">{title}</h3>
-              <p className="mt-3 text-sm leading-6 text-slate-400">{text}</p>
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {features.map(([title, description]) => (
+            <div key={title} className="rounded-2xl border border-white/10 bg-white/[0.04] p-7 transition duration-500 hover:-translate-y-1 hover:border-cyan-400/50">
+              <div className="mb-5 h-1 w-12 rounded-full bg-cyan-400" />
+              <h3 className="text-xl font-bold">{title}</h3>
+              <p className="mt-3 text-sm leading-7 text-slate-400">{description}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="border-y border-white/10 bg-white/[0.02]">
+      <section className="border-y border-white/10 bg-slate-900/70">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">Applications</p>
-          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Vehicle Security Applications</h2>
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              "Airports & Aviation Facilities",
-              "Government & Critical Infrastructure",
-              "Corporate & Commercial Sites",
-              "Parking Facilities",
-              "Industrial & Logistics Sites",
-              "Residential & Controlled Communities",
-            ].map((item) => (
-              <div key={item} className="rounded-xl border border-white/10 bg-[#0a1728] px-6 py-5 text-slate-200">
-                {item}
-              </div>
-            ))}
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-cyan-300">
+            Manufacturer Technologies
+          </p>
+
+          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+            Road Barrier Manufacturers
+          </h2>
+
+          <p className="mt-4 max-w-3xl leading-7 text-slate-300">
+            Professional manufacturer identity cards with dedicated automatic
+            barrier visuals and product-specific motion effects.
+          </p>
+
+          <div className="mt-10">
+            <RoadBarrierManufacturerIdentityGrid />
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">Manufacturer Ecosystem</p>
-        <h2 className="mt-3 max-w-3xl text-3xl font-bold sm:text-4xl">Barrier & Vehicle Access Technology</h2>
-        <p className="mt-5 max-w-3xl leading-7 text-slate-400">
-          Our technical coverage is structured around a broad ecosystem of
-          automatic barrier and vehicle access control technologies.
-        </p>
-
-        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-          {manufacturers.map(([name, logo]) => (
-            <div key={name} className="flex min-h-36 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.045] p-6 text-center shadow-[0_8px_30px_rgba(0,0,0,0.18)] transition duration-300 hover:-translate-y-1 hover:border-sky-400/40 hover:bg-white/[0.07]">
-              {logo ? (
-                <img src={logo} alt={name} className="max-h-12 max-w-full object-contain" />
-              ) : (
-                <span className="text-lg font-semibold tracking-tight text-slate-100">{name}</span>
-              )}
-            </div>
-          ))}
+        <div className="rounded-3xl border border-cyan-400/20 bg-gradient-to-br from-cyan-950/50 to-slate-900 p-8 sm:p-12">
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-cyan-300">
+            Professional Technical Services
+          </p>
+          <h2 className="mt-3 text-3xl font-bold">
+            Installation, Maintenance & Technical Support
+          </h2>
+          <p className="mt-4 max-w-3xl leading-8 text-slate-300">
+            Installation, commissioning, configuration, preventive maintenance,
+            corrective repair and technical troubleshooting.
+          </p>
+          <Link href="/service-request" className="mt-8 inline-flex rounded-xl bg-cyan-400 px-7 py-3 font-bold text-slate-950">
+            Submit Service Request
+          </Link>
         </div>
-      </section>
-
-      <section className="border-y border-white/10 bg-white/[0.02]">
-        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">Technical Services</p>
-          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {[
-              "Installation & Commissioning",
-              "Preventive Maintenance",
-              "Corrective Repair",
-              "Barrier Controller Diagnostics",
-              "Access Control Integration",
-              "Spare Parts & Technical Support",
-            ].map((service) => (
-              <div key={service} className="rounded-2xl border border-white/10 bg-[#0a1728] p-7">
-                <h3 className="font-bold">{service}</h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-5xl px-6 py-24 text-center lg:px-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">SecureTech Equipment</p>
-        <h2 className="mt-4 text-3xl font-bold sm:text-4xl">Need Road Barrier Support?</h2>
-        <p className="mx-auto mt-5 max-w-2xl leading-7 text-slate-400">
-          Contact our technical team for installation, maintenance,
-          troubleshooting, repair and access-control integration support.
-        </p>
-        <a href="/service-request" className="mt-9 inline-flex rounded-xl bg-sky-500 px-7 py-3.5 font-semibold transition hover:bg-sky-400">
-          Submit Service Request
-        </a>
       </section>
     </main>
   );

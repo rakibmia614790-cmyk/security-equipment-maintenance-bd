@@ -1,167 +1,124 @@
-import EquipmentBrandLogos from "../EquipmentBrandLogos";
+import Link from "next/link";
+import RoadBlockerManufacturerIdentityGrid from "@/app/components/RoadBlockerManufacturerIdentityGrid";
 
-const roadBlockerBrands = [
-  "FAAC",
-  "CAME",
-  "BFT",
-  "Magnetic Autocontrol",
-];
-const manufacturers = [
-  ["FAAC", ""],
-  ["Nice", ""],
-  ["CAME", ""],
-  ["BFT", ""],
-  ["Magnetic Autocontrol", ""],
-  ["Automatic Systems", ""],
-  ["Gunnebo", ""],
-  ["PERCo", ""],
-  ["Frontier Pitts", ""],
-  ["Pilomat", ""],
-  ["FAAC Simply Connect", ""],
-  ["Hormann", ""],
-  ["Delta Scientific", ""],
-  ["RIB", ""],
-  ["Roger Technology", ""],
-  ["DEA System", ""],
-  ["TAU", ""],
-  ["CAME Americas", ""],
-  ["Bolloré Protection", ""],
-  ["Allegion", ""],
+export const metadata = {
+  title: "Road Blocker System | Security Equipment Maintenance BD",
+  description:
+    "Professional hydraulic road blocker systems for high-security vehicle access control, airports, government facilities and critical infrastructure.",
+};
+
+const features = [
+  ["High-Security Vehicle Control", "Heavy-duty road blocking systems for controlled vehicle access."],
+  ["Hydraulic Protection", "Engineered rising barriers for demanding security environments."],
+  ["Critical Infrastructure", "Suitable for airports, government facilities and sensitive sites."],
+  ["Integrated Security", "Designed for integration with access control and vehicle security systems."],
+  ["Preventive Maintenance", "Inspection and maintenance support for dependable operation."],
+  ["Technical Support", "Installation, commissioning, troubleshooting, repair and field service."],
 ];
 
 export default function RoadBlockerPage() {
   return (
-    <main className="min-h-screen bg-[#06111f] text-white">
-      <section className="relative overflow-hidden border-b border-white/10">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(14,165,233,0.18),transparent_40%),radial-gradient(circle_at_bottom_left,rgba(37,99,235,0.12),transparent_40%)]" />
-        <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-sky-400">
+    <main className="min-h-screen bg-slate-950 text-white">
+      <section className="relative overflow-hidden border-b border-cyan-400/20 bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-950/60">
+        <div className="absolute inset-0 pointer-events-none flex items-center justify-center opacity-40">
+          <div className="h-96 w-96 rounded-full border border-cyan-400/20 animate-road-blocker-pulse" />
+          <div className="absolute h-64 w-64 rounded-full border border-cyan-400/30" />
+          <div className="absolute bottom-[18%] left-[12%] right-[12%] h-5 rounded-t-lg bg-cyan-300/60 shadow-[0_0_25px_rgba(34,211,238,.7)] animate-road-blocker-rise" />
+        </div>
+
+        <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <Link href="/equipment" className="text-sm font-semibold text-cyan-300">
+            ← Back to Equipment
+          </Link>
+
+          <p className="mt-12 text-sm font-bold uppercase tracking-[0.28em] text-cyan-300">
             High-Security Vehicle Protection
           </p>
-          <h1 className="max-w-4xl text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-            Automatic Road Blocker
+
+          <h1 className="mt-4 text-5xl font-black tracking-tight sm:text-6xl">
+            Road Blocker System
           </h1>
+
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-            High-security vehicle access protection systems for airports,
-            government facilities, critical infrastructure, embassies,
-            military facilities and restricted sites.
+            Professional hydraulic road blocker solutions for high-security
+            vehicle access control, airports, government facilities and
+            critical infrastructure.
           </p>
-          <div className="mt-10 flex flex-wrap gap-4">
-            <a href="/service-request" className="rounded-xl bg-sky-500 px-6 py-3 font-semibold transition hover:bg-sky-400">
-              Service Request
-            </a>
-            <a href="/contact" className="rounded-xl border border-white/15 bg-white/5 px-6 py-3 font-semibold transition hover:bg-white/10">
-              Contact Our Team
-            </a>
+
+          <div className="mt-9 flex flex-wrap gap-4">
+            <Link href="/service-request" className="rounded-xl bg-cyan-400 px-7 py-3 font-bold text-slate-950">
+              Request Service
+            </Link>
+            <Link href="/contact" className="rounded-xl border border-white/15 bg-white/5 px-7 py-3 font-semibold">
+              Contact Us
+            </Link>
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <div className="grid gap-10 lg:grid-cols-2">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">System Overview</p>
-            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">High-Security Vehicle Protection</h2>
-          </div>
-          <p className="text-lg leading-8 text-slate-300">
-            Automatic road blockers are engineered to control and restrict
-            vehicle access at sensitive entrances while integrating with
-            security, access-control and traffic-management systems.
+        <div className="mb-12 max-w-3xl">
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-cyan-300">
+            Perimeter Security
+          </p>
+          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+            Heavy-duty vehicle access protection
+          </h2>
+          <p className="mt-4 leading-8 text-slate-300">
+            Road blockers provide a robust physical security layer for
+            controlling and restricting unauthorized vehicle movement.
           </p>
         </div>
 
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {[
-            ["Vehicle Protection", "Designed for controlled and restricted access."],
-            ["High-Security Access", "Suitable for sensitive security environments."],
-            ["System Integration", "Integration with access and security systems."],
-            ["Technical Support", "Installation, maintenance and corrective services."],
-          ].map(([title, text]) => (
-            <div key={title} className="rounded-2xl border border-white/10 bg-white/[0.045] p-7">
-              <h3 className="text-lg font-bold">{title}</h3>
-              <p className="mt-3 text-sm leading-6 text-slate-400">{text}</p>
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {features.map(([title, description]) => (
+            <div key={title} className="rounded-2xl border border-white/10 bg-white/[0.04] p-7 transition duration-500 hover:-translate-y-1 hover:border-cyan-400/50">
+              <div className="mb-5 h-1 w-12 rounded-full bg-cyan-400" />
+              <h3 className="text-xl font-bold">{title}</h3>
+              <p className="mt-3 text-sm leading-7 text-slate-400">{description}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="border-y border-white/10 bg-white/[0.02]">
+      <section className="border-y border-white/10 bg-slate-900/70">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">Applications</p>
-          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">High-Security Applications</h2>
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              "Airports & Aviation Facilities",
-              "Government & Critical Infrastructure",
-              "Military & Defence Facilities",
-              "Embassies & Diplomatic Facilities",
-              "Ports & Strategic Infrastructure",
-              "Restricted Commercial & Industrial Sites",
-            ].map((item) => (
-              <div key={item} className="rounded-xl border border-white/10 bg-[#0a1728] px-6 py-5 text-slate-200">
-                {item}
-              </div>
-            ))}
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-cyan-300">
+            Manufacturer Technologies
+          </p>
+
+          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+            Road Blocker Manufacturers
+          </h2>
+
+          <p className="mt-4 max-w-3xl leading-7 text-slate-300">
+            Professional manufacturer identity cards with dedicated hydraulic
+            road-blocking visuals and product-specific animations.
+          </p>
+
+          <div className="mt-10">
+            <RoadBlockerManufacturerIdentityGrid />
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">Manufacturer Ecosystem</p>
-        <h2 className="mt-3 max-w-3xl text-3xl font-bold sm:text-4xl">Road Blocker Technology</h2>
-        <p className="mt-5 max-w-3xl leading-7 text-slate-400">
-          Our technical coverage is structured around a broad ecosystem of
-          vehicle barrier and high-security access technologies.
-        </p>
-
-        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-          {manufacturers.map(([name, logo]) => (
-            <div key={name} className="flex min-h-36 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.045] p-6 text-center shadow-[0_8px_30px_rgba(0,0,0,0.18)] transition duration-300 hover:-translate-y-1 hover:border-sky-400/40 hover:bg-white/[0.07]">
-              {logo ? (
-                <img src={logo} alt={name} className="max-h-12 max-w-full object-contain" />
-              ) : (
-                <span className="text-lg font-semibold tracking-tight text-slate-100">{name}</span>
-              )}
-            </div>
-          ))}
+        <div className="rounded-3xl border border-cyan-400/20 bg-gradient-to-br from-cyan-950/50 to-slate-900 p-8 sm:p-12">
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-cyan-300">
+            Professional Technical Services
+          </p>
+          <h2 className="mt-3 text-3xl font-bold">
+            Installation, Maintenance & Technical Support
+          </h2>
+          <p className="mt-4 max-w-3xl leading-8 text-slate-300">
+            Installation, commissioning, configuration, preventive maintenance,
+            corrective repair and technical troubleshooting.
+          </p>
+          <Link href="/service-request" className="mt-8 inline-flex rounded-xl bg-cyan-400 px-7 py-3 font-bold text-slate-950">
+            Submit Service Request
+          </Link>
         </div>
       </section>
-
-      <section className="border-y border-white/10 bg-white/[0.02]">
-        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">Technical Services</p>
-          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {[
-              "Installation & Commissioning",
-              "Preventive Maintenance",
-              "Corrective Repair",
-              "Hydraulic & Mechanical Diagnostics",
-              "Access Control Integration",
-              "Spare Parts & Technical Support",
-            ].map((service) => (
-              <div key={service} className="rounded-2xl border border-white/10 bg-[#0a1728] p-7">
-                <h3 className="font-bold">{service}</h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-5xl px-6 py-24 text-center lg:px-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">SecureTech Equipment</p>
-        <h2 className="mt-4 text-3xl font-bold sm:text-4xl">Need Road Blocker Support?</h2>
-        <p className="mx-auto mt-5 max-w-2xl leading-7 text-slate-400">
-          Contact our technical team for installation, maintenance,
-          troubleshooting, repair and system integration support.
-        </p>
-        <a href="/service-request" className="mt-9 inline-flex rounded-xl bg-sky-500 px-7 py-3.5 font-semibold transition hover:bg-sky-400">
-          Submit Service Request
-        </a>
-      </section>
-    
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-8">
-        <EquipmentBrandLogos brands={roadBlockerBrands} />
-      </div>
-</main>
+    </main>
   );
 }
