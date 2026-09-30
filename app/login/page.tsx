@@ -1,38 +1,142 @@
+"use client";
+
+import { FormEvent, useState } from "react";
 import Link from "next/link";
 
 export default function LoginPage() {
+  const [mobile, setMobile] = useState("");
+  const [challengeId, setChallengeId] = useState("");
+  const [code, setCode] = useState("");
+  const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [otpSent, setOtpSent] = useState(false);
+
+  async function requestOtp(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setLoading(true);
+    setMessage("");
+
+    try {
+      const response = await fetch("/api/secure-portal/otp", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          action: "request",
+          mobile,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        setMessage(result.error || "Unable to request OTP.");
+        return;
+      }
+
+      setChallengeId(result.challengeId);
+      setOtpSent(true);
+      setMessage("SMS OTP has been requested. Please enter the verification code.");
+    } catch {
+      setMessage("Unable to connect to the SecureTech Portal.");
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  async function verifyOtp(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setLoading(true);
+    setMessage("");
+
+    try {
+      const response = await fetch("/api/secure-portal/otp", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          action: "verify",
+          challengeId,
+          code,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        setMessage(result.error || "OTP verification failed.");
+        return;
+      }
+
+      setMessage(result.message);
+    } catch {
+      setMessage("Unable to connect to the SecureTech Portal.");
+    } finally {
+      setLoading(false);
+    }
+  }
+
   return (
-    <main className="min-h-[70vh] bg-slate-950 px-6 py-20 text-white">
-      <div className="mx-auto max-w-3xl text-center">
-        <div className="mb-4 inline-flex rounded-full border border-cyan-400/20 bg-cyan-400/5 px-4 py-2 text-sm text-cyan-300">
-          SecureTech BD
-        </div>
+    <main>
+      <section>
+        <Link href="/">← Back to Home</Link>
 
-        <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-          Secure Login
-        </h1>
+        <h1>SecureTech Portal Login</h1>
 
-        <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-300">
-          Secure access for authorized partners, engineers, technicians,
-          employees, and approved associates.
+        <p>
+          Login requires Email and Mobile Number verification. OTP verification
+          does not grant portal access until Admin Team authorization is completed.
         </p>
 
-        <div className="mt-10">
-          <Link
-            href="/partner-login"
-            className="inline-flex items-center justify-center rounded-xl bg-cyan-500 px-7 py-3.5 font-semibold text-slate-950 shadow-[0_8px_30px_rgba(6,182,212,0.22)] transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 hover:bg-cyan-400 hover:shadow-[0_12px_38px_rgba(6,182,212,0.34)]"
-          >
-            Continue to Login
-          </Link>
-        </div>
+        {!otpSent ? (
+          <form onSubmit={requestOtp}>
+            <label>
+              Email Address
+              <input name="email" type="email" required />
+            </label>
 
-        <Link
-          href="/"
-          className="mt-6 inline-block text-sm text-slate-400 transition hover:text-cyan-300"
-        >
-          ← Back to Home
-        </Link>
-      </div>
+            <label>
+              Mobile Number
+              <input
+                name="mobile"
+                type="tel"
+                value={mobile}
+                onChange={(event) => setMobile(event.target.value)}
+                required
+              />
+            </label>
+
+            <button type="submit" disabled={loading}>
+              {loading ? "Sending..." : "Send SMS OTP"}
+            </button>
+          </form>
+        ) : (
+          <form onSubmit={verifyOtp}>
+            <label>
+              SMS OTP
+              <input
+                name="code"
+                type="text"
+                inputMode="numeric"
+                maxLength={6}
+                value={code}
+                onChange={(event) => setCode(event.target.value)}
+                required
+              />
+            </label>
+
+            <button type="submit" disabled={loading}>
+              {loading ? "Verifying..." : "Verify OTP"}
+            </button>
+          </form>
+        )}
+
+        {message && <p>{message}</p>}
+
+        <p>
+          New user? <Link href="/register">Create an account</Link>
+        </p>
+
+        <p>Portal access: Admin Team · Engineer · Technician</p>
+      </section>
     </main>
   );
 }
